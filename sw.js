@@ -1,6 +1,6 @@
 // Service worker: solo la interfaz. Las lecciones viven en IndexedDB (las guarda la app).
 // No intercepta peticiones de otros orígenes (Supabase) ni respuestas de autenticación.
-const VERSION = "2.1.2";
+const VERSION = "2.1.3";
 const CACHE = "almanaque-shell-" + VERSION;
 const SHELL = [
   "./", "./index.html", "./styles.css", "./manifest.webmanifest",
@@ -14,7 +14,8 @@ const SHELL = [
 const SHELL_URLS = new Set(SHELL.map(p => new URL(p, self.registration.scope).href));
 
 self.addEventListener("install", (event) => {
-  event.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL)));
+  // cache: "reload" evita que la versión nueva se instale con archivos viejos guardados por el navegador.
+  event.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL.map(p => new Request(p, { cache: "reload" })))));
 });
 
 self.addEventListener("activate", (event) => {
