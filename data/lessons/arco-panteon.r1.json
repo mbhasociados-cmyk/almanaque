@@ -1,0 +1,229 @@
+{
+  "schemaVersion": "1.0",
+  "id": "arco-panteon",
+  "revision": 1,
+  "idioma": "es-CL",
+  "disciplina": "Arquitectura",
+  "familia": "arte",
+  "etiquetas": [
+    "Roma",
+    "estructuras",
+    "hormigón"
+  ],
+  "titulo": "El arco, la bóveda y el Panteón",
+  "nivel": "introductorio",
+  "minutosEstimados": 14,
+  "objetivos": [
+    "Explicar por qué un arco de piedra trabaja a compresión",
+    "Describir cómo se aligeró la cúpula del Panteón"
+  ],
+  "prerrequisitos": [],
+  "entrada": {
+    "pregunta": "Antes de leer: ¿por qué un puente de piedra antiguo puede seguir en pie después de 2.000 años?"
+  },
+  "pasos": [
+    {
+      "id": "compresion",
+      "titulo": "El arco trabaja a compresión",
+      "parrafos": [
+        "Las piedras de un arco, llamadas dovelas, se empujan unas a otras. La piedra resiste muy bien la compresión, aunque se quiebra con facilidad si se la dobla.",
+        "La dovela central superior se llama clave. El arco empuja hacia los lados, y ese empuje debe contenerse con muros o contrafuertes."
+      ],
+      "fuenteIds": [
+        "britannica-arco",
+        "pendiente-arco"
+      ],
+      "figura": {
+        "tipo": "svg",
+        "contenido": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Arco de medio punto formado por nueve dovelas</title><defs><marker id=\"arco-panteon-f1-ah\" viewBox=\"0 0 10 10\" refX=\"5\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" class=\"as-svg__accent\"/></marker></defs><polygon points=\"50.0,180.0 56.6,142.4 89.5,154.3 85.0,180.0\" class=\"as-svg__surface\"/><polygon points=\"50.0,180.0 56.6,142.4 89.5,154.3 85.0,180.0\" class=\"as-svg__ink\"/><polygon points=\"56.6,142.4 75.7,109.3 102.5,131.8 89.5,154.3\" class=\"as-svg__surface\"/><polygon points=\"56.6,142.4 75.7,109.3 102.5,131.8 89.5,154.3\" class=\"as-svg__ink\"/><polygon points=\"75.7,109.3 105.0,84.7 122.5,115.0 102.5,131.8\" class=\"as-svg__surface\"/><polygon points=\"75.7,109.3 105.0,84.7 122.5,115.0 102.5,131.8\" class=\"as-svg__ink\"/><polygon points=\"105.0,84.7 140.9,71.7 147.0,106.1 122.5,115.0\" class=\"as-svg__surface\"/><polygon points=\"105.0,84.7 140.9,71.7 147.0,106.1 122.5,115.0\" class=\"as-svg__ink\"/><polygon points=\"140.9,71.7 179.1,71.7 173.0,106.1 147.0,106.1\" class=\"as-svg__accent\"/><polygon points=\"140.9,71.7 179.1,71.7 173.0,106.1 147.0,106.1\" class=\"as-svg__ink\"/><polygon points=\"179.1,71.7 215.0,84.7 197.5,115.0 173.0,106.1\" class=\"as-svg__surface\"/><polygon points=\"179.1,71.7 215.0,84.7 197.5,115.0 173.0,106.1\" class=\"as-svg__ink\"/><polygon points=\"215.0,84.7 244.3,109.3 217.5,131.8 197.5,115.0\" class=\"as-svg__surface\"/><polygon points=\"215.0,84.7 244.3,109.3 217.5,131.8 197.5,115.0\" class=\"as-svg__ink\"/><polygon points=\"244.3,109.3 263.4,142.4 230.5,154.3 217.5,131.8\" class=\"as-svg__surface\"/><polygon points=\"244.3,109.3 263.4,142.4 230.5,154.3 217.5,131.8\" class=\"as-svg__ink\"/><polygon points=\"263.4,142.4 270.0,180.0 235.0,180.0 230.5,154.3\" class=\"as-svg__surface\"/><polygon points=\"263.4,142.4 270.0,180.0 235.0,180.0 230.5,154.3\" class=\"as-svg__ink\"/><line x1=\"45\" y1=\"175\" x2=\"15\" y2=\"175\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"2\" marker-end=\"url(#arco-panteon-f1-ah)\"/><line x1=\"275\" y1=\"175\" x2=\"305\" y2=\"175\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"2\" marker-end=\"url(#arco-panteon-f1-ah)\"/><text x=\"160\" y=\"58\" text-anchor=\"middle\" class=\"as-svg__label as-svg__accent\" font-size=\"11\">clave</text><text x=\"160\" y=\"196\" text-anchor=\"middle\" class=\"as-svg__label as-svg__muted\" font-size=\"10\">empuje lateral</text></svg>",
+        "alt": "Nueve bloques en forma de cuña forman un semicírculo; el bloque central está destacado; dos flechas en la base apuntan hacia afuera.",
+        "pie": "Arco de medio punto: dovelas, clave y empuje lateral."
+      },
+      "actividad": {
+        "tipo": "prediccion",
+        "pregunta": "¿Qué pasa si quitas el muro que contiene el empuje lateral de un arco?",
+        "respuesta": "Los apoyos se abren hacia afuera y el arco colapsa."
+      }
+    },
+    {
+      "id": "cupula",
+      "titulo": "Del arco a la cúpula",
+      "parrafos": [
+        "Si giras un arco sobre su eje vertical obtienes una cúpula. El Panteón de Roma fue reconstruido por completo durante el reinado de Adriano (117–138 d. C.); los sellos de sus ladrillos datan la mayor parte de la obra a comienzos de la década de 120. Su cúpula de hormigón, sin acero, tiene una luz interior de 43,2 metros.",
+        "La altura interior es igual a esa luz: cabría una esfera completa."
+      ],
+      "fuenteIds": [
+        "uw-panteon"
+      ],
+      "actividad": {
+        "tipo": "calculo",
+        "pregunta": "Si la luz interior es 43,2 m, ¿qué volumen tendría la esfera que cabe en el interior?",
+        "respuesta": "V = (4/3) × π × r³ con r = 21,6 m: (4/3) × 3,1416 × 10.077,696 = 42.213,5 m³ (cálculo con π = 3,1416, redondeado a un decimal)."
+      }
+    },
+    {
+      "id": "trucos",
+      "titulo": "Cómo se aligeró",
+      "parrafos": [
+        "En la base se usó basalto, pesado, y arriba piedra pómez, liviana. Por fuera, la cúpula sube en escalones concéntricos.",
+        "En la cima, el óculo de 8,2 metros es la única fuente de luz del interior. Los casetones del cielo de la cúpula se asocian también con la reducción de peso."
+      ],
+      "fuenteIds": [
+        "uw-panteon",
+        "pendiente-casetones"
+      ],
+      "actividad": {
+        "tipo": "explicacion",
+        "pregunta": "Explica por qué conviene que lo más liviano esté arriba.",
+        "respuesta": "Cada parte de la cúpula carga con todo lo que está encima; si arriba pesa menos, abajo hay menos esfuerzo."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "pregunta": "¿A qué esfuerzo trabaja principalmente un arco de piedra?",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Compresión",
+          "retroalimentacion": "Correcto: las dovelas se empujan unas a otras."
+        },
+        {
+          "id": "b",
+          "texto": "Tracción",
+          "retroalimentacion": "La piedra resiste mal la tracción; el arco está diseñado para evitarla."
+        },
+        {
+          "id": "c",
+          "texto": "Torsión",
+          "retroalimentacion": "Un arco bien cargado no trabaja a torsión."
+        }
+      ],
+      "correctaId": "a",
+      "fuenteIds": [
+        "pendiente-arco"
+      ]
+    },
+    {
+      "id": "q2",
+      "pregunta": "Debes reforzar un muro antiguo que sostiene un arco. ¿Qué empuje debes contener?",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "El empuje lateral hacia afuera",
+          "retroalimentacion": "Correcto: el arco tiende a abrir sus apoyos."
+        },
+        {
+          "id": "b",
+          "texto": "Un empuje hacia arriba",
+          "retroalimentacion": "El peso del arco empuja hacia abajo y hacia los lados, no hacia arriba."
+        },
+        {
+          "id": "c",
+          "texto": "Ninguno; el arco se sostiene solo",
+          "retroalimentacion": "Sin apoyos que contengan el empuje, el arco se abre."
+        }
+      ],
+      "correctaId": "a",
+      "fuenteIds": [
+        "pendiente-arco"
+      ]
+    },
+    {
+      "id": "q3",
+      "pregunta": "¿Qué material se usó en la parte alta de la cúpula del Panteón para aligerarla?",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Basalto",
+          "retroalimentacion": "El basalto, pesado, se usó en la base."
+        },
+        {
+          "id": "b",
+          "texto": "Piedra pómez",
+          "retroalimentacion": "Correcto: es liviana y se usó arriba."
+        },
+        {
+          "id": "c",
+          "texto": "Acero",
+          "retroalimentacion": "El Panteón es de hormigón, sin acero."
+        }
+      ],
+      "correctaId": "b",
+      "fuenteIds": [
+        "uw-panteon"
+      ]
+    }
+  ],
+  "repaso": [
+    {
+      "id": "r1",
+      "pregunta": "¿Qué es la clave de un arco?",
+      "respuesta": "La dovela central superior del arco."
+    },
+    {
+      "id": "r2",
+      "pregunta": "Nombra dos recursos con que se aligeró la cúpula del Panteón.",
+      "respuesta": "Piedra pómez arriba y basalto en la base, escalones concéntricos y óculo."
+    }
+  ],
+  "cierre": "Busca un arco en un edificio de tu ciudad e identifica dónde está su clave.",
+  "fuentes": [
+    {
+      "id": "britannica-arco",
+      "entidad": "Encyclopaedia Britannica",
+      "titulo": "Arch (architecture)",
+      "url": "https://britannica.com/technology/arch-architecture",
+      "ubicacion": "Resumen y pies de los diagramas",
+      "afirmaciones": [
+        "La construcción del arco depende de la cuña",
+        "Dovelas en forma de cuña forman la curva; la clave está arriba al centro",
+        "Las fuerzas de compresión recorren la estructura"
+      ],
+      "consultadaEl": "2026-10-19"
+    },
+    {
+      "id": "pendiente-arco",
+      "entidad": "Por definir",
+      "titulo": "Fuente sobre el empuje lateral de los arcos",
+      "url": "https://britannica.com/technology/arch-architecture",
+      "ubicacion": "Pendiente de localizar",
+      "afirmaciones": [
+        "El arco produce empuje lateral que deben contener muros o contrafuertes"
+      ],
+      "consultadaEl": null
+    },
+    {
+      "id": "uw-panteon",
+      "entidad": "University of Washington, Honors Program in Rome",
+      "titulo": "The Pantheon",
+      "url": "https://depts.washington.edu/hrome/Authors/zinnia/Pantheon/pub_zbarticle_view_printable.html",
+      "ubicacion": "Artículo completo (autor: zinnia, 09-04-2005)",
+      "afirmaciones": [
+        "Reconstruido por completo bajo Adriano (117–138); sellos de ladrillos de comienzos de la década de 120",
+        "Luz interior de 43,2 m; altura igual a la luz",
+        "Óculo de 8,2 m, única fuente de luz",
+        "Basalto en la base y piedra pómez arriba",
+        "Íntegramente de hormigón, sin acero"
+      ],
+      "consultadaEl": "2026-10-19"
+    },
+    {
+      "id": "pendiente-casetones",
+      "entidad": "Por definir",
+      "titulo": "Fuente sobre la función de los casetones",
+      "url": "https://www.britannica.com/topic/Pantheon-building-Rome",
+      "ubicacion": "Pendiente de localizar",
+      "afirmaciones": [
+        "Los casetones reducen el peso de la cúpula"
+      ],
+      "consultadaEl": null
+    }
+  ],
+  "controlEditorial": {
+    "estado": "borrador",
+    "revisadoPor": null,
+    "fechaRevision": null
+  }
+}

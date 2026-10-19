@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es-CL">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Almanaque del Saber</title>
+<meta name="description" content="Una lección por día, de máximo 15 minutos, disponible sin conexión.">
+<meta name="theme-color" content="#FBFCFD" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#18202B" media="(prefers-color-scheme: dark)">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png" type="image/png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Almanaque">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="brand">Almanaque del Saber<small>Una lección por día · máx. 15 min</small></div>
+    <button id="sync-pill" class="pill" type="button" data-tone="neutral">Preparando…</button>
+  </header>
+  <nav class="tabs" aria-label="Secciones">
+    <button id="tab-hoy" type="button">Hoy</button>
+    <button id="tab-repasar" type="button">Repasar</button>
+    <button id="tab-explorar" type="button">Explorar</button>
+    <button id="tab-biblioteca" type="button">Biblioteca</button>
+    <button id="tab-cuenta" type="button">Cuenta</button>
+  </nav>
+  <div id="review-bar" class="review" hidden>Modo revisión: se muestran lecciones en borrador, aún sin V°B°.</div>
+  <div id="update-bar" class="update" hidden>Hay una actualización disponible. <button id="update-btn" class="btn small-btn" type="button">Actualizar</button></div>
+  <main id="view" aria-live="polite"><p class="small">Cargando…</p></main>
+</div>
+<div class="toast" id="toast" hidden role="status"></div>
+<noscript>Esta aplicación necesita JavaScript.</noscript>
+<script src="vendor/supabase-2.45.4.js"></script>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

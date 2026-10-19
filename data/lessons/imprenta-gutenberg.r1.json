@@ -1,0 +1,212 @@
+{
+  "schemaVersion": "1.0",
+  "id": "imprenta-gutenberg",
+  "revision": 1,
+  "idioma": "es-CL",
+  "disciplina": "Historia",
+  "familia": "historia",
+  "etiquetas": [
+    "imprenta",
+    "Renacimiento",
+    "tecnología"
+  ],
+  "titulo": "La imprenta de tipos móviles",
+  "nivel": "introductorio",
+  "minutosEstimados": 12,
+  "objetivos": [
+    "Describir los componentes del sistema de Gutenberg",
+    "Explicar por qué abarató la copia de textos"
+  ],
+  "prerrequisitos": [],
+  "entrada": {
+    "pregunta": "Antes de leer: ¿cómo se copiaba un libro antes de la imprenta, y cuánto crees que tardaba?"
+  },
+  "pasos": [
+    {
+      "id": "sistema",
+      "titulo": "Un sistema completo",
+      "parrafos": [
+        "Johannes Gutenberg, nacido y fallecido en Maguncia (Alemania), combinó varias técnicas en un sistema para imprimir con letras de metal reutilizables.",
+        "El sistema incluía una aleación de metal duradera para fundir los tipos, una tinta de base oleosa y una prensa que aplicaba presión pareja sobre el papel."
+      ],
+      "fuenteIds": [
+        "britannica-gutenberg"
+      ],
+      "figura": {
+        "tipo": "svg",
+        "contenido": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 180\" class=\"as-svg\" role=\"img\"><title>Un tipo móvil con la letra R en relieve e invertida</title><rect x=\"70\" y=\"30\" width=\"100\" height=\"130\" class=\"as-svg__surface\"/><rect x=\"70\" y=\"30\" width=\"100\" height=\"130\" class=\"as-svg__ink\"/><rect x=\"70\" y=\"10\" width=\"100\" height=\"22\" class=\"as-svg__ink\"/><text x=\"120\" y=\"28\" text-anchor=\"middle\" transform=\"translate(240 0) scale(-1 1)\" class=\"as-svg__label as-svg__accent\" font-size=\"22\">R</text><text x=\"120\" y=\"100\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"11\">cuerpo de metal</text><text x=\"178\" y=\"25\" class=\"as-svg__label as-svg__muted\" font-size=\"11\">relieve</text></svg>",
+        "alt": "Bloque rectangular de metal con una letra R invertida en relieve en su extremo superior.",
+        "pie": "La letra va invertida para que al imprimir quede al derecho."
+      },
+      "actividad": {
+        "tipo": "prediccion",
+        "pregunta": "¿Por qué la letra del tipo va al revés?",
+        "respuesta": "Porque al presionar contra el papel la imagen se invierte; así queda legible."
+      }
+    },
+    {
+      "id": "biblia",
+      "titulo": "La Biblia de 42 líneas",
+      "parrafos": [
+        "Su obra más conocida es la Biblia de 42 líneas, impresa en latín en columnas de 42 líneas y terminada hacia 1455 en Maguncia. Se conservan unos 40 ejemplares; no se sabe cuántos se imprimieron."
+      ],
+      "fuenteIds": [
+        "britannica-biblia"
+      ],
+      "actividad": {
+        "tipo": "calculo",
+        "pregunta": "Si un copista escribía 3 páginas al día, ¿cuántos días tardaría en copiar una obra de 1.280 páginas?",
+        "respuesta": "1.280 / 3 = 426,67 días, es decir, unos 427 días de trabajo para una sola copia."
+      }
+    },
+    {
+      "id": "efectos",
+      "titulo": "Consecuencias",
+      "parrafos": [
+        "Con la imprenta, todas las copias de una edición decían exactamente lo mismo y producir una copia más costaba mucho menos que copiarla a mano.",
+        "Eso facilitó la circulación de textos científicos, religiosos y políticos en Europa durante las décadas siguientes."
+      ],
+      "fuenteIds": [
+        "pendiente-efectos"
+      ],
+      "actividad": {
+        "tipo": "explicacion",
+        "pregunta": "Compara la imprenta con internet: ¿qué abarataron ambos y qué problema común traen?",
+        "respuesta": "Ambos abarataron copiar y distribuir textos; ambos facilitan también la difusión de información falsa."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "pregunta": "¿Cuál de estos elementos formaba parte del sistema de Gutenberg?",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Una tinta de base oleosa",
+          "retroalimentacion": "Correcto: necesitaba una tinta que se adhiriera al metal."
+        },
+        {
+          "id": "b",
+          "texto": "Una máquina a vapor",
+          "retroalimentacion": "La máquina a vapor llegó siglos después."
+        },
+        {
+          "id": "c",
+          "texto": "Papel de celulosa industrial",
+          "retroalimentacion": "El papel industrial moderno es muy posterior."
+        }
+      ],
+      "correctaId": "a",
+      "fuenteIds": [
+        "britannica-gutenberg"
+      ]
+    },
+    {
+      "id": "q2",
+      "pregunta": "Un taller imprime 200 copias de un folleto. ¿Qué ventaja tiene sobre 200 copias manuscritas?",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Son todas idénticas",
+          "retroalimentacion": "Correcto: las copias impresas no acumulan errores de copista."
+        },
+        {
+          "id": "b",
+          "texto": "Duran más años",
+          "retroalimentacion": "La duración depende del papel y la tinta, no del método."
+        },
+        {
+          "id": "c",
+          "texto": "Son más bonitas",
+          "retroalimentacion": "Hay manuscritos bellísimos; la ventaja clave es la uniformidad y el costo."
+        }
+      ],
+      "correctaId": "a",
+      "fuenteIds": [
+        "pendiente-efectos"
+      ]
+    },
+    {
+      "id": "q3",
+      "pregunta": "¿Por qué la letra del tipo móvil está invertida?",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Por tradición de los copistas",
+          "retroalimentacion": "No es una tradición: es una necesidad física."
+        },
+        {
+          "id": "b",
+          "texto": "Para que al imprimir quede al derecho",
+          "retroalimentacion": "Correcto: la impresión invierte la imagen."
+        },
+        {
+          "id": "c",
+          "texto": "Para ahorrar metal",
+          "retroalimentacion": "La orientación no cambia la cantidad de metal."
+        }
+      ],
+      "correctaId": "b",
+      "fuenteIds": [
+        "britannica-gutenberg"
+      ]
+    }
+  ],
+  "repaso": [
+    {
+      "id": "r1",
+      "pregunta": "Nombra tres componentes del sistema de Gutenberg.",
+      "respuesta": "Tipos de una aleación metálica, tinta oleosa y prensa."
+    },
+    {
+      "id": "r2",
+      "pregunta": "¿Qué ventaja principal tiene una copia impresa frente a una manuscrita?",
+      "respuesta": "Todas las copias son iguales y cada copia adicional cuesta mucho menos."
+    }
+  ],
+  "cierre": "Piensa en un documento de tu trabajo que dependa de que todas las copias sean idénticas.",
+  "fuentes": [
+    {
+      "id": "britannica-gutenberg",
+      "entidad": "Encyclopaedia Britannica",
+      "titulo": "Johannes Gutenberg",
+      "url": "https://www.britannica.com/biography/Johannes-Gutenberg",
+      "ubicacion": "Resumen inicial y sección sobre la invención",
+      "afirmaciones": [
+        "Nació y murió en Maguncia",
+        "Aleación metálica duradera, tinta oleosa y prensa de presión pareja"
+      ],
+      "consultadaEl": "2026-10-19"
+    },
+    {
+      "id": "britannica-biblia",
+      "entidad": "Encyclopaedia Britannica",
+      "titulo": "Gutenberg Bible",
+      "url": "https://www.britannica.com/topic/Gutenberg-Bible",
+      "ubicacion": "Artículo principal",
+      "afirmaciones": [
+        "Completada hacia 1455 en Maguncia",
+        "Impresa en columnas de 42 líneas",
+        "Se conservan unos 40 ejemplares; se desconoce el número impreso"
+      ],
+      "consultadaEl": "2026-10-19"
+    },
+    {
+      "id": "pendiente-efectos",
+      "entidad": "Por definir",
+      "titulo": "Fuente sobre efectos de la imprenta",
+      "url": "https://www.britannica.com/technology/printing-publishing",
+      "ubicacion": "Pendiente de localizar",
+      "afirmaciones": [
+        "La imprenta uniformó las copias y abarató la reproducción de textos"
+      ],
+      "consultadaEl": null
+    }
+  ],
+  "controlEditorial": {
+    "estado": "borrador",
+    "revisadoPor": null,
+    "fechaRevision": null
+  }
+}

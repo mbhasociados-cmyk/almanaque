@@ -1,0 +1,143 @@
+{
+  "version": 1,
+  "nota": "Registro editorial fuera del contenido: modificar la lección cambiaría su SHA-256 e invalidaría la verificación. Estado publicado = verificación aprobada + V°B° de Max sobre el mismo SHA-256.",
+  "registros": [
+    {
+      "id": "numero-aureo",
+      "revision": 2,
+      "sha256": "0924764990c2620806d329f57fbda472babbe0cf66c0faa0eeb85915f0399c39",
+      "verificacion": {
+        "revisor": "ChatGPT",
+        "fecha": "2026-10-19",
+        "resultado": "aprobado",
+        "referencia": "RESPUESTA DE CHATGPT N°6; V°B° de Max confirmado en RESPUESTA DE CHATGPT N°7"
+      },
+      "vb": {
+        "por": "Max Monsalves Blanco",
+        "fecha": "2026-10-19",
+        "medio": "Aprobación expresa en conversación con Claude (\"apruebo\")"
+      }
+    },
+    {
+      "id": "fases-lunares",
+      "revision": 3,
+      "sha256": "a534c6d8ccc8ce0e21efaf3bbcc141ff47d5c220f9d800b7709c3761f7f26033",
+      "verificacion": {
+        "revisor": "ChatGPT",
+        "fecha": "2026-10-19",
+        "resultado": "aprobado",
+        "referencia": "RESPUESTA DE CHATGPT N°7"
+      },
+      "vb": {
+        "por": "Max Monsalves Blanco",
+        "fecha": "2026-10-19",
+        "medio": "Aprobación expresa de Max a ChatGPT (\"r3 aprobado igual\"), confirmada en RESPUESTA DE CHATGPT N°8 y transmitida a Claude por Max"
+      }
+    },
+    {
+      "id": "corriente-humboldt",
+      "revision": 2,
+      "sha256": "af001a0565c7262323b6e0fccefc2e6f14bb48f793a4ca765c43a76ac6edf337",
+      "verificacion": {
+        "revisor": "ChatGPT",
+        "fecha": "2026-10-19",
+        "resultado": "aprobado",
+        "referencia": "RESPUESTA DE CHATGPT N°9"
+      },
+      "vb": {
+        "por": "Max Monsalves Blanco",
+        "fecha": "2026-10-19",
+        "medio": "Declaración expresa de Max a Claude: \"Ya cuentan con verificación y V°B° de Max: [...] corriente de Humboldt r2\""
+      }
+    },
+    {
+      "id": "cielos-coquimbo",
+      "revision": 3,
+      "sha256": "3d83db44c008b3a150bcdd63faa867255d702191da9e8da3b86a47ffbc1fcd95",
+      "verificacion": {
+        "revisor": "ChatGPT",
+        "fecha": "2026-10-19",
+        "resultado": "aprobado",
+        "referencia": "RESPUESTA DE CHATGPT N°10"
+      },
+      "vb": {
+        "por": "Max Monsalves Blanco",
+        "fecha": "2026-10-19",
+        "medio": "V°B° de Max a las cinco r3, comunicado por Max a Claude junto con la RESPUESTA DE CHATGPT N°10"
+      }
+    },
+    {
+      "id": "imprenta-gutenberg",
+      "revision": 3,
+      "sha256": "80eb77e7900f1807e11626aaaa156f96317ae45944d574f796228310571834f9",
+      "verificacion": {
+        "revisor": "ChatGPT",
+        "fecha": "2026-10-19",
+        "resultado": "aprobado",
+        "referencia": "RESPUESTA DE CHATGPT N°10"
+      },
+      "vb": {
+        "por": "Max Monsalves Blanco",
+        "fecha": "2026-10-19",
+        "medio": "V°B° de Max a las cinco r3, comunicado por Max a Claude junto con la RESPUESTA DE CHATGPT N°10"
+      }
+    },
+    {
+      "id": "perspectiva-lineal",
+      "revision": 3,
+      "sha256": "01c8d4ec1e82b4369bd2b41f6c92f68b834ea9168337b087606e1b598b76a680",
+      "verificacion": {
+        "revisor": "ChatGPT",
+        "fecha": "2026-10-19",
+        "resultado": "aprobado",
+        "referencia": "RESPUESTA DE CHATGPT N°10",
+        "nota": "Fuentes getty-2p (AAT 300034309) y getty-3p (AAT 300067713) respaldadas por verificación independiente de ChatGPT (N°9 y N°10); Claude no pudo abrirlas (consultadaEl null). Criterio de ChatGPT N°10: una fuente verificada por otro revisor identificado puede respaldar la afirmación."
+      },
+      "vb": {
+        "por": "Max Monsalves Blanco",
+        "fecha": "2026-10-19",
+        "medio": "V°B° de Max a las cinco r3, comunicado por Max a Claude junto con la RESPUESTA DE CHATGPT N°10"
+      }
+    },
+    {
+      "id": "bauhaus",
+      "revision": 3,
+      "sha256": "4a2610be0376df9014cc3162680eddb86be5d5d464b50bfcebf14505a8d45f8a",
+      "verificacion": {
+        "revisor": "ChatGPT",
+        "fecha": "2026-10-19",
+        "resultado": "aprobado",
+        "referencia": "RESPUESTA DE CHATGPT N°10"
+      },
+      "vb": {
+        "por": "Max Monsalves Blanco",
+        "fecha": "2026-10-19",
+        "medio": "V°B° de Max a las cinco r3, comunicado por Max a Claude junto con la RESPUESTA DE CHATGPT N°10"
+      }
+    },
+    {
+      "id": "arco-panteon",
+      "revision": 3,
+      "sha256": "7d26b65c7c9dcb04f887fc00682fb8bb098b62fd7730d025b12348a981008113",
+      "verificacion": {
+        "revisor": "ChatGPT",
+        "fecha": "2026-10-19",
+        "resultado": "aprobado",
+        "referencia": "RESPUESTA DE CHATGPT N°10"
+      },
+      "vb": {
+        "por": "Max Monsalves Blanco",
+        "fecha": "2026-10-19",
+        "medio": "V°B° de Max a las cinco r3, comunicado por Max a Claude junto con la RESPUESTA DE CHATGPT N°10"
+      }
+    }
+  ],
+  "reglas": [
+    "Cada registro se identifica por (id, revision, sha256).",
+    "Se publica solo si la verificación es 'aprobado' y existe V°B° sobre el mismo SHA-256 del archivo descargado.",
+    "Registros contradictorios, incompletos o con hash distinto excluyen la lección de publicación.",
+    "Este registro es la autoridad editorial para portada, calendario, Explorar y descargas; controlEditorial dentro de la lección es antecedente histórico.",
+    "Este archivo sigue el mismo control de cambios que el contenido.",
+    "Una fuente sin verificar no respalda una afirmación; una fuente verificada por otro revisor identificado sí puede respaldarla (ChatGPT N°10)."
+  ]
+}

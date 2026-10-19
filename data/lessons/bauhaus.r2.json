@@ -1,0 +1,219 @@
+{
+  "schemaVersion": "1.0",
+  "id": "bauhaus",
+  "revision": 2,
+  "idioma": "es-CL",
+  "disciplina": "Diseño",
+  "familia": "arte",
+  "etiquetas": [
+    "diseño",
+    "siglo XX",
+    "retícula"
+  ],
+  "titulo": "La Bauhaus y la forma útil",
+  "nivel": "introductorio",
+  "minutosEstimados": 12,
+  "objetivos": [
+    "Ubicar la Bauhaus en el tiempo y sus sedes",
+    "Reconocer el uso de retículas en interfaces actuales"
+  ],
+  "prerrequisitos": [],
+  "entrada": {
+    "pregunta": "Antes de leer: piensa en una silla que te parezca \"moderna\". ¿Qué tiene y qué no tiene?"
+  },
+  "pasos": [
+    {
+      "id": "escuela",
+      "titulo": "De Weimar a Berlín",
+      "parrafos": [
+        "La Bauhaus fue una escuela alemana de diseño fundada en 1919 en Weimar por el arquitecto Walter Gropius. Funcionó en Weimar (1919–1925), en Dessau (1925–1932) y en Berlín (1932–1933).",
+        "En Dessau, la mayoría nacionalsocialista del concejo municipal decidió su cierre en 1932. En Berlín, desde abril de 1933 los nacionalsocialistas sellaron el edificio; Ludwig Mies van der Rohe anunció la disolución en agosto de 1933.",
+        "Comenzó con un enfoque artesanal que buscaba unir arte y oficio. En 1923 Gropius reorientó la escuela hacia el diseño para la producción en masa, con el lema \"Arte en la industria\"."
+      ],
+      "fuenteIds": [
+        "bauhaus-koop",
+        "met-bauhaus"
+      ],
+      "figura": {
+        "tipo": "svg",
+        "contenido": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 120\" class=\"as-svg\" role=\"img\"><title>Triángulo, cuadrado y círculo, formas básicas del curso preliminar</title><polygon points=\"50,105 95,15 140,105\" class=\"as-svg__accent\"/><rect x=\"160\" y=\"20\" width=\"85\" height=\"85\" class=\"as-svg__ink\" stroke-width=\"3\"/><circle cx=\"292\" cy=\"62\" r=\"30\" class=\"as-svg__muted\" stroke-width=\"3\"/></svg>",
+        "alt": "Un triángulo relleno, un cuadrado y un círculo dibujados con trazo grueso.",
+        "pie": "Composición ilustrativa con formas básicas."
+      },
+      "actividad": {
+        "tipo": "prediccion",
+        "pregunta": "En el curso preliminar, los estudiantes trabajaban con materiales, color y forma antes de especializarse. ¿Qué crees que aprendían al combinar figuras simples como estas?",
+        "respuesta": "A observar relaciones de tamaño, peso visual, color y equilibrio entre formas, antes de diseñar objetos concretos."
+      }
+    },
+    {
+      "id": "reticula",
+      "titulo": "La retícula",
+      "parrafos": [
+        "Ordenar una página o una pantalla con una grilla invisible da coherencia: cada elemento se alinea con algo.",
+        "Las retículas se utilizan en sistemas actuales de diseño. El IBM Design Language, por ejemplo, define márgenes y una división en columnas y filas iguales que da estructura a la composición."
+      ],
+      "fuenteIds": [
+        "ibm-grid"
+      ],
+      "actividad": {
+        "tipo": "explicacion",
+        "pregunta": "Abre la app de tu banco o de correo. Señala dos márgenes o columnas que se repitan.",
+        "respuesta": "Es frecuente encontrar márgenes laterales iguales, íconos del mismo tamaño y textos alineados a una misma línea."
+      }
+    },
+    {
+      "id": "legado",
+      "titulo": "El legado",
+      "parrafos": [
+        "Del taller de muebles de Marcel Breuer salieron sillas livianas de tubo de acero. La escuela usaba tipografías sin serifa y fotografía en sus impresos, por ejemplo en el trabajo de Herbert Bayer. El edificio de Gropius en Dessau usó estructura de acero y un muro cortina de vidrio.",
+        "Una pregunta útil al diseñar: para qué sirve cada elemento."
+      ],
+      "fuenteIds": [
+        "met-bauhaus"
+      ],
+      "actividad": {
+        "tipo": "explicacion",
+        "pregunta": "Elige un objeto de tu escritorio y nombra un elemento que sobra y uno que no puede faltar.",
+        "respuesta": "La respuesta es personal; lo importante es justificar cada elemento por su función."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "pregunta": "¿En qué ciudad se fundó la Bauhaus?",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Weimar",
+          "retroalimentacion": "Correcto: en 1919."
+        },
+        {
+          "id": "b",
+          "texto": "Dessau",
+          "retroalimentacion": "Dessau fue su segunda sede, desde 1925."
+        },
+        {
+          "id": "c",
+          "texto": "París",
+          "retroalimentacion": "La Bauhaus fue una escuela alemana."
+        }
+      ],
+      "correctaId": "a",
+      "fuenteIds": [
+        "bauhaus-koop"
+      ]
+    },
+    {
+      "id": "q2",
+      "pregunta": "Diseñas una planilla de rendiciones para que se lea con claridad. ¿Qué haces?",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Agregar adornos para que se vea profesional",
+          "retroalimentacion": "El adorno sin función suele dificultar la lectura."
+        },
+        {
+          "id": "b",
+          "texto": "Alinear columnas en una retícula y quitar lo que no cumple función",
+          "retroalimentacion": "Correcto: la claridad funcional facilita la lectura."
+        },
+        {
+          "id": "c",
+          "texto": "Usar muchos colores distintos",
+          "retroalimentacion": "El color sin función agrega ruido."
+        }
+      ],
+      "correctaId": "b",
+      "fuenteIds": [
+        "ibm-grid"
+      ]
+    },
+    {
+      "id": "q3",
+      "pregunta": "¿Cómo terminó la Bauhaus en 1933?",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Por falta de alumnos",
+          "retroalimentacion": "No fue esa la causa."
+        },
+        {
+          "id": "b",
+          "texto": "Se disolvió en Berlín tras el cierre y la presión de los nacionalsocialistas",
+          "retroalimentacion": "Correcto: sellaron el edificio en abril y Mies anunció la disolución en agosto de 1933."
+        },
+        {
+          "id": "c",
+          "texto": "Porque Gropius se jubiló",
+          "retroalimentacion": "Gropius había dejado la dirección en 1928; no fue la causa del fin."
+        }
+      ],
+      "correctaId": "b",
+      "fuenteIds": [
+        "bauhaus-koop"
+      ]
+    }
+  ],
+  "repaso": [
+    {
+      "id": "r1",
+      "pregunta": "Nombra las tres sedes de la Bauhaus en orden.",
+      "respuesta": "Weimar, Dessau y Berlín."
+    },
+    {
+      "id": "r2",
+      "pregunta": "¿Qué es una retícula en diseño?",
+      "respuesta": "Una grilla invisible de márgenes, columnas y filas que ordena y alinea los elementos."
+    }
+  ],
+  "cierre": "Revisa un documento tuyo y alinea todo a dos márgenes comunes.",
+  "fuentes": [
+    {
+      "id": "bauhaus-koop",
+      "entidad": "Bauhaus Kooperation Berlin Dessau Weimar",
+      "titulo": "What exactly was the Bauhaus?",
+      "url": "https://bauhauskooperation.com/knowledge/the-bauhaus/bauhaus-at-a-glance",
+      "ubicacion": "Secciones sobre Weimar, Dessau y Berlín",
+      "afirmaciones": [
+        "Fundada en Weimar en 1919 por Walter Gropius",
+        "Dessau 1925–1932; Gropius dirigió hasta 1928",
+        "La mayoría nacionalsocialista del concejo de Dessau decidió el cierre el 30-09-1932",
+        "Berlín 1932–1933: en abril de 1933 se selló el edificio; Mies anunció la disolución el 10-08-1933"
+      ],
+      "consultadaEl": "2026-10-19"
+    },
+    {
+      "id": "met-bauhaus",
+      "entidad": "The Metropolitan Museum of Art",
+      "titulo": "The Bauhaus, 1919–1933 (ensayo)",
+      "url": "https://www.metmuseum.org/essays/the-bauhaus-1919-1933",
+      "ubicacion": "Párrafos sobre objetivos, curso preliminar, giro de 1923 y talleres",
+      "afirmaciones": [
+        "Inicio artesanal que buscaba unir arte y oficio",
+        "Curso preliminar de materiales, color y forma",
+        "En 1923, giro hacia el diseño para la producción en masa (\"Art into Industry\")",
+        "Sillas de tubo de acero de Breuer; tipografía sin serifa y fotografía; edificio de Dessau con estructura de acero y muro cortina"
+      ],
+      "consultadaEl": "2026-10-19"
+    },
+    {
+      "id": "ibm-grid",
+      "entidad": "IBM Design Language",
+      "titulo": "2x Grid",
+      "url": "https://www.ibm.com/design/language/2x-grid/",
+      "ubicacion": "Apartados Margins y Columns and rows",
+      "afirmaciones": [
+        "Los márgenes separan el contenido del borde",
+        "Columnas y filas dan estructura a la composición y deben ser iguales"
+      ],
+      "consultadaEl": "2026-10-19"
+    }
+  ],
+  "controlEditorial": {
+    "estado": "borrador",
+    "revisadoPor": null,
+    "fechaRevision": null
+  }
+}

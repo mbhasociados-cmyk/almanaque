@@ -1,0 +1,207 @@
+{
+  "schemaVersion": "1.0",
+  "id": "corriente-humboldt",
+  "revision": 1,
+  "idioma": "es-CL",
+  "disciplina": "Geografía",
+  "familia": "geografia",
+  "etiquetas": [
+    "océano",
+    "clima",
+    "Coquimbo"
+  ],
+  "titulo": "La corriente de Humboldt y la camanchaca",
+  "nivel": "introductorio",
+  "minutosEstimados": 13,
+  "objetivos": [
+    "Explicar qué es la surgencia costera",
+    "Relacionar el mar frío con la aridez y la niebla costera"
+  ],
+  "prerrequisitos": [],
+  "entrada": {
+    "pregunta": "Antes de leer: si la costa está junto al océano, ¿por qué llueve tan poco en el norte de Chile?"
+  },
+  "pasos": [
+    {
+      "id": "corriente",
+      "titulo": "Un río frío dentro del mar",
+      "parrafos": [
+        "La corriente de Humboldt, también llamada corriente del Perú, es una corriente fría que avanza hacia el norte por la costa occidental de Sudamérica.",
+        "El viento empuja el agua superficial mar adentro y desde abajo sube agua más fría para reemplazarla. Ese proceso se llama surgencia."
+      ],
+      "fuenteIds": [
+        "britannica-peru",
+        "noaa"
+      ],
+      "figura": {
+        "tipo": "svg",
+        "contenido": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 220\" class=\"as-svg\" role=\"img\"><title>Esquema de la corriente de Humboldt y la surgencia costera</title><defs><marker id=\"corriente-humboldt-f1-ah\" viewBox=\"0 0 10 10\" refX=\"5\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" class=\"as-svg__accent\"/></marker></defs><rect width=\"320\" height=\"220\" class=\"as-svg__surface\"/><path d=\"M230 0 C210 60 215 120 235 220\" class=\"as-svg__ink\"/><text x=\"275\" y=\"110\" text-anchor=\"middle\" class=\"as-svg__label\">Chile</text><path d=\"M170 210 C160 150 165 90 185 20\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"2.5\" marker-end=\"url(#corriente-humboldt-f1-ah)\"/><path d=\"M120 210 C110 150 115 90 140 20\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"2.5\" marker-end=\"url(#corriente-humboldt-f1-ah)\"/><path d=\"M215 150 L150 150\" class=\"as-svg__muted\" stroke-width=\"2\" stroke-dasharray=\"4 4\" marker-end=\"url(#corriente-humboldt-f1-ah)\"/><text x=\"10\" y=\"30\" class=\"as-svg__label\" font-size=\"10\">hacia el norte</text><text x=\"10\" y=\"176\" class=\"as-svg__label as-svg__muted\" font-size=\"10\">el viento</text><text x=\"10\" y=\"190\" class=\"as-svg__label as-svg__muted\" font-size=\"10\">aleja el agua;</text><text x=\"10\" y=\"204\" class=\"as-svg__label as-svg__muted\" font-size=\"10\">sube agua fría</text></svg>",
+        "alt": "Mapa esquemático: dos flechas suben paralelas a la costa chilena y una flecha punteada sale de la costa hacia el mar.",
+        "pie": "Esquema simplificado, sin escala."
+      },
+      "actividad": {
+        "tipo": "prediccion",
+        "pregunta": "Si el viento deja de soplar varios días, ¿qué esperas que pase con la temperatura del mar en la costa?",
+        "respuesta": "Con menos viento hay menos surgencia: sube menos agua fría y el mar costero tiende a entibiarse."
+      }
+    },
+    {
+      "id": "clima",
+      "titulo": "Mar frío, costa seca y con niebla",
+      "parrafos": [
+        "El mar frío enfría el aire que está en contacto con él. Ese aire frío y pesado queda bajo una capa de aire más tibio, que actúa como tapa: es una inversión térmica.",
+        "Bajo esa tapa se forman nubes bajas y niebla costera, la camanchaca. Pero el aire no logra subir lo suficiente para producir lluvia, y la costa queda entre las más áridas del mundo."
+      ],
+      "fuenteIds": [
+        "britannica-peru"
+      ],
+      "actividad": {
+        "tipo": "explicacion",
+        "pregunta": "Explica a otra persona por qué puede haber niebla todas las mañanas y, aun así, casi no llover.",
+        "respuesta": "La niebla se forma bajo la inversión térmica; la lluvia necesitaría que el aire subiera mucho más, y la tapa de aire tibio lo impide."
+      }
+    },
+    {
+      "id": "vida",
+      "titulo": "Agua fría, mar rico",
+      "parrafos": [
+        "El agua que sube por surgencia es rica en nutrientes. Funciona como fertilizante para el plancton, y por eso las aguas frente a Perú, Chile y Ecuador están entre las zonas de pesca más ricas del mundo.",
+        "Durante un evento El Niño la corriente no es fría como de costumbre, y la pesca se resiente."
+      ],
+      "fuenteIds": [
+        "noaa",
+        "britannica-peru"
+      ],
+      "actividad": {
+        "tipo": "prediccion",
+        "pregunta": "Durante El Niño, ¿qué le pasa a la pesca de anchoveta y por qué?",
+        "respuesta": "Disminuye: con menos agua fría y menos nutrientes hay menos plancton, que es la base de la cadena alimentaria."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "pregunta": "¿Qué es la surgencia?",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "El ascenso de agua profunda y fría que reemplaza al agua superficial desplazada por el viento",
+          "retroalimentacion": "Correcto: el viento aleja el agua de superficie y sube agua profunda."
+        },
+        {
+          "id": "b",
+          "texto": "Una ola gigante producida por sismos",
+          "retroalimentacion": "Eso es un tsunami, un fenómeno distinto."
+        },
+        {
+          "id": "c",
+          "texto": "La llegada de agua dulce de los ríos al mar",
+          "retroalimentacion": "La surgencia viene del fondo del mar, no de los ríos."
+        }
+      ],
+      "correctaId": "a",
+      "fuenteIds": [
+        "noaa"
+      ]
+    },
+    {
+      "id": "q2",
+      "pregunta": "Un año el mar frente a Coquimbo está más tibio de lo normal. ¿Qué esperas?",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Más nutrientes y más pesca",
+          "retroalimentacion": "Al revés: el agua tibia indica menos surgencia y menos nutrientes."
+        },
+        {
+          "id": "b",
+          "texto": "Menos nutrientes y pesca más pobre",
+          "retroalimentacion": "Correcto: es lo que ocurre durante El Niño."
+        },
+        {
+          "id": "c",
+          "texto": "Ningún cambio",
+          "retroalimentacion": "La temperatura del agua es justamente la señal de que cambió la surgencia."
+        }
+      ],
+      "correctaId": "b",
+      "fuenteIds": [
+        "britannica-peru",
+        "noaa"
+      ]
+    },
+    {
+      "id": "q3",
+      "pregunta": "¿Por qué la camanchaca casi no produce lluvia?",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Porque la inversión térmica impide que el aire suba lo suficiente",
+          "retroalimentacion": "Correcto: la tapa de aire tibio frena el ascenso."
+        },
+        {
+          "id": "b",
+          "texto": "Porque la niebla es de agua salada",
+          "retroalimentacion": "La niebla es de agua dulce condensada; la sal no es el motivo."
+        },
+        {
+          "id": "c",
+          "texto": "Porque solo aparece de noche",
+          "retroalimentacion": "Aparece sobre todo en la mañana, pero el horario no explica la falta de lluvia."
+        }
+      ],
+      "correctaId": "a",
+      "fuenteIds": [
+        "britannica-peru"
+      ]
+    }
+  ],
+  "repaso": [
+    {
+      "id": "r1",
+      "pregunta": "Explica la surgencia en dos frases.",
+      "respuesta": "El viento empuja el agua de superficie mar adentro; sube agua profunda, fría y rica en nutrientes."
+    },
+    {
+      "id": "r2",
+      "pregunta": "¿Qué tienen en común la aridez costera y la camanchaca?",
+      "respuesta": "Ambas se explican por el mar frío y la inversión térmica."
+    }
+  ],
+  "cierre": "Anota una cosa del paisaje de la costa de Coquimbo que ahora puedes explicar.",
+  "fuentes": [
+    {
+      "id": "noaa",
+      "entidad": "NOAA National Ocean Service",
+      "titulo": "What is upwelling?",
+      "url": "https://oceanservice.noaa.gov/facts/upwelling.html",
+      "ubicacion": "Texto principal",
+      "afirmaciones": [
+        "El viento empuja el agua de superficie",
+        "Sube agua fría y rica en nutrientes",
+        "Las buenas zonas de pesca están donde la surgencia es común"
+      ],
+      "consultadaEl": "2026-10-19"
+    },
+    {
+      "id": "britannica-peru",
+      "entidad": "Encyclopaedia Britannica",
+      "titulo": "Peru Current",
+      "url": "https://www.britannica.com/place/Peru-Current",
+      "ubicacion": "Artículo completo",
+      "afirmaciones": [
+        "Corriente fría que fluye hacia el norte",
+        "Trae niebla a la costa y contribuye a su aridez",
+        "No es fría durante El Niño",
+        "Aguas de Perú, Chile y Ecuador entre las más ricas en pesca"
+      ],
+      "consultadaEl": "2026-10-19"
+    }
+  ],
+  "controlEditorial": {
+    "estado": "borrador",
+    "revisadoPor": null,
+    "fechaRevision": null
+  }
+}

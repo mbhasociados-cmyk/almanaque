@@ -1,0 +1,237 @@
+{
+  "schemaVersion": "1.0",
+  "id": "imprenta-gutenberg",
+  "revision": 2,
+  "idioma": "es-CL",
+  "disciplina": "Historia",
+  "familia": "historia",
+  "etiquetas": [
+    "imprenta",
+    "Renacimiento",
+    "tecnología"
+  ],
+  "titulo": "La imprenta de tipos móviles",
+  "nivel": "introductorio",
+  "minutosEstimados": 12,
+  "objetivos": [
+    "Describir los componentes del sistema de Gutenberg",
+    "Explicar qué cambió al poder reutilizar una composición tipográfica"
+  ],
+  "prerrequisitos": [],
+  "entrada": {
+    "pregunta": "Antes de leer: ¿cómo se copiaba un libro antes de la imprenta, y cuánto crees que tardaba?"
+  },
+  "pasos": [
+    {
+      "id": "sistema",
+      "titulo": "Un sistema completo",
+      "parrafos": [
+        "Johannes Gutenberg, nacido y fallecido en Maguncia (Alemania), combinó varias técnicas en un sistema para imprimir con letras de metal reutilizables.",
+        "Según Britannica, el sistema incluía una aleación duradera para los tipos, una tinta de base oleosa y una prensa que aplicaba presión pareja sobre la superficie de impresión."
+      ],
+      "fuenteIds": [
+        "britannica-gutenberg"
+      ],
+      "figura": {
+        "tipo": "svg",
+        "contenido": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 180\" class=\"as-svg\" role=\"img\"><title>Un tipo móvil con la letra R en relieve e invertida</title><rect x=\"70\" y=\"30\" width=\"100\" height=\"130\" class=\"as-svg__surface\"/><rect x=\"70\" y=\"30\" width=\"100\" height=\"130\" class=\"as-svg__ink\"/><rect x=\"70\" y=\"10\" width=\"100\" height=\"22\" class=\"as-svg__ink\"/><text x=\"120\" y=\"28\" text-anchor=\"middle\" transform=\"translate(240 0) scale(-1 1)\" class=\"as-svg__label as-svg__accent\" font-size=\"22\">R</text><text x=\"120\" y=\"100\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"11\">cuerpo de metal</text><text x=\"178\" y=\"25\" class=\"as-svg__label as-svg__muted\" font-size=\"11\">relieve</text></svg>",
+        "alt": "Bloque rectangular de metal con una letra R invertida en relieve en su extremo superior.",
+        "pie": "La letra va invertida para que al imprimir quede al derecho."
+      },
+      "actividad": {
+        "tipo": "prediccion",
+        "pregunta": "¿Por qué la letra del tipo va al revés?",
+        "respuesta": "Porque al presionar contra el papel la imagen se invierte; así queda legible."
+      }
+    },
+    {
+      "id": "biblia",
+      "titulo": "La Biblia de Gutenberg",
+      "parrafos": [
+        "Su obra más conocida es la Biblia de Gutenberg, en latín, terminada hacia 1455. Se la llama también Biblia de 42 líneas porque se imprimió en columnas de 42 líneas.",
+        "Según la Biblioteca Estatal de Baviera, se conservan 49 ejemplares más o menos completos. Se cree que se imprimieron unos 180, pero esa cifra es una estimación basada en una sola carta de la época."
+      ],
+      "fuenteIds": [
+        "britannica-biblia",
+        "bsb-biblia"
+      ],
+      "actividad": {
+        "tipo": "calculo",
+        "pregunta": "Ejercicio hipotético: si un copista escribiera 3 páginas al día, ¿cuántos días tardaría en copiar una obra de 1.280 páginas?",
+        "respuesta": "1.280 / 3 = 426,67 días, es decir, unos 427 días de trabajo para una sola copia. Es un supuesto para comparar, no un dato histórico."
+      }
+    },
+    {
+      "id": "efectos",
+      "titulo": "Qué cambió",
+      "parrafos": [
+        "La composición tipográfica permitía reproducir muchas veces un mismo texto sin copiar cada ejemplar a mano. Esto favorecía una mayor uniformidad, aunque había diferencias de impresión, correcciones y acabados hechos a mano: los tres ejemplares de la Morgan Library tienen distintos niveles de ornamentación."
+      ],
+      "fuenteIds": [
+        "morgan-ornamentacion",
+        "pendiente-costo"
+      ],
+      "actividad": {
+        "tipo": "explicacion",
+        "pregunta": "Como comparación, no como equivalencia histórica: ¿en qué se parece la imprenta a internet en cuanto a copiar y difundir textos?",
+        "respuesta": "En ambos casos se abarató reproducir y distribuir textos. Son contextos muy distintos; la comparación solo sirve para pensar en la escala de la difusión."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "pregunta": "¿Cuál de estos elementos formaba parte del sistema de Gutenberg?",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Una tinta de base oleosa",
+          "retroalimentacion": "Correcto: Britannica la menciona entre los componentes del sistema."
+        },
+        {
+          "id": "b",
+          "texto": "Una máquina a vapor",
+          "retroalimentacion": "La máquina a vapor llegó siglos después."
+        },
+        {
+          "id": "c",
+          "texto": "Papel de celulosa industrial",
+          "retroalimentacion": "El papel industrial moderno es muy posterior."
+        }
+      ],
+      "correctaId": "a",
+      "fuenteIds": [
+        "britannica-gutenberg"
+      ]
+    },
+    {
+      "id": "q2",
+      "pregunta": "¿Qué ventaja daba la composición con tipos móviles frente a la copia manuscrita?",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Reutilizar la misma composición para producir muchas copias",
+          "retroalimentacion": "Correcto: el texto se componía una vez y se imprimía muchas veces."
+        },
+        {
+          "id": "b",
+          "texto": "Que cada ejemplar quedara decorado a mano de forma idéntica",
+          "retroalimentacion": "La decoración a mano variaba entre ejemplares."
+        },
+        {
+          "id": "c",
+          "texto": "Que el papel durara más",
+          "retroalimentacion": "La duración depende del papel y de la tinta, no del método de composición."
+        }
+      ],
+      "correctaId": "a",
+      "fuenteIds": [
+        "morgan-ornamentacion"
+      ]
+    },
+    {
+      "id": "q3",
+      "pregunta": "¿Por qué la letra del tipo móvil está invertida?",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Por tradición de los copistas",
+          "retroalimentacion": "No es una tradición: es una necesidad física."
+        },
+        {
+          "id": "b",
+          "texto": "Para que al imprimir quede al derecho",
+          "retroalimentacion": "Correcto: la impresión invierte la imagen."
+        },
+        {
+          "id": "c",
+          "texto": "Para ahorrar metal",
+          "retroalimentacion": "La orientación no cambia la cantidad de metal."
+        }
+      ],
+      "correctaId": "b",
+      "fuenteIds": [
+        "britannica-gutenberg"
+      ]
+    }
+  ],
+  "repaso": [
+    {
+      "id": "r1",
+      "pregunta": "Nombra tres componentes del sistema de Gutenberg.",
+      "respuesta": "Tipos de una aleación metálica, tinta oleosa y prensa."
+    },
+    {
+      "id": "r2",
+      "pregunta": "¿Qué permitía la composición tipográfica?",
+      "respuesta": "Reproducir muchas veces un mismo texto sin copiar cada ejemplar a mano, con mayor uniformidad aunque no igualdad absoluta."
+    }
+  ],
+  "cierre": "Piensa en un documento de tu trabajo que se reproduce muchas veces. ¿Qué partes deben ser idénticas y cuáles se completan a mano?",
+  "fuentes": [
+    {
+      "id": "britannica-gutenberg",
+      "entidad": "Encyclopaedia Britannica",
+      "titulo": "Johannes Gutenberg",
+      "url": "https://www.britannica.com/biography/Johannes-Gutenberg",
+      "ubicacion": "Resumen inicial y sección sobre la invención",
+      "afirmaciones": [
+        "Nació y murió en Maguncia",
+        "Aleación metálica duradera, tinta oleosa y prensa de presión pareja"
+      ],
+      "consultadaEl": "2026-10-19"
+    },
+    {
+      "id": "britannica-biblia",
+      "entidad": "Encyclopaedia Britannica",
+      "titulo": "Gutenberg Bible",
+      "url": "https://www.britannica.com/topic/Gutenberg-Bible",
+      "ubicacion": "Artículo principal",
+      "afirmaciones": [
+        "Completada hacia 1455 en Maguncia",
+        "Impresa en columnas de 42 líneas"
+      ],
+      "consultadaEl": "2026-10-19"
+    },
+    {
+      "id": "bsb-biblia",
+      "entidad": "Bayerische Staatsbibliothek (MDZ, Digitale Sammlungen)",
+      "titulo": "Gutenberg Bible",
+      "url": "https://www.digitale-sammlungen.de/en/gutenberg-bible",
+      "ubicacion": "Texto descriptivo de la página",
+      "afirmaciones": [
+        "Se conservan 49 ejemplares más o menos completos (12 en vitela y 37 en papel)",
+        "Se cree que se imprimieron 180, según una sola carta de Enea Silvio Piccolomini",
+        "La terminación hacia 1455 se basa en una anotación de la encuadernación del ejemplar en papel de París"
+      ],
+      "consultadaEl": "2026-10-19"
+    },
+    {
+      "id": "morgan-ornamentacion",
+      "entidad": "The Morgan Library & Museum",
+      "titulo": "Gutenberg Bible: ornamentation",
+      "url": "https://www.themorgan.org/collections/works/gutenberg/ornamentation",
+      "ubicacion": "Texto sobre la ornamentación de los ejemplares",
+      "afirmaciones": [
+        "Los tres ejemplares de la Morgan tienen distintos niveles de ornamentación"
+      ],
+      "consultadaEl": "2026-10-19"
+    },
+    {
+      "id": "pendiente-costo",
+      "entidad": "Victoria and Albert Museum (candidata propuesta por ChatGPT N°7)",
+      "titulo": "Notas educativas sobre escritura e impresión",
+      "url": "https://www.vam.ac.uk/",
+      "ubicacion": "Pendiente de localizar",
+      "afirmaciones": [
+        "La imprenta abarató la reproducción de textos"
+      ],
+      "consultadaEl": null
+    }
+  ],
+  "controlEditorial": {
+    "estado": "borrador",
+    "revisadoPor": null,
+    "fechaRevision": null
+  }
+}

@@ -1,0 +1,223 @@
+{
+  "schemaVersion": "1.0",
+  "id": "fases-lunares",
+  "revision": 1,
+  "idioma": "es-CL",
+  "disciplina": "Astronomía",
+  "familia": "astronomia",
+  "etiquetas": [
+    "Luna",
+    "luz",
+    "geometría"
+  ],
+  "titulo": "¿Quién cambia la cara de la Luna?",
+  "nivel": "introductorio",
+  "minutosEstimados": 12,
+  "objetivos": [
+    "Explicar las fases usando un modelo",
+    "Distinguir una fase de un eclipse"
+  ],
+  "prerrequisitos": [],
+  "entrada": {
+    "pregunta": "Antes de leer: ¿qué crees que produce las fases de la Luna?"
+  },
+  "pasos": [
+    {
+      "id": "luz",
+      "titulo": "Una mitad siempre iluminada",
+      "parrafos": [
+        "El Sol ilumina siempre la mitad de la Luna; la otra mitad queda a oscuras.",
+        "En el esquema, la luz llega desde la izquierda: en las cuatro posiciones de la órbita, la mitad iluminada mira al Sol."
+      ],
+      "fuenteIds": [
+        "nasa-fases"
+      ],
+      "figura": {
+        "tipo": "svg",
+        "contenido": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 220\" class=\"as-svg\" role=\"img\"><title>Órbita de la Luna con cuatro posiciones, siempre iluminada desde la izquierda</title><defs><marker id=\"fases-lunares-f1-ah\" viewBox=\"0 0 10 10\" refX=\"5\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" class=\"as-svg__accent\"/></marker></defs><text x=\"8\" y=\"20\" class=\"as-svg__label\" font-size=\"11\">Luz solar</text><line x1=\"8\" y1=\"30\" x2=\"60\" y2=\"30\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"2\" marker-end=\"url(#fases-lunares-f1-ah)\"/><line x1=\"8\" y1=\"190\" x2=\"60\" y2=\"190\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"2\" marker-end=\"url(#fases-lunares-f1-ah)\"/><circle cx=\"170\" cy=\"110\" r=\"70\" class=\"as-svg__muted\" stroke-dasharray=\"4 4\"/><circle cx=\"170\" cy=\"110\" r=\"16\" class=\"as-svg__surface\"/><circle cx=\"170\" cy=\"110\" r=\"16\" class=\"as-svg__ink\"/><text x=\"170\" y=\"114\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"10\">Tierra</text><path d=\"M86 96 A14 14 0 0 0 86 124 Z\" class=\"as-svg__accent\"/><circle cx=\"86\" cy=\"110\" r=\"14\" class=\"as-svg__ink\"/><path d=\"M254 96 A14 14 0 0 0 254 124 Z\" class=\"as-svg__accent\"/><circle cx=\"254\" cy=\"110\" r=\"14\" class=\"as-svg__ink\"/><path d=\"M170 26 A14 14 0 0 0 170 54 Z\" class=\"as-svg__accent\"/><circle cx=\"170\" cy=\"40\" r=\"14\" class=\"as-svg__ink\"/><path d=\"M170 166 A14 14 0 0 0 170 194 Z\" class=\"as-svg__accent\"/><circle cx=\"170\" cy=\"180\" r=\"14\" class=\"as-svg__ink\"/><text x=\"86\" y=\"140\" text-anchor=\"middle\" class=\"as-svg__label as-svg__muted\" font-size=\"10\">nueva</text><text x=\"254\" y=\"140\" text-anchor=\"middle\" class=\"as-svg__label as-svg__muted\" font-size=\"10\">llena</text><text x=\"200\" y=\"44\" class=\"as-svg__label as-svg__muted\" font-size=\"10\">cuarto</text><text x=\"200\" y=\"184\" class=\"as-svg__label as-svg__muted\" font-size=\"10\">cuarto</text></svg>",
+        "alt": "Tierra al centro y la Luna en cuatro posiciones de su órbita; en todas, la mitad izquierda de la Luna está iluminada.",
+        "pie": "Vista desde arriba, sin escala. La mitad iluminada siempre mira al Sol."
+      },
+      "actividad": {
+        "tipo": "prediccion",
+        "pregunta": "En la posición de la derecha, ¿qué parte de la mitad iluminada ve alguien en la Tierra?",
+        "respuesta": "Toda: la mitad iluminada mira hacia la Tierra. Es la Luna llena."
+      }
+    },
+    {
+      "id": "modelo",
+      "titulo": "Cambia el punto de vista",
+      "parrafos": [
+        "Lo que cambia mientras la Luna orbita es cuánto de esa mitad iluminada vemos desde la Tierra. El ciclo completo se repite cada unos 29,5 días.",
+        "NASA nombra ocho fases: nueva, creciente, cuarto creciente, gibosa creciente, llena, gibosa menguante, cuarto menguante y menguante."
+      ],
+      "fuenteIds": [
+        "nasa-fases",
+        "pendiente-hemisferio"
+      ],
+      "figura": {
+        "tipo": "svg",
+        "contenido": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 80\" class=\"as-svg\" role=\"img\"><title>Cuatro fases de la Luna vistas desde la Tierra</title><circle cx=\"40\" cy=\"40\" r=\"14\" class=\"as-svg__ink\"/><path d=\"M130 26 A14 14 0 0 0 130 54 Z\" class=\"as-svg__accent\"/><circle cx=\"130\" cy=\"40\" r=\"14\" class=\"as-svg__ink\"/><circle cx=\"220\" cy=\"40\" r=\"14\" class=\"as-svg__accent\"/><circle cx=\"220\" cy=\"40\" r=\"14\" class=\"as-svg__ink\"/><path d=\"M310 26 A14 14 0 0 1 310 54 Z\" class=\"as-svg__accent\"/><circle cx=\"310\" cy=\"40\" r=\"14\" class=\"as-svg__ink\"/><text x=\"40\" y=\"74\" text-anchor=\"middle\" class=\"as-svg__label as-svg__muted\" font-size=\"10\">nueva</text><text x=\"130\" y=\"74\" text-anchor=\"middle\" class=\"as-svg__label as-svg__muted\" font-size=\"10\">cuarto creciente</text><text x=\"220\" y=\"74\" text-anchor=\"middle\" class=\"as-svg__label as-svg__muted\" font-size=\"10\">llena</text><text x=\"310\" y=\"74\" text-anchor=\"middle\" class=\"as-svg__label as-svg__muted\" font-size=\"10\">cuarto menguante</text></svg>",
+        "alt": "Cuatro círculos: uno vacío, uno con la mitad izquierda clara, uno completamente claro y uno con la mitad derecha clara.",
+        "pie": "Cuatro de las ocho fases, tal como se ven desde el hemisferio sur. En el hemisferio norte el lado iluminado aparece invertido."
+      },
+      "actividad": {
+        "tipo": "explicacion",
+        "pregunta": "Con una linterna fija y una pelota, gira tú en el centro sosteniendo la pelota frente a tu cara. Dibuja cuatro vistas.",
+        "respuesta": "Tus dibujos muestran que la iluminación no cambia; cambia la parte iluminada que tú ves."
+      }
+    },
+    {
+      "id": "eclipse",
+      "titulo": "La sombra terrestre es otro fenómeno",
+      "parrafos": [
+        "En la Luna nueva, la Luna suele pasar arriba o abajo del Sol visto desde la Tierra, no exactamente delante. Las fases no se deben a la sombra de la Tierra.",
+        "Cuando la sombra de la Tierra sí cae sobre la Luna, ocurre un eclipse lunar, que solo es posible en Luna llena y con una alineación precisa."
+      ],
+      "fuenteIds": [
+        "nasa-fases",
+        "pendiente-eclipse"
+      ],
+      "actividad": {
+        "tipo": "explicacion",
+        "pregunta": "Explica a otra persona la diferencia entre una Luna menguante y un eclipse lunar.",
+        "respuesta": "La menguante es parte del ciclo de iluminación visto desde la Tierra; el eclipse ocurre cuando la sombra de la Tierra cae sobre la Luna."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "pregunta": "¿Qué explica las fases de la Luna?",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "La porción de la mitad iluminada que vemos desde la Tierra",
+          "retroalimentacion": "Correcto: cambia con la posición de la Luna en su órbita."
+        },
+        {
+          "id": "b",
+          "texto": "La sombra de la Tierra",
+          "retroalimentacion": "La sombra terrestre produce eclipses, no las fases."
+        },
+        {
+          "id": "c",
+          "texto": "Cambios en el tamaño de la Luna",
+          "retroalimentacion": "El tamaño de la Luna no cambia."
+        }
+      ],
+      "correctaId": "a",
+      "fuenteIds": [
+        "nasa-fases"
+      ]
+    },
+    {
+      "id": "q2",
+      "pregunta": "Hoy hay Luna llena. ¿En qué posición está la Luna?",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Entre la Tierra y el Sol",
+          "retroalimentacion": "En esa posición vemos el lado oscuro: es Luna nueva."
+        },
+        {
+          "id": "b",
+          "texto": "Al lado opuesto del Sol, visto desde la Tierra",
+          "retroalimentacion": "Correcto: vemos toda su mitad iluminada."
+        },
+        {
+          "id": "c",
+          "texto": "Justo encima del polo norte",
+          "retroalimentacion": "La posición relevante es respecto del Sol, no de los polos."
+        }
+      ],
+      "correctaId": "b",
+      "fuenteIds": [
+        "nasa-fases"
+      ]
+    },
+    {
+      "id": "q3",
+      "pregunta": "¿Cuándo oscurece la sombra terrestre a la Luna?",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "En cada Luna menguante",
+          "retroalimentacion": "La menguante es una fase de iluminación, no una sombra."
+        },
+        {
+          "id": "b",
+          "texto": "Todas las noches",
+          "retroalimentacion": "No ocurre a diario."
+        },
+        {
+          "id": "c",
+          "texto": "Durante un eclipse lunar",
+          "retroalimentacion": "Correcto: requiere una alineación precisa del Sol, la Tierra y la Luna."
+        }
+      ],
+      "correctaId": "c",
+      "fuenteIds": [
+        "pendiente-eclipse"
+      ]
+    }
+  ],
+  "repaso": [
+    {
+      "id": "r1",
+      "pregunta": "Explica una fase sin usar la expresión \"sombra de la Tierra\".",
+      "respuesta": "Vemos una porción variable de la mitad de la Luna iluminada por el Sol."
+    },
+    {
+      "id": "r2",
+      "pregunta": "¿Cada cuántos días se repite el ciclo de fases?",
+      "respuesta": "Cada unos 29,5 días."
+    }
+  ],
+  "cierre": "Repite tus dibujos iniciales y anota qué corregiste.",
+  "fuentes": [
+    {
+      "id": "nasa-fases",
+      "entidad": "NASA",
+      "titulo": "Moon Phases",
+      "url": "https://science.nasa.gov/moon/moon-phases/",
+      "ubicacion": "Explicación de las fases y lista de las ocho fases",
+      "afirmaciones": [
+        "El Sol ilumina siempre la mitad de la Luna",
+        "Cambia cuánto de esa mitad vemos al orbitar",
+        "El ciclo se repite cada unos 29,5 días",
+        "En Luna nueva la Luna no suele pasar exactamente entre la Tierra y el Sol",
+        "Las ocho fases"
+      ],
+      "consultadaEl": "2026-10-19"
+    },
+    {
+      "id": "pendiente-hemisferio",
+      "entidad": "Por definir",
+      "titulo": "Fuente sobre la orientación de las fases según hemisferio",
+      "url": "https://science.nasa.gov/moon/",
+      "ubicacion": "Pendiente de localizar",
+      "afirmaciones": [
+        "Desde el hemisferio sur el lado iluminado de cada fase aparece invertido respecto del hemisferio norte"
+      ],
+      "consultadaEl": null
+    },
+    {
+      "id": "pendiente-eclipse",
+      "entidad": "NASA",
+      "titulo": "Fuente sobre eclipses lunares",
+      "url": "https://science.nasa.gov/eclipses/",
+      "ubicacion": "Pendiente de localizar: la página Moon Phases NO trata los eclipses",
+      "afirmaciones": [
+        "La sombra terrestre sobre la Luna produce un eclipse lunar",
+        "Solo ocurre en Luna llena con alineación precisa"
+      ],
+      "consultadaEl": null
+    }
+  ],
+  "controlEditorial": {
+    "estado": "borrador",
+    "revisadoPor": null,
+    "fechaRevision": null
+  }
+}

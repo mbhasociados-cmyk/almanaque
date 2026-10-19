@@ -1,0 +1,241 @@
+{
+  "schemaVersion": "1.0",
+  "id": "cielos-coquimbo",
+  "revision": 1,
+  "idioma": "es-CL",
+  "disciplina": "Astronomía",
+  "familia": "astronomia",
+  "etiquetas": [
+    "observatorios",
+    "Coquimbo",
+    "cielo nocturno"
+  ],
+  "titulo": "Por qué el norte de Chile mira al universo",
+  "nivel": "introductorio",
+  "minutosEstimados": 14,
+  "objetivos": [
+    "Identificar las condiciones que hacen bueno un sitio astronómico",
+    "Ubicar observatorios de la Región de Coquimbo"
+  ],
+  "prerrequisitos": [],
+  "entrada": {
+    "pregunta": "Antes de leer: ¿qué necesitarías para ver estrellas muy débiles? Haz una lista de tres condiciones."
+  },
+  "pasos": [
+    {
+      "id": "condiciones",
+      "titulo": "Tres condiciones",
+      "parrafos": [
+        "Un buen sitio astronómico necesita muchas noches despejadas, aire seco y estable, y cielos oscuros, lejos de la contaminación lumínica.",
+        "En el norte de Chile las nubes bajas de la costa suelen quedar bajo la inversión térmica; las cumbres de los cerros quedan por encima de ellas."
+      ],
+      "fuenteIds": [
+        "eso-lasilla"
+      ],
+      "figura": {
+        "tipo": "svg",
+        "contenido": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Cumbres de cerros sobre una capa de nubes bajas, bajo un cielo estrellado</title><rect width=\"320\" height=\"200\" class=\"as-svg__surface\"/><circle cx=\"0\" cy=\"0\" r=\"1.6\" class=\"as-svg__accent\"/><circle cx=\"73\" cy=\"37\" r=\"1\" class=\"as-svg__accent\"/><circle cx=\"146\" cy=\"74\" r=\"1\" class=\"as-svg__accent\"/><circle cx=\"219\" cy=\"21\" r=\"1.6\" class=\"as-svg__accent\"/><circle cx=\"292\" cy=\"58\" r=\"1\" class=\"as-svg__accent\"/><circle cx=\"45\" cy=\"5\" r=\"1\" class=\"as-svg__accent\"/><circle cx=\"118\" cy=\"42\" r=\"1.6\" class=\"as-svg__accent\"/><circle cx=\"191\" cy=\"79\" r=\"1\" class=\"as-svg__accent\"/><circle cx=\"264\" cy=\"26\" r=\"1\" class=\"as-svg__accent\"/><circle cx=\"17\" cy=\"63\" r=\"1.6\" class=\"as-svg__accent\"/><circle cx=\"90\" cy=\"10\" r=\"1\" class=\"as-svg__accent\"/><circle cx=\"163\" cy=\"47\" r=\"1\" class=\"as-svg__accent\"/><circle cx=\"236\" cy=\"84\" r=\"1.6\" class=\"as-svg__accent\"/><circle cx=\"309\" cy=\"31\" r=\"1\" class=\"as-svg__accent\"/><circle cx=\"62\" cy=\"68\" r=\"1\" class=\"as-svg__accent\"/><circle cx=\"135\" cy=\"15\" r=\"1.6\" class=\"as-svg__accent\"/><circle cx=\"208\" cy=\"52\" r=\"1\" class=\"as-svg__accent\"/><circle cx=\"281\" cy=\"89\" r=\"1\" class=\"as-svg__accent\"/><circle cx=\"34\" cy=\"36\" r=\"1.6\" class=\"as-svg__accent\"/><circle cx=\"107\" cy=\"73\" r=\"1\" class=\"as-svg__accent\"/><circle cx=\"180\" cy=\"20\" r=\"1\" class=\"as-svg__accent\"/><circle cx=\"253\" cy=\"57\" r=\"1.6\" class=\"as-svg__accent\"/><circle cx=\"6\" cy=\"4\" r=\"1\" class=\"as-svg__accent\"/><circle cx=\"79\" cy=\"41\" r=\"1\" class=\"as-svg__accent\"/><circle cx=\"152\" cy=\"78\" r=\"1.6\" class=\"as-svg__accent\"/><circle cx=\"225\" cy=\"25\" r=\"1\" class=\"as-svg__accent\"/><circle cx=\"298\" cy=\"62\" r=\"1\" class=\"as-svg__accent\"/><circle cx=\"51\" cy=\"9\" r=\"1.6\" class=\"as-svg__accent\"/><circle cx=\"124\" cy=\"46\" r=\"1\" class=\"as-svg__accent\"/><circle cx=\"197\" cy=\"83\" r=\"1\" class=\"as-svg__accent\"/><circle cx=\"270\" cy=\"30\" r=\"1.6\" class=\"as-svg__accent\"/><circle cx=\"23\" cy=\"67\" r=\"1\" class=\"as-svg__accent\"/><circle cx=\"96\" cy=\"14\" r=\"1\" class=\"as-svg__accent\"/><circle cx=\"169\" cy=\"51\" r=\"1.6\" class=\"as-svg__accent\"/><circle cx=\"242\" cy=\"88\" r=\"1\" class=\"as-svg__accent\"/><circle cx=\"315\" cy=\"35\" r=\"1\" class=\"as-svg__accent\"/><circle cx=\"68\" cy=\"72\" r=\"1.6\" class=\"as-svg__accent\"/><circle cx=\"141\" cy=\"19\" r=\"1\" class=\"as-svg__accent\"/><circle cx=\"214\" cy=\"56\" r=\"1\" class=\"as-svg__accent\"/><circle cx=\"287\" cy=\"3\" r=\"1.6\" class=\"as-svg__accent\"/><path d=\"M0 200 L70 120 L110 150 L170 85 L230 140 L270 110 L320 160 L320 200Z\" class=\"as-svg__ink\"/><rect y=\"150\" width=\"320\" height=\"22\" class=\"as-svg__muted\" stroke-dasharray=\"3 3\"/><circle cx=\"170\" cy=\"82\" r=\"5\" class=\"as-svg__accent\"/><text x=\"180\" y=\"78\" class=\"as-svg__label\" font-size=\"11\">observatorio</text><text x=\"10\" y=\"166\" class=\"as-svg__label as-svg__muted\" font-size=\"11\">capa de nubes bajas</text></svg>",
+        "alt": "Silueta de cerros con un observatorio en la cumbre, sobre una franja de nubes bajas.",
+        "pie": "Esquema sin escala: las cumbres sobresalen de la capa de nubes bajas."
+      },
+      "actividad": {
+        "tipo": "prediccion",
+        "pregunta": "¿Por qué crees que un observatorio prefiere estar en una cumbre y no en la costa?",
+        "respuesta": "En la cumbre queda sobre las nubes bajas, con menos aire encima y menos humedad."
+      }
+    },
+    {
+      "id": "cerros",
+      "titulo": "Los cerros de la región",
+      "parrafos": [
+        "La Silla, del Observatorio Europeo Austral (ESO), está a unos 2.400 metros de altitud y a unos 600 km al norte de Santiago. ESO lo describe como uno de los cielos nocturnos más oscuros de la Tierra.",
+        "En la comuna de Vicuña están Cerro Tololo y Cerro Pachón, donde operan instalaciones de NOIRLab como el Observatorio Interamericano de Cerro Tololo, Gemini Sur y SOAR. En la cumbre de Cerro Pachón está el Observatorio Vera C. Rubin, que hará un sondeo del cielo nocturno durante diez años."
+      ],
+      "fuenteIds": [
+        "eso-lasilla",
+        "noirlab-chile",
+        "rubin"
+      ],
+      "actividad": {
+        "tipo": "explicacion",
+        "pregunta": "Explica a otra persona por qué una ciudad que crece cerca de un observatorio es un problema.",
+        "respuesta": "Su iluminación aclara el cielo y reduce el contraste; los objetos débiles dejan de verse."
+      }
+    },
+    {
+      "id": "proteger",
+      "titulo": "Proteger la oscuridad",
+      "parrafos": [
+        "El D.S. N° 1/2022 del Ministerio del Medio Ambiente, norma de emisión de luminosidad artificial generada por alumbrados de exteriores, se publicó en el Diario Oficial el 18 de octubre de 2023. Protege tres objetivos: la observación astronómica, la biodiversidad y la salud.",
+        "Desde el hemisferio sur, en una noche oscura, se puede observar la Gran Nube de Magallanes, una galaxia satélite de la Vía Láctea."
+      ],
+      "fuenteIds": [
+        "mma-luminica",
+        "eso-lmc"
+      ],
+      "actividad": {
+        "tipo": "prediccion",
+        "pregunta": "¿Por qué un astrónomo prefiere noches sin luna?",
+        "respuesta": "La luz de la Luna ilumina la atmósfera y reduce el contraste, ocultando objetos débiles como galaxias y nebulosas."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "pregunta": "¿Cuál de estas condiciones NO favorece la observación astronómica?",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Aire seco",
+          "retroalimentacion": "El aire seco sí favorece: hay menos vapor que absorba luz."
+        },
+        {
+          "id": "b",
+          "texto": "Contaminación lumínica",
+          "retroalimentacion": "Correcto: la luz artificial aclara el cielo y tapa los objetos débiles."
+        },
+        {
+          "id": "c",
+          "texto": "Altura",
+          "retroalimentacion": "La altura sí favorece: hay menos atmósfera encima."
+        }
+      ],
+      "correctaId": "b",
+      "fuenteIds": [
+        "eso-lasilla"
+      ]
+    },
+    {
+      "id": "q2",
+      "pregunta": "Una empresa quiere instalar un gran letrero luminoso en un cerro del Valle de Elqui. ¿Qué norma chilena es pertinente?",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "El D.S. N° 1/2022 del Ministerio del Medio Ambiente, sobre luminosidad artificial de alumbrados de exteriores",
+          "retroalimentacion": "Correcto: regula la luz que emiten los alumbrados de exteriores para proteger, entre otros objetivos, la observación astronómica."
+        },
+        {
+          "id": "b",
+          "texto": "El Código del Trabajo",
+          "retroalimentacion": "Regula relaciones laborales, no la iluminación."
+        },
+        {
+          "id": "c",
+          "texto": "Ninguna; la iluminación no está regulada",
+          "retroalimentacion": "Sí existe una norma específica."
+        }
+      ],
+      "correctaId": "a",
+      "fuenteIds": [
+        "mma-luminica"
+      ]
+    },
+    {
+      "id": "q3",
+      "pregunta": "¿Qué es la Gran Nube de Magallanes?",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Una nube de tormenta del extremo sur",
+          "retroalimentacion": "Su nombre confunde: no es una nube atmosférica."
+        },
+        {
+          "id": "b",
+          "texto": "Una galaxia satélite de la Vía Láctea",
+          "retroalimentacion": "Correcto: es visible desde el hemisferio sur."
+        },
+        {
+          "id": "c",
+          "texto": "Un cometa que vuelve cada año",
+          "retroalimentacion": "No es un cometa: es una galaxia, mucho más lejana que cualquier cometa."
+        }
+      ],
+      "correctaId": "b",
+      "fuenteIds": [
+        "eso-lmc"
+      ]
+    }
+  ],
+  "repaso": [
+    {
+      "id": "r1",
+      "pregunta": "Nombra las tres condiciones de un buen sitio astronómico.",
+      "respuesta": "Noches despejadas, aire seco y estable, cielo oscuro."
+    },
+    {
+      "id": "r2",
+      "pregunta": "Nombra dos cerros con observatorios en la Región de Coquimbo.",
+      "respuesta": "La Silla, Cerro Tololo o Cerro Pachón."
+    }
+  ],
+  "cierre": "La próxima noche despejada, apaga las luces del patio cinco minutos y anota cuántas estrellas más ves.",
+  "fuentes": [
+    {
+      "id": "eso-lasilla",
+      "entidad": "European Southern Observatory",
+      "titulo": "La Silla",
+      "url": "https://www.eso.org/public/teles-instr/lasilla/",
+      "ubicacion": "Página del observatorio, párrafo inicial",
+      "afirmaciones": [
+        "Altitud de 2.400 m",
+        "A unos 600 km al norte de Santiago",
+        "Uno de los cielos nocturnos más oscuros de la Tierra"
+      ],
+      "consultadaEl": "2026-10-19"
+    },
+    {
+      "id": "rubin",
+      "entidad": "U.S. National Science Foundation",
+      "titulo": "NSF–DOE Vera C. Rubin Observatory",
+      "url": "https://www.nsf.gov/focus-areas/astronomy-space/rubin-observatory",
+      "ubicacion": "Párrafo inicial",
+      "afirmaciones": [
+        "El Observatorio Rubin está en la cumbre de Cerro Pachón, Chile",
+        "Hará el Legacy Survey of Space and Time, un sondeo del cielo nocturno de diez años"
+      ],
+      "consultadaEl": "2026-10-19"
+    },
+    {
+      "id": "noirlab-chile",
+      "entidad": "NSF NOIRLab",
+      "titulo": "NOIRLab and Chile",
+      "url": "https://noirlab.edu/public/about/broader-impacts/chile",
+      "ubicacion": "Sección sobre las instalaciones en Chile",
+      "afirmaciones": [
+        "Cerro Tololo y Cerro Pachón están en Vicuña",
+        "Instalaciones en Chile: CTIO, Gemini Sur, SOAR y Rubin"
+      ],
+      "consultadaEl": "2026-10-19"
+    },
+    {
+      "id": "mma-luminica",
+      "entidad": "Ministerio del Medio Ambiente",
+      "titulo": "Nueva Norma Lumínica (presentación)",
+      "url": "https://luminica.mma.gob.cl/wp-content/uploads/2024/09/01-Nueva-Norma-Luminica.pdf",
+      "ubicacion": "Portada y secciones de objetivos y vigencia",
+      "afirmaciones": [
+        "D.S. N° 1/2022 MMA, Norma de Emisión de Luminosidad Artificial Generada por Alumbrados de Exteriores",
+        "Publicada en el Diario Oficial el 18-10-2023",
+        "Objetivos: observación astronómica, biodiversidad y salud"
+      ],
+      "consultadaEl": "2026-10-19"
+    },
+    {
+      "id": "eso-lmc",
+      "entidad": "European Southern Observatory",
+      "titulo": "Large Magellanic Cloud (imagen)",
+      "url": "https://eso.org/public/images/magellan-ch17-bardon-cc",
+      "ubicacion": "Descripción de la imagen",
+      "afirmaciones": [
+        "La Gran Nube de Magallanes es una galaxia satélite de la Vía Láctea visible desde el hemisferio sur"
+      ],
+      "consultadaEl": "2026-10-19"
+    }
+  ],
+  "controlEditorial": {
+    "estado": "borrador",
+    "revisadoPor": null,
+    "fechaRevision": null
+  }
+}

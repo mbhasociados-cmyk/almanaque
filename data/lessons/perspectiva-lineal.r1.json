@@ -1,0 +1,202 @@
+{
+  "schemaVersion": "1.0",
+  "id": "perspectiva-lineal",
+  "revision": 1,
+  "idioma": "es-CL",
+  "disciplina": "Arte",
+  "familia": "arte",
+  "etiquetas": [
+    "Renacimiento",
+    "geometría",
+    "dibujo"
+  ],
+  "titulo": "La perspectiva lineal",
+  "nivel": "introductorio",
+  "minutosEstimados": 11,
+  "objetivos": [
+    "Ubicar el punto de fuga y la línea de horizonte en una imagen",
+    "Explicar el origen renacentista del método"
+  ],
+  "prerrequisitos": [],
+  "entrada": {
+    "pregunta": "Antes de leer: mira un pasillo largo. ¿Qué le pasa al ancho del pasillo a medida que se aleja?"
+  },
+  "pasos": [
+    {
+      "id": "fuga",
+      "titulo": "El punto de fuga",
+      "parrafos": [
+        "En la perspectiva lineal, las líneas paralelas que se alejan del observador convergen en un único punto de fuga situado sobre la línea del horizonte.",
+        "La línea del horizonte de una imagen está a la altura de los ojos de quien mira."
+      ],
+      "fuenteIds": [
+        "britannica-persp"
+      ],
+      "figura": {
+        "tipo": "svg",
+        "contenido": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Calle en perspectiva con un punto de fuga</title><rect width=\"320\" height=\"200\" class=\"as-svg__surface\"/><line x1=\"0\" y1=\"80\" x2=\"320\" y2=\"80\" class=\"as-svg__muted\" stroke-dasharray=\"4 4\"/><line x1=\"160\" y1=\"80\" x2=\"0\" y2=\"200\" class=\"as-svg__ink\"/><line x1=\"160\" y1=\"80\" x2=\"320\" y2=\"200\" class=\"as-svg__ink\"/><line x1=\"160\" y1=\"80\" x2=\"0\" y2=\"20\" class=\"as-svg__ink\"/><line x1=\"160\" y1=\"80\" x2=\"320\" y2=\"20\" class=\"as-svg__ink\"/><line x1=\"40\" y1=\"35.0\" x2=\"40\" y2=\"170.0\" class=\"as-svg__muted\"/><line x1=\"280\" y1=\"35.0\" x2=\"280\" y2=\"170.0\" class=\"as-svg__muted\"/><line x1=\"80\" y1=\"50.0\" x2=\"80\" y2=\"140.0\" class=\"as-svg__muted\"/><line x1=\"240\" y1=\"50.0\" x2=\"240\" y2=\"140.0\" class=\"as-svg__muted\"/><line x1=\"115\" y1=\"63.1\" x2=\"115\" y2=\"113.8\" class=\"as-svg__muted\"/><line x1=\"205\" y1=\"63.1\" x2=\"205\" y2=\"113.8\" class=\"as-svg__muted\"/><line x1=\"140\" y1=\"72.5\" x2=\"140\" y2=\"95.0\" class=\"as-svg__muted\"/><line x1=\"180\" y1=\"72.5\" x2=\"180\" y2=\"95.0\" class=\"as-svg__muted\"/><circle cx=\"160\" cy=\"80\" r=\"4\" class=\"as-svg__accent\"/><text x=\"160\" y=\"56\" text-anchor=\"middle\" class=\"as-svg__label as-svg__accent\" font-size=\"10\">punto de fuga</text></svg>",
+        "alt": "Cuatro líneas que parten de las esquinas convergen en un punto central sobre una línea horizontal punteada; líneas verticales representan fachadas que se achican.",
+        "pie": "La línea punteada es el horizonte; las paralelas convergen en el punto de fuga."
+      },
+      "actividad": {
+        "tipo": "prediccion",
+        "pregunta": "Si el fotógrafo se agacha, ¿dónde queda la línea del horizonte en la foto?",
+        "respuesta": "Más abajo: el horizonte siempre queda a la altura de la cámara u ojo."
+      }
+    },
+    {
+      "id": "origen",
+      "titulo": "Florencia, siglo XV",
+      "parrafos": [
+        "Se considera que el sistema fue ideado hacia 1415 y se atribuye a Filippo Brunelleschi.",
+        "En 1435, Leon Battista Alberti documentó el método en su tratado sobre la pintura (Della pittura en su versión italiana)."
+      ],
+      "fuenteIds": [
+        "britannica-persp"
+      ],
+      "actividad": {
+        "tipo": "explicacion",
+        "pregunta": "Toma una foto de una calle recta y prolonga sus bordes con una regla. ¿Dónde se cruzan?",
+        "respuesta": "En un punto sobre la línea del horizonte, a la altura de la cámara."
+      }
+    },
+    {
+      "id": "atmosfera",
+      "titulo": "Más allá de la regla",
+      "parrafos": [
+        "Los pintores combinan la perspectiva lineal con la perspectiva atmosférica: a gran distancia los contrastes entre luz y sombra son menos marcados, los colores oscuros tienden al azul y los bordes se ven menos nítidos. Por eso las montañas lejanas se ven azuladas."
+      ],
+      "fuenteIds": [
+        "britannica-aerea"
+      ],
+      "actividad": {
+        "tipo": "prediccion",
+        "pregunta": "En una foto del Valle de Elqui, ¿qué cerros se ven más azulados: los cercanos o los lejanos?",
+        "respuesta": "Los lejanos: entre ellos y la cámara hay más aire que dispersa la luz."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "pregunta": "En perspectiva lineal, ¿dónde convergen las líneas paralelas que se alejan?",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "En el punto de fuga, sobre el horizonte",
+          "retroalimentacion": "Correcto."
+        },
+        {
+          "id": "b",
+          "texto": "En el borde inferior del cuadro",
+          "retroalimentacion": "Se acercan entre sí a medida que se alejan, hacia el horizonte, no hacia abajo."
+        },
+        {
+          "id": "c",
+          "texto": "Siempre en el centro exacto del cuadro",
+          "retroalimentacion": "El punto de fuga puede estar en cualquier lugar del horizonte."
+        }
+      ],
+      "correctaId": "a",
+      "fuenteIds": [
+        "britannica-persp"
+      ]
+    },
+    {
+      "id": "q2",
+      "pregunta": "Dibujas una línea férrea recta vista desde el andén. ¿Qué haces con los rieles?",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Los dibujo paralelos",
+          "retroalimentacion": "Así no se percibe profundidad."
+        },
+        {
+          "id": "b",
+          "texto": "Los hago converger hacia un punto del horizonte",
+          "retroalimentacion": "Correcto: es el principio de la perspectiva lineal."
+        },
+        {
+          "id": "c",
+          "texto": "Los separo a medida que se alejan",
+          "retroalimentacion": "Eso invierte el efecto de la distancia."
+        }
+      ],
+      "correctaId": "b",
+      "fuenteIds": [
+        "britannica-persp"
+      ]
+    },
+    {
+      "id": "q3",
+      "pregunta": "¿Quién documentó por escrito el método en 1435?",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Leon Battista Alberti",
+          "retroalimentacion": "Correcto."
+        },
+        {
+          "id": "b",
+          "texto": "Filippo Brunelleschi",
+          "retroalimentacion": "A Brunelleschi se le atribuye haberlo ideado hacia 1415; el tratado de 1435 es de Alberti."
+        },
+        {
+          "id": "c",
+          "texto": "Leonardo da Vinci",
+          "retroalimentacion": "Leonardo nació en 1452, después del tratado."
+        }
+      ],
+      "correctaId": "a",
+      "fuenteIds": [
+        "britannica-persp"
+      ]
+    }
+  ],
+  "repaso": [
+    {
+      "id": "r1",
+      "pregunta": "¿Qué es el punto de fuga?",
+      "respuesta": "El punto del horizonte donde parecen converger las paralelas que se alejan."
+    },
+    {
+      "id": "r2",
+      "pregunta": "¿A qué altura está la línea del horizonte en una imagen?",
+      "respuesta": "A la altura de los ojos del observador o de la cámara."
+    }
+  ],
+  "cierre": "Busca en tu celular una foto con un punto de fuga claro y márcalo con el dedo.",
+  "fuentes": [
+    {
+      "id": "britannica-persp",
+      "entidad": "Encyclopaedia Britannica",
+      "titulo": "Linear perspective",
+      "url": "https://www.britannica.com/art/linear-perspective",
+      "ubicacion": "Párrafo inicial",
+      "afirmaciones": [
+        "Paralelas convergen en un único punto de fuga sobre el horizonte",
+        "Ideado hacia 1415, atribuido a Brunelleschi",
+        "Documentado por Alberti en 1435 (Della pittura)"
+      ],
+      "consultadaEl": "2026-10-19"
+    },
+    {
+      "id": "britannica-aerea",
+      "entidad": "Encyclopaedia Britannica",
+      "titulo": "Aerial perspective",
+      "url": "https://www.britannica.com/art/aerial-perspective",
+      "ubicacion": "Definición y párrafo siguiente",
+      "afirmaciones": [
+        "Contrastes de luz y sombra menos extremos a gran distancia",
+        "Los colores oscuros lejanos tienden al azul; montañas lejanas azuladas",
+        "Bordes y contornos menos nítidos"
+      ],
+      "consultadaEl": "2026-10-19"
+    }
+  ],
+  "controlEditorial": {
+    "estado": "borrador",
+    "revisadoPor": null,
+    "fechaRevision": null
+  }
+}

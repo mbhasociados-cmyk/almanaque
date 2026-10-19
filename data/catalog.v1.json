@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "generado": "2026-10-19",
+  "lecciones": [
+    {
+      "id": "numero-aureo",
+      "revision": 2,
+      "titulo": "El número áureo",
+      "disciplina": "Matemática",
+      "familia": "matematica",
+      "minutosEstimados": 12,
+      "estado": "publicado",
+      "archivo": "data/lessons/numero-aureo.r2.json",
+      "sha256": "0924764990c2620806d329f57fbda472babbe0cf66c0faa0eeb85915f0399c39"
+    },
+    {
+      "id": "fases-lunares",
+      "revision": 3,
+      "titulo": "¿Quién cambia la cara de la Luna?",
+      "disciplina": "Astronomía",
+      "familia": "astronomia",
+      "minutosEstimados": 12,
+      "estado": "publicado",
+      "archivo": "data/lessons/fases-lunares.r3.json",
+      "sha256": "a534c6d8ccc8ce0e21efaf3bbcc141ff47d5c220f9d800b7709c3761f7f26033"
+    },
+    {
+      "id": "corriente-humboldt",
+      "revision": 2,
+      "titulo": "La corriente de Humboldt y la camanchaca",
+      "disciplina": "Geografía",
+      "familia": "geografia",
+      "minutosEstimados": 13,
+      "estado": "publicado",
+      "archivo": "data/lessons/corriente-humboldt.r2.json",
+      "sha256": "af001a0565c7262323b6e0fccefc2e6f14bb48f793a4ca765c43a76ac6edf337"
+    },
+    {
+      "id": "cielos-coquimbo",
+      "revision": 3,
+      "titulo": "Por qué el norte de Chile mira al universo",
+      "disciplina": "Astronomía",
+      "familia": "astronomia",
+      "minutosEstimados": 14,
+      "estado": "publicado",
+      "archivo": "data/lessons/cielos-coquimbo.r3.json",
+      "sha256": "3d83db44c008b3a150bcdd63faa867255d702191da9e8da3b86a47ffbc1fcd95"
+    },
+    {
+      "id": "imprenta-gutenberg",
+      "revision": 3,
+      "titulo": "La imprenta de tipos móviles",
+      "disciplina": "Historia",
+      "familia": "historia",
+      "minutosEstimados": 12,
+      "estado": "publicado",
+      "archivo": "data/lessons/imprenta-gutenberg.r3.json",
+      "sha256": "80eb77e7900f1807e11626aaaa156f96317ae45944d574f796228310571834f9"
+    },
+    {
+      "id": "perspectiva-lineal",
+      "revision": 3,
+      "titulo": "La perspectiva lineal",
+      "disciplina": "Arte",
+      "familia": "arte",
+      "minutosEstimados": 11,
+      "estado": "publicado",
+      "archivo": "data/lessons/perspectiva-lineal.r3.json",
+      "sha256": "01c8d4ec1e82b4369bd2b41f6c92f68b834ea9168337b087606e1b598b76a680"
+    },
+    {
+      "id": "bauhaus",
+      "revision": 3,
+      "titulo": "La Bauhaus y la forma útil",
+      "disciplina": "Diseño",
+      "familia": "arte",
+      "minutosEstimados": 12,
+      "estado": "publicado",
+      "archivo": "data/lessons/bauhaus.r3.json",
+      "sha256": "4a2610be0376df9014cc3162680eddb86be5d5d464b50bfcebf14505a8d45f8a"
+    },
+    {
+      "id": "arco-panteon",
+      "revision": 3,
+      "titulo": "El arco, la bóveda y el Panteón",
+      "disciplina": "Arquitectura",
+      "familia": "arte",
+      "minutosEstimados": 14,
+      "estado": "publicado",
+      "archivo": "data/lessons/arco-panteon.r3.json",
+      "sha256": "7d26b65c7c9dcb04f887fc00682fb8bb098b62fd7730d025b12348a981008113"
+    }
+  ]
+}

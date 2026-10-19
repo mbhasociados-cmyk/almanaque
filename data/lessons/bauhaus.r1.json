@@ -1,0 +1,202 @@
+{
+  "schemaVersion": "1.0",
+  "id": "bauhaus",
+  "revision": 1,
+  "idioma": "es-CL",
+  "disciplina": "Diseño",
+  "familia": "arte",
+  "etiquetas": [
+    "diseño",
+    "siglo XX",
+    "retícula"
+  ],
+  "titulo": "La Bauhaus y la forma útil",
+  "nivel": "introductorio",
+  "minutosEstimados": 12,
+  "objetivos": [
+    "Ubicar la Bauhaus en el tiempo y sus sedes",
+    "Reconocer la retícula en interfaces actuales"
+  ],
+  "prerrequisitos": [],
+  "entrada": {
+    "pregunta": "Antes de leer: piensa en una silla que te parezca \"moderna\". ¿Qué tiene y qué no tiene?"
+  },
+  "pasos": [
+    {
+      "id": "escuela",
+      "titulo": "Arte y oficio juntos",
+      "parrafos": [
+        "La Bauhaus fue una escuela alemana de diseño fundada en 1919 en Weimar por el arquitecto Walter Gropius. Se trasladó a Dessau y luego a Berlín, donde cerró en 1933 bajo la presión del régimen nazi.",
+        "Su idea central fue unir artes y oficios y diseñar objetos pensados para la producción industrial."
+      ],
+      "fuenteIds": [
+        "pendiente-bauhaus"
+      ],
+      "figura": {
+        "tipo": "svg",
+        "contenido": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 120\" class=\"as-svg\" role=\"img\"><title>Triángulo, cuadrado y círculo, formas básicas del curso preliminar</title><polygon points=\"50,105 95,15 140,105\" class=\"as-svg__accent\"/><rect x=\"160\" y=\"20\" width=\"85\" height=\"85\" class=\"as-svg__ink\" stroke-width=\"3\"/><circle cx=\"292\" cy=\"62\" r=\"30\" class=\"as-svg__muted\" stroke-width=\"3\"/></svg>",
+        "alt": "Un triángulo relleno, un cuadrado y un círculo dibujados con trazo grueso.",
+        "pie": "Formas básicas, ejercicio típico del curso preliminar."
+      },
+      "actividad": {
+        "tipo": "prediccion",
+        "pregunta": "¿Por qué una escuela de diseño empezaría con triángulos, cuadrados y círculos?",
+        "respuesta": "Son las formas mínimas; dominarlas permite componer cualquier objeto sin depender del adorno."
+      }
+    },
+    {
+      "id": "reticula",
+      "titulo": "La retícula",
+      "parrafos": [
+        "Ordenar una página o una pantalla con una grilla invisible da coherencia: cada elemento se alinea con algo.",
+        "Esa disciplina, desarrollada después por el diseño gráfico del siglo XX, está detrás de la mayoría de las aplicaciones y sitios web actuales."
+      ],
+      "fuenteIds": [
+        "pendiente-reticula"
+      ],
+      "actividad": {
+        "tipo": "explicacion",
+        "pregunta": "Abre la app de tu banco o de correo. Señala dos márgenes o columnas que se repitan.",
+        "respuesta": "Casi siempre hay márgenes laterales iguales, íconos del mismo tamaño y textos alineados a una misma línea."
+      }
+    },
+    {
+      "id": "legado",
+      "titulo": "El legado",
+      "parrafos": [
+        "Muebles de tubo de acero, tipografías sin serifa y edificios de volúmenes simples con grandes ventanales son herencias asociadas a la Bauhaus.",
+        "La lección práctica: antes de decorar, pregunta para qué sirve cada elemento."
+      ],
+      "fuenteIds": [
+        "pendiente-bauhaus"
+      ],
+      "actividad": {
+        "tipo": "explicacion",
+        "pregunta": "Elige un objeto de tu escritorio y nombra un elemento que sobra y uno que no puede faltar.",
+        "respuesta": "La respuesta es personal; lo importante es justificar cada elemento por su función."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "pregunta": "¿En qué ciudad se fundó la Bauhaus?",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Weimar",
+          "retroalimentacion": "Correcto: en 1919."
+        },
+        {
+          "id": "b",
+          "texto": "Dessau",
+          "retroalimentacion": "Dessau fue su segunda sede."
+        },
+        {
+          "id": "c",
+          "texto": "París",
+          "retroalimentacion": "La Bauhaus fue una escuela alemana."
+        }
+      ],
+      "correctaId": "a",
+      "fuenteIds": [
+        "pendiente-bauhaus"
+      ]
+    },
+    {
+      "id": "q2",
+      "pregunta": "Diseñas una planilla de rendiciones. ¿Qué principio de la Bauhaus aplicas?",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Agregar adornos para que se vea profesional",
+          "retroalimentacion": "Es lo contrario del principio de la forma útil."
+        },
+        {
+          "id": "b",
+          "texto": "Alinear columnas en una retícula y quitar lo que no cumple función",
+          "retroalimentacion": "Correcto."
+        },
+        {
+          "id": "c",
+          "texto": "Usar muchos colores distintos",
+          "retroalimentacion": "El color sin función agrega ruido."
+        }
+      ],
+      "correctaId": "b",
+      "fuenteIds": [
+        "pendiente-reticula"
+      ]
+    },
+    {
+      "id": "q3",
+      "pregunta": "¿Por qué cerró la Bauhaus en 1933?",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Por falta de alumnos",
+          "retroalimentacion": "No fue esa la causa."
+        },
+        {
+          "id": "b",
+          "texto": "Por la presión del régimen nazi",
+          "retroalimentacion": "Correcto."
+        },
+        {
+          "id": "c",
+          "texto": "Porque Gropius se jubiló",
+          "retroalimentacion": "Gropius había dejado la dirección antes, pero no fue la causa del cierre."
+        }
+      ],
+      "correctaId": "b",
+      "fuenteIds": [
+        "pendiente-bauhaus"
+      ]
+    }
+  ],
+  "repaso": [
+    {
+      "id": "r1",
+      "pregunta": "Nombra las tres sedes de la Bauhaus en orden.",
+      "respuesta": "Weimar, Dessau y Berlín."
+    },
+    {
+      "id": "r2",
+      "pregunta": "¿Qué es una retícula en diseño?",
+      "respuesta": "Una grilla invisible que ordena y alinea los elementos."
+    }
+  ],
+  "cierre": "Revisa un documento tuyo y alinea todo a dos márgenes comunes.",
+  "fuentes": [
+    {
+      "id": "pendiente-bauhaus",
+      "entidad": "Encyclopaedia Britannica",
+      "titulo": "Bauhaus",
+      "url": "https://www.britannica.com/topic/Bauhaus-German-school-of-design",
+      "ubicacion": "Pendiente de localizar (la consulta falló el 2026-10-19)",
+      "afirmaciones": [
+        "Fundada en 1919 en Weimar por Walter Gropius",
+        "Sedes posteriores en Dessau y Berlín",
+        "Cerró en 1933 bajo presión del régimen nazi",
+        "Buscaba unir artes y oficios y diseñar para la industria"
+      ],
+      "consultadaEl": null
+    },
+    {
+      "id": "pendiente-reticula",
+      "entidad": "Por definir",
+      "titulo": "Fuente sobre la retícula tipográfica",
+      "url": "https://www.britannica.com/topic/graphic-design",
+      "ubicacion": "Pendiente de localizar",
+      "afirmaciones": [
+        "La retícula ordena y alinea elementos en páginas e interfaces"
+      ],
+      "consultadaEl": null
+    }
+  ],
+  "controlEditorial": {
+    "estado": "borrador",
+    "revisadoPor": null,
+    "fechaRevision": null
+  }
+}

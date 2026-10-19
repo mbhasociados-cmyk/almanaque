@@ -1,0 +1,240 @@
+{
+  "schemaVersion": "1.0",
+  "id": "perspectiva-lineal",
+  "revision": 3,
+  "idioma": "es-CL",
+  "disciplina": "Arte",
+  "familia": "arte",
+  "etiquetas": [
+    "Renacimiento",
+    "geometría",
+    "dibujo"
+  ],
+  "titulo": "La perspectiva lineal",
+  "nivel": "introductorio",
+  "minutosEstimados": 11,
+  "objetivos": [
+    "Ubicar el punto de fuga y el horizonte en una perspectiva de un punto",
+    "Explicar el origen renacentista del método"
+  ],
+  "prerrequisitos": [],
+  "entrada": {
+    "pregunta": "Antes de leer: mira un pasillo largo. ¿Qué le pasa al ancho del pasillo a medida que se aleja?"
+  },
+  "pasos": [
+    {
+      "id": "fuga",
+      "titulo": "El punto de fuga",
+      "parrafos": [
+        "En este ejemplo de perspectiva de un punto, los bordes horizontales paralelos que se alejan en la misma dirección convergen hacia un punto del horizonte. Otras direcciones pueden tener otros puntos de fuga: también existen perspectivas de dos y tres puntos.",
+        "El horizonte de los planos horizontales corresponde a la altura de los ojos de quien observa. Dónde aparece esa línea dentro de una fotografía depende además de hacia dónde apunte la cámara."
+      ],
+      "fuenteIds": [
+        "britannica-persp",
+        "getty-2p",
+        "getty-3p"
+      ],
+      "figura": {
+        "tipo": "svg",
+        "contenido": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Calle en perspectiva con un punto de fuga</title><rect width=\"320\" height=\"200\" class=\"as-svg__surface\"/><line x1=\"0\" y1=\"80\" x2=\"320\" y2=\"80\" class=\"as-svg__muted\" stroke-dasharray=\"4 4\"/><line x1=\"160\" y1=\"80\" x2=\"0\" y2=\"200\" class=\"as-svg__ink\"/><line x1=\"160\" y1=\"80\" x2=\"320\" y2=\"200\" class=\"as-svg__ink\"/><line x1=\"160\" y1=\"80\" x2=\"0\" y2=\"20\" class=\"as-svg__ink\"/><line x1=\"160\" y1=\"80\" x2=\"320\" y2=\"20\" class=\"as-svg__ink\"/><line x1=\"40\" y1=\"35.0\" x2=\"40\" y2=\"170.0\" class=\"as-svg__muted\"/><line x1=\"280\" y1=\"35.0\" x2=\"280\" y2=\"170.0\" class=\"as-svg__muted\"/><line x1=\"80\" y1=\"50.0\" x2=\"80\" y2=\"140.0\" class=\"as-svg__muted\"/><line x1=\"240\" y1=\"50.0\" x2=\"240\" y2=\"140.0\" class=\"as-svg__muted\"/><line x1=\"115\" y1=\"63.1\" x2=\"115\" y2=\"113.8\" class=\"as-svg__muted\"/><line x1=\"205\" y1=\"63.1\" x2=\"205\" y2=\"113.8\" class=\"as-svg__muted\"/><line x1=\"140\" y1=\"72.5\" x2=\"140\" y2=\"95.0\" class=\"as-svg__muted\"/><line x1=\"180\" y1=\"72.5\" x2=\"180\" y2=\"95.0\" class=\"as-svg__muted\"/><circle cx=\"160\" cy=\"80\" r=\"4\" class=\"as-svg__accent\"/><text x=\"160\" y=\"56\" text-anchor=\"middle\" class=\"as-svg__label as-svg__accent\" font-size=\"10\">punto de fuga</text></svg>",
+        "alt": "Cuatro líneas que parten de las esquinas convergen en un punto central sobre una línea horizontal punteada; líneas verticales representan fachadas que se achican.",
+        "pie": "Ejemplo de perspectiva de un punto: la línea punteada es el horizonte y las paralelas horizontales convergen en el punto de fuga."
+      },
+      "actividad": {
+        "tipo": "prediccion",
+        "pregunta": "Si bajas los ojos, ¿cómo cambia la altura desde la que observas el pasillo?",
+        "respuesta": "Cambia tu nivel de observación. La ubicación del horizonte dentro de una foto depende además de dónde apunte la cámara."
+      }
+    },
+    {
+      "id": "origen",
+      "titulo": "Florencia, siglo XV",
+      "parrafos": [
+        "Según Britannica, el sistema se habría ideado hacia 1415 y se atribuye a Filippo Brunelleschi. El Metropolitan Museum señala que la perspectiva lineal pudo haber sido desarrollada primero por él.",
+        "Leon Battista Alberti explicó sus principios en su tratado sobre la pintura (Della pittura en italiano), que Britannica fecha en 1435 y que el Metropolitan describe como un manual fundamental para artistas."
+      ],
+      "fuenteIds": [
+        "britannica-persp",
+        "met-renacimiento"
+      ],
+      "actividad": {
+        "tipo": "explicacion",
+        "pregunta": "Toma una foto de una calle recta y plana, con la cámara horizontal, y prolonga sus bordes con una regla. ¿Dónde se cruzan?",
+        "respuesta": "Cerca de un punto sobre el horizonte. Si la calle sube, baja o la cámara se inclina, el resultado cambia."
+      }
+    },
+    {
+      "id": "atmosfera",
+      "titulo": "Más allá de la regla",
+      "parrafos": [
+        "Los pintores combinan la perspectiva lineal con la perspectiva atmosférica. A gran distancia, los contrastes entre luz y sombra suelen verse menos marcados, los colores oscuros tienden al azul y los bordes se ven menos nítidos. Por eso las montañas lejanas pueden verse azuladas."
+      ],
+      "fuenteIds": [
+        "britannica-aerea"
+      ],
+      "actividad": {
+        "tipo": "prediccion",
+        "pregunta": "En una foto del Valle de Elqui, ¿qué cerros suelen verse más azulados: los cercanos o los lejanos?",
+        "respuesta": "Los lejanos suelen verse más azulados y con menos contraste, aunque depende de la luz y de las condiciones del aire."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "pregunta": "En una perspectiva de un punto, ¿dónde convergen los bordes horizontales paralelos que se alejan?",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "En el punto de fuga, sobre el horizonte",
+          "retroalimentacion": "Correcto, para ese caso y esas direcciones."
+        },
+        {
+          "id": "b",
+          "texto": "En el borde inferior del cuadro",
+          "retroalimentacion": "Se acercan entre sí hacia el horizonte, no hacia abajo."
+        },
+        {
+          "id": "c",
+          "texto": "Siempre en el centro exacto del cuadro",
+          "retroalimentacion": "El punto de fuga puede estar en cualquier lugar del horizonte."
+        }
+      ],
+      "correctaId": "a",
+      "fuenteIds": [
+        "britannica-persp"
+      ]
+    },
+    {
+      "id": "q2",
+      "pregunta": "Dibujas en perspectiva de un punto una línea férrea recta y plana vista desde el andén, mirando a lo largo de la vía. ¿Qué haces con los rieles?",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Los dibujo paralelos en el papel",
+          "retroalimentacion": "En este dibujo perspectivo, mantenerlos paralelos no representa cómo se alejan."
+        },
+        {
+          "id": "b",
+          "texto": "Los hago converger hacia un punto del horizonte",
+          "retroalimentacion": "Correcto: es el principio de la perspectiva de un punto."
+        },
+        {
+          "id": "c",
+          "texto": "Los separo a medida que se alejan",
+          "retroalimentacion": "Eso invierte el efecto de la distancia."
+        }
+      ],
+      "correctaId": "b",
+      "fuenteIds": [
+        "britannica-persp"
+      ]
+    },
+    {
+      "id": "q3",
+      "pregunta": "¿Quién explicó por escrito los principios de la perspectiva lineal en un tratado sobre la pintura?",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Leon Battista Alberti",
+          "retroalimentacion": "Correcto: su tratado Della pittura explica esos principios."
+        },
+        {
+          "id": "b",
+          "texto": "Filippo Brunelleschi",
+          "retroalimentacion": "A Brunelleschi se le atribuye haberlo desarrollado primero; el tratado es de Alberti."
+        },
+        {
+          "id": "c",
+          "texto": "Leonardo da Vinci",
+          "retroalimentacion": "Leonardo nació en 1452, después del tratado."
+        }
+      ],
+      "correctaId": "a",
+      "fuenteIds": [
+        "britannica-persp",
+        "met-renacimiento"
+      ]
+    }
+  ],
+  "repaso": [
+    {
+      "id": "r1",
+      "pregunta": "En una perspectiva de un punto, ¿qué es el punto de fuga?",
+      "respuesta": "El punto del horizonte hacia el que convergen las paralelas horizontales que se alejan en la misma dirección."
+    },
+    {
+      "id": "r2",
+      "pregunta": "¿A qué corresponde la altura del horizonte?",
+      "respuesta": "A la altura de los ojos de quien observa; su posición en una foto depende también de hacia dónde apunte la cámara."
+    }
+  ],
+  "cierre": "Busca en tu celular una foto de una calle recta y marca con el dedo dónde convergen sus bordes.",
+  "fuentes": [
+    {
+      "id": "britannica-persp",
+      "entidad": "Encyclopaedia Britannica",
+      "titulo": "Linear perspective",
+      "url": "https://www.britannica.com/art/linear-perspective",
+      "ubicacion": "Párrafo inicial",
+      "afirmaciones": [
+        "Paralelas convergen en un único punto de fuga sobre el horizonte, en la perspectiva de un punto",
+        "Ideado hacia 1415, atribuido a Brunelleschi",
+        "Documentado por Alberti en 1435 (Della pittura)"
+      ],
+      "consultadaEl": "2026-10-19"
+    },
+    {
+      "id": "met-renacimiento",
+      "entidad": "The Metropolitan Museum of Art",
+      "titulo": "Architecture in Renaissance Italy (ensayo)",
+      "url": "https://www.metmuseum.org/essays/architecture-in-renaissance-italy",
+      "ubicacion": "Pasaje sobre Brunelleschi y el tratado de Alberti",
+      "afirmaciones": [
+        "La perspectiva lineal pudo haber sido desarrollada primero por Brunelleschi",
+        "Della pittura de Alberti fue un manual fundamental que explica los principios de la perspectiva lineal"
+      ],
+      "consultadaEl": "2026-10-19"
+    },
+    {
+      "id": "getty-2p",
+      "entidad": "Getty Research Institute",
+      "titulo": "Art & Architecture Thesaurus, registro 300034309 (two-point perspective)",
+      "url": "http://vocab.getty.edu/page/aat/300034309",
+      "ubicacion": "Apartado Note. Verificado por ChatGPT N°9; Claude no pudo abrir el registro el 19-10-2026 (error de conexión)",
+      "afirmaciones": [
+        "Existe la perspectiva de dos puntos"
+      ],
+      "consultadaEl": null
+    },
+    {
+      "id": "getty-3p",
+      "entidad": "Getty Research Institute",
+      "titulo": "Art & Architecture Thesaurus, registro 300067713 (three-point perspective system)",
+      "url": "http://vocab.getty.edu/page/aat/300067713",
+      "ubicacion": "Apartado Note, acepción geométrica: tres grupos de paralelas que retroceden hacia sus puntos de fuga. Verificado por ChatGPT N°9; Claude no pudo abrir el registro el 19-10-2026 (error de conexión)",
+      "afirmaciones": [
+        "En la perspectiva de tres puntos, tres grupos de paralelas retroceden hacia sus respectivos puntos de fuga"
+      ],
+      "consultadaEl": null
+    },
+    {
+      "id": "britannica-aerea",
+      "entidad": "Encyclopaedia Britannica",
+      "titulo": "Aerial perspective",
+      "url": "https://www.britannica.com/art/aerial-perspective",
+      "ubicacion": "Definición y párrafo siguiente",
+      "afirmaciones": [
+        "Contrastes de luz y sombra menos extremos a gran distancia",
+        "Los colores oscuros lejanos tienden al azul; montañas lejanas azuladas",
+        "Bordes y contornos menos nítidos"
+      ],
+      "consultadaEl": "2026-10-19"
+    }
+  ],
+  "controlEditorial": {
+    "estado": "borrador",
+    "revisadoPor": null,
+    "fechaRevision": null
+  }
+}

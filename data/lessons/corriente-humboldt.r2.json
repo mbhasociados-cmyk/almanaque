@@ -1,0 +1,233 @@
+{
+  "schemaVersion": "1.0",
+  "id": "corriente-humboldt",
+  "revision": 2,
+  "idioma": "es-CL",
+  "disciplina": "Geografía",
+  "familia": "geografia",
+  "etiquetas": [
+    "océano",
+    "clima",
+    "Coquimbo"
+  ],
+  "titulo": "La corriente de Humboldt y la camanchaca",
+  "nivel": "introductorio",
+  "minutosEstimados": 13,
+  "objetivos": [
+    "Explicar qué es la surgencia costera",
+    "Relacionar el mar frío con la niebla costera y la escasa lluvia"
+  ],
+  "prerrequisitos": [],
+  "entrada": {
+    "pregunta": "Antes de leer: si la costa está junto al océano, ¿por qué llueve tan poco en el norte de Chile?"
+  },
+  "pasos": [
+    {
+      "id": "corriente",
+      "titulo": "Un río frío dentro del mar",
+      "parrafos": [
+        "La corriente de Humboldt, también llamada corriente del Perú, es una corriente fría que avanza hacia el norte por la costa occidental de Sudamérica.",
+        "El viento empuja el agua superficial mar adentro y sube agua desde mayor profundidad, más fría, para reemplazarla. Ese proceso se llama surgencia."
+      ],
+      "fuenteIds": [
+        "britannica-peru",
+        "noaa"
+      ],
+      "figura": {
+        "tipo": "svg",
+        "contenido": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 220\" class=\"as-svg\" role=\"img\"><title>Esquema de la corriente de Humboldt y la surgencia costera</title><defs><marker id=\"corriente-humboldt-f1-ah\" viewBox=\"0 0 10 10\" refX=\"5\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" class=\"as-svg__accent\"/></marker></defs><rect width=\"320\" height=\"220\" class=\"as-svg__surface\"/><path d=\"M230 0 C210 60 215 120 235 220\" class=\"as-svg__ink\"/><text x=\"275\" y=\"110\" text-anchor=\"middle\" class=\"as-svg__label\">Chile</text><path d=\"M170 210 C160 150 165 90 185 20\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"2.5\" marker-end=\"url(#corriente-humboldt-f1-ah)\"/><path d=\"M120 210 C110 150 115 90 140 20\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"2.5\" marker-end=\"url(#corriente-humboldt-f1-ah)\"/><path d=\"M215 150 L150 150\" class=\"as-svg__muted\" stroke-width=\"2\" stroke-dasharray=\"4 4\" marker-end=\"url(#corriente-humboldt-f1-ah)\"/><text x=\"10\" y=\"30\" class=\"as-svg__label\" font-size=\"10\">hacia el norte</text><text x=\"10\" y=\"176\" class=\"as-svg__label as-svg__muted\" font-size=\"10\">el viento</text><text x=\"10\" y=\"190\" class=\"as-svg__label as-svg__muted\" font-size=\"10\">aleja el agua;</text><text x=\"10\" y=\"204\" class=\"as-svg__label as-svg__muted\" font-size=\"10\">sube agua fría</text></svg>",
+        "alt": "Mapa esquemático: dos flechas suben paralelas a la costa chilena y una flecha punteada sale de la costa hacia el mar.",
+        "pie": "Esquema simplificado, sin escala."
+      },
+      "actividad": {
+        "tipo": "prediccion",
+        "pregunta": "Si disminuyen los vientos favorables a la surgencia y las demás condiciones son semejantes, ¿qué esperas que pase con la temperatura del mar en la costa?",
+        "respuesta": "Que suba menos agua fría desde la profundidad, de modo que el mar costero tendería a entibiarse."
+      }
+    },
+    {
+      "id": "clima",
+      "titulo": "Mar frío, cielo estable",
+      "parrafos": [
+        "El océano frío favorece una capa de aire fresco y húmedo cerca de la superficie. Más arriba, el aire descendente del anticiclón del Pacífico contribuye a mantener condiciones estables y una inversión térmica.",
+        "La inversión limita el desarrollo vertical de las nubes. Puede haber nubes bajas y niebla costera, la camanchaca, con poca precipitación. La aridez regional depende también de otros factores."
+      ],
+      "fuenteIds": [
+        "britannica-peru",
+        "osses-1998"
+      ],
+      "actividad": {
+        "tipo": "explicacion",
+        "pregunta": "Explica a otra persona por qué puede haber nubes bajas en la costa y, aun así, llover poco.",
+        "respuesta": "La inversión térmica limita el crecimiento vertical de las nubes; sin ese desarrollo es difícil que produzcan lluvia abundante."
+      }
+    },
+    {
+      "id": "vida",
+      "titulo": "Agua fría, mar productivo",
+      "parrafos": [
+        "El agua que sube por surgencia es rica en nutrientes. Fertiliza las aguas superficiales y favorece el crecimiento del fitoplancton; por eso las buenas zonas de pesca suelen estar donde la surgencia es común.",
+        "Durante El Niño la surgencia se debilita o se detiene y llegan menos nutrientes. Puede haber menos fitoplancton, lo que afecta a los peces que se alimentan de él y a quienes se alimentan de esos peces."
+      ],
+      "fuenteIds": [
+        "noaa",
+        "noaa-nino",
+        "britannica-peru"
+      ],
+      "actividad": {
+        "tipo": "prediccion",
+        "pregunta": "Si durante El Niño llegan menos nutrientes a la superficie, ¿qué puede pasar con la cadena alimentaria marina?",
+        "respuesta": "Puede haber menos fitoplancton, y eso puede afectar la distribución y disponibilidad de los peces que dependen de él."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "pregunta": "¿Qué es la surgencia costera?",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "El ascenso de agua más profunda y fría que reemplaza al agua superficial desplazada por el viento",
+          "retroalimentacion": "Correcto: el viento aleja el agua de superficie y sube agua desde mayor profundidad."
+        },
+        {
+          "id": "b",
+          "texto": "Una ola gigante producida por sismos",
+          "retroalimentacion": "Eso es un tsunami, un fenómeno distinto."
+        },
+        {
+          "id": "c",
+          "texto": "La llegada de agua dulce de los ríos al mar",
+          "retroalimentacion": "La surgencia trae agua desde la profundidad del océano, no desde los ríos."
+        }
+      ],
+      "correctaId": "a",
+      "fuenteIds": [
+        "noaa"
+      ]
+    },
+    {
+      "id": "q2",
+      "pregunta": "Disminuye el aporte de agua rica en nutrientes en la costa. ¿Qué efecto puede tener sobre el fitoplancton?",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Puede disminuir, porque recibe menos nutrientes",
+          "retroalimentacion": "Correcto: el fitoplancton depende de esos nutrientes."
+        },
+        {
+          "id": "b",
+          "texto": "Siempre aumenta",
+          "retroalimentacion": "Con menos nutrientes no hay razón para esperar un aumento."
+        },
+        {
+          "id": "c",
+          "texto": "No cambia, porque solo depende de la luz",
+          "retroalimentacion": "La luz importa, pero los nutrientes también limitan su crecimiento."
+        }
+      ],
+      "correctaId": "a",
+      "fuenteIds": [
+        "noaa",
+        "noaa-nino"
+      ]
+    },
+    {
+      "id": "q3",
+      "pregunta": "¿Qué papel cumple la inversión térmica en la costa norte?",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Limita el desarrollo vertical de las nubes",
+          "retroalimentacion": "Correcto: por eso puede haber nubes bajas con poca lluvia."
+        },
+        {
+          "id": "b",
+          "texto": "Calienta el agua del mar",
+          "retroalimentacion": "La inversión es una característica del aire, no calienta el océano."
+        },
+        {
+          "id": "c",
+          "texto": "Produce las mareas",
+          "retroalimentacion": "Las mareas se deben sobre todo a la atracción de la Luna y el Sol."
+        }
+      ],
+      "correctaId": "a",
+      "fuenteIds": [
+        "osses-1998"
+      ]
+    }
+  ],
+  "repaso": [
+    {
+      "id": "r1",
+      "pregunta": "Explica la surgencia en dos frases.",
+      "respuesta": "El viento empuja el agua de superficie mar adentro. Sube agua más profunda, fría y rica en nutrientes."
+    },
+    {
+      "id": "r2",
+      "pregunta": "¿Por qué la costa norte puede tener nubes bajas y poca lluvia?",
+      "respuesta": "Porque la inversión térmica, favorecida por el mar frío y el anticiclón, limita el desarrollo vertical de las nubes."
+    }
+  ],
+  "cierre": "Anota una cosa del paisaje de la costa de Coquimbo que ahora puedes explicar.",
+  "fuentes": [
+    {
+      "id": "noaa",
+      "entidad": "NOAA National Ocean Service",
+      "titulo": "What is upwelling?",
+      "url": "https://oceanservice.noaa.gov/facts/upwelling.html",
+      "ubicacion": "Texto principal",
+      "afirmaciones": [
+        "El viento empuja el agua de superficie",
+        "Sube agua más fría y rica en nutrientes",
+        "Esos nutrientes fertilizan las aguas superficiales",
+        "Las buenas zonas de pesca suelen estar donde la surgencia es común"
+      ],
+      "consultadaEl": "2026-10-19"
+    },
+    {
+      "id": "noaa-nino",
+      "entidad": "NOAA National Ocean Service",
+      "titulo": "What are El Niño and La Niña?",
+      "url": "https://oceanservice.noaa.gov/facts/ninonina.html",
+      "ubicacion": "Sección El Niño, párrafo sobre vida marina",
+      "afirmaciones": [
+        "Durante El Niño la surgencia se debilita o se detiene",
+        "Hay menos fitoplancton, lo que afecta a los peces y a quienes se alimentan de ellos"
+      ],
+      "consultadaEl": "2026-10-19"
+    },
+    {
+      "id": "britannica-peru",
+      "entidad": "Encyclopaedia Britannica",
+      "titulo": "Peru Current",
+      "url": "https://www.britannica.com/place/Peru-Current",
+      "ubicacion": "Artículo completo",
+      "afirmaciones": [
+        "Corriente fría que fluye hacia el norte por la costa occidental de Sudamérica",
+        "Trae niebla a la costa y contribuye a su aridez",
+        "Aguas de Perú, Chile y Ecuador entre las más ricas en pesca"
+      ],
+      "consultadaEl": "2026-10-19"
+    },
+    {
+      "id": "osses-1998",
+      "entidad": "Revista de Geografía Norte Grande, 25: 7-13 (1998)",
+      "titulo": "Osses, Cereceda, Schemenauer, Larrain y Lazaro: Diferencias y similitudes de la niebla entre Iquique (Chile) y Mejía (Perú)",
+      "url": "https://analesliteraturachilena.letras.uc.cl/index.php/RGNG/article/download/42185/34205/107509",
+      "ubicacion": "Resultados, a) Factores a escala planetaria, página 8",
+      "afirmaciones": [
+        "Influencia conjunta del Anticiclón del Pacífico Suroriental y de la Corriente de Humboldt",
+        "Una fuerte inversión térmica impide el desarrollo vertical del estratocúmulo"
+      ],
+      "consultadaEl": "2026-10-19"
+    }
+  ],
+  "controlEditorial": {
+    "estado": "borrador",
+    "revisadoPor": null,
+    "fechaRevision": null
+  }
+}

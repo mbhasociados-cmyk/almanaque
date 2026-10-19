@@ -1,0 +1,204 @@
+{
+  "schemaVersion": "1.0",
+  "id": "numero-aureo",
+  "revision": 1,
+  "idioma": "es-CL",
+  "disciplina": "Matemática",
+  "familia": "matematica",
+  "etiquetas": [
+    "proporción",
+    "Fibonacci",
+    "irracionales"
+  ],
+  "titulo": "El número áureo",
+  "nivel": "introductorio",
+  "minutosEstimados": 12,
+  "objetivos": [
+    "Calcular φ a partir de su definición",
+    "Relacionar φ con la sucesión de Fibonacci",
+    "Distinguir datos comprobados de afirmaciones populares"
+  ],
+  "prerrequisitos": [],
+  "entrada": {
+    "pregunta": "Antes de leer: ¿crees que existe una proporción \"perfecta\"? ¿Dónde has escuchado que aparece?"
+  },
+  "pasos": [
+    {
+      "id": "definicion",
+      "titulo": "La definición",
+      "parrafos": [
+        "Divide un segmento en dos partes, a (la mayor) y b (la menor), de modo que el todo sea a la parte mayor como la mayor es a la menor: (a + b) / a = a / b.",
+        "Esa razón se llama φ (fi). Su valor exacto es φ = (1 + √5) / 2 = 1,6180339887… Es un número irracional: sus decimales no terminan ni se repiten."
+      ],
+      "fuenteIds": [
+        "mathworld",
+        "britannica-aureo"
+      ],
+      "figura": {
+        "tipo": "svg",
+        "contenido": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 324 200\" class=\"as-svg\" role=\"img\"><title>Rectángulo áureo dividido en un cuadrado y un rectángulo menor</title><rect x=\"2\" y=\"2\" width=\"320\" height=\"196\" class=\"as-svg__surface\"/><rect x=\"2\" y=\"2\" width=\"320\" height=\"196\" class=\"as-svg__ink\"/><line x1=\"198\" y1=\"2\" x2=\"198\" y2=\"198\" class=\"as-svg__ink\"/><line x1=\"198\" y1=\"123\" x2=\"322\" y2=\"123\" class=\"as-svg__ink\"/><line x1=\"245\" y1=\"123\" x2=\"245\" y2=\"198\" class=\"as-svg__ink\"/><path d=\"M198 198 A196 196 0 0 1 2 2 M198 2 A124 124 0 0 1 322 123 M322 123 A77 77 0 0 1 245 198\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"2.5\"/><text x=\"100\" y=\"105\" text-anchor=\"middle\" class=\"as-svg__label as-svg__muted\" font-size=\"12\">cuadrado</text><text x=\"252\" y=\"100\" text-anchor=\"middle\" class=\"as-svg__label as-svg__muted\" font-size=\"11\">áureo</text></svg>",
+        "alt": "Rectángulo cuyos lados están en razón áurea; al quitarle un cuadrado queda otro rectángulo áureo.",
+        "pie": "Al quitar un cuadrado a un rectángulo áureo, el resto vuelve a ser áureo."
+      },
+      "actividad": {
+        "tipo": "prediccion",
+        "pregunta": "Si a = 1, ¿qué ecuación cumple b? Intenta plantearla antes de abrir la respuesta.",
+        "respuesta": "Con a + b = φ·a y a/b = φ se llega a φ² = φ + 1. Su solución positiva es (1 + √5) / 2."
+      }
+    },
+    {
+      "id": "fibonacci",
+      "titulo": "Fibonacci se acerca a φ",
+      "parrafos": [
+        "En la sucesión 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89… cada número es la suma de los dos anteriores.",
+        "Si divides un término por el anterior, el cociente se acerca cada vez más a φ: 34 / 21 = 1,6190…; 55 / 34 = 1,6176…"
+      ],
+      "fuenteIds": [
+        "mathworld"
+      ],
+      "actividad": {
+        "tipo": "calculo",
+        "pregunta": "Calcula 89 / 55 y compáralo con φ.",
+        "respuesta": "89 / 55 = 1,61818… Coincide con φ = 1,61803… en los tres primeros decimales."
+      }
+    },
+    {
+      "id": "mito",
+      "titulo": "Dato y leyenda",
+      "parrafos": [
+        "Muchas afirmaciones populares sobre φ en el arte y la arquitectura están muy exageradas. Se repite, por ejemplo, que el Partenón se diseñó con φ, pero esa afirmación aparece en obras de ficción y no en mediciones documentadas.",
+        "Para evaluar una afirmación así hay que preguntar qué medidas se tomaron, entre qué puntos y con qué margen de error."
+      ],
+      "fuenteIds": [
+        "mathworld"
+      ],
+      "actividad": {
+        "tipo": "explicacion",
+        "pregunta": "Busca una foto de una fachada famosa. ¿Qué dos medidas elegirías para \"probar\" que usa φ, y por qué esa elección ya es un problema?",
+        "respuesta": "Casi cualquier fachada tiene algún par de medidas cuya razón se acerca a 1,6. Elegir las medidas después de ver el resultado es buscar la coincidencia, no probarla."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "pregunta": "¿Cuál es el valor exacto de φ?",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "(1 + √5) / 2",
+          "retroalimentacion": "Correcto: es la solución positiva de φ² = φ + 1."
+        },
+        {
+          "id": "b",
+          "texto": "1,618 exactamente",
+          "retroalimentacion": "1,618 es una aproximación; φ es irracional y sus decimales no terminan."
+        },
+        {
+          "id": "c",
+          "texto": "√2",
+          "retroalimentacion": "√2 ≈ 1,414 es otro irracional, pero no es la razón áurea."
+        }
+      ],
+      "correctaId": "a",
+      "fuenteIds": [
+        "mathworld"
+      ]
+    },
+    {
+      "id": "q2",
+      "pregunta": "En Fibonacci, ¿cuál cociente queda más cerca de φ?",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "8 / 5",
+          "retroalimentacion": "8 / 5 = 1,6: todavía lejos. Los cocientes mejoran con términos más grandes."
+        },
+        {
+          "id": "b",
+          "texto": "144 / 89",
+          "retroalimentacion": "Correcto: 144 / 89 = 1,61797…, más cerca de φ que los cocientes de términos menores."
+        },
+        {
+          "id": "c",
+          "texto": "3 / 2",
+          "retroalimentacion": "3 / 2 = 1,5: es uno de los primeros cocientes, el más alejado de los tres."
+        }
+      ],
+      "correctaId": "b",
+      "fuenteIds": [
+        "mathworld"
+      ]
+    },
+    {
+      "id": "q3",
+      "pregunta": "Un artículo dice que un edificio \"usa φ\". ¿Qué es lo primero que deberías preguntar?",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Si el arquitecto era famoso",
+          "retroalimentacion": "La fama del autor no dice nada sobre las medidas."
+        },
+        {
+          "id": "b",
+          "texto": "Qué medidas se tomaron y con qué margen de error",
+          "retroalimentacion": "Correcto: sin medidas definidas de antemano y un margen de error, la afirmación no se puede comprobar."
+        },
+        {
+          "id": "c",
+          "texto": "Si el edificio es bonito",
+          "retroalimentacion": "Que algo se vea armónico no demuestra una proporción concreta."
+        }
+      ],
+      "correctaId": "b",
+      "fuenteIds": [
+        "mathworld"
+      ]
+    }
+  ],
+  "repaso": [
+    {
+      "id": "r1",
+      "pregunta": "Escribe la definición de φ con tus palabras y su valor aproximado.",
+      "respuesta": "El todo es a la parte mayor como la mayor es a la menor; φ ≈ 1,618."
+    },
+    {
+      "id": "r2",
+      "pregunta": "¿Qué relación hay entre Fibonacci y φ?",
+      "respuesta": "El cociente entre términos consecutivos se acerca a φ."
+    }
+  ],
+  "cierre": "Resume en una frase qué es φ y una razón para desconfiar de los \"φ en todas partes\".",
+  "fuentes": [
+    {
+      "id": "mathworld",
+      "entidad": "Wolfram MathWorld",
+      "titulo": "Golden Ratio",
+      "url": "https://mathworld.wolfram.com/GoldenRatio.html",
+      "ubicacion": "Definición, valor decimal, límite de Fibonacci y comentario sobre afirmaciones exageradas",
+      "afirmaciones": [
+        "φ = (1 + √5) / 2",
+        "φ es el límite de cocientes consecutivos de Fibonacci",
+        "Las afirmaciones sobre φ en arte y arquitectura tienden a estar muy exageradas",
+        "La afirmación del Partenón aparece en NUMB3RS y El código Da Vinci"
+      ],
+      "consultadaEl": "2026-10-19"
+    },
+    {
+      "id": "britannica-aureo",
+      "entidad": "Encyclopaedia Britannica",
+      "titulo": "Golden ratio",
+      "url": "https://www.britannica.com/science/golden-ratio",
+      "ubicacion": "Párrafo inicial",
+      "afirmaciones": [
+        "φ es irracional y vale aproximadamente 1,618"
+      ],
+      "consultadaEl": "2026-10-19"
+    }
+  ],
+  "controlEditorial": {
+    "estado": "borrador",
+    "revisadoPor": null,
+    "fechaRevision": null
+  }
+}
