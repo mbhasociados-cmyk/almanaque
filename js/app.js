@@ -421,6 +421,20 @@ function renderBiblioteca() {
 }
 
 // ------------------------------------------------------------ Cuenta
+const AUTH_KEY = "almanaque-auth-draft", AUTH_TTL = 60 * 60 * 1000;
+let authMem = null;
+function authDraft() {
+  const empty = { email: "", code: "", codeSent: false, msg: "", t: 0 };
+  if (!authMem) { try { authMem = JSON.parse(localStorage.getItem(AUTH_KEY) || "null"); } catch { authMem = null; } }
+  if (!authMem || Date.now() - (authMem.t || 0) > AUTH_TTL) authMem = { ...empty };
+  return { ...empty, ...authMem };
+}
+function saveAuthDraft(patch) {
+  authMem = { ...authDraft(), ...patch, t: Date.now() };
+  try { const { code, ...keep } = authMem; localStorage.setItem(AUTH_KEY, JSON.stringify(keep)); } catch { /* sin almacenamiento: queda en memoria */ }
+}
+function clearAuthDraft() { authMem = null; try { localStorage.removeItem(AUTH_KEY); } catch { /* nada */ } }
+
 async function renderCuenta() {
   const s = app.syncStatus || sync.status;
   const persist = await db.getMeta("persist");
@@ -429,10 +443,12 @@ async function renderCuenta() {
   if (!sync.isEnabled()) {
     acct = `<p>La app funciona en <b>modo local</b>: tu avance queda guardado solo en este dispositivo. Para compartirlo entre el PC y el celular hay que configurar la conexión (archivo <code>js/config.js</code>, ver instrucciones).</p>`;
   } else if (!sync.currentUser()) {
-    acct = `<form id="f-email" class="form"><label for="email">Correo</label><input id="email" type="email" autocomplete="email" required placeholder="tu@correo.cl">
-      <button class="btn" type="submit">Enviar código</button></form>
-      <form id="f-code" class="form" hidden><label for="code">Código de 6 dígitos recibido por correo</label><input id="code" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6}" maxlength="6" required>
-      <button class="btn" type="submit">Ingresar</button></form><p id="auth-msg" class="small"></p>
+    // Borrador del inicio de sesión: sobrevive a los redibujos y a una recarga (p. ej. al ir al correo y volver en el iPhone).
+    const a = authDraft();
+    acct = `<form id="f-email" class="form"><label for="email">Correo</label><input id="email" type="email" autocomplete="email" required placeholder="tu@correo.cl" value="${esc(a.email)}">
+      <button class="btn" type="submit">${a.codeSent ? "Enviar otro código" : "Enviar código"}</button></form>
+      <form id="f-code" class="form"${a.codeSent ? "" : " hidden"}><label for="code">Código de 6 dígitos recibido por correo</label><input id="code" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6}" maxlength="6" required value="${esc(a.code)}">
+      <button class="btn" type="submit">Ingresar</button></form><p id="auth-msg" class="small">${esc(a.msg)}</p>
       <p class="small">El código se escribe aquí mismo, dentro de la app. Puedes pedir uno nuevo cada 60 segundos.</p>`;
   } else {
     acct = `<p>Sesión iniciada como <b>${esc(s.email)}</b>.</p>
@@ -465,8 +481,23 @@ async function renderCuenta() {
 
   const fe = $("#f-email");
   if (fe) {
-    fe.onsubmit = async (ev) => { ev.preventDefault(); const email = $("#email").value.trim(); $("#auth-msg").textContent = "Enviando…"; const err = await sync.requestCode(email); $("#auth-msg").textContent = err ? `No pude enviar el código: ${err}` : "Revisa tu correo y escribe el código."; if (!err) { $("#f-code").hidden = false; $("#code").focus(); } };
-    $("#f-code").onsubmit = async (ev) => { ev.preventDefault(); const err = await sync.verifyCode($("#email").value.trim(), $("#code").value.trim()); $("#auth-msg").textContent = err ? `No pude verificar el código: ${err}` : "Sesión iniciada."; };
+    $("#email").oninput = (ev) => saveAuthDraft({ email: ev.target.value });
+    $("#code").oninput = (ev) => saveAuthDraft({ code: ev.target.value });
+    fe.onsubmit = async (ev) => {
+      ev.preventDefault(); const email = $("#email").value.trim();
+      saveAuthDraft({ email, msg: "Enviando…" }); $("#auth-msg").textContent = "Enviando…";
+      const err = await sync.requestCode(email);
+      const msg = err ? `No pude enviar el código: ${err}` : "Revisa tu correo y escribe el código aquí.";
+      saveAuthDraft(err ? { msg } : { msg, codeSent: true, code: "" });
+      if ($("#auth-msg")) $("#auth-msg").textContent = msg;
+      if (!err && $("#f-code")) { $("#f-code").hidden = false; $("#code").focus(); }
+    };
+    $("#f-code").onsubmit = async (ev) => {
+      ev.preventDefault();
+      const err = await sync.verifyCode($("#email").value.trim(), $("#code").value.trim());
+      if (err) { const msg = `No pude verificar el código: ${err}`; saveAuthDraft({ msg }); if ($("#auth-msg")) $("#auth-msg").textContent = msg; }
+      else { clearAuthDraft(); if ($("#auth-msg")) $("#auth-msg").textContent = "Sesión iniciada."; }
+    };
   }
   const sn = $("#sync-now"); if (sn) sn.onclick = () => sync.schedule(0);
   const lo = $("#logout"); if (lo) lo.onclick = async () => { await sync.signOut(); };
@@ -544,7 +575,7 @@ async function main() {
   [app.catalog, app.calendar, app.approvals] = await Promise.all([loadIndex("catalog.v1.json", "catalog"), loadIndex("calendar.v1.json", "calendar"), loadIndex("aprobaciones.v1.json", "aprobaciones")]);
   await refresh();
   render();
-  sync.onStatus(s => { app.syncStatus = s; renderHeader(); if (app.route === "cuenta" && !app.session) renderCuenta(); });
+  sync.onStatus(s => { app.syncStatus = s; renderHeader(); const typing = ["email", "code"].includes(document.activeElement?.id); if (app.route === "cuenta" && !app.session && !typing) renderCuenta(); });
   window.addEventListener("almanaque:synced", async () => { await refresh(); await prefetch(); await refresh(); if (!app.session) render(); else renderHeader(); });
   await sync.init();
   await prefetch(); await refresh();

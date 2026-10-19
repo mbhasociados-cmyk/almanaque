@@ -1,6 +1,6 @@
 // Service worker: solo la interfaz. Las lecciones viven en IndexedDB (las guarda la app).
 // No intercepta peticiones de otros orígenes (Supabase) ni respuestas de autenticación.
-const VERSION = "2.1.1";
+const VERSION = "2.1.2";
 const CACHE = "almanaque-shell-" + VERSION;
 const SHELL = [
   "./", "./index.html", "./styles.css", "./manifest.webmanifest",
