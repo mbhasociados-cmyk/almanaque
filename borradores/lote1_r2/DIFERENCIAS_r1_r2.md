@@ -1,0 +1,379 @@
+# Diferencias r1 → r2 del lote 1 (comparación automática campo por campo)
+
+## como-funciona-gps
+
+- `fuentes`
+  - antes: [{"id": "britannica-gps", "entidad": "Encyclopaedia Britannica", "titulo": "GPS", "url": "https://www.britannica.com/technology/GPS", "ubicacion": "Resumen inicial", "afirmaciones": ["Sistema de radionavegación basado en el espacio", "El receptor mide el tiempo que tardan las señales de radio de cuatro o más satélites, calcula la distancia a cada uno y con ello determina la posición"], "respalda": ["c3", "c4", "c5", "c7"], "consultadaEl": "2026-10-20"}, {"id": "gps-espacio", "entidad": "GPS.gov (Gobierno de los Estados Unidos)", "titulo": "Space Segment", "url": "https://www.gps.gov/systems/gps/space/", "ubicacion": "Constelación y órbitas", "afirmaciones": ["Se comprometen a mantener al menos 24 satélites GPS operativos el 95 % del tiempo", "Los satélites operan a aproximadamente 20.200 km de altura", "Cada satélite da dos vueltas a la Tierra por día", "La disposición permite ver al menos cuatro satélites desde prácticamente cualquier punto del planeta"], "respalda": ["c2", "c6", "c7", "c8"], "consultadaEl": "2026-10-20"}]
+  - ahora: [{"id": "gps-poster", "entidad": "GPS.gov (Gobierno de los Estados Unidos)", "titulo": "How GPS Works (póster, versión de texto)", "url": "https://www.gps.gov/multimedia/poster/poster.txt", "ubicacion": "Sección sobre el funcionamiento del receptor", "afirmaciones": ["Los satélites GPS transmiten señales de radio con su ubicación, su estado y la hora precisa (t1) de sus relojes atómicos", "El receptor registra la hora exacta de llegada (t2) de cada señal y, comparándola con la hora de emisión, calcula su distancia a cada satélite", "Cuando conoce su distancia a por lo menos cuatro satélites, puede calcular su posición tridimensional en la Tierra"], "respalda": ["c1", "c3", "c4", "c5", "c7"], "consultadaEl": "2026-10-20"}, {"id": "britannica-gps", "entidad": "Encyclopaedia Britannica", "titulo": "GPS", "url": "https://www.britannica.com/technology/GPS", "ubicacion": "Resumen inicial", "afirmaciones": ["El receptor mide el tiempo que tardan las señales de radio de cuatro o más satélites, calcula la distancia a cada uno y con ello determina la posición"], "respalda": ["c3", "c4", "c5"], "consultadaEl": "2026-10-20"}, {"id": "gps-espacio", "entidad": "GPS.gov (Gobierno de los Estados Unidos)", "titulo": "Space Segment", "url": "https://www.gps.gov/systems/gps/space/", "ubicacion": "Constelación y órbitas", "afirmaciones": ["Se comprometen a mantener al menos 24 satélites GPS operativos el 95 % del tiempo", "Los satélites operan a aproximadamente 20.200 km de altura", "Cada satélite da dos vueltas a la Tierra por día", "La disposición permite ver al menos cuatro satélites desde prácticamente cualquier punto del planeta"], "respalda": ["c2", "c6", "c7", "c8"], "consultadaEl": "2026-10-20"}, {"id": "gps-precision", "entidad": "GPS.gov (Gobierno de los Estados Unidos)", "titulo": "GPS Accuracy", "url": "https://www.gps.gov/gps-accuracy", "ubicacion": "Causas comunes de pérdida de precisión", "afirmaciones": ["El bloqueo de las señales por edificios, puentes, árboles, etc., y el uso en interiores o bajo tierra degradan la precisión", "La precisión de los teléfonos empeora cerca de edificios, puentes y árboles"], "respalda": ["c6"], "consultadaEl": "2026-10-20"}]
+- `resumen.puntos[0]`
+  - antes: "El GPS funciona con al menos 24 satélites que envían señales de radio."
+  - ahora: "El GPS usa al menos 24 satélites que envían señales de radio con la hora de sus relojes atómicos."
+- `resumen.puntos[1]`
+  - antes: "El receptor mide cuánto tarda en llegar cada señal y así calcula su distancia a cada satélite."
+  - ahora: "El receptor compara cuándo salió y cuándo llegó cada señal, y así calcula su distancia a cada satélite."
+- `resumen.puntos[2]`
+  - antes: "Con la distancia a cuatro o más satélites, calcula dónde estás."
+  - ahora: "Con la distancia a por lo menos cuatro satélites calcula su posición; los edificios y los árboles pueden bloquear las señales."
+- `revision`
+  - antes: 1
+  - ahora: 2
+- `tarjetas[c1].fuenteIds`
+  - antes: []
+  - ahora: ["gps-poster"]
+- `tarjetas[c1].texto`
+  - antes: "Abres el mapa del celular y aparece un punto azul justo donde estás. ¿Cómo lo sabe?"
+  - ahora: "Abres el mapa del celular y aparece un punto justo donde estás. Una parte de esa respuesta viene del espacio."
+- `tarjetas[c2].texto`
+  - antes: "El sistema GPS tiene al menos 24 satélites funcionando, a unos 20.200 kilómetros de altura."
+  - ahora: "El sistema GPS mantiene al menos 24 satélites funcionando, a unos 20.200 kilómetros de altura."
+- `tarjetas[c3].fuenteIds`
+  - antes: ["britannica-gps"]
+  - ahora: ["gps-poster", "britannica-gps"]
+- `tarjetas[c3].texto`
+  - antes: "Los satélites envían señales de radio. El receptor GPS mide cuánto tardó en llegar cada señal, y con eso calcula a qué distancia está de cada satélite."
+  - ahora: "Cada satélite envía señales de radio con la hora exacta de sus relojes atómicos. El receptor anota cuándo llega cada señal y, comparando las horas, calcula a qué distancia está cada satélite."
+- `tarjetas[c3].titulo`
+  - antes: "Señales que viajan"
+  - ahora: "Señales con la hora exacta"
+- `tarjetas[c4].fuenteIds`
+  - antes: ["britannica-gps"]
+  - ahora: ["gps-poster", "britannica-gps"]
+- `tarjetas[c4].opciones[a].retro`
+  - antes: "¡Exacto! Con ese tiempo calcula la distancia a cada satélite."
+  - ahora: "¡Exacto! Con esa diferencia calcula la distancia."
+- `tarjetas[c4].opciones[a].texto`
+  - antes: "Cuánto tardan en llegar las señales de los satélites"
+  - ahora: "La hora en que salió la señal y la hora en que llegó"
+- `tarjetas[c4].opciones[b].retro`
+  - antes: "El viento no tiene que ver: el GPS usa señales de radio de satélites."
+  - ahora: "El viento no tiene que ver: el GPS usa la hora de las señales de radio de los satélites."
+- `tarjetas[c4].opciones[c].retro`
+  - antes: "No: el GPS calcula distancias con el tiempo que tardan las señales de los satélites."
+  - ahora: "No: el GPS calcula distancias con la hora de salida y de llegada de las señales."
+- `tarjetas[c4].pregunta`
+  - antes: "¿Qué mide el receptor GPS para saber dónde está?"
+  - ahora: "¿Qué compara el receptor GPS para saber a qué distancia está cada satélite?"
+- `tarjetas[c5].fuenteIds`
+  - antes: ["britannica-gps"]
+  - ahora: ["gps-poster", "britannica-gps"]
+- `tarjetas[c5].texto`
+  - antes: "Con la distancia a cuatro o más satélites, el receptor calcula su posición."
+  - ahora: "Cuando conoce su distancia a por lo menos cuatro satélites, el receptor calcula su posición en tres dimensiones."
+- `tarjetas[c6].fuenteIds`
+  - antes: ["gps-espacio"]
+  - ahora: ["gps-espacio", "gps-precision"]
+- `tarjetas[c6].revelado`
+  - antes: "Sí. Los satélites están repartidos de manera que, desde prácticamente cualquier punto de la Tierra, se pueden ver al menos cuatro."
+  - ahora: "No siempre. La constelación está distribuida para ofrecer cobertura desde prácticamente toda la Tierra, pero para recibir bien las señales ayuda tener el cielo despejado: los edificios, los puentes y los árboles pueden bloquearlas."
+- `tarjetas[c6].texto`
+  - antes: "¿Crees que desde cualquier lugar del planeta hay al menos cuatro satélites GPS a la vista?"
+  - ahora: "¿Crees que el GPS funciona igual de bien dentro de un edificio que en un lugar abierto?"
+- `tarjetas[c6].titulo`
+  - antes: "¿Siempre hay cuatro?"
+  - ahora: "¿Funciona en todas partes?"
+- `tarjetas[c7].fuenteIds[0]`
+  - antes: "britannica-gps"
+  - ahora: "gps-poster"
+- `tarjetas[c7].opciones[a].retro`
+  - antes: "Correcto: necesita la distancia a cuatro o más satélites."
+  - ahora: "Correcto: necesita la distancia a por lo menos cuatro satélites."
+- `tarjetas[c7].opciones[b].retro`
+  - antes: "Con uno solo no le alcanza: necesita cuatro o más."
+  - ahora: "Con uno solo no le alcanza: necesita por lo menos cuatro."
+- `tarjetas[c7].opciones[c].retro`
+  - antes: "Hay al menos 24 en órbita, pero para ubicarte le basta con cuatro o más."
+  - ahora: "Hay al menos 24 en órbita, pero para calcular la posición le basta con cuatro o más."
+- `tarjetas[c7].pregunta`
+  - antes: "Estás en el centro de La Serena y el GPS te ubica. ¿Cuántos satélites necesitó, como mínimo?"
+  - ahora: "Para calcular una posición en tres dimensiones usando GPS, ¿de cuántos satélites necesita conocer la distancia un receptor, como mínimo?"
+
+## fases-luna
+
+- `fuentes[nasa-fases].afirmaciones[0]`
+  - antes: "En el sistema solar, el único objeto que brilla con luz propia es el Sol; la Luna no produce su propia luz"
+  - ahora: "La Luna no produce su propia luz; la luz de la Luna es luz del Sol reflejada"
+- `fuentes[nasa-fases].respalda`
+  - antes: ["c2", "c3", "c4", "c5", "c8"]
+  - ahora: ["c1", "c2", "c3", "c4", "c5", "c8"]
+- `fuentes[ou-hemisferio].afirmaciones[0]`
+  - antes: "Al sur del ecuador, la Luna crece como una C y mengua como una D"
+  - ahora: "Al sur del ecuador, la Luna crece como una C y mengua como una D, con la curva levemente inclinada"
+- `resumen.puntos[0]`
+  - antes: "La Luna no tiene luz propia: el Sol siempre ilumina una mitad de ella."
+  - ahora: "La Luna no tiene luz propia: refleja la luz del Sol, que siempre ilumina una mitad de ella."
+- `resumen.puntos[2]`
+  - antes: "En Chile, la Luna crece como una C y mengua como una D."
+  - ahora: "En Chile, una ayuda visual: la tajada creciente suele parecerse a una C, y la menguante, a una D."
+- `revision`
+  - antes: 1
+  - ahora: 2
+- `tarjetas[c1].fuenteIds`
+  - antes: []
+  - ahora: ["nasa-fases"]
+- `tarjetas[c2].texto`
+  - antes: "En nuestro sistema solar, solo el Sol brilla con luz propia. La Luna se ve porque el Sol la ilumina."
+  - ahora: "La Luna no produce la luz que vemos: refleja la luz del Sol."
+- `tarjetas[c6].revelado`
+  - antes: "Una C. Al sur del ecuador, la Luna crece como una C y mengua como una D."
+  - ahora: "Una ayuda visual: al sur del ecuador, la tajada de Luna creciente suele parecerse a una C, y la menguante, a una D. Muchas veces se ve un poco inclinada."
+- `tarjetas[c6].texto`
+  - antes: "En el hemisferio sur, cuando la Luna está creciendo, ¿parece una C o una D?"
+  - ahora: "En el hemisferio sur, cuando la Luna se ve como una tajada fina, ¿cómo saber si está creciendo o menguando?"
+- `tarjetas[c6].titulo`
+  - antes: "En Chile se ve distinto"
+  - ahora: "Una ayuda para Chile"
+- `tarjetas[c7].opciones[a].retro`
+  - antes: "Correcto: en el hemisferio sur, la Luna crece como una C."
+  - ahora: "Correcto: en el hemisferio sur, la tajada creciente suele parecerse a una C."
+- `tarjetas[c7].opciones[b].retro`
+  - antes: "En el hemisferio sur, la que mengua tiene forma de D."
+  - ahora: "En el hemisferio sur, la tajada menguante suele parecerse a una D."
+- `tarjetas[c7].pregunta`
+  - antes: "Esta noche, en Coquimbo, ves una Luna con forma de C. ¿Va creciendo o menguando?"
+  - ahora: "Esta noche, en Coquimbo, ves una tajada fina de Luna con forma de C. Usando la ayuda visual, ¿va creciendo o menguando?"
+
+## gabriela-mistral
+
+- `fuentes`
+  - antes: [{"id": "nobel-mistral", "entidad": "The Nobel Prize (NobelPrize.org)", "titulo": "Gabriela Mistral – Facts", "url": "https://www.nobelprize.org/prizes/literature/1945/mistral/facts/", "ubicacion": "Ficha completa", "afirmaciones": ["Seudónimo Gabriela Mistral; nombre real Lucila Godoy Alcayaga", "Nació el 7 de abril de 1889 en Vicuña, Chile", "Comenzó a enseñar a los 15 años en su distrito natal", "Motivación: por su poesía lírica que, inspirada en emociones poderosas, hizo de su nombre un símbolo de las aspiraciones idealistas del mundo latinoamericano", "Primera persona de Sudamérica en recibir el Nobel de Literatura"], "respalda": ["c2", "c3", "c4", "c7", "c8"], "consultadaEl": "2026-10-20"}, {"id": "memoria-mistral", "entidad": "Memoria Chilena, Biblioteca Nacional de Chile", "titulo": "Gabriela Mistral (1889-1957)", "url": "https://www.memoriachilena.gob.cl/602/w3-article-3429.html", "ubicacion": "Presentación y cronología", "afirmaciones": ["Nació en Vicuña el 7 de abril de 1889; vivió en Montegrande", "Con los «Sonetos de la muerte» obtuvo el premio principal de los Juegos Florales de 1914", "«Desolación» (Nueva York, 1922) fue su primer libro; «Ternura: canciones de niños» (Madrid, 1924)", "Su imagen pública destacó su figura de madre y maestra"], "respalda": ["c2", "c5", "c6"], "consultadaEl": "2026-10-20"}]
+  - ahora: [{"id": "memoria-mistral", "entidad": "Memoria Chilena, Biblioteca Nacional de Chile", "titulo": "Gabriela Mistral (1889-1957)", "url": "https://www.memoriachilena.gob.cl/602/w3-article-3429.html", "ubicacion": "Presentación y cronología", "afirmaciones": ["La poeta Gabriela Mistral es considerada uno de los principales referentes de la literatura chilena", "Nació en Vicuña el 7 de abril de 1889; fue bautizada como Lucila de María Godoy Alcayaga", "Hacia 1905, cuando iba a cumplir 16 años, inició su carrera docente como ayudante en la Escuela de La Compañía Baja (la cronología la fecha en 1904)", "En 1922 fue invitada a México a colaborar en la reforma educacional", "Con los «Sonetos de la muerte» obtuvo el premio principal de los Juegos Florales de 1914", "«Desolación» (Nueva York, 1922) fue su primer libro; «Ternura: canciones de niños» (Madrid, 1924); publicó cuatro libros de poesía", "Su imagen pública destacó su figura de madre y maestra", "El Nobel de 1945 constituye el primer reconocimiento de la Academia Sueca a las letras latinoamericanas"], "respalda": ["c1", "c2", "c3", "c4", "c5", "c6", "c7", "c8"], "consultadaEl": "2026-10-20"}]
+- `resumen.puntos[0]`
+  - antes: "Gabriela Mistral, cuyo nombre real era Lucila Godoy Alcayaga, nació en Vicuña en 1889 y fue profesora desde muy joven."
+  - ahora: "Gabriela Mistral, bautizada Lucila de María Godoy Alcayaga, nació en Vicuña en 1889 y fue maestra desde muy joven."
+- `resumen.puntos[1]`
+  - antes: "Escribió poesía lírica y también canciones y poemas para niños, como los de «Ternura»."
+  - ahora: "Escribió poemas y también canciones para niños, como los de «Ternura»."
+- `resumen.puntos[2]`
+  - antes: "En 1945 fue la primera persona de Sudamérica en ganar el Premio Nobel de Literatura."
+  - ahora: "En 1945 ganó el Premio Nobel de Literatura: el primero de la Academia Sueca para las letras latinoamericanas."
+- `revision`
+  - antes: 1
+  - ahora: 2
+- `tarjetas[c1].fuenteIds`
+  - antes: []
+  - ahora: ["memoria-mistral"]
+- `tarjetas[c1].texto`
+  - antes: "Nació en Vicuña, en el Valle del Elqui, y llegó a ganar el Premio Nobel de Literatura."
+  - ahora: "Nació en Vicuña, en el Valle del Elqui, y en 1945 ganó el Premio Nobel de Literatura."
+- `tarjetas[c2].fuenteIds`
+  - antes: ["nobel-mistral", "memoria-mistral"]
+  - ahora: ["memoria-mistral"]
+- `tarjetas[c2].texto`
+  - antes: "Su nombre real era Lucila Godoy Alcayaga. Nació en Vicuña el 7 de abril de 1889 y empezó a enseñar a los 15 años."
+  - ahora: "Fue bautizada como Lucila de María Godoy Alcayaga. Nació en Vicuña el 7 de abril de 1889 y empezó a trabajar en una escuela antes de cumplir 16 años."
+- `tarjetas[c3].fuenteIds[0]`
+  - antes: "nobel-mistral"
+  - ahora: "memoria-mistral"
+- `tarjetas[c3].texto`
+  - antes: "Gabriela Mistral fue el nombre con que firmó su obra. Con él se dio a conocer en Chile y en el mundo."
+  - ahora: "Gabriela Mistral fue el nombre con que firmó sus poemas. Hoy se la considera uno de los principales referentes de la literatura chilena."
+- `tarjetas[c3].titulo`
+  - antes: "Un nombre para firmar"
+  - ahora: "Un nombre para su obra"
+- `tarjetas[c4].fuenteIds[0]`
+  - antes: "nobel-mistral"
+  - ahora: "memoria-mistral"
+- `tarjetas[c4].opciones[a].retro`
+  - antes: "¡Exacto! Gabriela Mistral fue el nombre con que firmó su obra."
+  - ahora: "¡Así es! Fue poeta y maestra; en 1922 incluso fue invitada a México a colaborar en una reforma educacional."
+- `tarjetas[c4].opciones[a].texto`
+  - antes: "Lucila Godoy Alcayaga"
+  - ahora: "Por su poesía y por su trabajo como maestra"
+- `tarjetas[c4].opciones[b].retro`
+  - antes: "Ese fue el nombre con que firmó; su nombre real era Lucila Godoy Alcayaga."
+  - ahora: "No: se la recuerda por su poesía y por su trabajo como maestra."
+- `tarjetas[c4].opciones[b].texto`
+  - antes: "Gabriela Mistral"
+  - ahora: "Por haber sido presidenta de Chile"
+- `tarjetas[c4].opciones[c].retro`
+  - antes: "No: su nombre real era Lucila Godoy Alcayaga."
+  - ahora: "Su obra más conocida es poesía: publicó cuatro libros de poemas."
+- `tarjetas[c4].opciones[c].texto`
+  - antes: "Gabriela Godoy"
+  - ahora: "Por haber escrito solo novelas"
+- `tarjetas[c4].pregunta`
+  - antes: "¿Cuál era el nombre real de Gabriela Mistral?"
+  - ahora: "¿Por qué crees que se recuerda a Gabriela Mistral?"
+- `tarjetas[c5].titulo`
+  - antes: "El premio que la dio a conocer"
+  - ahora: "Los primeros premios y libros"
+- `tarjetas[c6].texto`
+  - antes: "También escribió canciones y poemas para niños, como los de «Ternura», de 1924. Su figura de maestra y madre marcó cómo la leyó el público."
+  - ahora: "También escribió canciones y poemas para niños, como los de «Ternura», de 1924. Por eso muchas personas la recuerdan como madre y maestra."
+- `tarjetas[c6].titulo`
+  - antes: "Poesía para niños"
+  - ahora: "Poemas para niños"
+- `tarjetas[c7].fuenteIds[0]`
+  - antes: "nobel-mistral"
+  - ahora: "memoria-mistral"
+- `tarjetas[c7].revelado`
+  - antes: "El Premio Nobel de Literatura, por su poesía lírica, inspirada en emociones poderosas."
+  - ahora: "El Premio Nobel de Literatura. Fue el primer reconocimiento de la Academia Sueca a las letras latinoamericanas."
+- `tarjetas[c7].texto`
+  - antes: "En 1945 recibió un premio que ninguna persona de Sudamérica había ganado antes en literatura. ¿Cuál fue?"
+  - ahora: "En 1945 recibió un premio que la Academia Sueca nunca antes había dado a las letras latinoamericanas. ¿Cuál fue?"
+- `tarjetas[c8].fuenteIds[0]`
+  - antes: "nobel-mistral"
+  - ahora: "memoria-mistral"
+- `tarjetas[c8].opciones[a].retro`
+  - antes: "¡Así es! Fue la primera persona de Sudamérica en ganarlo."
+  - ahora: "¡Exacto! Fue un reconocimiento histórico."
+- `tarjetas[c8].opciones[a].texto`
+  - antes: "Fue Gabriela Mistral, en 1945"
+  - ahora: "Ganó el Premio Nobel de Literatura, el primero para las letras latinoamericanas"
+- `tarjetas[c8].opciones[b].retro`
+  - antes: "No: la primera persona de Sudamérica en ganarlo fue Gabriela Mistral, en 1945."
+  - ahora: "Su primer libro, «Desolación», es de 1922."
+- `tarjetas[c8].opciones[b].texto`
+  - antes: "Fue un escritor argentino"
+  - ahora: "Publicó su primer libro"
+- `tarjetas[c8].opciones[c].retro`
+  - antes: "Sí lo han ganado: la primera fue Gabriela Mistral, en 1945."
+  - ahora: "Los Juegos Florales los ganó en 1914."
+- `tarjetas[c8].opciones[c].texto`
+  - antes: "Nadie de Sudamérica lo ha ganado"
+  - ahora: "Ganó los Juegos Florales"
+- `tarjetas[c8].pregunta`
+  - antes: "Alguien dice que el primer Nobel de Literatura de Sudamérica fue un hombre. ¿Qué le respondes?"
+  - ahora: "¿Qué logró Gabriela Mistral en 1945?"
+
+## mar-salado
+
+- `fuentes[noaa-sal].afirmaciones`
+  - antes: ["Las rocas en tierra son la principal fuente de las sales disueltas en el agua de mar", "La lluvia es levemente ácida y erosiona las rocas, liberando iones que van a arroyos y ríos que desembocan en el océano", "El agua del océano se filtra por grietas del fondo y es calentada por el magma; algunas sales provienen de erupciones volcánicas submarinas", "Cloruro y sodio forman cerca del 85 % de los iones disueltos", "Salinidad promedio de unas 35 partes por mil: cerca del 3,5 % del peso del agua de mar son sales disueltas"]
+  - ahora: ["Las rocas en tierra son la principal fuente de las sales disueltas en el agua de mar", "La lluvia es levemente ácida y erosiona las rocas, liberando iones que van a arroyos y ríos que desembocan en el océano", "El agua del océano se filtra por grietas del fondo y es calentada por el magma; algunas sales provienen de erupciones volcánicas submarinas", "Cloruro y sodio forman cerca del 85 % de los iones disueltos", "Salinidad promedio de unas 35 partes por mil: cerca del 3,5 % del peso del agua de mar son sales disueltas", "La salinidad varía con la temperatura, la evaporación y la precipitación"]
+- `fuentes[noaa-sal].respalda`
+  - antes: ["c2", "c3", "c4", "c5", "c6", "c7", "c8"]
+  - ahora: ["c1", "c2", "c3", "c4", "c5", "c6", "c7", "c8"]
+- `resumen.puntos[2]`
+  - antes: "Cada kilo de agua de mar tiene unos 35 gramos de sales."
+  - ahora: "En promedio, cada kilo de agua de mar tiene unos 35 gramos de sales."
+- `revision`
+  - antes: 1
+  - ahora: 2
+- `tarjetas[c1].fuenteIds`
+  - antes: []
+  - ahora: ["noaa-sal"]
+- `tarjetas[c6].revelado`
+  - antes: "Unos 35 gramos. Es decir, cerca del 3,5 % del peso del agua de mar son sales disueltas."
+  - ahora: "En promedio, unos 35 gramos: cerca del 3,5 % del peso del agua de mar son sales disueltas. La cantidad cambia de un lugar a otro."
+- `tarjetas[c8].texto`
+  - antes: "Los dos componentes más abundantes del agua de mar son el cloruro y el sodio: juntos forman cerca del 85 % de todo lo que tiene disuelto."
+  - ahora: "Entre las sales disueltas del mar predominan el sodio y el cloruro: juntos representan cerca del 85 % de los iones disueltos."
+
+## pan-duro
+
+- `fuentes[asb-staling].respalda`
+  - antes: ["c2", "c3", "c4", "c6", "c7"]
+  - ahora: ["c1", "c2", "c3", "c4", "c6", "c7"]
+- `revision`
+  - antes: 1
+  - ahora: 2
+- `tarjetas[c1].fuenteIds`
+  - antes: []
+  - ahora: ["asb-staling"]
+- `tarjetas[c6].texto`
+  - antes: "En el congelador, el almidón casi no puede moverse. Por eso el endurecimiento se retrasa y el pan dura más."
+  - ahora: "La congelación retrasa la reorganización del almidón y ayuda a conservar la textura del pan. Así, el endurecimiento de la miga se demora más."
+- `tarjetas[c6].titulo`
+  - antes: "El congelador lo frena"
+  - ahora: "El congelador lo retrasa"
+
+## temblores-chile
+
+- `fuentes`
+  - antes: [{"id": "usgs-nazca", "entidad": "U.S. Geological Survey", "titulo": "Seismicity of the Earth 1900–2013: Seismotectonics of South America (Nazca Plate Region)", "url": "https://www.usgs.gov/publications/seismicity-earth-1900-2013-seismotectonics-south-america-nazca-plate-region", "ubicacion": "Resumen de la publicación", "afirmaciones": ["La corteza y litosfera oceánica de la placa de Nazca comienzan su descenso al manto bajo Sudamérica", "Convergencia de aproximadamente 80 mm/año en el sur a aproximadamente 65 mm/año en el norte", "La subducción influye en la actividad volcánica, la deformación de la corteza y la generación de terremotos; es responsable del levantamiento de los Andes y de la cadena volcánica activa"], "respalda": ["c2", "c3", "c4", "c5", "c7"], "consultadaEl": "2026-10-20"}, {"id": "britannica-1960", "entidad": "Encyclopaedia Britannica", "titulo": "Chile earthquake of 1960", "url": "https://www.britannica.com/print/article/1421130", "ubicacion": "Artículo completo", "afirmaciones": ["Se originó frente a la costa sur de Chile el 22 de mayo de 1960", "La mayoría de las fuentes le asignan magnitud 9,5", "El terremoto más grande registrado en el siglo XX", "La ruptura ocurrió donde la placa de Nazca subduce bajo la placa Sudamericana", "Las olas llegaron a Hawái unas 15 horas después; en Japón destruyeron más de 1.600 viviendas"], "respalda": ["c6", "c8"], "consultadaEl": "2026-10-19"}, {"id": "csn-terremotos", "entidad": "Centro Sismológico Nacional, Universidad de Chile", "titulo": "Grandes terremotos en Chile", "url": "https://www.csn.uchile.cl/sismologia/grandes-terremotos-en-chile/", "ubicacion": "Tabla de sismos importantes o destructivos", "afirmaciones": ["Valdivia, 22/05/1960: Mw 9,5"], "respalda": ["c6"], "consultadaEl": "2026-10-20"}]
+  - ahora: [{"id": "usgs-nazca", "entidad": "U.S. Geological Survey", "titulo": "Seismicity of the Earth 1900–2013: Seismotectonics of South America (Nazca Plate Region)", "url": "https://www.usgs.gov/publications/seismicity-earth-1900-2013-seismotectonics-south-america-nazca-plate-region", "ubicacion": "Resumen de la publicación", "afirmaciones": ["La corteza y litosfera oceánica de la placa de Nazca comienzan su descenso al manto bajo Sudamérica", "Convergencia de aproximadamente 80 mm/año en el sur a aproximadamente 65 mm/año en el norte", "La subducción influye en la actividad volcánica, la deformación de la corteza y la generación de terremotos; es responsable del levantamiento de los Andes y de la cadena volcánica activa"], "respalda": ["c1", "c2", "c3", "c4", "c7"], "consultadaEl": "2026-10-20"}, {"id": "usgs-sismos", "entidad": "U.S. Geological Survey", "titulo": "The Science of Earthquakes", "url": "https://www.usgs.gov/programs/earthquake-hazards/science-earthquakes", "ubicacion": "Texto principal", "afirmaciones": ["Como los bordes de las placas son ásperos, se traban mientras el resto de la placa sigue moviéndose", "Mientras los bordes están trabados, se va almacenando la energía", "Cuando la fuerza vence la fricción y la falla se destraba, toda esa energía se libera", "La energía se irradia en forma de ondas sísmicas"], "respalda": ["c5", "c7"], "consultadaEl": "2026-10-20"}, {"id": "britannica-1960", "entidad": "Encyclopaedia Britannica", "titulo": "Chile earthquake of 1960", "url": "https://www.britannica.com/print/article/1421130", "ubicacion": "Artículo completo", "afirmaciones": ["Se originó frente a la costa sur de Chile el 22 de mayo de 1960", "La mayoría de las fuentes le asignan magnitud 9,5", "El terremoto más grande registrado en el siglo XX", "La ruptura ocurrió donde la placa de Nazca subduce bajo la placa Sudamericana", "Las olas llegaron a Hawái unas 15 horas después; en Japón destruyeron más de 1.600 viviendas"], "respalda": ["c6", "c8"], "consultadaEl": "2026-10-19"}, {"id": "csn-terremotos", "entidad": "Centro Sismológico Nacional, Universidad de Chile", "titulo": "Grandes terremotos en Chile", "url": "https://www.csn.uchile.cl/sismologia/grandes-terremotos-en-chile/", "ubicacion": "Tabla de sismos importantes o destructivos", "afirmaciones": ["Valdivia, 22/05/1960: Mw 9,5"], "respalda": ["c6"], "consultadaEl": "2026-10-20"}]
+- `resumen.puntos[1]`
+  - antes: "Ese encuentro genera terremotos, levanta los Andes y alimenta los volcanes."
+  - ahora: "Los bordes de las placas se traban y acumulan energía; cuando se destraban de golpe, se produce el terremoto."
+- `revision`
+  - antes: 1
+  - ahora: 2
+- `tarjetas[c1].fuenteIds`
+  - antes: []
+  - ahora: ["usgs-nazca"]
+- `tarjetas[c3].texto`
+  - antes: "La placa de Nazca avanza y se hunde lentamente bajo Sudamérica, entre 6,5 y 8 centímetros por año. A eso se le llama subducción."
+  - ahora: "La placa de Nazca se mete lentamente bajo Sudamérica; a eso se le llama subducción. Las dos placas se acercan entre 6,5 y 8 centímetros por año."
+- `tarjetas[c4].opciones[c].retro`
+  - antes: "No está quieta: se mueve varios centímetros cada año."
+  - ahora: "No está quieta: las placas se acercan varios centímetros cada año."
+- `tarjetas[c5].fuenteIds[0]`
+  - antes: "usgs-nazca"
+  - ahora: "usgs-sismos"
+- `tarjetas[c5].texto`
+  - antes: "Ese encuentro lento entre las placas genera terremotos, levanta la cordillera de los Andes y alimenta la cadena de volcanes."
+  - ahora: "Los bordes de las placas son ásperos y se quedan trabados, mientras el resto sigue moviéndose. La energía se acumula hasta que los bordes se destraban de golpe: esa liberación repentina es el terremoto."
+- `tarjetas[c7].fuenteIds`
+  - antes: ["usgs-nazca"]
+  - ahora: ["usgs-nazca", "usgs-sismos"]
+- `tarjetas[c7].opciones[a].texto`
+  - antes: "Porque frente a la costa una placa se hunde bajo la otra"
+  - ahora: "Porque frente a la costa una placa se mete bajo la otra, y sus bordes se traban y se destraban de golpe"
+
+## unidad-fomento
+
+- `fuentes[bcch-uf].respalda`
+  - antes: ["c3", "c4", "c5", "c6", "c7", "c8"]
+  - ahora: ["c1", "c3", "c4", "c5", "c6", "c7", "c8"]
+- `resumen.puntos[0]`
+  - antes: "La UF es una unidad que calcula el Banco Central y cuyo valor en pesos cambia cada día."
+  - ahora: "La UF es una unidad que calcula el Banco Central; su valor en pesos se reajusta cada día."
+- `resumen.puntos[1]`
+  - antes: "Se reajusta según el IPC, el índice que mide cuánto cambian los precios."
+  - ahora: "El reajuste sigue el IPC del mes anterior, el índice que mide cuánto cambiaron los precios."
+- `resumen.puntos[2]`
+  - antes: "Por eso, un arriendo o un crédito en UF sube en pesos cuando suben los precios."
+  - ahora: "Por eso, un monto en UF equivale a más pesos cuando el IPC del mes anterior subió."
+- `revision`
+  - antes: 1
+  - ahora: 2
+- `tarjetas[c1].fuenteIds`
+  - antes: []
+  - ahora: ["bcch-uf"]
+- `tarjetas[c1].texto`
+  - antes: "Arriendos, créditos y seguros se cobran en UF. ¿Por qué no simplemente en pesos?"
+  - ahora: "Créditos y seguros pueden estar expresados en UF. ¿Por qué no simplemente en pesos?"
+- `tarjetas[c3].texto`
+  - antes: "La UF es una unidad que calcula el Banco Central. Su valor en pesos cambia todos los días, de acuerdo con la variación del IPC."
+  - ahora: "La UF es una unidad que calcula el Banco Central. Su valor en pesos se reajusta diariamente según el IPC del mes anterior."
+- `tarjetas[c4].opciones[a].retro`
+  - antes: "¡Exacto! La UF se reajusta según el IPC."
+  - ahora: "¡Exacto! La UF se reajusta cada día, desde el 10 de un mes hasta el 9 del siguiente, según el IPC del mes anterior."
+- `tarjetas[c4].opciones[a].texto`
+  - antes: "Sube"
+  - ahora: "Sube un poco cada día, desde el día 10"
+- `tarjetas[c4].opciones[b].retro`
+  - antes: "Al revés: si el IPC sube, la UF también sube en pesos."
+  - ahora: "Al revés: si el IPC del mes anterior subió, la UF sube en pesos."
+- `tarjetas[c4].opciones[c].retro`
+  - antes: "No: la UF se reajusta día a día según el IPC."
+  - ahora: "No: la UF sigue el IPC del mes anterior, que ya fue medido; no reacciona a los precios de hoy."
+- `tarjetas[c4].opciones[c].texto`
+  - antes: "Queda igual"
+  - ahora: "Cambia al instante con los precios de hoy"
+- `tarjetas[c4].pregunta`
+  - antes: "Si el IPC sube, ¿qué pasa con el valor de la UF en pesos?"
+  - ahora: "Si el IPC del mes anterior subió, ¿qué pasa con el valor de la UF en pesos?"
+- `tarjetas[c5].texto`
+  - antes: "Si tu arriendo es de 10 UF, siempre pagas 10 UF. Pero como la UF se reajusta con el IPC, cuando los precios suben, en pesos pagas un poco más."
+  - ahora: "Si el contrato mantiene el arriendo en 10 UF, cada mes pagas 10 UF. Pero si el IPC del mes anterior subió, esas 10 UF equivalen a un poco más de pesos."
+- `tarjetas[c6].revelado`
+  - antes: "Porque la UF nació como índice de reajuste: el monto se ajusta según el IPC. El Banco Central indica que se usa para reajustar créditos en moneda nacional de bancos y cooperativas, y también en cajas de compensación y compañías de seguros."
+  - ahora: "Se reajusta según el IPC del mes anterior. El Banco Central explica que la UF sirve como índice de reajuste para créditos en moneda nacional de bancos y cooperativas, y que también la usan cajas de compensación y compañías de seguros."
+- `tarjetas[c6].texto`
+  - antes: "¿Por qué los créditos en Chile suelen estar en UF y no en pesos?"
+  - ahora: "Si un crédito está expresado en UF, ¿qué le pasa a la deuda en pesos?"
+- `tarjetas[c6].titulo`
+  - antes: "¿Para qué sirve?"
+  - ahora: "¿Para qué sirve en un crédito?"
+- `tarjetas[c7].opciones[a].retro`
+  - antes: "Correcto: al reajustarse la UF con el IPC, el monto en pesos sube."
+  - ahora: "Correcto: como la UF se reajusta según el IPC del mes anterior, el monto en pesos sube."
+- `tarjetas[c7].opciones[c].retro`
+  - antes: "El que está en UF sí cambia en pesos, porque la UF se reajusta con el IPC."
+  - ahora: "El que está en UF sí cambia en pesos, porque la UF se reajusta según el IPC del mes anterior."
+- `tarjetas[c7].pregunta`
+  - antes: "Te ofrecen dos arriendos: uno con pesos fijos por dos años y otro en UF. Si los precios suben, ¿cuál sube en pesos?"
+  - ahora: "Te ofrecen dos arriendos: uno en pesos fijos por dos años y otro que se mantiene en UF. Si el IPC viene subiendo, ¿cuál sube en pesos?"

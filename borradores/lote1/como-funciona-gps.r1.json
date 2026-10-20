@@ -1,0 +1,171 @@
+{
+  "schemaVersion": "2.0",
+  "id": "como-funciona-gps",
+  "revision": 1,
+  "idioma": "es-CL",
+  "disciplina": "Tecnología",
+  "familia": "tecnologia",
+  "titulo": "¿Cómo sabe el GPS dónde estoy?",
+  "subtitulo": "El punto azul del mapa, explicado.",
+  "minutosEstimados": 5,
+  "tarjetas": [
+    {
+      "id": "c1",
+      "tipo": "portada",
+      "titulo": "¿Cómo sabe el GPS dónde estoy?",
+      "texto": "Abres el mapa del celular y aparece un punto azul justo donde estás. ¿Cómo lo sabe?",
+      "fuenteIds": []
+    },
+    {
+      "id": "c2",
+      "tipo": "idea",
+      "titulo": "Satélites alrededor de la Tierra",
+      "texto": "El sistema GPS tiene al menos 24 satélites funcionando, a unos 20.200 kilómetros de altura.",
+      "fuenteIds": [
+        "gps-espacio"
+      ]
+    },
+    {
+      "id": "c3",
+      "tipo": "idea",
+      "titulo": "Señales que viajan",
+      "texto": "Los satélites envían señales de radio. El receptor GPS mide cuánto tardó en llegar cada señal, y con eso calcula a qué distancia está de cada satélite.",
+      "fuenteIds": [
+        "britannica-gps"
+      ]
+    },
+    {
+      "id": "c4",
+      "tipo": "pregunta",
+      "pregunta": "¿Qué mide el receptor GPS para saber dónde está?",
+      "correctaId": "a",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Cuánto tardan en llegar las señales de los satélites",
+          "retro": "¡Exacto! Con ese tiempo calcula la distancia a cada satélite."
+        },
+        {
+          "id": "b",
+          "texto": "La fuerza del viento",
+          "retro": "El viento no tiene que ver: el GPS usa señales de radio de satélites."
+        },
+        {
+          "id": "c",
+          "texto": "La temperatura del aire",
+          "retro": "No: el GPS calcula distancias con el tiempo que tardan las señales de los satélites."
+        }
+      ],
+      "fuenteIds": [
+        "britannica-gps"
+      ]
+    },
+    {
+      "id": "c5",
+      "tipo": "idea",
+      "titulo": "Con cuatro basta",
+      "texto": "Con la distancia a cuatro o más satélites, el receptor calcula su posición.",
+      "fuenteIds": [
+        "britannica-gps"
+      ]
+    },
+    {
+      "id": "c6",
+      "tipo": "revelar",
+      "titulo": "¿Siempre hay cuatro?",
+      "texto": "¿Crees que desde cualquier lugar del planeta hay al menos cuatro satélites GPS a la vista?",
+      "revelado": "Sí. Los satélites están repartidos de manera que, desde prácticamente cualquier punto de la Tierra, se pueden ver al menos cuatro.",
+      "fuenteIds": [
+        "gps-espacio"
+      ]
+    },
+    {
+      "id": "c7",
+      "tipo": "pregunta",
+      "pregunta": "Estás en el centro de La Serena y el GPS te ubica. ¿Cuántos satélites necesitó, como mínimo?",
+      "correctaId": "a",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Cuatro",
+          "retro": "Correcto: necesita la distancia a cuatro o más satélites."
+        },
+        {
+          "id": "b",
+          "texto": "Uno",
+          "retro": "Con uno solo no le alcanza: necesita cuatro o más."
+        },
+        {
+          "id": "c",
+          "texto": "Veinticuatro",
+          "retro": "Hay al menos 24 en órbita, pero para ubicarte le basta con cuatro o más."
+        }
+      ],
+      "fuenteIds": [
+        "britannica-gps",
+        "gps-espacio"
+      ]
+    },
+    {
+      "id": "c8",
+      "tipo": "dato",
+      "texto": "Cada satélite GPS da dos vueltas completas a la Tierra por día.",
+      "fuenteIds": [
+        "gps-espacio"
+      ]
+    }
+  ],
+  "resumen": {
+    "titulo": "Cómo funciona el GPS",
+    "puntos": [
+      "El GPS funciona con al menos 24 satélites que envían señales de radio.",
+      "El receptor mide cuánto tarda en llegar cada señal y así calcula su distancia a cada satélite.",
+      "Con la distancia a cuatro o más satélites, calcula dónde estás."
+    ]
+  },
+  "fuentes": [
+    {
+      "id": "britannica-gps",
+      "entidad": "Encyclopaedia Britannica",
+      "titulo": "GPS",
+      "url": "https://www.britannica.com/technology/GPS",
+      "ubicacion": "Resumen inicial",
+      "afirmaciones": [
+        "Sistema de radionavegación basado en el espacio",
+        "El receptor mide el tiempo que tardan las señales de radio de cuatro o más satélites, calcula la distancia a cada uno y con ello determina la posición"
+      ],
+      "respalda": [
+        "c3",
+        "c4",
+        "c5",
+        "c7"
+      ],
+      "consultadaEl": "2026-10-20"
+    },
+    {
+      "id": "gps-espacio",
+      "entidad": "GPS.gov (Gobierno de los Estados Unidos)",
+      "titulo": "Space Segment",
+      "url": "https://www.gps.gov/systems/gps/space/",
+      "ubicacion": "Constelación y órbitas",
+      "afirmaciones": [
+        "Se comprometen a mantener al menos 24 satélites GPS operativos el 95 % del tiempo",
+        "Los satélites operan a aproximadamente 20.200 km de altura",
+        "Cada satélite da dos vueltas a la Tierra por día",
+        "La disposición permite ver al menos cuatro satélites desde prácticamente cualquier punto del planeta"
+      ],
+      "respalda": [
+        "c2",
+        "c6",
+        "c7",
+        "c8"
+      ],
+      "consultadaEl": "2026-10-20"
+    }
+  ],
+  "controlEditorial": {
+    "estado": "borrador",
+    "revisadoPor": null,
+    "fechaRevision": null
+  }
+}

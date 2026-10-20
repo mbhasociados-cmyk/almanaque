@@ -1,0 +1,175 @@
+{
+  "schemaVersion": "2.0",
+  "id": "gabriela-mistral",
+  "revision": 1,
+  "idioma": "es-CL",
+  "disciplina": "Literatura",
+  "familia": "literatura",
+  "titulo": "¿Quién fue Gabriela Mistral?",
+  "subtitulo": "La maestra de Vicuña que ganó el Nobel.",
+  "minutosEstimados": 5,
+  "tarjetas": [
+    {
+      "id": "c1",
+      "tipo": "portada",
+      "titulo": "¿Quién fue Gabriela Mistral?",
+      "texto": "Nació en Vicuña, en el Valle del Elqui, y llegó a ganar el Premio Nobel de Literatura.",
+      "fuenteIds": []
+    },
+    {
+      "id": "c2",
+      "tipo": "idea",
+      "titulo": "Lucila, la maestra",
+      "texto": "Su nombre real era Lucila Godoy Alcayaga. Nació en Vicuña el 7 de abril de 1889 y empezó a enseñar a los 15 años.",
+      "fuenteIds": [
+        "nobel-mistral",
+        "memoria-mistral"
+      ]
+    },
+    {
+      "id": "c3",
+      "tipo": "idea",
+      "titulo": "Un nombre para firmar",
+      "texto": "Gabriela Mistral fue el nombre con que firmó su obra. Con él se dio a conocer en Chile y en el mundo.",
+      "fuenteIds": [
+        "nobel-mistral"
+      ]
+    },
+    {
+      "id": "c4",
+      "tipo": "pregunta",
+      "pregunta": "¿Cuál era el nombre real de Gabriela Mistral?",
+      "correctaId": "a",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Lucila Godoy Alcayaga",
+          "retro": "¡Exacto! Gabriela Mistral fue el nombre con que firmó su obra."
+        },
+        {
+          "id": "b",
+          "texto": "Gabriela Mistral",
+          "retro": "Ese fue el nombre con que firmó; su nombre real era Lucila Godoy Alcayaga."
+        },
+        {
+          "id": "c",
+          "texto": "Gabriela Godoy",
+          "retro": "No: su nombre real era Lucila Godoy Alcayaga."
+        }
+      ],
+      "fuenteIds": [
+        "nobel-mistral"
+      ]
+    },
+    {
+      "id": "c5",
+      "tipo": "idea",
+      "titulo": "El premio que la dio a conocer",
+      "texto": "En 1914 ganó el premio principal de los Juegos Florales con sus «Sonetos de la muerte». En 1922 publicó su primer libro, «Desolación».",
+      "fuenteIds": [
+        "memoria-mistral"
+      ]
+    },
+    {
+      "id": "c6",
+      "tipo": "idea",
+      "titulo": "Poesía para niños",
+      "texto": "También escribió canciones y poemas para niños, como los de «Ternura», de 1924. Su figura de maestra y madre marcó cómo la leyó el público.",
+      "fuenteIds": [
+        "memoria-mistral"
+      ]
+    },
+    {
+      "id": "c7",
+      "tipo": "revelar",
+      "titulo": "1945",
+      "texto": "En 1945 recibió un premio que ninguna persona de Sudamérica había ganado antes en literatura. ¿Cuál fue?",
+      "revelado": "El Premio Nobel de Literatura, por su poesía lírica, inspirada en emociones poderosas.",
+      "fuenteIds": [
+        "nobel-mistral"
+      ]
+    },
+    {
+      "id": "c8",
+      "tipo": "pregunta",
+      "pregunta": "Alguien dice que el primer Nobel de Literatura de Sudamérica fue un hombre. ¿Qué le respondes?",
+      "correctaId": "a",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Fue Gabriela Mistral, en 1945",
+          "retro": "¡Así es! Fue la primera persona de Sudamérica en ganarlo."
+        },
+        {
+          "id": "b",
+          "texto": "Fue un escritor argentino",
+          "retro": "No: la primera persona de Sudamérica en ganarlo fue Gabriela Mistral, en 1945."
+        },
+        {
+          "id": "c",
+          "texto": "Nadie de Sudamérica lo ha ganado",
+          "retro": "Sí lo han ganado: la primera fue Gabriela Mistral, en 1945."
+        }
+      ],
+      "fuenteIds": [
+        "nobel-mistral"
+      ]
+    }
+  ],
+  "resumen": {
+    "titulo": "Gabriela Mistral",
+    "puntos": [
+      "Gabriela Mistral, cuyo nombre real era Lucila Godoy Alcayaga, nació en Vicuña en 1889 y fue profesora desde muy joven.",
+      "Escribió poesía lírica y también canciones y poemas para niños, como los de «Ternura».",
+      "En 1945 fue la primera persona de Sudamérica en ganar el Premio Nobel de Literatura."
+    ]
+  },
+  "fuentes": [
+    {
+      "id": "nobel-mistral",
+      "entidad": "The Nobel Prize (NobelPrize.org)",
+      "titulo": "Gabriela Mistral – Facts",
+      "url": "https://www.nobelprize.org/prizes/literature/1945/mistral/facts/",
+      "ubicacion": "Ficha completa",
+      "afirmaciones": [
+        "Seudónimo Gabriela Mistral; nombre real Lucila Godoy Alcayaga",
+        "Nació el 7 de abril de 1889 en Vicuña, Chile",
+        "Comenzó a enseñar a los 15 años en su distrito natal",
+        "Motivación: por su poesía lírica que, inspirada en emociones poderosas, hizo de su nombre un símbolo de las aspiraciones idealistas del mundo latinoamericano",
+        "Primera persona de Sudamérica en recibir el Nobel de Literatura"
+      ],
+      "respalda": [
+        "c2",
+        "c3",
+        "c4",
+        "c7",
+        "c8"
+      ],
+      "consultadaEl": "2026-10-20"
+    },
+    {
+      "id": "memoria-mistral",
+      "entidad": "Memoria Chilena, Biblioteca Nacional de Chile",
+      "titulo": "Gabriela Mistral (1889-1957)",
+      "url": "https://www.memoriachilena.gob.cl/602/w3-article-3429.html",
+      "ubicacion": "Presentación y cronología",
+      "afirmaciones": [
+        "Nació en Vicuña el 7 de abril de 1889; vivió en Montegrande",
+        "Con los «Sonetos de la muerte» obtuvo el premio principal de los Juegos Florales de 1914",
+        "«Desolación» (Nueva York, 1922) fue su primer libro; «Ternura: canciones de niños» (Madrid, 1924)",
+        "Su imagen pública destacó su figura de madre y maestra"
+      ],
+      "respalda": [
+        "c2",
+        "c5",
+        "c6"
+      ],
+      "consultadaEl": "2026-10-20"
+    }
+  ],
+  "controlEditorial": {
+    "estado": "borrador",
+    "revisadoPor": null,
+    "fechaRevision": null
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "nota": "Lecciones en tarjetas publicadas desde borradores/. gen_lessons.py las copia byte a byte a data/lessons y las agrega al catálogo y al calendario.",
+  "lecciones": [
+    {
+      "carpeta": "borradores/lote1_r2",
+      "id": "pan-duro",
+      "revision": 2,
+      "fecha": "2026-10-28"
+    },
+    {
+      "carpeta": "borradores/lote1_r2",
+      "id": "temblores-chile",
+      "revision": 2,
+      "fecha": "2026-10-29"
+    },
+    {
+      "carpeta": "borradores/lote1_r2",
+      "id": "unidad-fomento",
+      "revision": 2,
+      "fecha": "2026-10-30"
+    },
+    {
+      "carpeta": "borradores/lote1_r2",
+      "id": "fases-luna",
+      "revision": 2,
+      "fecha": "2026-10-31"
+    },
+    {
+      "carpeta": "borradores/lote1_r3",
+      "id": "gabriela-mistral",
+      "revision": 3,
+      "fecha": "2026-11-01"
+    },
+    {
+      "carpeta": "borradores/lote1_r3",
+      "id": "como-funciona-gps",
+      "revision": 3,
+      "fecha": "2026-11-02"
+    },
+    {
+      "carpeta": "borradores/lote1_r2",
+      "id": "mar-salado",
+      "revision": 2,
+      "fecha": "2026-11-03"
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "schemaVersion": "2.0",
+  "id": "fases-luna",
+  "revision": 1,
+  "idioma": "es-CL",
+  "disciplina": "Astronomía",
+  "familia": "astronomia",
+  "titulo": "¿Por qué cambia la forma de la Luna?",
+  "subtitulo": "La Luna no cambia: cambia lo que vemos de ella.",
+  "minutosEstimados": 5,
+  "tarjetas": [
+    {
+      "id": "c1",
+      "tipo": "portada",
+      "titulo": "¿Por qué cambia la forma de la Luna?",
+      "texto": "A veces es un círculo completo y a veces una tajada fina. Pero la Luna no cambia: cambia lo que vemos de ella.",
+      "fuenteIds": []
+    },
+    {
+      "id": "c2",
+      "tipo": "idea",
+      "titulo": "La Luna no tiene luz propia",
+      "texto": "En nuestro sistema solar, solo el Sol brilla con luz propia. La Luna se ve porque el Sol la ilumina.",
+      "fuenteIds": [
+        "nasa-fases"
+      ]
+    },
+    {
+      "id": "c3",
+      "tipo": "idea",
+      "titulo": "Siempre hay una mitad iluminada",
+      "texto": "El Sol ilumina siempre la mitad de la Luna. Lo que cambia es cuánto de esa mitad vemos desde la Tierra mientras la Luna da su vuelta.",
+      "fuenteIds": [
+        "nasa-fases"
+      ]
+    },
+    {
+      "id": "c4",
+      "tipo": "pregunta",
+      "pregunta": "¿Qué causa las fases de la Luna?",
+      "correctaId": "a",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Cuánto vemos de la mitad que el Sol ilumina",
+          "retro": "¡Exacto! La mitad iluminada siempre está; cambia cuánto de ella vemos."
+        },
+        {
+          "id": "b",
+          "texto": "Que la Luna se achica y se agranda",
+          "retro": "La Luna no cambia de tamaño: cambia la parte iluminada que vemos."
+        },
+        {
+          "id": "c",
+          "texto": "Que la Luna se apaga de a poco",
+          "retro": "La Luna no tiene luz propia que se apague: la ilumina el Sol."
+        }
+      ],
+      "fuenteIds": [
+        "nasa-fases"
+      ]
+    },
+    {
+      "id": "c5",
+      "tipo": "idea",
+      "titulo": "Un ciclo de casi un mes",
+      "texto": "El ciclo completo de fases se repite más o menos una vez al mes: cada 29 días y medio.",
+      "fuenteIds": [
+        "nasa-fases"
+      ]
+    },
+    {
+      "id": "c6",
+      "tipo": "revelar",
+      "titulo": "En Chile se ve distinto",
+      "texto": "En el hemisferio sur, cuando la Luna está creciendo, ¿parece una C o una D?",
+      "revelado": "Una C. Al sur del ecuador, la Luna crece como una C y mengua como una D.",
+      "fuenteIds": [
+        "ou-hemisferio"
+      ]
+    },
+    {
+      "id": "c7",
+      "tipo": "pregunta",
+      "pregunta": "Esta noche, en Coquimbo, ves una Luna con forma de C. ¿Va creciendo o menguando?",
+      "correctaId": "a",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Creciendo",
+          "retro": "Correcto: en el hemisferio sur, la Luna crece como una C."
+        },
+        {
+          "id": "b",
+          "texto": "Menguando",
+          "retro": "En el hemisferio sur, la que mengua tiene forma de D."
+        },
+        {
+          "id": "c",
+          "texto": "Es luna llena",
+          "retro": "La luna llena se ve como un círculo completo."
+        }
+      ],
+      "fuenteIds": [
+        "ou-hemisferio"
+      ]
+    },
+    {
+      "id": "c8",
+      "tipo": "dato",
+      "texto": "Las fases de la Luna son ocho: luna nueva, creciente, cuarto creciente, gibosa creciente, luna llena, gibosa menguante, cuarto menguante y menguante.",
+      "fuenteIds": [
+        "nasa-fases"
+      ]
+    }
+  ],
+  "resumen": {
+    "titulo": "Las fases de la Luna",
+    "puntos": [
+      "La Luna no tiene luz propia: el Sol siempre ilumina una mitad de ella.",
+      "Las fases son la parte de esa mitad iluminada que vemos desde la Tierra; el ciclo dura unos 29 días y medio.",
+      "En Chile, la Luna crece como una C y mengua como una D."
+    ]
+  },
+  "fuentes": [
+    {
+      "id": "nasa-fases",
+      "entidad": "NASA Science",
+      "titulo": "Moon Phases",
+      "url": "https://science.nasa.gov/moon/moon-phases/",
+      "ubicacion": "Texto principal",
+      "afirmaciones": [
+        "En el sistema solar, el único objeto que brilla con luz propia es el Sol; la Luna no produce su propia luz",
+        "El Sol siempre ilumina la mitad de la Luna; cuánto vemos de esa mitad cambia a medida que recorre su órbita",
+        "El ciclo se repite más o menos una vez al mes (cada 29,5 días)",
+        "Las ocho fases, en orden: nueva, creciente, cuarto creciente, gibosa creciente, llena, gibosa menguante, cuarto menguante y menguante"
+      ],
+      "respalda": [
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c8"
+      ],
+      "consultadaEl": "2026-10-20"
+    },
+    {
+      "id": "ou-hemisferio",
+      "entidad": "The Open University (OpenLearn)",
+      "titulo": "Moons of our Solar System, semana 1, 2.11 How the Moon's phases look from the Earth",
+      "url": "https://www.open.edu/openlearn/mod/oucontent/view.php?id=69107&section=3.11",
+      "ubicacion": "Párrafo sobre el hemisferio sur",
+      "afirmaciones": [
+        "Al sur del ecuador, la Luna crece como una C y mengua como una D"
+      ],
+      "respalda": [
+        "c6",
+        "c7"
+      ],
+      "consultadaEl": "2026-10-20"
+    }
+  ],
+  "controlEditorial": {
+    "estado": "borrador",
+    "revisadoPor": null,
+    "fechaRevision": null
+  }
+}

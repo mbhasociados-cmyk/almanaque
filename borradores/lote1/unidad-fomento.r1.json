@@ -1,0 +1,168 @@
+{
+  "schemaVersion": "2.0",
+  "id": "unidad-fomento",
+  "revision": 1,
+  "idioma": "es-CL",
+  "disciplina": "Economía cotidiana",
+  "familia": "economia",
+  "titulo": "¿Qué cambia cuando un precio está en UF?",
+  "subtitulo": "Arriendos, créditos y seguros: por qué no en pesos.",
+  "minutosEstimados": 5,
+  "tarjetas": [
+    {
+      "id": "c1",
+      "tipo": "portada",
+      "titulo": "¿Qué es la UF?",
+      "texto": "Arriendos, créditos y seguros se cobran en UF. ¿Por qué no simplemente en pesos?",
+      "fuenteIds": []
+    },
+    {
+      "id": "c2",
+      "tipo": "idea",
+      "titulo": "Medir cuánto cambian los precios",
+      "texto": "Cada mes, el INE mide cuánto cambian los precios de una canasta de productos y servicios que compran los hogares. Ese índice se llama IPC.",
+      "fuenteIds": [
+        "ine-ipc"
+      ]
+    },
+    {
+      "id": "c3",
+      "tipo": "idea",
+      "titulo": "La UF sigue al IPC",
+      "texto": "La UF es una unidad que calcula el Banco Central. Su valor en pesos cambia todos los días, de acuerdo con la variación del IPC.",
+      "fuenteIds": [
+        "bcch-uf"
+      ]
+    },
+    {
+      "id": "c4",
+      "tipo": "pregunta",
+      "pregunta": "Si el IPC sube, ¿qué pasa con el valor de la UF en pesos?",
+      "correctaId": "a",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Sube",
+          "retro": "¡Exacto! La UF se reajusta según el IPC."
+        },
+        {
+          "id": "b",
+          "texto": "Baja",
+          "retro": "Al revés: si el IPC sube, la UF también sube en pesos."
+        },
+        {
+          "id": "c",
+          "texto": "Queda igual",
+          "retro": "No: la UF se reajusta día a día según el IPC."
+        }
+      ],
+      "fuenteIds": [
+        "bcch-uf"
+      ]
+    },
+    {
+      "id": "c5",
+      "tipo": "idea",
+      "titulo": "Un arriendo en UF",
+      "texto": "Si tu arriendo es de 10 UF, siempre pagas 10 UF. Pero como la UF se reajusta con el IPC, cuando los precios suben, en pesos pagas un poco más.",
+      "fuenteIds": [
+        "bcch-uf"
+      ]
+    },
+    {
+      "id": "c6",
+      "tipo": "revelar",
+      "titulo": "¿Para qué sirve?",
+      "texto": "¿Por qué los créditos en Chile suelen estar en UF y no en pesos?",
+      "revelado": "Porque la UF nació como índice de reajuste: el monto se ajusta según el IPC. El Banco Central indica que se usa para reajustar créditos en moneda nacional de bancos y cooperativas, y también en cajas de compensación y compañías de seguros.",
+      "fuenteIds": [
+        "bcch-uf"
+      ]
+    },
+    {
+      "id": "c7",
+      "tipo": "pregunta",
+      "pregunta": "Te ofrecen dos arriendos: uno con pesos fijos por dos años y otro en UF. Si los precios suben, ¿cuál sube en pesos?",
+      "correctaId": "a",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "El que está en UF",
+          "retro": "Correcto: al reajustarse la UF con el IPC, el monto en pesos sube."
+        },
+        {
+          "id": "b",
+          "texto": "El de pesos fijos",
+          "retro": "El de pesos fijos se mantiene en el mismo monto en pesos."
+        },
+        {
+          "id": "c",
+          "texto": "Ninguno de los dos",
+          "retro": "El que está en UF sí cambia en pesos, porque la UF se reajusta con el IPC."
+        }
+      ],
+      "fuenteIds": [
+        "bcch-uf"
+      ]
+    },
+    {
+      "id": "c8",
+      "tipo": "dato",
+      "texto": "El valor de la UF se conoce por adelantado: a más tardar el día 9 de cada mes se publican en el Diario Oficial los valores de cada día, desde el 10 de ese mes hasta el 9 del siguiente.",
+      "fuenteIds": [
+        "bcch-uf"
+      ]
+    }
+  ],
+  "resumen": {
+    "titulo": "La UF",
+    "puntos": [
+      "La UF es una unidad que calcula el Banco Central y cuyo valor en pesos cambia cada día.",
+      "Se reajusta según el IPC, el índice que mide cuánto cambian los precios.",
+      "Por eso, un arriendo o un crédito en UF sube en pesos cuando suben los precios."
+    ]
+  },
+  "fuentes": [
+    {
+      "id": "bcch-uf",
+      "entidad": "Banco Central de Chile",
+      "titulo": "Unidad de Fomento (UF): nota metodológica",
+      "url": "https://si3.bcentral.cl/estadisticas/Principal1/Metodologias/EMF/UF.pdf",
+      "ubicacion": "Texto completo",
+      "afirmaciones": [
+        "La UF es un índice de reajustabilidad, calculado y autorizado por el Banco Central de Chile",
+        "Se reajusta en forma diaria desde el día 10 de cada mes hasta el día 9 del mes siguiente, de acuerdo con la variación del IPC",
+        "Se usa como índice de reajuste para créditos en moneda nacional de bancos y cooperativas, y en otras entidades como cajas de compensación y compañías de seguros",
+        "El valor diario se publica en el Diario Oficial a más tardar el día 9 de cada mes"
+      ],
+      "respalda": [
+        "c3",
+        "c4",
+        "c5",
+        "c6",
+        "c7",
+        "c8"
+      ],
+      "consultadaEl": "2026-10-20"
+    },
+    {
+      "id": "ine-ipc",
+      "entidad": "Instituto Nacional de Estadísticas",
+      "titulo": "Índice de Precios al Consumidor",
+      "url": "https://www.ine.gob.cl/estadisticas/economia/indices-de-precio-e-inflacion/indice-de-precios-al-consumidor",
+      "ubicacion": "Definición",
+      "afirmaciones": [
+        "El IPC mide mes a mes la variación de los precios de una canasta de bienes y servicios representativa del consumo de los hogares urbanos"
+      ],
+      "respalda": [
+        "c2"
+      ],
+      "consultadaEl": "2026-10-20"
+    }
+  ],
+  "controlEditorial": {
+    "estado": "borrador",
+    "revisadoPor": null,
+    "fechaRevision": null
+  }
+}

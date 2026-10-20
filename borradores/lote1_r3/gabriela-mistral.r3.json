@@ -1,0 +1,163 @@
+{
+  "schemaVersion": "2.0",
+  "id": "gabriela-mistral",
+  "revision": 3,
+  "idioma": "es-CL",
+  "disciplina": "Literatura",
+  "familia": "literatura",
+  "titulo": "¿Quién fue Gabriela Mistral?",
+  "subtitulo": "La maestra de Vicuña que ganó el Nobel.",
+  "minutosEstimados": 5,
+  "tarjetas": [
+    {
+      "id": "c1",
+      "tipo": "portada",
+      "titulo": "¿Quién fue Gabriela Mistral?",
+      "texto": "Nació en Vicuña, en el Valle del Elqui, y en 1945 ganó el Premio Nobel de Literatura.",
+      "fuenteIds": [
+        "memoria-mistral"
+      ]
+    },
+    {
+      "id": "c2",
+      "tipo": "idea",
+      "titulo": "Lucila, la maestra",
+      "texto": "Fue bautizada como Lucila de María Godoy Alcayaga. Nació en Vicuña el 7 de abril de 1889 y empezó a trabajar en una escuela antes de cumplir 16 años.",
+      "fuenteIds": [
+        "memoria-mistral"
+      ]
+    },
+    {
+      "id": "c3",
+      "tipo": "idea",
+      "titulo": "Un nombre para su obra",
+      "texto": "Gabriela Mistral fue el nombre con que firmó sus poemas. Hoy se la considera uno de los principales referentes de la literatura chilena.",
+      "fuenteIds": [
+        "memoria-mistral"
+      ]
+    },
+    {
+      "id": "c4",
+      "tipo": "pregunta",
+      "pregunta": "¿Por qué crees que se recuerda a Gabriela Mistral?",
+      "correctaId": "a",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Por su poesía y por su trabajo como maestra",
+          "retro": "¡Así es! Fue poeta y maestra; en 1922 incluso fue invitada a México a colaborar en una reforma educacional."
+        },
+        {
+          "id": "b",
+          "texto": "Por haber sido presidenta de Chile",
+          "retro": "No: se la recuerda por su poesía y por su trabajo como maestra."
+        },
+        {
+          "id": "c",
+          "texto": "Por haber escrito solo novelas",
+          "retro": "Su obra más conocida es poesía: publicó cuatro libros de poemas."
+        }
+      ],
+      "fuenteIds": [
+        "memoria-mistral"
+      ]
+    },
+    {
+      "id": "c5",
+      "tipo": "idea",
+      "titulo": "Los primeros premios y libros",
+      "texto": "En 1914 ganó el premio principal de los Juegos Florales con sus «Sonetos de la muerte». En 1922 publicó su primer libro, «Desolación».",
+      "fuenteIds": [
+        "memoria-mistral"
+      ]
+    },
+    {
+      "id": "c6",
+      "tipo": "idea",
+      "titulo": "Poemas para niños",
+      "texto": "También escribió canciones y poemas para niños, como los de «Ternura», de 1924. Durante mucho tiempo, su imagen pública quedó asociada a las figuras de «madre» y «maestra».",
+      "fuenteIds": [
+        "memoria-mistral"
+      ]
+    },
+    {
+      "id": "c7",
+      "tipo": "revelar",
+      "titulo": "1945",
+      "texto": "En 1945 recibió un premio que la Academia Sueca nunca antes había dado a las letras latinoamericanas. ¿Cuál fue?",
+      "revelado": "El Premio Nobel de Literatura. Fue el primer reconocimiento de la Academia Sueca a las letras latinoamericanas.",
+      "fuenteIds": [
+        "memoria-mistral"
+      ]
+    },
+    {
+      "id": "c8",
+      "tipo": "pregunta",
+      "pregunta": "¿Qué logró Gabriela Mistral en 1945?",
+      "correctaId": "a",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Ganó el Premio Nobel de Literatura, el primero para las letras latinoamericanas",
+          "retro": "¡Exacto! Fue un reconocimiento histórico."
+        },
+        {
+          "id": "b",
+          "texto": "Publicó su primer libro",
+          "retro": "Su primer libro, «Desolación», es de 1922."
+        },
+        {
+          "id": "c",
+          "texto": "Ganó los Juegos Florales",
+          "retro": "Los Juegos Florales los ganó en 1914."
+        }
+      ],
+      "fuenteIds": [
+        "memoria-mistral"
+      ]
+    }
+  ],
+  "resumen": {
+    "titulo": "Gabriela Mistral",
+    "puntos": [
+      "Gabriela Mistral, bautizada Lucila de María Godoy Alcayaga, nació en Vicuña en 1889 y fue maestra desde muy joven.",
+      "Escribió poemas y también canciones para niños, como los de «Ternura».",
+      "En 1945 ganó el Premio Nobel de Literatura: el primero de la Academia Sueca para las letras latinoamericanas."
+    ]
+  },
+  "fuentes": [
+    {
+      "id": "memoria-mistral",
+      "entidad": "Memoria Chilena, Biblioteca Nacional de Chile",
+      "titulo": "Gabriela Mistral (1889-1957)",
+      "url": "https://www.memoriachilena.gob.cl/602/w3-article-3429.html",
+      "ubicacion": "Presentación y cronología",
+      "afirmaciones": [
+        "La poeta Gabriela Mistral es considerada uno de los principales referentes de la literatura chilena",
+        "Nació en Vicuña el 7 de abril de 1889; fue bautizada como Lucila de María Godoy Alcayaga",
+        "Hacia 1905, cuando iba a cumplir 16 años, inició su carrera docente como ayudante en la Escuela de La Compañía Baja (la cronología la fecha en 1904)",
+        "En 1922 fue invitada a México a colaborar en la reforma educacional",
+        "Con los «Sonetos de la muerte» obtuvo el premio principal de los Juegos Florales de 1914",
+        "«Desolación» (Nueva York, 1922) fue su primer libro; «Ternura: canciones de niños» (Madrid, 1924); publicó cuatro libros de poesía",
+        "Su imagen pública destacó su figura de madre y maestra",
+        "El Nobel de 1945 constituye el primer reconocimiento de la Academia Sueca a las letras latinoamericanas"
+      ],
+      "respalda": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6",
+        "c7",
+        "c8"
+      ],
+      "consultadaEl": "2026-10-20"
+    }
+  ],
+  "controlEditorial": {
+    "estado": "borrador",
+    "revisadoPor": null,
+    "fechaRevision": null
+  }
+}

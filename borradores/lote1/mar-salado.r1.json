@@ -1,0 +1,174 @@
+{
+  "schemaVersion": "2.0",
+  "id": "mar-salado",
+  "revision": 1,
+  "idioma": "es-CL",
+  "disciplina": "Ciencias de la Tierra",
+  "familia": "geografia",
+  "titulo": "¿Por qué el mar es salado?",
+  "subtitulo": "La sal viaja desde las rocas hasta el océano.",
+  "minutosEstimados": 5,
+  "tarjetas": [
+    {
+      "id": "c1",
+      "tipo": "portada",
+      "titulo": "¿Por qué el mar es salado?",
+      "texto": "Al mar le llega el agua de los ríos. Entonces, ¿de dónde sale tanta sal?",
+      "fuenteIds": []
+    },
+    {
+      "id": "c2",
+      "tipo": "pregunta",
+      "pregunta": "¿De dónde crees que viene la mayor parte de la sal del mar?",
+      "correctaId": "a",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "De las rocas de la tierra firme",
+          "retro": "¡Así es! Las rocas en tierra firme son la principal fuente de las sales del mar."
+        },
+        {
+          "id": "b",
+          "texto": "De los peces",
+          "retro": "No: la principal fuente son las rocas de la tierra firme."
+        },
+        {
+          "id": "c",
+          "texto": "De las nubes",
+          "retro": "No: la mayor parte llega desde las rocas de la tierra firme."
+        }
+      ],
+      "fuenteIds": [
+        "noaa-sal"
+      ]
+    },
+    {
+      "id": "c3",
+      "tipo": "idea",
+      "titulo": "La lluvia desgasta las rocas",
+      "texto": "El agua de lluvia es levemente ácida y va desgastando las rocas. Así se desprenden minerales que quedan disueltos en el agua.",
+      "fuenteIds": [
+        "noaa-sal"
+      ]
+    },
+    {
+      "id": "c4",
+      "tipo": "idea",
+      "titulo": "Los ríos los llevan al mar",
+      "texto": "Esos minerales disueltos viajan por arroyos y ríos hasta llegar al océano.",
+      "fuenteIds": [
+        "noaa-sal",
+        "usgs-sal"
+      ]
+    },
+    {
+      "id": "c5",
+      "tipo": "idea",
+      "titulo": "También desde el fondo del mar",
+      "texto": "Otra parte de las sales viene del propio fondo del océano: de grietas calentadas por el magma y de volcanes submarinos.",
+      "fuenteIds": [
+        "noaa-sal"
+      ]
+    },
+    {
+      "id": "c6",
+      "tipo": "revelar",
+      "titulo": "¿Cuánta sal tiene?",
+      "texto": "Si tomaras un kilo de agua de mar, ¿cuánta sal crees que tendría?",
+      "revelado": "Unos 35 gramos. Es decir, cerca del 3,5 % del peso del agua de mar son sales disueltas.",
+      "fuenteIds": [
+        "noaa-sal",
+        "usgs-sal"
+      ]
+    },
+    {
+      "id": "c7",
+      "tipo": "pregunta",
+      "pregunta": "Un niño te pregunta de dónde sale la sal del mar. ¿Qué le dices?",
+      "correctaId": "a",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "La lluvia desgasta las rocas y los ríos llevan esos minerales al mar",
+          "retro": "¡Exacto! Ese es el camino principal de la sal."
+        },
+        {
+          "id": "b",
+          "texto": "La ponen los peces",
+          "retro": "No: los peces no son la fuente; lo son sobre todo las rocas de la tierra firme."
+        },
+        {
+          "id": "c",
+          "texto": "Cae con la lluvia directo al mar",
+          "retro": "La lluvia ayuda, pero desgastando las rocas en tierra: los ríos llevan después esos minerales al mar."
+        }
+      ],
+      "fuenteIds": [
+        "noaa-sal"
+      ]
+    },
+    {
+      "id": "c8",
+      "tipo": "dato",
+      "texto": "Los dos componentes más abundantes del agua de mar son el cloruro y el sodio: juntos forman cerca del 85 % de todo lo que tiene disuelto.",
+      "fuenteIds": [
+        "noaa-sal"
+      ]
+    }
+  ],
+  "resumen": {
+    "titulo": "La sal del mar",
+    "puntos": [
+      "La mayor parte de la sal del mar viene de las rocas de la tierra firme, que la lluvia desgasta.",
+      "Los ríos llevan esos minerales disueltos al océano; otra parte sale de grietas y volcanes del fondo marino.",
+      "Cada kilo de agua de mar tiene unos 35 gramos de sales."
+    ]
+  },
+  "fuentes": [
+    {
+      "id": "noaa-sal",
+      "entidad": "NOAA National Ocean Service",
+      "titulo": "Why is the ocean salty?",
+      "url": "https://oceanservice.noaa.gov/facts/whysalty.html",
+      "ubicacion": "Texto principal",
+      "afirmaciones": [
+        "Las rocas en tierra son la principal fuente de las sales disueltas en el agua de mar",
+        "La lluvia es levemente ácida y erosiona las rocas, liberando iones que van a arroyos y ríos que desembocan en el océano",
+        "El agua del océano se filtra por grietas del fondo y es calentada por el magma; algunas sales provienen de erupciones volcánicas submarinas",
+        "Cloruro y sodio forman cerca del 85 % de los iones disueltos",
+        "Salinidad promedio de unas 35 partes por mil: cerca del 3,5 % del peso del agua de mar son sales disueltas"
+      ],
+      "respalda": [
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6",
+        "c7",
+        "c8"
+      ],
+      "consultadaEl": "2026-10-20"
+    },
+    {
+      "id": "usgs-sal",
+      "entidad": "U.S. Geological Survey",
+      "titulo": "Why is the ocean salty?",
+      "url": "https://www.usgs.gov/faqs/why-ocean-salty",
+      "ubicacion": "Respuesta principal",
+      "afirmaciones": [
+        "Los iones de la escorrentía son llevados a arroyos y ríos y luego al océano",
+        "La salinidad del agua de mar es de unas 35 partes por mil; cerca del 3,5 % de su peso son sales disueltas"
+      ],
+      "respalda": [
+        "c4",
+        "c6"
+      ],
+      "consultadaEl": "2026-10-20"
+    }
+  ],
+  "controlEditorial": {
+    "estado": "borrador",
+    "revisadoPor": null,
+    "fechaRevision": null
+  }
+}
