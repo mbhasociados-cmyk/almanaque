@@ -2,7 +2,7 @@
 // Rechaza scripts, eventos, estilos, colores literales y referencias externas.
 const ELEMENTS = new Set(["svg", "g", "path", "line", "polyline", "polygon", "rect", "circle", "ellipse", "text", "tspan", "title", "desc", "defs", "marker"]);
 const ATTRS = new Set(["xmlns", "viewBox", "width", "height", "x", "y", "x1", "y1", "x2", "y2", "cx", "cy", "r", "rx", "ry", "d", "points", "transform", "class", "text-anchor", "font-size", "stroke-width", "stroke-dasharray", "id", "refX", "refY", "markerWidth", "markerHeight", "orient", "marker-end", "marker-start", "role", "aria-label", "aria-hidden"]);
-const CLASSES = new Set(["as-svg", "as-svg__ink", "as-svg__muted", "as-svg__accent", "as-svg__surface", "as-svg__label", "as-svg__hit"]);
+const CLASSES = new Set(["as-svg", "as-svg__ink", "as-svg__muted", "as-svg__accent", "as-svg__surface", "as-svg__label", "as-svg__hit", "as-svg__fill", "as-svg__soft", "as-svg__warm", "as-svg__cool", "as-svg__sun", "as-svg__warmline", "as-svg__coolline"]);
 const NUMERIC = /^[-0-9.,\s eE]*$/;
 
 export function sanitizeSvg(src, lessonId) {

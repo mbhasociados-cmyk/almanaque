@@ -2,16 +2,29 @@
   "id": "./",
   "name": "Almanaque del Saber",
   "short_name": "Almanaque",
-  "description": "Una lección por día, de máximo 15 minutos, disponible sin conexión.",
+  "description": "Aprende cada día una idea nueva, de cualquier tema, en pocos minutos.",
   "lang": "es-CL",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#E6EAEF",
-  "theme_color": "#FBFCFD",
+  "background_color": "#F6F3EE",
+  "theme_color": "#F6F3EE",
   "icons": [
-    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
-    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
-    { "src": "icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
   ]
 }

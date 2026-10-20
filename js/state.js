@@ -27,6 +27,8 @@ export function canonicalOrder(events) {
 }
 
 const key = (id, rev) => `${id}@${rev}`;
+// Preguntas de una lección: esquema 1.x (quiz) o 2.0 (tarjetas de tipo "pregunta").
+export const questionsOf = (lesson) => lesson.tarjetas ? lesson.tarjetas.filter(t => t.tipo === "pregunta") : (lesson.quiz || []);
 
 // lessons: Map "id@rev" -> lección (esquema 1.0). Puede faltar contenido: en ese caso
 // los eventos se conservan pero no se interpretan pasos ni puntajes.
@@ -63,7 +65,7 @@ export function deriveState(events, lessons, todayIso = chileDate(new Date())) {
       }
       case "step_reached": {
         const r = run(st, e.run_id);
-        const idx = lesson ? lesson.pasos.findIndex(p => p.id === e.payload.step_id) : -1;
+        const idx = lesson ? (lesson.tarjetas || lesson.pasos).findIndex(p => p.id === e.payload.step_id) : -1;
         if (idx > r.maxStep) r.maxStep = idx;
         break;
       }
@@ -111,10 +113,10 @@ export function deriveState(events, lessons, todayIso = chileDate(new Date())) {
     const score = (a) => {
       if (!lesson) return null;
       let ok = 0;
-      for (const qq of lesson.quiz) if (a.answers.get(qq.id) === qq.correctaId) ok++;
+      for (const qq of questionsOf(lesson)) if (a.answers.get(qq.id) === qq.correctaId) ok++;
       return ok;
     };
-    const attempts = [...st.attempts.values()].map(a => ({ ...a, answers: Object.fromEntries(a.answers), score: score(a), of: lesson ? lesson.quiz.length : null }));
+    const attempts = [...st.attempts.values()].map(a => ({ ...a, answers: Object.fromEntries(a.answers), score: score(a), of: lesson ? questionsOf(lesson).length : null }));
     const openAttempt = r ? attempts.filter(a => a.run_id === r.run_id && !a.completed).pop() || null : null;
     perLesson.set(key(st.lesson_id, st.revision), {
       lesson_id: st.lesson_id, revision: st.revision,
@@ -133,7 +135,7 @@ export function deriveState(events, lessons, todayIso = chileDate(new Date())) {
     const lesson = lessons.get(key(pl.lesson_id, pl.revision));
     if (!lesson) continue;
     const base = chileDate(pl.firstCompletedAt);
-    for (const r of lesson.repaso) {
+    for (const r of lesson.repaso || []) {
       const k = `${pl.lesson_id}:${r.id}`;
       if (!cards.has(k)) cards.set(k, { key: k, lesson_id: pl.lesson_id, revision: pl.revision, review_id: r.id, pregunta: r.pregunta, respuesta: r.respuesta, level: 0, due: addDays(base, INTERVALS[0]), history: [] });
     }

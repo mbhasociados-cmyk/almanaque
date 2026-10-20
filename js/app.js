@@ -1,83 +1,57 @@
-// Almanaque del Saber — interfaz
+// Almanaque del Saber — interfaz v3: tarjetas visuales, en línea, con colección de lo aprendido.
 import { CONFIG } from "./config.js";
 import * as db from "./db.js";
 import * as sync from "./sync.js";
-import { deriveState, chileDate } from "./state.js";
+import { deriveState, chileDate, questionsOf } from "./state.js";
 import { sanitizeSvg } from "./sanitize.js";
 
 const $ = (s, el = document) => el.querySelector(s);
 const view = $("#view");
+const player = $("#player");
 const MESES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
 const DIAS = ["domingo", "lunes", "martes", "miércoles", "jueves", "viernes", "sábado"];
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const ROUTES = ["hoy", "explorar", "aprendido", "cuenta"];
 
-const app = {
-  catalog: null, calendar: null, lessons: new Map(), state: null,
-  route: "hoy", filter: "Todas", session: null, reviewSession: null,
-  syncStatus: null, swReg: null, updateWaiting: false, downloading: new Set(), importPreview: null,
-};
+const app = { catalog: null, calendar: null, approvals: null, lessons: new Map(), state: null, route: "hoy", filter: "Todos", play: null, syncStatus: null, preview: null, open: null };
 
-// ------------------------------------------------------------ datos
-async function fetchJson(url, ms = 4000) {
-  const ctl = new AbortController();
-  const t = setTimeout(() => ctl.abort(), ms);
-  try {
-    const r = await fetch(url, { signal: ctl.signal, cache: "no-cache" });
-    if (!r.ok) throw new Error("HTTP " + r.status);
-    return { json: await r.json(), bytes: null };
-  } finally { clearTimeout(t); }
+// ------------------------------------------------------------ datos (siempre desde la red)
+async function fetchJson(url) {
+  const r = await fetch(url + (url.includes("?") ? "&" : "?") + "t=" + Date.now(), { cache: "no-store" });
+  if (!r.ok) throw new Error("HTTP " + r.status);
+  return r.json();
 }
-
-async function loadIndex(name, metaKey) {
-  try {
-    const { json } = await fetchJson(`data/${name}`);
-    await db.setMeta(metaKey, json);
-    return json;
-  } catch {
-    return (await db.getMeta(metaKey)) || null; // última versión válida guardada
-  }
+async function loadIndex(name) {
+  try { const j = await fetchJson(`data/${name}`); await db.setMeta("idx:" + name, j); return j; }
+  catch { return (await db.getMeta("idx:" + name)) || null; } // solo ante un corte momentáneo
 }
-
 async function sha256Hex(buf) {
   const h = await crypto.subtle.digest("SHA-256", buf);
   return [...new Uint8Array(h)].map(b => b.toString(16).padStart(2, "0")).join("");
 }
-
-// Descarga una lección, verifica su hash contra el catálogo y la guarda. Solo entonces queda "disponible sin conexión".
+// Descarga la lección y verifica su SHA-256 contra el catálogo antes de mostrarla.
 async function ensureLesson(entry) {
   const k = `${entry.id}@${entry.revision}`;
   if (app.lessons.has(k)) return app.lessons.get(k);
-  const stored = await db.getLesson(entry.id, entry.revision);
-  if (stored) { app.lessons.set(k, stored); return stored; }
-  if (app.downloading.has(k)) return null;
-  app.downloading.add(k);
   try {
-    const r = await fetch(entry.archivo, { cache: "no-cache" });
+    const r = await fetch(entry.archivo + "?t=" + Date.now(), { cache: "no-store" });
     if (!r.ok) throw new Error("HTTP " + r.status);
     const buf = await r.arrayBuffer();
-    const hash = await sha256Hex(buf);
-    if (entry.sha256 && hash !== entry.sha256) throw new Error("La lección descargada no coincide con el catálogo");
+    if (entry.sha256 && (await sha256Hex(buf)) !== entry.sha256) throw new Error("hash");
     const data = JSON.parse(new TextDecoder().decode(buf));
-    await db.putLesson(data, hash);
     app.lessons.set(k, data);
-    requestPersistence();
+    await db.putLesson(data, entry.sha256);
     return data;
-  } catch (e) {
-    return null;
-  } finally { app.downloading.delete(k); }
+  } catch {
+    const stored = await db.getLesson(entry.id, entry.revision);
+    if (stored) app.lessons.set(k, stored);
+    return stored;
+  }
 }
 
-async function requestPersistence() {
-  if (!navigator.storage?.persist) return;
-  if ((await db.getMeta("persist")) === true) return;
-  try { await db.setMeta("persist", await navigator.storage.persist()); } catch { /* sin soporte */ }
-}
-
+// ------------------------------------------------------------ autoridad editorial (data/aprobaciones.v1.json)
 const catEntry = (id, rev) => app.catalog?.lecciones.find(l => l.id === id && (rev == null || l.revision === rev));
-const REVIEW_MODE = CONFIG.MODO_REVISION === true; // por defecto false: solo lecciones publicadas
-// Autoridad editorial: data/aprobaciones.v1.json. Se recalcula aquí, sin confiar en el estado del catálogo.
-// Publicado solo si hay un único registro coherente para (id, revisión), con el mismo SHA-256 del catálogo
-// (que a su vez se comprueba contra el archivo descargado), verificación "aprobado" y V°B°.
+const REVIEW_MODE = CONFIG.MODO_REVISION === true;
 function editorialState(entry) {
   if (!entry) return "excluido";
   const regs = (app.approvals?.registros || []).filter(r => r.id === entry.id && r.revision === entry.revision);
@@ -86,341 +60,146 @@ function editorialState(entry) {
   const r = regs[0];
   const verified = r.verificacion && r.verificacion.resultado === "aprobado" && r.verificacion.revisor && r.verificacion.fecha;
   if (!verified) return "borrador";
-  if (r.vb && r.vb.por && r.vb.fecha) return "publicado";
-  return "verificado";
+  return r.vb && r.vb.por && r.vb.fecha ? "publicado" : "verificado";
 }
-function visible(entry) { const st = editorialState(entry); return st === "publicado" || (REVIEW_MODE && st !== "excluido"); }
+const isPreview = (e) => Boolean(app.preview && e && e.id === app.preview.id && e.revision === app.preview.rev);
+const isCards = (e) => e?.schemaVersion === "2.0"; // la interfaz v3 muestra solo lecciones en tarjetas
+function visible(e) { const st = editorialState(e); return isCards(e) && (st === "publicado" || (st !== "excluido" && (REVIEW_MODE || isPreview(e)))); }
+const visibleEntries = () => (app.catalog?.lecciones || []).filter(e => visible(e) && (!isPreview(e) || REVIEW_MODE || editorialState(e) === "publicado"));
 function todayIso() { return chileDate(new Date()); }
 function todayEntry() {
-  const e = app.calendar?.entradas.find(x => x.fecha === todayIso());
-  return e ? catEntry(e.id, e.revision) : null;
+  if (app.preview) { const p = catEntry(app.preview.id, app.preview.rev); if (p && visible(p)) return p; }
+  const c = app.calendar?.entradas.find(x => x.fecha === todayIso());
+  const e = c ? catEntry(c.id, c.revision) : null;
+  if (e && visible(e)) return e;
+  return visibleEntries().find(x => !lessonState(x).completed) || visibleEntries()[0] || null; // si no hay calendario, una pendiente
 }
 
-async function prefetch() {
-  if (!app.catalog) return;
-  const today = todayIso();
-  const want = new Set();
-  for (const e of app.calendar?.entradas || []) if (e.fecha >= today && e.fecha <= addDaysIso(today, 7)) want.add(`${e.id}@${e.revision}`);
-  for (const [id, v] of app.state?.library || []) if (v.saved) want.add(`${id}@${v.revision}`);
-  for (const k of want) { const [id, rev] = k.split("@"); const c = catEntry(id, Number(rev)); if (c && visible(c)) await ensureLesson(c); }
-}
-function addDaysIso(iso, n) { const [y, m, d] = iso.split("-").map(Number); return new Date(Date.UTC(y, m - 1, d + n)).toISOString().slice(0, 10); }
-
+// ------------------------------------------------------------ estado y eventos
 async function refresh() {
-  for (const row of await db.allLessons()) app.lessons.set(row.key, row.data);
+  for (const row of await db.allLessons()) if (!app.lessons.has(row.key)) app.lessons.set(row.key, row.data);
   app.state = deriveState(await db.allEvents(), app.lessons, todayIso());
 }
-
-async function record(type, lesson, extra = {}) {
-  await db.addEvent({ type, lesson_id: lesson.id ?? lesson.lesson_id, lesson_revision: lesson.revision, ...extra });
+async function record(type, L, extra = {}) {
+  await db.addEvent({ type, lesson_id: L.id, lesson_revision: L.revision, ...extra });
   sync.schedule(2000);
   await refresh();
 }
-
 const lessonState = (L) => app.state?.perLesson.get(`${L.id}@${L.revision}`) || { activeRunId: null, maxStep: -1, attempts: [], openAttempt: null, completed: false, revealed: [] };
-const isOffline = (id, rev) => app.lessons.has(`${id}@${rev}`);
+const learned = () => visibleOrLearned().filter(e => lessonState(e).completed);
+// Lo aprendido se conserva aunque la lección deje de estar en el calendario; se excluye solo si su registro es contradictorio.
+const visibleOrLearned = () => (app.catalog?.lecciones || []).filter(e => isCards(e) && editorialState(e) !== "excluido" && (visible(e) || lessonState(e).completed));
 
-// ------------------------------------------------------------ cabecera
+// ------------------------------------------------------------ cabecera y navegación
 const SYNC_LABEL = {
-  local: () => "Guardado en este dispositivo",
-  needs_login: () => "Inicia sesión para sincronizar",
-  idle: () => "Preparando…",
-  syncing: () => "Sincronizando…",
-  synced: () => "Avance sincronizado",
-  pending: (s) => `Pendiente de sincronizar (${s.pending})`,
-  offline: (s) => s.pending ? `Sin conexión · ${s.pending} pendientes` : "Sin conexión",
-  unreachable: () => "No pude conectar",
-  server: () => "No pude conectar",
-  unknown: () => "No pude conectar",
-  auth: () => "Vuelve a iniciar sesión",
-  permission: () => "Cuenta no habilitada",
-  other_owner: () => "Equipo asociado a otra cuenta",
+  local: () => "Solo en este equipo", needs_login: () => "Inicia sesión", idle: () => "Conectando…", syncing: () => "Guardando…",
+  synced: () => "Al día", pending: () => "Guardando…", offline: () => "Sin internet", unreachable: () => "Sin conexión con el servidor",
+  server: () => "Sin conexión con el servidor", unknown: () => "Sin conexión con el servidor", auth: () => "Vuelve a iniciar sesión",
+  permission: () => "Cuenta no habilitada", other_owner: () => "Equipo de otra cuenta",
 };
-const SYNC_TONE = { synced: "ok", local: "neutral", syncing: "neutral", idle: "neutral", pending: "warn", offline: "warn", needs_login: "warn" };
-
+const SYNC_TONE = { synced: "ok", syncing: "neutral", idle: "neutral", pending: "neutral", needs_login: "warn", offline: "warn" };
 function renderHeader() {
   const s = app.syncStatus || sync.status;
   const pill = $("#sync-pill");
   pill.textContent = (SYNC_LABEL[s.state] || (() => s.state))(s);
   pill.dataset.tone = SYNC_TONE[s.state] || "bad";
-  const due = app.state?.dueCards.length || 0;
-  $("#tab-repasar").textContent = due ? `Repasar · ${due}` : "Repasar";
-  for (const t of ["hoy", "repasar", "explorar", "biblioteca", "cuenta"]) $("#tab-" + t).setAttribute("aria-current", app.route === t ? "page" : "false");
-  $("#update-bar").hidden = !app.updateWaiting;
-  $("#review-bar").hidden = !REVIEW_MODE;
+  for (const t of ROUTES) $("#tab-" + t).setAttribute("aria-current", app.route === t ? "page" : "false");
+  const n = learned().length;
+  $("#tab-aprendido .n").textContent = n ? String(n) : "";
+  $("#review-bar").hidden = !REVIEW_MODE && !app.preview;
+  $("#review-bar").innerHTML = app.preview ? `Vista previa de un borrador: no se publica hasta tener verificación y V°B°. <a href="./">Salir</a>` : "Modo revisión: se muestran borradores.";
 }
-
 function go(route) {
-  app.route = route; app.session = null; app.reviewSession = null;
-  if (location.hash !== "#" + route) history.replaceState(null, "", "#" + route);
+  app.route = ROUTES.includes(route) ? route : "hoy"; app.open = null;
+  if (location.hash !== "#" + app.route) history.replaceState(null, "", location.search + "#" + app.route);
   render();
 }
-
 function render() {
-  app.coverEntry = null;
   renderHeader();
-  if (app.session) return renderLesson();
-  ({ hoy: renderHoy, repasar: renderRepasar, explorar: renderExplorar, biblioteca: renderBiblioteca, cuenta: renderCuenta }[app.route] || renderHoy)();
-  window.scrollTo({ top: 0 });
+  ({ hoy: renderHoy, explorar: renderExplorar, aprendido: renderAprendido, cuenta: renderCuenta }[app.route])();
+}
+
+// ------------------------------------------------------------ piezas visuales
+function visualHtml(L, svgText, cls = "") {
+  const clean = svgText ? sanitizeSvg(svgText, L.id) : null;
+  return clean ? `<div class="visual ${cls}">${clean}</div>` : "";
+}
+function coverSvg(entry) { // portada de la lección (desde el contenido, si ya está cargado)
+  const L = app.lessons.get(`${entry.id}@${entry.revision}`);
+  const t = L?.tarjetas?.find(x => x.tipo === "portada");
+  return L && t?.visual ? visualHtml(L, t.visual, "cover-visual") : `<div class="visual cover-visual placeholder"></div>`;
+}
+function tile(entry, big = false) {
+  const st = lessonState(entry);
+  const L = app.lessons.get(`${entry.id}@${entry.revision}`);
+  const action = st.completed ? "Aprendida ✓" : st.maxStep >= 0 ? "Continuar" : big ? "Empezar" : `${entry.minutosEstimados} min`;
+  return `<button class="tile ${big ? "big" : ""}" data-fam="${esc(entry.familia)}" data-open="${esc(entry.id)}@${entry.revision}">
+    ${coverSvg(entry)}
+    <span class="tile-body"><span class="kicker">${esc(entry.disciplina)}</span><span class="tile-title">${esc(entry.titulo)}</span>
+    ${big && L?.subtitulo ? `<span class="tile-sub">${esc(L.subtitulo)}</span>` : ""}
+    <span class="tile-foot"><span>${entry.minutosEstimados} min</span><span class="cta">${action}</span></span></span></button>`;
+}
+function bindTiles() {
+  view.querySelectorAll("[data-open]").forEach(b => b.onclick = () => { const [id, rev] = b.dataset.open.split("@"); openLesson(catEntry(id, Number(rev))); });
+  view.querySelectorAll("[data-go]").forEach(b => b.onclick = () => go(b.dataset.go));
+}
+async function loadAll(entries) { // carga en paralelo lo que falta y vuelve a dibujar
+  const miss = entries.filter(e => !app.lessons.has(`${e.id}@${e.revision}`));
+  if (!miss.length) return;
+  await Promise.all(miss.map(ensureLesson));
+  await refresh(); if (!app.play) render();
 }
 
 // ------------------------------------------------------------ Hoy
-function weekStrip() {
-  const w = app.state?.week || { learningDays: 0, reviews: 0 };
-  return `<div class="week"><span><b>${w.learningDays}</b> ${w.learningDays === 1 ? "día" : "días"} de aprendizaje esta semana</span><span><b>${w.reviews}</b> ${w.reviews === 1 ? "concepto repasado" : "conceptos repasados"}</span></div>`;
-}
-
 function renderHoy() {
-  const entry = todayEntry();
-  const now = new Date();
   const hoy = todayIso();
-  const [, , dd] = hoy.split("-").map(Number);
-  const dow = new Date(hoy + "T12:00:00Z").getUTCDay();
-  const mm = Number(hoy.split("-")[1]) - 1;
-  const fecha = `${DIAS[dow]} · ${dd} de ${MESES[mm]} de ${hoy.slice(0, 4)}`;
-  if (!entry || !visible(entry)) {
-    view.innerHTML = `${weekStrip()}<article class="leaf"><div class="leaf-head"><div class="daynum">${dd}</div><div><div class="daymeta">${fecha}</div><h1>Aún no hay lección publicada para hoy</h1></div></div>
-      <div class="leaf-body"><p class="lede">Puedes elegir cualquier lección del archivo o hacer tus repasos pendientes.</p><div class="row"><button class="btn" data-go="explorar">Ir a Explorar</button><button class="btn ghost" data-go="repasar">Repasar</button></div></div></article>`;
-    bindGo(); return;
-  }
-  renderCover(entry, { isToday: true, dd, fecha });
+  const [y, m, d] = hoy.split("-").map(Number);
+  const dow = new Date(Date.UTC(y, m - 1, d)).getUTCDay();
+  const e = todayEntry();
+  const n = learned().length;
+  const others = visibleEntries().filter(x => x !== e && !lessonState(x).completed).slice(0, 4);
+  view.innerHTML = `<section class="hello"><p class="date">${DIAS[dow]} ${d} de ${MESES[m - 1]}</p>
+      <h1>${app.preview ? "Vista previa" : "Tu idea de hoy"}</h1></section>
+    ${e ? tile(e, true) : `<div class="empty"><h2>Pronto llega tu próxima idea</h2><p>Estamos preparando y verificando las próximas lecciones.</p></div>`}
+    <div class="stat"><b>${n}</b> ${n === 1 ? "idea aprendida" : "ideas aprendidas"} <button class="link" data-go="aprendido">Ver mi colección</button></div>
+    ${others.length ? `<h2 class="section">Sigue explorando</h2><div class="grid">${others.map(x => tile(x)).join("")}</div>` : ""}`;
+  bindTiles();
+  loadAll([e, ...others].filter(Boolean));
 }
 
-function bindGo() { view.querySelectorAll("[data-go]").forEach(b => b.onclick = () => go(b.dataset.go)); }
-
-async function renderCover(entry, opts = {}) {
-  app.coverEntry = entry;
-  const L = app.lessons.get(`${entry.id}@${entry.revision}`);
-  const offline = Boolean(L);
-  const st = L ? lessonState(L) : null;
-  const est = editorialState(entry);
-  const draft = est !== "publicado";
-  let primary = "Comenzar lección";
-  if (st?.completed) primary = "Repasar lección";
-  else if (st && st.maxStep >= 0) primary = `Retomar desde el avance alcanzado (paso ${st.maxStep + 1})`;
-  view.innerHTML = `${opts.isToday ? weekStrip() : ""}<article class="leaf">
-    <div class="leaf-head"><div class="daynum">${opts.isToday ? opts.dd : "§"}</div>
-      <div><div class="daymeta">${opts.isToday ? esc(opts.fecha) : "Lección del archivo"}</div>
-      <h1>${esc(entry.titulo)}</h1>
-      <div class="chips-row"><span class="disc">${esc(entry.disciplina)}</span>${draft ? `<span class="chip-flag">${est === "verificado" ? "Verificada · pendiente de V°B°" : "Borrador · pendiente de verificación"}</span>` : ""}</div></div></div>
-    <div class="leaf-body">
-      ${L ? `<ul class="goals">${L.objetivos.map(o => `<li>${esc(o)}</li>`).join("")}</ul>` : ""}
-      <div class="facts"><span>Duración <b>${entry.minutosEstimados} min</b></span>${L ? `<span>Pasos <b>${L.pasos.length}</b></span><span>Preguntas <b>${L.quiz.length}</b></span>` : ""}
-        <span class="${offline ? "ok" : "muted"}">${offline ? "Disponible sin conexión en este dispositivo" : (navigator.onLine ? "Descargando…" : "No descargada en este dispositivo")}</span></div>
-      ${st?.completed ? `<p class="small">Mejor resultado: ${st.bestScore} de ${L.quiz.length}. Intentos: ${st.attempts.filter(a => a.completed).length}.</p>` : ""}
-      <div class="row"><button class="btn" id="start" ${L ? "" : "disabled"}>${primary}</button>
-        ${!opts.isToday ? `<button class="btn ghost" id="back">Volver</button>` : ""}
-        ${st?.activeRunId ? `<button class="btn link" id="restart">Reiniciar lección</button>` : ""}</div>
-      <div id="confirm-restart" hidden class="note">Reiniciar crea un recorrido nuevo desde el comienzo. Los intentos y el avance anteriores quedan en tu historial. <div class="row"><button class="btn" id="restart-yes">Reiniciar</button><button class="btn ghost" id="restart-no">Cancelar</button></div></div>
-    </div></article>`;
-  if (!L) ensureLesson(entry).then(() => refresh()).then(() => { if (!app.session && app.coverEntry === entry) renderCover(entry, opts); });
-  const s = $("#start"); if (s) s.onclick = () => startLesson(L, { fromToday: opts.isToday });
-  const b = $("#back"); if (b) b.onclick = () => go(app.route);
-  const r = $("#restart"); if (r) r.onclick = () => { $("#confirm-restart").hidden = false; };
-  const ry = $("#restart-yes"); if (ry) ry.onclick = async () => { await record("lesson_restarted", L, { run_id: crypto.randomUUID() }); startLesson(L, { fromToday: opts.isToday, fresh: true }); };
-  const rn = $("#restart-no"); if (rn) rn.onclick = () => { $("#confirm-restart").hidden = true; };
-}
-
-// ------------------------------------------------------------ Lección
-async function startLesson(L, opts = {}) {
-  let st = lessonState(L);
-  if (!st.activeRunId) { await record("lesson_opened", L, { run_id: crypto.randomUUID() }); st = lessonState(L); }
-  let step = "entrada";
-  if (!opts.fresh && !st.completed && st.maxStep >= 0) step = st.maxStep;
-  else if ((app.state?.dueCards.length || 0) > 0) step = "recuperar";
-  app.session = { L, step, startedAt: Date.now(), attemptId: null, fromToday: opts.fromToday, recovered: 0 };
-  render();
-}
-
-function progressBar(L, step) {
-  const total = L.pasos.length + 3; // entrada + pasos + evaluación + cierre
-  const pos = step === "recuperar" ? 0 : step === "entrada" ? 1 : step === "quiz" ? L.pasos.length + 2 : step === "cierre" ? total : step + 2;
-  const label = step === "recuperar" ? "Recuperar" : step === "entrada" ? "Descubrir" : step === "quiz" ? "Comprobar" : step === "cierre" ? "Cerrar" : `Comprender · paso ${step + 1} de ${L.pasos.length}`;
-  return `<div class="stephead"><span>${esc(L.disciplina.toUpperCase())} · ${esc(L.titulo)}</span><span>${label}</span></div><div class="progress"><i style="width:${Math.round(pos / total * 100)}%"></i></div>`;
-}
-
-function renderLesson() {
-  const { L, step } = app.session;
-  if (step === "recuperar") return renderRecover();
-  if (step === "entrada") return renderEntrada();
-  if (step === "quiz") return renderQuiz();
-  if (step === "cierre") return renderCierre();
-  return renderStep(step);
-}
-
-function leaf(inner) { view.innerHTML = `<article class="leaf"><div class="leaf-body pad-top">${inner}</div></article>`; window.scrollTo({ top: 0 }); }
-function exitLesson() { const r = app.session?.fromToday ? "hoy" : app.route; app.session = null; go(r); }
-
-function renderRecover() {
-  const { L } = app.session;
-  const card = app.state.dueCards[0];
-  if (!card || app.session.recovered >= 2) { app.session.step = "entrada"; return renderEntrada(); }
-  leaf(`${progressBar(L, "recuperar")}
-    <h2>Antes de empezar, recupera</h2><p class="small">Responde de memoria. Son ${Math.min(2, app.state.dueCards.length) - app.session.recovered} ${Math.min(2, app.state.dueCards.length) - app.session.recovered === 1 ? "pregunta" : "preguntas"} de lecciones anteriores.</p>
-    ${reviewCardHtml(card)}
-    <div class="row"><button class="btn link" id="skip">Saltar repaso</button></div>`);
-  bindReviewCard(card, async () => { app.session.recovered++; renderRecover(); });
-  $("#skip").onclick = () => { app.session.step = "entrada"; renderEntrada(); };
-}
-
-function renderEntrada() {
-  const { L } = app.session;
-  leaf(`${progressBar(L, "entrada")}
-    <h2>${esc(L.entrada.pregunta)}</h2>
-    <label class="small" for="idea">Tu idea inicial (opcional, no se guarda ni se sincroniza)</label>
-    <textarea id="idea" rows="3"></textarea>
-    <p class="section-title">Al terminar podrás</p><ul class="goals">${L.objetivos.map(o => `<li>${esc(o)}</li>`).join("")}</ul>
-    <div class="row"><button class="btn ghost" id="prev">Salir</button><button class="btn" id="next">Comenzar</button></div>`);
-  $("#prev").onclick = exitLesson;
-  $("#next").onclick = () => { app.session.step = 0; renderLesson(); };
-}
-
-function figureHtml(L, f, i) {
-  const clean = sanitizeSvg(f.contenido, L.id);
-  if (!clean) return `<div class="figure-alt">${esc(f.alt)}</div>`;
-  return `<figure class="as-figure"><div class="figure">${clean}</div><figcaption class="figcap">${esc(f.pie)}</figcaption><p class="sr-only">${esc(f.alt)}</p></figure>`;
-}
-
-async function renderStep(i) {
-  const { L } = app.session;
-  const S = L.pasos[i];
-  const st = lessonState(L);
-  if (i > st.maxStep) await record("step_reached", L, { run_id: st.activeRunId, payload: { step_id: S.id } });
-  const revealed = lessonState(L).revealed.includes(S.id);
-  const A = S.actividad;
-  leaf(`${progressBar(L, i)}
-    <section class="step"><h2>${esc(S.titulo)}</h2>${S.parrafos.map(p => `<p>${esc(p)}</p>`).join("")}
-      ${S.figura ? figureHtml(L, S.figura, i) : ""}
-      ${A ? `<div class="activity"><span class="act-kind">${{ prediccion: "Predice", calculo: "Calcula", explicacion: "Explica" }[A.tipo] || "Actividad"}</span><p>${esc(A.pregunta)}</p>
-        <button class="btn link" id="rev" aria-expanded="${revealed}">${revealed ? "Ocultar respuesta" : "Ver respuesta"}</button><div id="ans" ${revealed ? "" : "hidden"}>${esc(A.respuesta)}</div></div>` : ""}
-      <p class="sources-inline">Fuentes: ${S.fuenteIds.map(id => { const f = L.fuentes.find(x => x.id === id); return f ? esc(f.entidad) : esc(id); }).join(" · ")}</p>
-    </section>
-    <div class="row"><button class="btn ghost" id="prev">${i === 0 ? "Volver" : "Anterior"}</button><button class="btn" id="next">${i === L.pasos.length - 1 ? "Ir a la evaluación" : "Siguiente"}</button></div>`);
-  const rev = $("#rev");
-  if (rev) rev.onclick = async () => {
-    const a = $("#ans"); a.hidden = !a.hidden; rev.textContent = a.hidden ? "Ver respuesta" : "Ocultar respuesta"; rev.setAttribute("aria-expanded", String(!a.hidden));
-    if (!a.hidden && !lessonState(L).revealed.includes(S.id)) await record("activity_revealed", L, { run_id: lessonState(L).activeRunId, payload: { step_id: S.id } });
-  };
-  $("#prev").onclick = () => { app.session.step = i === 0 ? "entrada" : i - 1; renderLesson(); };
-  $("#next").onclick = () => { app.session.step = i === L.pasos.length - 1 ? "quiz" : i + 1; renderLesson(); };
-}
-
-async function renderQuiz() {
-  const { L } = app.session;
-  let st = lessonState(L);
-  if (!app.session.attemptId) {
-    if (st.openAttempt) app.session.attemptId = st.openAttempt.attempt_id; // continúa el mismo intento (también desde otro equipo)
-    else { const id = crypto.randomUUID(); await record("attempt_started", L, { run_id: st.activeRunId, payload: { attempt_id: id } }); app.session.attemptId = id; }
-    st = lessonState(L);
-  }
-  const att = st.attempts.find(a => a.attempt_id === app.session.attemptId) || { answers: {}, completed: false };
-  const answers = att.answers || {};
-  leaf(`${progressBar(L, "quiz")}
-    <h2>Comprueba lo aprendido</h2>
-    ${L.quiz.map((q, qi) => {
-      const chosen = answers[q.id];
-      return `<fieldset class="q"><legend>${qi + 1}. ${esc(q.pregunta)}</legend>
-        ${q.opciones.map(o => {
-          const cls = chosen ? (o.id === q.correctaId ? "right" : o.id === chosen ? "wrong" : "") : "";
-          return `<button class="opt ${cls}" data-q="${q.id}" data-o="${o.id}" ${chosen ? "disabled" : ""}>${esc(o.texto)}</button>`;
-        }).join("")}
-        ${chosen ? `<p class="feedback ${chosen === q.correctaId ? "ok" : "bad"}">${esc(q.opciones.find(o => o.id === chosen)?.retroalimentacion)}</p>` : ""}
-      </fieldset>`;
-    }).join("")}
-    <div class="row"><button class="btn ghost" id="prev">Volver a los pasos</button>${att.completed ? `<button class="btn" id="next">Continuar</button>` : ""}</div>`);
-  view.querySelectorAll(".opt:not([disabled])").forEach(b => b.onclick = async () => {
-    view.querySelectorAll(`.opt[data-q="${b.dataset.q}"]`).forEach(x => x.disabled = true);
-    await record("quiz_answered", L, { run_id: lessonState(L).activeRunId, payload: { attempt_id: app.session.attemptId, question_id: b.dataset.q, option_id: b.dataset.o } });
-    const a2 = lessonState(L).attempts.find(a => a.attempt_id === app.session.attemptId);
-    if (a2 && !a2.completed && L.quiz.every(q => a2.answers[q.id])) {
-      const dur = Math.min(86400, Math.max(0, Math.round((Date.now() - app.session.startedAt) / 1000)));
-      await record("lesson_completed", L, { run_id: lessonState(L).activeRunId, payload: { attempt_id: app.session.attemptId, duration_s: dur } });
-    }
-    renderQuiz();
-  });
-  $("#prev").onclick = () => { app.session.step = L.pasos.length - 1; renderLesson(); };
-  const n = $("#next"); if (n) n.onclick = () => { app.session.step = "cierre"; renderLesson(); };
-}
-
-function renderCierre() {
-  const { L } = app.session;
-  const st = lessonState(L);
-  const att = st.attempts.find(a => a.attempt_id === app.session.attemptId);
-  const saved = app.state.library.get(L.id)?.saved;
-  const mins = att?.duration_s != null ? Math.round(att.duration_s / 60) : null;
-  leaf(`${progressBar(L, "cierre")}
-    <h2>Cierre</h2><p>${esc(L.cierre)}</p>
-    ${att ? `<div class="note"><span class="score">${att.score} de ${att.of} correctas</span><br><span class="small">Tiempo en esta sesión: ${mins} min (redondeado). Un resultado inmediato no acredita dominio: los repasos te lo mostrarán en 1, 3, 7 y 21 días.</span></div>` : ""}
-    <details class="sources"><summary>Fuentes de esta lección</summary><ul>${L.fuentes.map(f => `<li><b>${esc(f.entidad)}</b>, ${esc(f.titulo)}. ${esc(f.ubicacion)}. <a href="${esc(f.url)}" target="_blank" rel="noopener">${esc(f.url)}</a>${f.consultadaEl ? ` (consultada el ${esc(f.consultadaEl)})` : " (pendiente de verificación)"}</li>`).join("")}</ul></details>
-    <div class="row"><button class="btn" id="save">${saved ? "Quitar de mi biblioteca" : "Guardar en mi biblioteca"}</button><button class="btn ghost" id="home">Terminar</button></div>`);
-  $("#save").onclick = async () => { await record(saved ? "library_removed" : "library_saved", L); toast(saved ? "Lección quitada de tu biblioteca" : "Lección guardada en tu biblioteca"); renderCierre(); };
-  $("#home").onclick = exitLesson;
-}
-
-// ------------------------------------------------------------ Repasar
-function reviewCardHtml(c) {
-  const L = app.lessons.get(`${c.lesson_id}@${c.revision}`);
-  return `<div class="review-card"><div class="small">${esc(L?.titulo || c.lesson_id)}</div><p class="rq">${esc(c.pregunta)}</p>
-    <button class="btn ghost" id="show">Mostrar respuesta</button>
-    <div id="rans" hidden><p class="ra">${esc(c.respuesta)}</p><p class="small">¿Cómo te fue?</p>
-    <div class="row"><button class="btn grade" data-g="0">No recordé</button><button class="btn grade" data-g="1">Recordé parcialmente</button><button class="btn grade" data-g="2">Recordé</button></div></div></div>`;
-}
-function bindReviewCard(c, after) {
-  $("#show").onclick = () => { $("#rans").hidden = false; $("#show").hidden = true; };
-  view.querySelectorAll(".grade").forEach(b => b.onclick = async () => {
-    view.querySelectorAll(".grade").forEach(x => x.disabled = true);
-    await record("review_graded", { lesson_id: c.lesson_id, revision: c.revision }, { payload: { review_id: c.review_id, review_attempt_id: crypto.randomUUID(), grade: Number(b.dataset.g) } });
-    after();
-  });
-}
-
-function renderRepasar() {
-  const due = app.state?.dueCards || [];
-  app.reviewSession = app.reviewSession || { done: 0 };
-  if (!due.length) {
-    view.innerHTML = `${weekStrip()}<div class="empty"><h2>No tienes repasos pendientes</h2><p>Cuando termines una lección, sus conceptos volverán aquí al día siguiente, y después a los 3, 7 y 21 días.</p></div>`;
-    return;
-  }
-  const c = due[0];
-  const over = app.reviewSession.done >= 4;
-  view.innerHTML = `${weekStrip()}<article class="leaf"><div class="leaf-body pad-top">
-    <div class="stephead"><span>REPASO</span><span>${due.length} ${due.length === 1 ? "pendiente" : "pendientes"}</span></div>
-    ${over ? `<p class="note">Ya llevas unos dos minutos de repaso. Puedes seguir o dejar el resto para mañana; nada se pierde.</p>` : ""}
-    ${reviewCardHtml(c)}</div></article>`;
-  bindReviewCard(c, () => { app.reviewSession.done++; renderHeader(); renderRepasar(); });
-}
-
-// ------------------------------------------------------------ Explorar y Biblioteca
-function lessonCard(e, extra = "") {
-  return `<button class="card" data-id="${esc(e.id)}" data-rev="${e.revision}"><span class="disc">${esc(e.disciplina)}</span><h3>${esc(e.titulo)}</h3>
-    <span class="date">${e.minutosEstimados} min${isOffline(e.id, e.revision) ? " · sin conexión ✓" : ""}${editorialState(e) === "verificado" ? " · verificada" : editorialState(e) !== "publicado" ? " · borrador" : ""}${extra}</span></button>`;
-}
-function bindCards() {
-  view.querySelectorAll(".card").forEach(c => c.onclick = () => { const e = catEntry(c.dataset.id, Number(c.dataset.rev)); renderCover(e, { isToday: false }); });
-}
-
+// ------------------------------------------------------------ Explorar
 function renderExplorar() {
-  const list = (app.catalog?.lecciones || []).filter(visible);
-  const discs = ["Todas", ...new Set(list.map(l => l.disciplina))];
-  const shown = list.filter(l => app.filter === "Todas" || l.disciplina === app.filter);
-  view.innerHTML = `<div class="stack"><p class="section-title">Archivo de lecciones</p>
-    <div class="chips">${discs.map(d => `<button class="chip" aria-pressed="${d === app.filter}" data-d="${esc(d)}">${esc(d)}</button>`).join("")}</div>
-    ${shown.length ? `<div class="lib-grid">${shown.map(e => lessonCard(e)).join("")}</div>` : `<div class="empty">No hay lecciones disponibles${navigator.onLine ? "" : " sin conexión"}.</div>`}</div>`;
-  view.querySelectorAll(".chip").forEach(c => c.onclick = () => { app.filter = c.dataset.d; renderExplorar(); });
-  bindCards();
+  const all = visibleEntries();
+  const temas = ["Todos", ...new Set(all.map(e => e.disciplina))];
+  if (!temas.includes(app.filter)) app.filter = "Todos";
+  const list = all.filter(e => app.filter === "Todos" || e.disciplina === app.filter);
+  view.innerHTML = `<section class="hello"><h1>Explorar</h1><p class="date">Aprende algo de cualquier tema, en pocos minutos.</p></section>
+    <div class="chips">${temas.map(t => `<button class="chip" aria-pressed="${t === app.filter}" data-f="${esc(t)}">${esc(t)}</button>`).join("")}</div>
+    ${list.length ? `<div class="grid">${list.map(x => tile(x)).join("")}</div>` : `<div class="empty"><p>Aún no hay lecciones publicadas en este tema.</p></div>`}`;
+  view.querySelectorAll("[data-f]").forEach(b => b.onclick = () => { app.filter = b.dataset.f; renderExplorar(); });
+  bindTiles();
+  loadAll(list);
 }
 
-function renderBiblioteca() {
-  const lib = [...(app.state?.library || [])].filter(([, v]) => v.saved).map(([id, v]) => catEntry(id, v.revision)).filter(visible);
-  const done = [...(app.state?.perLesson.values() || [])].filter(p => p.completed).map(p => catEntry(p.lesson_id, p.revision)).filter(visible).filter(e => !lib.includes(e));
-  const extra = (e) => { const p = app.state.perLesson.get(`${e.id}@${e.revision}`); return p?.completed ? ` · mejor ${p.bestScore}/${app.lessons.get(`${e.id}@${e.revision}`)?.quiz.length ?? "?"}` : ""; };
-  view.innerHTML = `<div class="stack"><p class="section-title">Guardadas · ${lib.length}</p>
-    ${lib.length ? `<div class="lib-grid">${lib.map(e => lessonCard(e, extra(e))).join("")}</div>` : `<div class="empty">Aún no guardas lecciones. Al terminar una lección, pulsa “Guardar en mi biblioteca”.</div>`}
-    ${done.length ? `<p class="section-title">Terminadas sin guardar · ${done.length}</p><div class="lib-grid">${done.map(e => lessonCard(e, extra(e))).join("")}</div>` : ""}</div>`;
-  bindCards();
+// ------------------------------------------------------------ Aprendido: la colección de resúmenes
+function summaryCard(e, L) {
+  const R = L?.resumen;
+  const when = lessonState(e).firstCompletedAt ? new Date(lessonState(e).firstCompletedAt).toLocaleDateString("es-CL", { day: "numeric", month: "long" }) : "";
+  return `<article class="summary" data-fam="${esc(e.familia)}">
+    <header><span class="kicker">${esc(e.disciplina)}${when ? " · " + esc(when) : ""}</span><h3>${esc(R?.titulo || e.titulo)}</h3></header>
+    ${R ? `<ul>${R.puntos.map(p => `<li>${esc(p)}</li>`).join("")}</ul>` : `<p class="small">Cargando resumen…</p>`}
+    <button class="link" data-open="${esc(e.id)}@${e.revision}">Ver la lección de nuevo</button></article>`;
+}
+function renderAprendido() {
+  const list = learned().sort((a, b) => (lessonState(b).firstCompletedAt || "").localeCompare(lessonState(a).firstCompletedAt || ""));
+  view.innerHTML = `<section class="hello"><h1>Aprendido</h1><p class="date">${list.length ? `Tu colección: ${list.length} ${list.length === 1 ? "idea" : "ideas"}. Cada lección que terminas deja aquí su resumen.` : "Aquí se guardará el resumen de cada lección que termines."}</p></section>
+    ${list.length ? `<div class="summaries">${list.map(e => summaryCard(e, app.lessons.get(`${e.id}@${e.revision}`))).join("")}</div>`
+      : `<div class="empty"><h2>Tu colección está vacía</h2><p>Termina tu primera lección y su resumen aparecerá aquí.</p><button class="btn" data-go="hoy">Ir a la idea de hoy</button></div>`}`;
+  bindTiles();
+  loadAll(list);
 }
 
-// ------------------------------------------------------------ Cuenta
+// ------------------------------------------------------------ Cuenta (inicio de sesión por código)
 const AUTH_KEY = "almanaque-auth-draft", AUTH_TTL = 60 * 60 * 1000;
 let authMem = null;
 function authDraft() {
@@ -431,54 +210,33 @@ function authDraft() {
 }
 function saveAuthDraft(patch) {
   authMem = { ...authDraft(), ...patch, t: Date.now() };
-  try { const { code, ...keep } = authMem; localStorage.setItem(AUTH_KEY, JSON.stringify(keep)); } catch { /* sin almacenamiento: queda en memoria */ }
+  try { const { code, ...keep } = authMem; localStorage.setItem(AUTH_KEY, JSON.stringify(keep)); } catch { /* queda en memoria */ }
 }
 function clearAuthDraft() { authMem = null; try { localStorage.removeItem(AUTH_KEY); } catch { /* nada */ } }
 
-async function renderCuenta() {
+function renderCuenta() {
   const s = app.syncStatus || sync.status;
-  const persist = await db.getMeta("persist");
-  const dev = await db.getMeta("device");
-  let acct = "";
-  if (!sync.isEnabled()) {
-    acct = `<p>La app funciona en <b>modo local</b>: tu avance queda guardado solo en este dispositivo. Para compartirlo entre el PC y el celular hay que configurar la conexión (archivo <code>js/config.js</code>, ver instrucciones).</p>`;
-  } else if (!sync.currentUser()) {
-    // Borrador del inicio de sesión: sobrevive a los redibujos y a una recarga (p. ej. al ir al correo y volver en el iPhone).
+  let acct;
+  if (!sync.isEnabled()) acct = `<p>La conexión con el servidor no está configurada.</p>`;
+  else if (!sync.currentUser()) {
     const a = authDraft();
-    acct = `<form id="f-email" class="form"><label for="email">Correo</label><input id="email" type="email" autocomplete="email" required placeholder="tu@correo.cl" value="${esc(a.email)}">
+    acct = `<p>Entra con tu correo para que tu avance y tu colección se vean igual en el PC y en el celular.</p>
+      <form id="f-email" class="form"><label for="email">Correo</label><input id="email" type="email" autocomplete="email" required placeholder="tu@correo.cl" value="${esc(a.email)}">
       <button class="btn" type="submit">${a.codeSent ? "Enviar otro código" : "Enviar código"}</button></form>
-      <form id="f-code" class="form"${a.codeSent ? "" : " hidden"}><label for="code">Código de 6 dígitos recibido por correo</label><input id="code" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6}" maxlength="6" required value="${esc(a.code)}">
-      <button class="btn" type="submit">Ingresar</button></form><p id="auth-msg" class="small">${esc(a.msg)}</p>
-      <p class="small">El código se escribe aquí mismo, dentro de la app. Puedes pedir uno nuevo cada 60 segundos.</p>`;
+      <form id="f-code" class="form"${a.codeSent ? "" : " hidden"}><label for="code">Código de 6 dígitos que llegó a tu correo</label><input id="code" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6}" maxlength="6" required value="${esc(a.code)}">
+      <button class="btn" type="submit">Entrar</button></form><p id="auth-msg" class="small">${esc(a.msg)}</p>`;
   } else {
     acct = `<p>Sesión iniciada como <b>${esc(s.email)}</b>.</p>
-      <div class="row"><button class="btn" id="sync-now">Sincronizar ahora</button><button class="btn ghost" id="logout">Cerrar sesión</button></div>
-      ${s.otherOwner ? `<p class="note">Este equipo ya tiene avance asociado a otra cuenta; no se enviará con esta sesión.</p>` : ""}`;
+      <div class="row"><button class="btn ghost" id="sync-now">Actualizar ahora</button><button class="btn ghost" id="logout">Cerrar sesión</button></div>
+      ${s.otherOwner ? `<p class="small">Este equipo tiene avance de otra cuenta; no se enviará con esta sesión.</p>` : ""}`;
   }
-  const m = s.metrics;
-  view.innerHTML = `<div class="stack">
-    <section class="panel"><h2>Cuenta y sincronización</h2>${acct}
+  view.innerHTML = `<section class="hello"><h1>Cuenta</h1></section>
+    <section class="panel">${acct}
       <dl class="kv"><dt>Estado</dt><dd>${esc((SYNC_LABEL[s.state] || (() => s.state))(s))}</dd>
-      <dt>Última sincronización</dt><dd>${s.lastOk ? new Date(s.lastOk).toLocaleString("es-CL") : "—"}</dd>
-      <dt>${sync.isEnabled() ? "Pendientes en este equipo" : "Registros guardados solo aquí"}</dt><dd>${s.pending}</dd>
-      ${s.conflicts ? `<dt>Conflictos</dt><dd>${s.conflicts} (se conservan las copias locales)</dd>` : ""}
-      ${s.invalid ? `<dt>Eventos rechazados</dt><dd>${s.invalid}</dd>` : ""}
-      ${m ? `<dt>Último ciclo</dt><dd>${m.sent} enviados · ${m.received} recibidos · ${(m.bytesIn / 1024).toFixed(1)} KB · ${m.ms} ms</dd>` : ""}
+      <dt>Última actualización</dt><dd>${s.lastOk ? new Date(s.lastOk).toLocaleString("es-CL") : "—"}</dd>
+      ${s.pending ? `<dt>Por guardar</dt><dd>${s.pending}</dd>` : ""}
       ${s.lastError ? `<dt>Detalle</dt><dd class="small">${esc(s.lastError)}</dd>` : ""}</dl>
-      <p class="small">“Avance sincronizado” significa que este equipo envió todo y recibió lo último disponible. El otro equipo puede tener avances sin conexión que llegarán cuando se conecte.</p>
-    </section>
-    <section class="panel"><h2>Este dispositivo</h2>
-      <dl class="kv"><dt>Lecciones disponibles sin conexión</dt><dd>${app.lessons.size}</dd>
-      <dt>Almacenamiento persistente</dt><dd>${persist === true ? "Concedido" : persist === false ? "No concedido por el navegador" : "Aún no solicitado"}</dd>
-      <dt>Identificador</dt><dd class="mono small">${esc(dev?.device_id || "—")}</dd></dl>
-      <div class="row"><button class="btn ghost" id="dl-week">Descargar próxima semana</button></div>
-    </section>
-    <section class="panel"><h2>Respaldo opcional</h2>
-      <p class="small">Exporta tu historial a un archivo JSON. Importarlo fusiona por identificador de evento: no duplica ni reemplaza tu avance.</p>
-      <div class="row"><button class="btn ghost" id="export">Exportar respaldo</button><label class="btn ghost" for="import">Importar respaldo</label><input id="import" type="file" accept="application/json,.json" hidden></div>
-      <div id="import-preview"></div>
-    </section></div>`;
-
+    </section>`;
   const fe = $("#f-email");
   if (fe) {
     $("#email").oninput = (ev) => saveAuthDraft({ email: ev.target.value });
@@ -496,89 +254,149 @@ async function renderCuenta() {
       ev.preventDefault();
       const err = await sync.verifyCode($("#email").value.trim(), $("#code").value.trim());
       if (err) { const msg = `No pude verificar el código: ${err}`; saveAuthDraft({ msg }); if ($("#auth-msg")) $("#auth-msg").textContent = msg; }
-      else { clearAuthDraft(); if ($("#auth-msg")) $("#auth-msg").textContent = "Sesión iniciada."; }
+      else { clearAuthDraft(); if ($("#auth-msg")) $("#auth-msg").textContent = "Listo, sesión iniciada."; }
     };
   }
   const sn = $("#sync-now"); if (sn) sn.onclick = () => sync.schedule(0);
-  const lo = $("#logout"); if (lo) lo.onclick = async () => { await sync.signOut(); };
-  $("#dl-week").onclick = async () => { await prefetch(); await refresh(); toast("Lecciones de la próxima semana descargadas"); renderCuenta(); };
-  $("#export").onclick = exportBackup;
-  $("#import").onchange = (ev) => previewImport(ev.target.files[0]);
+  const lo = $("#logout"); if (lo) lo.onclick = () => sync.signOut();
 }
 
-async function exportBackup() {
-  const data = { format: "almanaque-respaldo", version: 1, exported_at: new Date().toISOString(), device: await db.getMeta("device"), owner: (await db.getMeta("owner")) || null, events: await db.allEvents(), lessons: (await db.allLessons()).map(l => ({ sha256: l.sha256, data: l.data })) };
-  const blob = new Blob([JSON.stringify(data, null, 1)], { type: "application/json" });
-  const a = document.createElement("a");
-  a.href = URL.createObjectURL(blob);
-  a.download = `almanaque-respaldo-${todayIso()}.json`;
-  document.body.appendChild(a); a.click(); a.remove();
-  setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+// ------------------------------------------------------------ Reproductor de tarjetas
+async function openLesson(entry) {
+  if (!entry) return;
+  const L = await ensureLesson(entry);
+  if (!L || !L.tarjetas) { toast("No pude abrir la lección. Revisa tu conexión."); return; }
+  let st = lessonState(L);
+  if (!st.activeRunId) { await record("lesson_opened", L, { run_id: crypto.randomUUID() }); st = lessonState(L); }
+  let attemptId = st.openAttempt?.attempt_id || null;
+  if (!attemptId) { attemptId = crypto.randomUUID(); await record("attempt_started", L, { run_id: st.activeRunId, payload: { attempt_id: attemptId } }); }
+  const n = L.tarjetas.length;
+  const start = !st.completed && st.maxStep > 0 ? Math.min(st.maxStep, n - 1) : 0;
+  app.play = { L, entry, i: start, attemptId, startedAt: Date.now(), revealed: new Set() };
+  document.body.classList.add("playing");
+  player.hidden = false;
+  player.dataset.fam = entry.familia;
+  renderCard();
 }
+function closePlayer() {
+  app.play = null; player.hidden = true; player.innerHTML = ""; document.body.classList.remove("playing");
+  render();
+}
+const curAttempt = () => lessonState(app.play.L).attempts.find(a => a.attempt_id === app.play.attemptId) || { answers: {}, completed: false };
 
-async function previewImport(file) {
-  const box = $("#import-preview");
-  if (!file) return;
-  let data;
-  try { data = JSON.parse(await file.text()); } catch { box.innerHTML = `<p class="note">El archivo no es un JSON válido.</p>`; return; }
-  if (data?.format !== "almanaque-respaldo" || data.version !== 1 || !Array.isArray(data.events)) { box.innerHTML = `<p class="note">El archivo no es un respaldo del Almanaque (formato o versión no reconocidos).</p>`; return; }
-  const owner = (await db.getMeta("owner")) || null;
-  const plan = { add: [], same: 0, conflict: 0, foreign: 0, lessons: [] };
-  for (const e of data.events) {
-    if (!e?.id || !e.type || !e.lesson_id) continue;
-    if (e.user_id && owner && e.user_id !== owner) { plan.foreign++; continue; }
-    const l = await db.getEvent(e.id);
-    if (!l) plan.add.push(e);
-    else if (JSON.stringify([l.type, l.lesson_id, l.lesson_revision, l.payload, l.run_id]) === JSON.stringify([e.type, e.lesson_id, e.lesson_revision, e.payload, e.run_id])) plan.same++;
-    else plan.conflict++;
+async function renderCard() {
+  const P = app.play; const { L } = P;
+  const n = L.tarjetas.length; // la tarjeta n es el resumen
+  const st = lessonState(L);
+  if (P.i < n) {
+    const T = L.tarjetas[P.i];
+    if (P.i > st.maxStep) await record("step_reached", L, { run_id: st.activeRunId, payload: { step_id: T.id } });
+  } else {
+    const a = curAttempt();
+    if (!a.completed) {
+      const dur = Math.min(86400, Math.max(0, Math.round((Date.now() - P.startedAt) / 1000)));
+      await record("lesson_completed", L, { run_id: lessonState(L).activeRunId, payload: { attempt_id: P.attemptId, duration_s: dur } });
+      P.justLearned = true;
+    }
   }
-  for (const l of data.lessons || []) if (l?.data?.id && !app.lessons.has(`${l.data.id}@${l.data.revision}`)) plan.lessons.push(l);
-  app.importPreview = plan;
-  box.innerHTML = `<div class="note">Vista previa: <b>${plan.add.length}</b> eventos nuevos, ${plan.same} ya existentes, ${plan.conflict} con contenido distinto (se conserva la copia local), ${plan.foreign} de otra cuenta (se omiten), ${plan.lessons.length} lecciones nuevas.
-    <div class="row"><button class="btn" id="imp-yes" ${plan.add.length || plan.lessons.length ? "" : "disabled"}>Importar</button><button class="btn ghost" id="imp-no">Cancelar</button></div></div>`;
-  $("#imp-no").onclick = () => { box.innerHTML = ""; app.importPreview = null; };
-  $("#imp-yes").onclick = async () => {
-    const own = (await db.getMeta("owner")) || null;
-    await db.putEvents(plan.add.map(e => ({ ...e, user_id: e.user_id || own, sync: (e.user_id || own) ? (e.seq != null ? "awaiting_confirmation" : "pending") : "local" })));
-    for (const l of plan.lessons) await db.putLesson(l.data, l.sha256);
-    await refresh(); sync.schedule(0);
-    toast(`Importados ${plan.add.length} eventos`); box.innerHTML = "";
-  };
+  const T = P.i < n ? L.tarjetas[P.i] : null;
+  const ans = curAttempt().answers || {};
+  const blocked = T && T.tipo === "pregunta" && !ans[T.id];
+  const bars = Array.from({ length: n + 1 }, (_, k) => `<i class="${k < P.i ? "done" : k === P.i ? "now" : ""}"></i>`).join("");
+  player.innerHTML = `<div class="pl-top"><div class="bars">${bars}</div>
+      <div class="pl-head"><span class="kicker">${esc(L.disciplina)}</span><button class="x" id="pl-close" aria-label="Cerrar">✕</button></div></div>
+    <div class="pl-card ${T ? "t-" + T.tipo : "t-resumen"}" id="pl-card">${T ? cardHtml(L, T, ans) : summaryHtml(L)}</div>
+    <div class="pl-nav">${P.i > 0 ? `<button class="btn ghost" id="pl-prev">Atrás</button>` : `<span></span>`}
+      ${T ? `<button class="btn" id="pl-next" ${blocked ? "disabled" : ""}>${blocked ? "Elige una respuesta" : P.i === n - 1 ? "Ver resumen" : "Siguiente"}</button>`
+          : `<button class="btn" id="pl-done">Terminar</button>`}</div>`;
+  $("#pl-close").onclick = closePlayer;
+  const pv = $("#pl-prev"); if (pv) pv.onclick = () => step(-1);
+  const nx = $("#pl-next"); if (nx) nx.onclick = () => step(1);
+  const dn = $("#pl-done"); if (dn) dn.onclick = () => { const first = P.justLearned; closePlayer(); if (first) go("aprendido"); };
+  if (T?.tipo === "pregunta") player.querySelectorAll(".opt:not([disabled])").forEach(b => b.onclick = async () => {
+    player.querySelectorAll(".opt").forEach(x => x.disabled = true);
+    await record("quiz_answered", L, { run_id: lessonState(L).activeRunId, payload: { attempt_id: P.attemptId, question_id: T.id, option_id: b.dataset.o } });
+    renderCard();
+  });
+  if (T?.tipo === "revelar") { const r = $("#reveal"); if (r) r.onclick = () => { P.revealed.add(T.id); renderCard(); }; }
+  bindSwipe($("#pl-card"));
 }
+function step(d) {
+  const P = app.play; if (!P) return;
+  const n = P.L.tarjetas.length;
+  const T = P.i < n ? P.L.tarjetas[P.i] : null;
+  if (d > 0 && T?.tipo === "pregunta" && !(curAttempt().answers || {})[T.id]) return;
+  P.i = Math.max(0, Math.min(n, P.i + d));
+  renderCard();
+}
+function cardHtml(L, T, ans) {
+  const src = T.fuenteIds?.length ? `<p class="src">Fuente: ${T.fuenteIds.map(id => esc(L.fuentes.find(f => f.id === id)?.entidad || id)).join(" · ")}</p>` : "";
+  if (T.tipo === "portada") return `${visualHtml(L, T.visual, "hero")}<h1>${esc(T.titulo)}</h1>${T.texto ? `<p class="lead">${esc(T.texto)}</p>` : ""}<p class="hint">Toca Siguiente o desliza para avanzar</p>`;
+  if (T.tipo === "idea") return `${visualHtml(L, T.visual)}<h2>${esc(T.titulo)}</h2><p class="lead">${esc(T.texto)}</p>${src}`;
+  if (T.tipo === "dato") return `${visualHtml(L, T.visual)}<span class="badge">Dato curioso</span><p class="lead">${esc(T.texto)}</p>${src}`;
+  if (T.tipo === "revelar") {
+    const open = app.play.revealed.has(T.id);
+    return `${visualHtml(L, T.visual)}<h2>${esc(T.titulo)}</h2><p class="lead">${esc(T.texto)}</p>
+      ${open ? `<div class="revealed"><p>${esc(T.revelado)}</p></div>${src}` : `<button class="btn reveal" id="reveal">Toca para descubrir</button>`}`;
+  }
+  if (T.tipo === "pregunta") {
+    const chosen = ans[T.id];
+    return `<span class="badge">¿Qué crees?</span><h2>${esc(T.pregunta)}</h2><div class="opts">
+      ${T.opciones.map(o => { const cls = chosen ? (o.id === T.correctaId ? "right" : o.id === chosen ? "wrong" : "") : ""; return `<button class="opt ${cls}" data-o="${esc(o.id)}" ${chosen ? "disabled" : ""}>${esc(o.texto)}</button>`; }).join("")}</div>
+      ${chosen ? `<p class="feedback ${chosen === T.correctaId ? "ok" : "bad"}">${esc(T.opciones.find(o => o.id === chosen)?.retro)}</p>` : `<p class="hint">No hay nota: elige y descubre la respuesta.</p>`}`;
+  }
+  return `<p>${esc(T.texto || "")}</p>`;
+}
+function summaryHtml(L) {
+  const R = L.resumen;
+  return `<span class="badge">Lo que aprendiste</span><h2>${esc(R.titulo)}</h2>
+    <ol class="points">${R.puntos.map(p => `<li>${esc(p)}</li>`).join("")}</ol>
+    <p class="saved">✓ Guardado en tu colección Aprendido</p>
+    <details class="sources"><summary>Fuentes de esta lección</summary><ul>${L.fuentes.map(f => `<li><b>${esc(f.entidad)}</b>, ${esc(f.titulo)}. <a href="${esc(f.url)}" target="_blank" rel="noopener">Abrir fuente</a></li>`).join("")}</ul></details>`;
+}
+function bindSwipe(el) {
+  if (!el) return;
+  let x0 = null, y0 = null;
+  el.addEventListener("touchstart", (e) => { x0 = e.touches[0].clientX; y0 = e.touches[0].clientY; }, { passive: true });
+  el.addEventListener("touchend", (e) => {
+    if (x0 == null) return;
+    const dx = e.changedTouches[0].clientX - x0, dy = e.changedTouches[0].clientY - y0; x0 = null;
+    if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy) * 1.5) step(dx < 0 ? 1 : -1);
+  }, { passive: true });
+}
+document.addEventListener("keydown", (e) => {
+  if (!app.play) return;
+  if (e.key === "ArrowRight") step(1); else if (e.key === "ArrowLeft") step(-1); else if (e.key === "Escape") closePlayer();
+});
 
-// ------------------------------------------------------------ utilidades UI
-function toast(t) { const el = $("#toast"); el.textContent = t; el.hidden = false; clearTimeout(toast.t); toast.t = setTimeout(() => el.hidden = true, 2400); }
-
+// ------------------------------------------------------------ utilidades
+function toast(t) { const el = $("#toast"); el.textContent = t; el.hidden = false; clearTimeout(toast.t); toast.t = setTimeout(() => el.hidden = true, 2600); }
 function setupServiceWorker() {
   if (!("serviceWorker" in navigator)) return;
-  navigator.serviceWorker.register("./sw.js").then(reg => {
-    app.swReg = reg;
-    const markWaiting = () => { if (reg.waiting && navigator.serviceWorker.controller) { app.updateWaiting = true; renderHeader(); } };
-    markWaiting();
-    reg.addEventListener("updatefound", () => { const w = reg.installing; w?.addEventListener("statechange", () => { if (w.state === "installed") markWaiting(); }); });
-  }).catch(() => {});
-  let reloading = false;
-  navigator.serviceWorker.addEventListener("controllerchange", () => { if (!reloading) { reloading = true; location.reload(); } });
-  $("#update-btn").onclick = () => {
-    if (app.session?.step === "quiz") { toast("Termina la evaluación y vuelve a pulsar Actualizar"); return; }
-    app.swReg?.waiting?.postMessage("SKIP_WAITING");
-  };
+  navigator.serviceWorker.register("./sw.js").catch(() => {});
+  let reloading = false; // la versión nueva toma el control sola; se recarga solo si no hay una lección abierta
+  navigator.serviceWorker.addEventListener("controllerchange", () => { if (!reloading && !app.play) { reloading = true; location.reload(); } });
 }
 
 // ------------------------------------------------------------ arranque
 async function main() {
-  for (const t of ["hoy", "repasar", "explorar", "biblioteca", "cuenta"]) $("#tab-" + t).onclick = () => go(t);
+  for (const t of ROUTES) $("#tab-" + t).onclick = () => go(t);
   $("#sync-pill").onclick = () => go("cuenta");
+  const vista = new URLSearchParams(location.search).get("vista");
+  if (vista && /^[a-z0-9-]+@[0-9]+$/.test(vista)) { const [id, rev] = vista.split("@"); app.preview = { id, rev: Number(rev) }; }
   const h = location.hash.slice(1);
-  if (["hoy", "repasar", "explorar", "biblioteca", "cuenta"].includes(h)) app.route = h;
+  if (ROUTES.includes(h)) app.route = h;
   setupServiceWorker();
-  [app.catalog, app.calendar, app.approvals] = await Promise.all([loadIndex("catalog.v1.json", "catalog"), loadIndex("calendar.v1.json", "calendar"), loadIndex("aprobaciones.v1.json", "aprobaciones")]);
+  [app.catalog, app.calendar, app.approvals] = await Promise.all([loadIndex("catalog.v1.json"), loadIndex("calendar.v1.json"), loadIndex("aprobaciones.v1.json")]);
   await refresh();
   render();
-  sync.onStatus(s => { app.syncStatus = s; renderHeader(); const typing = ["email", "code"].includes(document.activeElement?.id); if (app.route === "cuenta" && !app.session && !typing) renderCuenta(); });
-  window.addEventListener("almanaque:synced", async () => { await refresh(); await prefetch(); await refresh(); if (!app.session) render(); else renderHeader(); });
+  sync.onStatus(s => { app.syncStatus = s; renderHeader(); const typing = ["email", "code"].includes(document.activeElement?.id); if (app.route === "cuenta" && !app.play && !typing) renderCuenta(); });
+  window.addEventListener("almanaque:synced", async () => { await refresh(); if (!app.play) render(); else renderHeader(); });
+  document.addEventListener("visibilitychange", async () => { // al volver a la app, trae el contenido nuevo
+    if (document.visibilityState !== "visible" || app.play) return;
+    [app.catalog, app.calendar, app.approvals] = await Promise.all([loadIndex("catalog.v1.json"), loadIndex("calendar.v1.json"), loadIndex("aprobaciones.v1.json")]);
+    render();
+  });
   await sync.init();
-  await prefetch(); await refresh();
-  if (!app.session) render();
 }
 main();
