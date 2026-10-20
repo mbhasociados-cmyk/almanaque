@@ -128,10 +128,13 @@ function visualHtml(L, svgText, cls = "") {
   const clean = svgText ? sanitizeSvg(svgText, L.id) : null;
   return clean ? `<div class="visual ${cls}">${clean}</div>` : "";
 }
+// Portada por tema cuando la lección aún no tiene ilustración (no forma parte del contenido aprobado).
+const GLYPH = { fisica: "☀", astronomia: "☾", quimica: "⚗", cocina: "⚗", geografia: "▲", economia: "$", sociedad: "$", literatura: "✎", tecnologia: "⌖", historia: "⌛", arte: "✿", biologia: "❦", salud: "❦", matematica: "∑" };
+const placeholder = (fam, cls = "cover-visual") => `<div class="visual ${cls} placeholder" aria-hidden="true"><span class="glyph">${(GLYPH[fam] || "✦") + "\uFE0E"}</span></div>`;
 function coverSvg(entry) { // portada de la lección (desde el contenido, si ya está cargado)
   const L = app.lessons.get(`${entry.id}@${entry.revision}`);
   const t = L?.tarjetas?.find(x => x.tipo === "portada");
-  return L && t?.visual ? visualHtml(L, t.visual, "cover-visual") : `<div class="visual cover-visual placeholder"></div>`;
+  return L && t?.visual ? visualHtml(L, t.visual, "cover-visual") : placeholder(entry.familia);
 }
 function tile(entry, big = false) {
   const st = lessonState(entry);
@@ -335,7 +338,7 @@ function step(d) {
 }
 function cardHtml(L, T, ans) {
   const src = T.fuenteIds?.length ? `<p class="src">Fuente: ${T.fuenteIds.map(id => esc(L.fuentes.find(f => f.id === id)?.entidad || id)).join(" · ")}</p>` : "";
-  if (T.tipo === "portada") return `${visualHtml(L, T.visual, "hero")}<h1>${esc(T.titulo)}</h1>${T.texto ? `<p class="lead">${esc(T.texto)}</p>` : ""}<p class="hint">Toca Siguiente o desliza para avanzar</p>`;
+  if (T.tipo === "portada") return `${T.visual ? visualHtml(L, T.visual, "hero") : placeholder(L.familia, "hero")}<h1>${esc(T.titulo)}</h1>${T.texto ? `<p class="lead">${esc(T.texto)}</p>` : ""}<p class="hint">Toca Siguiente o desliza para avanzar</p>`;
   if (T.tipo === "idea") return `${visualHtml(L, T.visual)}<h2>${esc(T.titulo)}</h2><p class="lead">${esc(T.texto)}</p>${src}`;
   if (T.tipo === "dato") return `${visualHtml(L, T.visual)}<span class="badge">Dato curioso</span><p class="lead">${esc(T.texto)}</p>${src}`;
   if (T.tipo === "revelar") {

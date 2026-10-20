@@ -130,7 +130,7 @@
       "disciplina": "Cocina y ciencia",
       "familia": "quimica",
       "minutosEstimados": 5,
-      "estado": "borrador",
+      "estado": "publicado",
       "archivo": "data/lessons/pan-duro.r2.json",
       "sha256": "3adc5f6d782087f383b1aa5dd7b41762af3b8adbf292847087ad3ff864d21a05"
     },
@@ -142,7 +142,7 @@
       "disciplina": "Geografía",
       "familia": "geografia",
       "minutosEstimados": 5,
-      "estado": "borrador",
+      "estado": "publicado",
       "archivo": "data/lessons/temblores-chile.r2.json",
       "sha256": "fea71cf537e4cc0ed41eb4500f1ae10aa21d460e48ce9a4a5e62a7f82da2ac00"
     },
@@ -154,7 +154,7 @@
       "disciplina": "Economía cotidiana",
       "familia": "economia",
       "minutosEstimados": 5,
-      "estado": "borrador",
+      "estado": "publicado",
       "archivo": "data/lessons/unidad-fomento.r2.json",
       "sha256": "eae96171f04f74038eaf3ebd49e6aa5b275976ba96472d611285f540bad71d0b"
     },
@@ -166,7 +166,7 @@
       "disciplina": "Astronomía",
       "familia": "astronomia",
       "minutosEstimados": 5,
-      "estado": "borrador",
+      "estado": "publicado",
       "archivo": "data/lessons/fases-luna.r2.json",
       "sha256": "6cc20cb48916ab368ec0365a96ede9cf9072b595e4bef64b934884484611b70f"
     },
@@ -178,7 +178,7 @@
       "disciplina": "Literatura",
       "familia": "literatura",
       "minutosEstimados": 5,
-      "estado": "borrador",
+      "estado": "publicado",
       "archivo": "data/lessons/gabriela-mistral.r3.json",
       "sha256": "790672c9d8268907e56798e8d2a2ceb7a377b8d7297036d66a717f828a084351"
     },
@@ -190,7 +190,7 @@
       "disciplina": "Tecnología",
       "familia": "tecnologia",
       "minutosEstimados": 5,
-      "estado": "borrador",
+      "estado": "publicado",
       "archivo": "data/lessons/como-funciona-gps.r3.json",
       "sha256": "312b7c592e8c6e0c39b777a26395f22607d16330a3dcbbce8759b9f306e3171e"
     },
@@ -202,7 +202,7 @@
       "disciplina": "Ciencias de la Tierra",
       "familia": "geografia",
       "minutosEstimados": 5,
-      "estado": "borrador",
+      "estado": "publicado",
       "archivo": "data/lessons/mar-salado.r2.json",
       "sha256": "f048712c30906637637731978d5b2aa345e2aed290b416d3dc95492146fe3d75"
     }

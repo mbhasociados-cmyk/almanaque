@@ -74,7 +74,9 @@ a { color: var(--a); }
 .tile.big .tile-title { font-size: 28px; }
 .tile.big .tile-body { padding: 16px 18px 18px; gap: 6px; }
 .tile.big .cta { background: var(--a); color: #fff; padding: 9px 18px; border-radius: 99px; font-size: 15px; }
-.placeholder { min-height: 80px; }
+.placeholder { min-height: 80px; background: linear-gradient(135deg, var(--a-soft), color-mix(in srgb, var(--a) 30%, var(--a-soft))); }
+.placeholder .glyph { font-size: clamp(42px, 12vw, 84px); line-height: 1; color: var(--a); font-family: var(--serif); }
+.pl-card .visual.hero.placeholder { aspect-ratio: 16 / 9; }
 
 .stat { display: flex; align-items: baseline; gap: 6px; flex-wrap: wrap; margin: 16px 2px; color: var(--muted); }
 .stat b { font: 26px/1 var(--serif); color: var(--ink); }

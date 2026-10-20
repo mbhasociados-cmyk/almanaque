@@ -151,6 +151,155 @@
         "medio": "Aprobación expresa en conversación con Claude (\"vb cielo azul r3\"), tras revisar la vista previa publicada"
       },
       "pruebaComprension": "NO DOCUMENTADA. Max otorgó V°B° expreso, pero no entregó por escrito la explicación con sus palabras ni un ejemplo."
+    },
+    {
+      "id": "pan-duro",
+      "revision": 2,
+      "sha256": "3adc5f6d782087f383b1aa5dd7b41762af3b8adbf292847087ad3ff864d21a05",
+      "verificacion": {
+        "revisor": "ChatGPT",
+        "estado": "verificado",
+        "alcance": "exactitud editorial e integridad SHA-256",
+        "fecha": "2026-10-20",
+        "referencias": [
+          "RESPUESTA DE CHATGPT al MENSAJE N°17 (revisión editorial del lote 1 r2)"
+        ]
+      },
+      "funcionamiento": "PROBADA_POR_CLAUDE (copia local de la app, tamaño iPhone, 20-10-2026)",
+      "pruebaComprension": "NO DOCUMENTADA. Max otorgó V°B° expreso tras ver las vistas previas, pero no entregó por escrito las respuestas a las tres preguntas de comprensión.",
+      "vb": {
+        "por": "Max Monsalves Blanco",
+        "fecha": "2026-10-20",
+        "medio": "Aprobación expresa en conversación con Claude (\"vb. lote 1\"), tras revisar las vistas previas publicadas"
+      }
+    },
+    {
+      "id": "temblores-chile",
+      "revision": 2,
+      "sha256": "fea71cf537e4cc0ed41eb4500f1ae10aa21d460e48ce9a4a5e62a7f82da2ac00",
+      "verificacion": {
+        "revisor": "ChatGPT",
+        "estado": "verificado",
+        "alcance": "exactitud editorial e integridad SHA-256",
+        "fecha": "2026-10-20",
+        "referencias": [
+          "RESPUESTA DE CHATGPT al MENSAJE N°17 (revisión editorial del lote 1 r2)"
+        ]
+      },
+      "funcionamiento": "PROBADA_POR_CLAUDE (copia local de la app, tamaño iPhone, 20-10-2026)",
+      "pruebaComprension": "NO DOCUMENTADA. Max otorgó V°B° expreso tras ver las vistas previas, pero no entregó por escrito las respuestas a las tres preguntas de comprensión.",
+      "vb": {
+        "por": "Max Monsalves Blanco",
+        "fecha": "2026-10-20",
+        "medio": "Aprobación expresa en conversación con Claude (\"vb. lote 1\"), tras revisar las vistas previas publicadas"
+      }
+    },
+    {
+      "id": "unidad-fomento",
+      "revision": 2,
+      "sha256": "eae96171f04f74038eaf3ebd49e6aa5b275976ba96472d611285f540bad71d0b",
+      "verificacion": {
+        "revisor": "ChatGPT",
+        "estado": "verificado",
+        "alcance": "exactitud editorial e integridad SHA-256",
+        "fecha": "2026-10-20",
+        "referencias": [
+          "RESPUESTA DE CHATGPT al MENSAJE N°17 (revisión editorial del lote 1 r2)"
+        ]
+      },
+      "funcionamiento": "PROBADA_POR_CLAUDE (copia local de la app, tamaño iPhone, 20-10-2026)",
+      "pruebaComprension": "NO DOCUMENTADA. Max otorgó V°B° expreso tras ver las vistas previas, pero no entregó por escrito las respuestas a las tres preguntas de comprensión.",
+      "vb": {
+        "por": "Max Monsalves Blanco",
+        "fecha": "2026-10-20",
+        "medio": "Aprobación expresa en conversación con Claude (\"vb. lote 1\"), tras revisar las vistas previas publicadas"
+      }
+    },
+    {
+      "id": "fases-luna",
+      "revision": 2,
+      "sha256": "6cc20cb48916ab368ec0365a96ede9cf9072b595e4bef64b934884484611b70f",
+      "verificacion": {
+        "revisor": "ChatGPT",
+        "estado": "verificado",
+        "alcance": "exactitud editorial e integridad SHA-256",
+        "fecha": "2026-10-20",
+        "referencias": [
+          "RESPUESTA DE CHATGPT al MENSAJE N°17 (revisión editorial del lote 1 r2)"
+        ]
+      },
+      "funcionamiento": "PROBADA_POR_CLAUDE (copia local de la app, tamaño iPhone, 20-10-2026)",
+      "pruebaComprension": "NO DOCUMENTADA. Max otorgó V°B° expreso tras ver las vistas previas, pero no entregó por escrito las respuestas a las tres preguntas de comprensión.",
+      "vb": {
+        "por": "Max Monsalves Blanco",
+        "fecha": "2026-10-20",
+        "medio": "Aprobación expresa en conversación con Claude (\"vb. lote 1\"), tras revisar las vistas previas publicadas"
+      }
+    },
+    {
+      "id": "gabriela-mistral",
+      "revision": 3,
+      "sha256": "790672c9d8268907e56798e8d2a2ceb7a377b8d7297036d66a717f828a084351",
+      "verificacion": {
+        "revisor": "ChatGPT",
+        "estado": "verificado",
+        "alcance": "exactitud editorial e integridad SHA-256",
+        "fecha": "2026-10-20",
+        "referencias": [
+          "RESPUESTA DE CHATGPT al MENSAJE N°17 (revisión editorial del lote 1 r2)",
+          "RESPUESTA DE CHATGPT al MENSAJE N°18 (revisión r3 e integridad)"
+        ]
+      },
+      "funcionamiento": "PROBADA_POR_CLAUDE (copia local de la app, tamaño iPhone, 20-10-2026)",
+      "pruebaComprension": "NO DOCUMENTADA. Max otorgó V°B° expreso tras ver las vistas previas, pero no entregó por escrito las respuestas a las tres preguntas de comprensión.",
+      "vb": {
+        "por": "Max Monsalves Blanco",
+        "fecha": "2026-10-20",
+        "medio": "Aprobación expresa en conversación con Claude (\"vb. lote 1\"), tras revisar las vistas previas publicadas"
+      }
+    },
+    {
+      "id": "como-funciona-gps",
+      "revision": 3,
+      "sha256": "312b7c592e8c6e0c39b777a26395f22607d16330a3dcbbce8759b9f306e3171e",
+      "verificacion": {
+        "revisor": "ChatGPT",
+        "estado": "verificado",
+        "alcance": "exactitud editorial e integridad SHA-256",
+        "fecha": "2026-10-20",
+        "referencias": [
+          "RESPUESTA DE CHATGPT al MENSAJE N°17 (revisión editorial del lote 1 r2)",
+          "RESPUESTA DE CHATGPT al MENSAJE N°18 (revisión r3 e integridad)"
+        ]
+      },
+      "funcionamiento": "PROBADA_POR_CLAUDE (copia local de la app, tamaño iPhone, 20-10-2026)",
+      "pruebaComprension": "NO DOCUMENTADA. Max otorgó V°B° expreso tras ver las vistas previas, pero no entregó por escrito las respuestas a las tres preguntas de comprensión.",
+      "vb": {
+        "por": "Max Monsalves Blanco",
+        "fecha": "2026-10-20",
+        "medio": "Aprobación expresa en conversación con Claude (\"vb. lote 1\"), tras revisar las vistas previas publicadas"
+      }
+    },
+    {
+      "id": "mar-salado",
+      "revision": 2,
+      "sha256": "f048712c30906637637731978d5b2aa345e2aed290b416d3dc95492146fe3d75",
+      "verificacion": {
+        "revisor": "ChatGPT",
+        "estado": "verificado",
+        "alcance": "exactitud editorial e integridad SHA-256",
+        "fecha": "2026-10-20",
+        "referencias": [
+          "RESPUESTA DE CHATGPT al MENSAJE N°17 (revisión editorial del lote 1 r2)"
+        ]
+      },
+      "funcionamiento": "PROBADA_POR_CLAUDE (copia local de la app, tamaño iPhone, 20-10-2026)",
+      "pruebaComprension": "NO DOCUMENTADA. Max otorgó V°B° expreso tras ver las vistas previas, pero no entregó por escrito las respuestas a las tres preguntas de comprensión.",
+      "vb": {
+        "por": "Max Monsalves Blanco",
+        "fecha": "2026-10-20",
+        "medio": "Aprobación expresa en conversación con Claude (\"vb. lote 1\"), tras revisar las vistas previas publicadas"
+      }
     }
   ],
   "reglas": [
