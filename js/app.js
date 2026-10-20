@@ -58,7 +58,7 @@ function editorialState(entry) {
   if (!regs.length) return "borrador";
   if (regs.length > 1 || regs.some(r => r.sha256 !== entry.sha256)) return "excluido";
   const r = regs[0];
-  const verified = r.verificacion && r.verificacion.resultado === "aprobado" && r.verificacion.revisor && r.verificacion.fecha;
+  const verified = r.verificacion && (r.verificacion.resultado === "aprobado" || r.verificacion.estado === "verificado") && r.verificacion.revisor && r.verificacion.fecha;
   if (!verified) return "borrador";
   return r.vb && r.vb.por && r.vb.fecha ? "publicado" : "verificado";
 }
@@ -71,9 +71,13 @@ function todayEntry() {
   if (app.preview) { const p = catEntry(app.preview.id, app.preview.rev); if (p && visible(p)) return p; }
   const c = app.calendar?.entradas.find(x => x.fecha === todayIso());
   const e = c ? catEntry(c.id, c.revision) : null;
-  if (e && visible(e)) return e;
-  return visibleEntries().find(x => !lessonState(x).completed) || visibleEntries()[0] || null; // si no hay calendario, una pendiente
+  return e && visible(e) ? e : null; // solo la lección programada para hoy
 }
+// Fecha programada de una lección; si es futura, la lección se muestra como "Anticipada".
+const scheduled = (e) => app.calendar?.entradas.find(x => x.id === e.id && x.revision === e.revision)?.fecha || null;
+const isEarly = (e) => { const f = scheduled(e); return Boolean(f && f > todayIso()); };
+const shortDate = (iso) => { const [, m, d] = iso.split("-").map(Number); return `${d} de ${MESES[m - 1]}`; };
+const nextScheduled = () => (app.calendar?.entradas || []).filter(x => x.fecha > todayIso()).map(x => ({ x, e: catEntry(x.id, x.revision) })).filter(o => o.e && visible(o.e)).sort((a, b) => a.x.fecha.localeCompare(b.x.fecha))[0] || null;
 
 // ------------------------------------------------------------ estado y eventos
 async function refresh() {
@@ -132,10 +136,10 @@ function coverSvg(entry) { // portada de la lección (desde el contenido, si ya 
 function tile(entry, big = false) {
   const st = lessonState(entry);
   const L = app.lessons.get(`${entry.id}@${entry.revision}`);
-  const action = st.completed ? "Aprendida ✓" : st.maxStep >= 0 ? "Continuar" : big ? "Empezar" : `${entry.minutosEstimados} min`;
+  const action = st.completed ? "Aprendida ✓ · ver de nuevo" : st.maxStep >= 0 ? "Continuar" : "Empezar";
   return `<button class="tile ${big ? "big" : ""}" data-fam="${esc(entry.familia)}" data-open="${esc(entry.id)}@${entry.revision}">
     ${coverSvg(entry)}
-    <span class="tile-body"><span class="kicker">${esc(entry.disciplina)}</span><span class="tile-title">${esc(entry.titulo)}</span>
+    <span class="tile-body"><span class="kicker">${esc(entry.disciplina)}${isEarly(entry) && !isPreview(entry) ? ` · Anticipada, del ${esc(shortDate(scheduled(entry)))}` : ""}</span><span class="tile-title">${esc(entry.titulo)}</span>
     ${big && L?.subtitulo ? `<span class="tile-sub">${esc(L.subtitulo)}</span>` : ""}
     <span class="tile-foot"><span>${entry.minutosEstimados} min</span><span class="cta">${action}</span></span></span></button>`;
 }
@@ -157,10 +161,10 @@ function renderHoy() {
   const dow = new Date(Date.UTC(y, m - 1, d)).getUTCDay();
   const e = todayEntry();
   const n = learned().length;
-  const others = visibleEntries().filter(x => x !== e && !lessonState(x).completed).slice(0, 4);
+  const others = e ? visibleEntries().filter(x => x !== e && !lessonState(x).completed && !isEarly(x)).slice(0, 4) : [];
   view.innerHTML = `<section class="hello"><p class="date">${DIAS[dow]} ${d} de ${MESES[m - 1]}</p>
       <h1>${app.preview ? "Vista previa" : "Tu idea de hoy"}</h1></section>
-    ${e ? tile(e, true) : `<div class="empty"><h2>Pronto llega tu próxima idea</h2><p>Estamos preparando y verificando las próximas lecciones.</p></div>`}
+    ${e ? tile(e, true) : (() => { const nx = nextScheduled(); return `<div class="empty"><h2>Hoy no hay una idea programada</h2><p>${nx ? `La próxima llega el ${esc(shortDate(nx.x.fecha))}. Si no quieres esperar, puedes verla anticipada en Explorar.` : "Estamos preparando y verificando las próximas lecciones."}</p>${nx ? `<button class="btn" data-go="explorar">Ir a Explorar</button>` : ""}</div>`; })()}
     <div class="stat"><b>${n}</b> ${n === 1 ? "idea aprendida" : "ideas aprendidas"} <button class="link" data-go="aprendido">Ver mi colección</button></div>
     ${others.length ? `<h2 class="section">Sigue explorando</h2><div class="grid">${others.map(x => tile(x)).join("")}</div>` : ""}`;
   bindTiles();

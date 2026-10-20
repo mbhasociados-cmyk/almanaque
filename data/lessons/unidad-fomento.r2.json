@@ -1,0 +1,171 @@
+{
+  "schemaVersion": "2.0",
+  "id": "unidad-fomento",
+  "revision": 2,
+  "idioma": "es-CL",
+  "disciplina": "Economía cotidiana",
+  "familia": "economia",
+  "titulo": "¿Qué cambia cuando un precio está en UF?",
+  "subtitulo": "Arriendos, créditos y seguros: por qué no en pesos.",
+  "minutosEstimados": 5,
+  "tarjetas": [
+    {
+      "id": "c1",
+      "tipo": "portada",
+      "titulo": "¿Qué es la UF?",
+      "texto": "Créditos y seguros pueden estar expresados en UF. ¿Por qué no simplemente en pesos?",
+      "fuenteIds": [
+        "bcch-uf"
+      ]
+    },
+    {
+      "id": "c2",
+      "tipo": "idea",
+      "titulo": "Medir cuánto cambian los precios",
+      "texto": "Cada mes, el INE mide cuánto cambian los precios de una canasta de productos y servicios que compran los hogares. Ese índice se llama IPC.",
+      "fuenteIds": [
+        "ine-ipc"
+      ]
+    },
+    {
+      "id": "c3",
+      "tipo": "idea",
+      "titulo": "La UF sigue al IPC",
+      "texto": "La UF es una unidad que calcula el Banco Central. Su valor en pesos se reajusta diariamente según el IPC del mes anterior.",
+      "fuenteIds": [
+        "bcch-uf"
+      ]
+    },
+    {
+      "id": "c4",
+      "tipo": "pregunta",
+      "pregunta": "Si el IPC del mes anterior subió, ¿qué pasa con el valor de la UF en pesos?",
+      "correctaId": "a",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Sube un poco cada día, desde el día 10",
+          "retro": "¡Exacto! La UF se reajusta cada día, desde el 10 de un mes hasta el 9 del siguiente, según el IPC del mes anterior."
+        },
+        {
+          "id": "b",
+          "texto": "Baja",
+          "retro": "Al revés: si el IPC del mes anterior subió, la UF sube en pesos."
+        },
+        {
+          "id": "c",
+          "texto": "Cambia al instante con los precios de hoy",
+          "retro": "No: la UF sigue el IPC del mes anterior, que ya fue medido; no reacciona a los precios de hoy."
+        }
+      ],
+      "fuenteIds": [
+        "bcch-uf"
+      ]
+    },
+    {
+      "id": "c5",
+      "tipo": "idea",
+      "titulo": "Un arriendo en UF",
+      "texto": "Si el contrato mantiene el arriendo en 10 UF, cada mes pagas 10 UF. Pero si el IPC del mes anterior subió, esas 10 UF equivalen a un poco más de pesos.",
+      "fuenteIds": [
+        "bcch-uf"
+      ]
+    },
+    {
+      "id": "c6",
+      "tipo": "revelar",
+      "titulo": "¿Para qué sirve en un crédito?",
+      "texto": "Si un crédito está expresado en UF, ¿qué le pasa a la deuda en pesos?",
+      "revelado": "Se reajusta según el IPC del mes anterior. El Banco Central explica que la UF sirve como índice de reajuste para créditos en moneda nacional de bancos y cooperativas, y que también la usan cajas de compensación y compañías de seguros.",
+      "fuenteIds": [
+        "bcch-uf"
+      ]
+    },
+    {
+      "id": "c7",
+      "tipo": "pregunta",
+      "pregunta": "Te ofrecen dos arriendos: uno en pesos fijos por dos años y otro que se mantiene en UF. Si el IPC viene subiendo, ¿cuál sube en pesos?",
+      "correctaId": "a",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "El que está en UF",
+          "retro": "Correcto: como la UF se reajusta según el IPC del mes anterior, el monto en pesos sube."
+        },
+        {
+          "id": "b",
+          "texto": "El de pesos fijos",
+          "retro": "El de pesos fijos se mantiene en el mismo monto en pesos."
+        },
+        {
+          "id": "c",
+          "texto": "Ninguno de los dos",
+          "retro": "El que está en UF sí cambia en pesos, porque la UF se reajusta según el IPC del mes anterior."
+        }
+      ],
+      "fuenteIds": [
+        "bcch-uf"
+      ]
+    },
+    {
+      "id": "c8",
+      "tipo": "dato",
+      "texto": "El valor de la UF se conoce por adelantado: a más tardar el día 9 de cada mes se publican en el Diario Oficial los valores de cada día, desde el 10 de ese mes hasta el 9 del siguiente.",
+      "fuenteIds": [
+        "bcch-uf"
+      ]
+    }
+  ],
+  "resumen": {
+    "titulo": "La UF",
+    "puntos": [
+      "La UF es una unidad que calcula el Banco Central; su valor en pesos se reajusta cada día.",
+      "El reajuste sigue el IPC del mes anterior, el índice que mide cuánto cambiaron los precios.",
+      "Por eso, un monto en UF equivale a más pesos cuando el IPC del mes anterior subió."
+    ]
+  },
+  "fuentes": [
+    {
+      "id": "bcch-uf",
+      "entidad": "Banco Central de Chile",
+      "titulo": "Unidad de Fomento (UF): nota metodológica",
+      "url": "https://si3.bcentral.cl/estadisticas/Principal1/Metodologias/EMF/UF.pdf",
+      "ubicacion": "Texto completo",
+      "afirmaciones": [
+        "La UF es un índice de reajustabilidad, calculado y autorizado por el Banco Central de Chile",
+        "Se reajusta en forma diaria desde el día 10 de cada mes hasta el día 9 del mes siguiente, de acuerdo con la variación del IPC",
+        "Se usa como índice de reajuste para créditos en moneda nacional de bancos y cooperativas, y en otras entidades como cajas de compensación y compañías de seguros",
+        "El valor diario se publica en el Diario Oficial a más tardar el día 9 de cada mes"
+      ],
+      "respalda": [
+        "c1",
+        "c3",
+        "c4",
+        "c5",
+        "c6",
+        "c7",
+        "c8"
+      ],
+      "consultadaEl": "2026-10-20"
+    },
+    {
+      "id": "ine-ipc",
+      "entidad": "Instituto Nacional de Estadísticas",
+      "titulo": "Índice de Precios al Consumidor",
+      "url": "https://www.ine.gob.cl/estadisticas/economia/indices-de-precio-e-inflacion/indice-de-precios-al-consumidor",
+      "ubicacion": "Definición",
+      "afirmaciones": [
+        "El IPC mide mes a mes la variación de los precios de una canasta de bienes y servicios representativa del consumo de los hogares urbanos"
+      ],
+      "respalda": [
+        "c2"
+      ],
+      "consultadaEl": "2026-10-20"
+    }
+  ],
+  "controlEditorial": {
+    "estado": "borrador",
+    "revisadoPor": null,
+    "fechaRevision": null
+  }
+}

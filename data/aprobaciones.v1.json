@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "nota": "Registro editorial fuera del contenido: modificar la lección cambiaría su SHA-256 e invalidaría la verificación. Estado publicado = verificación aprobada + V°B° de Max sobre el mismo SHA-256.",
+  "nota": "Registro editorial fuera del contenido: modificar la lección cambiaría su SHA-256 e invalidaría la verificación. Regla: una lección queda publicada solo si existe un único registro para su id y revisión, con el mismo SHA-256 del archivo publicado, una verificación válida de ChatGPT y el V°B° de Max sobre esa misma huella. Se admiten dos formatos de verificación con el mismo efecto: verificacion.resultado = \"aprobado\" (registros de lecciones 1.x) y verificacion.estado = \"verificado\" con su alcance (desde el piloto en tarjetas). El V°B° es exclusivo de Max; la prueba de comprensión se registra por separado y su ausencia se deja anotada.",
   "registros": [
     {
       "id": "numero-aureo",
@@ -130,6 +130,27 @@
         "fecha": "2026-10-19",
         "medio": "V°B° de Max a las cinco r3, comunicado por Max a Claude junto con la RESPUESTA DE CHATGPT N°10"
       }
+    },
+    {
+      "id": "cielo-azul",
+      "revision": 3,
+      "sha256": "e68c9e3315f25ced78fbbb61402dfcf06ed892d51700fd33282fa443bff8a8a8",
+      "verificacion": {
+        "revisor": "ChatGPT",
+        "estado": "verificado",
+        "alcance": "exactitud editorial e integridad SHA-256",
+        "fecha": "2026-10-20",
+        "referencias": [
+          "RESPUESTA DE CHATGPT N°13 (revisión editorial)",
+          "Verificación N°14 (SHA-256 sobre el archivo exacto e integridad frente a r2)"
+        ]
+      },
+      "vb": {
+        "por": "Max Monsalves Blanco",
+        "fecha": "2026-10-20",
+        "medio": "Aprobación expresa en conversación con Claude (\"vb cielo azul r3\"), tras revisar la vista previa publicada"
+      },
+      "pruebaComprension": "NO DOCUMENTADA. Max otorgó V°B° expreso, pero no entregó por escrito la explicación con sus palabras ni un ejemplo."
     }
   ],
   "reglas": [

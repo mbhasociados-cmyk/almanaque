@@ -1,0 +1,210 @@
+{
+  "schemaVersion": "2.0",
+  "id": "como-funciona-gps",
+  "revision": 3,
+  "idioma": "es-CL",
+  "disciplina": "Tecnología",
+  "familia": "tecnologia",
+  "titulo": "¿Cómo sabe el GPS dónde estoy?",
+  "subtitulo": "El punto azul del mapa, explicado.",
+  "minutosEstimados": 5,
+  "tarjetas": [
+    {
+      "id": "c1",
+      "tipo": "portada",
+      "titulo": "¿Cómo sabe el GPS dónde estoy?",
+      "texto": "Abres el mapa del celular y aparece un punto justo donde estás. Una parte de esa respuesta viene del espacio.",
+      "fuenteIds": [
+        "gps-poster"
+      ]
+    },
+    {
+      "id": "c2",
+      "tipo": "idea",
+      "titulo": "Satélites alrededor de la Tierra",
+      "texto": "El sistema GPS mantiene al menos 24 satélites funcionando, a unos 20.200 kilómetros de altura.",
+      "fuenteIds": [
+        "gps-espacio"
+      ]
+    },
+    {
+      "id": "c3",
+      "tipo": "idea",
+      "titulo": "Señales con la hora exacta",
+      "texto": "Cada satélite envía señales de radio con la hora exacta de sus relojes atómicos. El receptor anota cuándo llega cada señal y, comparando las horas, calcula a qué distancia está cada satélite.",
+      "fuenteIds": [
+        "gps-poster",
+        "britannica-gps"
+      ]
+    },
+    {
+      "id": "c4",
+      "tipo": "pregunta",
+      "pregunta": "¿Qué compara el receptor GPS para saber a qué distancia está cada satélite?",
+      "correctaId": "a",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "La hora en que salió la señal y la hora en que llegó",
+          "retro": "¡Exacto! Con esa diferencia calcula la distancia."
+        },
+        {
+          "id": "b",
+          "texto": "La fuerza del viento",
+          "retro": "El viento no tiene que ver: el GPS usa la hora de las señales de radio de los satélites."
+        },
+        {
+          "id": "c",
+          "texto": "La temperatura del aire",
+          "retro": "No: el GPS calcula distancias con la hora de salida y de llegada de las señales."
+        }
+      ],
+      "fuenteIds": [
+        "gps-poster",
+        "britannica-gps"
+      ]
+    },
+    {
+      "id": "c5",
+      "tipo": "idea",
+      "titulo": "Por lo menos cuatro",
+      "texto": "Cuando conoce su distancia a por lo menos cuatro satélites, el receptor calcula su posición en tres dimensiones.",
+      "fuenteIds": [
+        "gps-poster",
+        "britannica-gps"
+      ]
+    },
+    {
+      "id": "c6",
+      "tipo": "revelar",
+      "titulo": "¿Funciona en todas partes?",
+      "texto": "¿Crees que el GPS funciona igual de bien dentro de un edificio que en un lugar abierto?",
+      "revelado": "No siempre. La constelación está distribuida para ofrecer cobertura desde prácticamente toda la Tierra, pero para recibir bien las señales ayuda tener el cielo despejado: los edificios, los puentes y los árboles pueden bloquearlas.",
+      "fuenteIds": [
+        "gps-espacio",
+        "gps-precision"
+      ]
+    },
+    {
+      "id": "c7",
+      "tipo": "pregunta",
+      "pregunta": "Para calcular una posición en tres dimensiones usando GPS, ¿de cuántos satélites necesita conocer la distancia un receptor, como mínimo?",
+      "correctaId": "a",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Cuatro",
+          "retro": "Correcto: necesita la distancia a por lo menos cuatro satélites."
+        },
+        {
+          "id": "b",
+          "texto": "Uno",
+          "retro": "Con uno solo no le alcanza: necesita por lo menos cuatro."
+        },
+        {
+          "id": "c",
+          "texto": "Veinticuatro",
+          "retro": "Hay al menos 24 en órbita, pero el mínimo para calcular la posición es conocer la distancia a cuatro."
+        }
+      ],
+      "fuenteIds": [
+        "gps-poster",
+        "gps-espacio"
+      ]
+    },
+    {
+      "id": "c8",
+      "tipo": "dato",
+      "texto": "Cada satélite GPS da dos vueltas completas a la Tierra por día.",
+      "fuenteIds": [
+        "gps-espacio"
+      ]
+    }
+  ],
+  "resumen": {
+    "titulo": "Cómo funciona el GPS",
+    "puntos": [
+      "El GPS usa al menos 24 satélites que envían señales de radio con la hora de sus relojes atómicos.",
+      "El receptor compara cuándo salió y cuándo llegó cada señal, y así calcula su distancia a cada satélite.",
+      "Con la distancia a por lo menos cuatro satélites calcula su posición; los edificios y los árboles pueden bloquear las señales."
+    ]
+  },
+  "fuentes": [
+    {
+      "id": "gps-poster",
+      "entidad": "GPS.gov (Gobierno de los Estados Unidos)",
+      "titulo": "How GPS Works (póster, versión de texto)",
+      "url": "https://www.gps.gov/multimedia/poster/poster.txt",
+      "ubicacion": "Sección sobre el funcionamiento del receptor",
+      "afirmaciones": [
+        "Los satélites GPS transmiten señales de radio con su ubicación, su estado y la hora precisa (t1) de sus relojes atómicos",
+        "El receptor registra la hora exacta de llegada (t2) de cada señal y, comparándola con la hora de emisión, calcula su distancia a cada satélite",
+        "Cuando conoce su distancia a por lo menos cuatro satélites, puede calcular su posición tridimensional en la Tierra"
+      ],
+      "respalda": [
+        "c1",
+        "c3",
+        "c4",
+        "c5",
+        "c7"
+      ],
+      "consultadaEl": "2026-10-20"
+    },
+    {
+      "id": "britannica-gps",
+      "entidad": "Encyclopaedia Britannica",
+      "titulo": "GPS",
+      "url": "https://www.britannica.com/technology/GPS",
+      "ubicacion": "Resumen inicial",
+      "afirmaciones": [
+        "El receptor mide el tiempo que tardan las señales de radio de cuatro o más satélites, calcula la distancia a cada uno y con ello determina la posición"
+      ],
+      "respalda": [
+        "c3",
+        "c4",
+        "c5"
+      ],
+      "consultadaEl": "2026-10-20"
+    },
+    {
+      "id": "gps-espacio",
+      "entidad": "GPS.gov (Gobierno de los Estados Unidos)",
+      "titulo": "Space Segment",
+      "url": "https://www.gps.gov/systems/gps/space/",
+      "ubicacion": "Constelación y órbitas",
+      "afirmaciones": [
+        "Se comprometen a mantener al menos 24 satélites GPS operativos el 95 % del tiempo",
+        "Los satélites operan a aproximadamente 20.200 km de altura",
+        "Cada satélite da dos vueltas a la Tierra por día",
+        "La disposición permite ver al menos cuatro satélites desde prácticamente cualquier punto del planeta"
+      ],
+      "respalda": [
+        "c2",
+        "c6",
+        "c7",
+        "c8"
+      ],
+      "consultadaEl": "2026-10-20"
+    },
+    {
+      "id": "gps-precision",
+      "entidad": "GPS.gov (Gobierno de los Estados Unidos)",
+      "titulo": "GPS Accuracy",
+      "url": "https://www.gps.gov/gps-accuracy",
+      "ubicacion": "Causas comunes de pérdida de precisión",
+      "afirmaciones": [
+        "El bloqueo de las señales por edificios, puentes, árboles, etc., y el uso en interiores o bajo tierra degradan la precisión",
+        "La precisión de los teléfonos empeora cerca de edificios, puentes y árboles"
+      ],
+      "respalda": [
+        "c6"
+      ],
+      "consultadaEl": "2026-10-20"
+    }
+  ],
+  "controlEditorial": {
+    "estado": "borrador",
+    "revisadoPor": null,
+    "fechaRevision": null
+  }
+}
