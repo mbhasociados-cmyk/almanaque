@@ -58,9 +58,11 @@ function editorialState(entry) {
   if (!regs.length) return "borrador";
   if (regs.length > 1 || regs.some(r => r.sha256 !== entry.sha256)) return "excluido";
   const r = regs[0];
-  const verified = r.verificacion && (r.verificacion.resultado === "aprobado" || r.verificacion.estado === "verificado") && r.verificacion.revisor && r.verificacion.fecha;
+  // Opción A (delegación general de Max del 20-10-2026): autoverificación de Claude + publicación autorizada por delegación, sin V°B° individual.
+  const optA = r.modalidad === "opcion-A" && r.estadoRevision === "AUTOVERIFICADA_POR_CLAUDE" && r.publicacion === "AUTORIZADA_POR_DELEGACION_GENERAL_DE_MAX" && r.delegacion && r.delegacion.por && r.delegacion.fecha;
+  const verified = optA || (r.verificacion && (r.verificacion.resultado === "aprobado" || r.verificacion.estado === "verificado") && r.verificacion.revisor && r.verificacion.fecha);
   if (!verified) return "borrador";
-  return r.vb && r.vb.por && r.vb.fecha ? "publicado" : "verificado";
+  return optA || (r.vb && r.vb.por && r.vb.fecha) ? "publicado" : "verificado";
 }
 const isPreview = (e) => Boolean(app.preview && e && e.id === app.preview.id && e.revision === app.preview.rev);
 const isCards = (e) => e?.schemaVersion === "2.0"; // la interfaz v3 muestra solo lecciones en tarjetas
@@ -68,7 +70,7 @@ function visible(e) { const st = editorialState(e); return isCards(e) && (st ===
 const visibleEntries = () => (app.catalog?.lecciones || []).filter(e => visible(e) && (!isPreview(e) || REVIEW_MODE || editorialState(e) === "publicado"));
 function todayIso() { return chileDate(new Date()); }
 function todayEntry() {
-  if (app.preview) { const p = catEntry(app.preview.id, app.preview.rev); if (p && visible(p)) return p; }
+  if (app.preview) { const p = catEntry(app.preview.id, app.preview.rev); if (p && visible(p) && editorialState(p) !== "publicado") return p; }
   const c = app.calendar?.entradas.find(x => x.fecha === todayIso());
   const e = c ? catEntry(c.id, c.revision) : null;
   return e && visible(e) ? e : null; // solo la lección programada para hoy
@@ -110,8 +112,10 @@ function renderHeader() {
   for (const t of ROUTES) $("#tab-" + t).setAttribute("aria-current", app.route === t ? "page" : "false");
   const n = learned().length;
   $("#tab-aprendido .n").textContent = n ? String(n) : "";
-  $("#review-bar").hidden = !REVIEW_MODE && !app.preview;
-  $("#review-bar").innerHTML = app.preview ? `Vista previa de un borrador: no se publica hasta tener verificación y V°B°. <a href="./">Salir</a>` : "Modo revisión: se muestran borradores.";
+  const pe = app.preview ? catEntry(app.preview.id, app.preview.rev) : null;
+  const draftPreview = Boolean(pe && editorialState(pe) !== "publicado");
+  $("#review-bar").hidden = !REVIEW_MODE && !draftPreview;
+  $("#review-bar").innerHTML = draftPreview ? `Vista previa de un borrador: no se publica hasta tener verificación y V°B°. <a href="./">Salir</a>` : "Modo revisión: se muestran borradores.";
 }
 function go(route) {
   app.route = ROUTES.includes(route) ? route : "hoy"; app.open = null;
@@ -165,13 +169,15 @@ function renderHoy() {
   const e = todayEntry();
   const n = learned().length;
   const others = e ? visibleEntries().filter(x => x !== e && !lessonState(x).completed && !isEarly(x)).slice(0, 4) : [];
+  const proximas = visibleEntries().filter(x => x !== e && isEarly(x) && !lessonState(x).completed).sort((a, b) => scheduled(a).localeCompare(scheduled(b))).slice(0, 6);
   view.innerHTML = `<section class="hello"><p class="date">${DIAS[dow]} ${d} de ${MESES[m - 1]}</p>
-      <h1>${app.preview ? "Vista previa" : "Tu idea de hoy"}</h1></section>
+      <h1>${app.preview && e && isPreview(e) ? "Vista previa" : "Tu idea de hoy"}</h1></section>
     ${e ? tile(e, true) : (() => { const nx = nextScheduled(); return `<div class="empty"><h2>Hoy no hay una idea programada</h2><p>${nx ? `La próxima llega el ${esc(shortDate(nx.x.fecha))}. Si no quieres esperar, puedes verla anticipada en Explorar.` : "Estamos preparando y verificando las próximas lecciones."}</p>${nx ? `<button class="btn" data-go="explorar">Ir a Explorar</button>` : ""}</div>`; })()}
     <div class="stat"><b>${n}</b> ${n === 1 ? "idea aprendida" : "ideas aprendidas"} <button class="link" data-go="aprendido">Ver mi colección</button></div>
-    ${others.length ? `<h2 class="section">Sigue explorando</h2><div class="grid">${others.map(x => tile(x)).join("")}</div>` : ""}`;
+    ${others.length ? `<h2 class="section">Sigue explorando</h2><div class="grid">${others.map(x => tile(x)).join("")}</div>` : ""}
+    ${proximas.length ? `<h2 class="section">Próximas lecciones</h2><p class="date">Puedes verlas antes de su fecha.</p><div class="grid">${proximas.map(x => tile(x)).join("")}</div>` : ""}`;
   bindTiles();
-  loadAll([e, ...others].filter(Boolean));
+  loadAll([e, ...others, ...proximas].filter(Boolean));
 }
 
 // ------------------------------------------------------------ Explorar

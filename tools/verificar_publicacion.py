@@ -28,10 +28,17 @@ for k, n in cuenta.items():
     if n > 1: err(f"registro duplicado: {k} aparece {n} veces")
 reg = {(r["id"], r["revision"]): r for r in apr["registros"]}
 
+def opcion_a(r):
+    d = r.get("delegacion") or {}
+    return (r.get("modalidad") == "opcion-A" and r.get("estadoRevision") == "AUTOVERIFICADA_POR_CLAUDE"
+            and r.get("publicacion") == "AUTORIZADA_POR_DELEGACION_GENERAL_DE_MAX" and bool(d.get("por") and d.get("fecha")))
 def verificado(r):
+    if opcion_a(r): return True
     v = r.get("verificacion") or {}
     return (v.get("resultado") == "aprobado" or v.get("estado") == "verificado") and v.get("revisor") and v.get("fecha")
-def con_vb(r): return bool((r.get("vb") or {}).get("por") and (r.get("vb") or {}).get("fecha"))
+def con_vb(r):
+    if opcion_a(r): return True
+    return bool((r.get("vb") or {}).get("por") and (r.get("vb") or {}).get("fecha"))
 
 # 2. Catálogo: sin duplicados; la huella declarada coincide con el archivo
 cuenta_cat = Counter((l["id"], l["revision"]) for l in cat["lecciones"])
@@ -75,9 +82,11 @@ for k, l in catk.items():
 for k in publicadas:
     if k in APROBADAS_POR_MAX:
         if APROBADAS_POR_MAX[k] != catk[k]["sha256"]: err(f"{k} publicada con una huella distinta de la que revisó Max")
-    elif reg[k].get("modalidad") != "opcion-A":
+    elif not opcion_a(reg[k]):
         # Fuera de la lista revisada por Max, solo se admite lo publicado bajo la delegación general (opción A, 20-10-2026)
         err(f"{k} publicada sin estar en la lista revisada por Max ni en la modalidad opción A")
+    elif "vb" in reg[k]:
+        err(f"{k}: un registro de opción A no puede llevar V°B° individual de Max")
 for k, sha in APROBADAS_POR_MAX.items():
     if k not in publicadas: err(f"{k} aprobada por Max pero no publicada")
     elif not any(e["id"] == k[0] and e["revision"] == k[1] for e in cal["entradas"]): err(f"{k} publicada pero sin fecha en el calendario")

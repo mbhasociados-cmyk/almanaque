@@ -514,6 +514,9 @@ def estado_de(id, rev, sha):
     for r in APROB:
         if r["id"] == id and r["revision"] == rev and r["sha256"] == sha:
             v = r.get("verificacion", {}); ok = v.get("resultado") == "aprobado" or v.get("estado") == "verificado"
+            d = r.get("delegacion") or {}
+            if (r.get("modalidad") == "opcion-A" and r.get("estadoRevision") == "AUTOVERIFICADA_POR_CLAUDE"
+                and r.get("publicacion") == "AUTORIZADA_POR_DELEGACION_GENERAL_DE_MAX" and d.get("por") and d.get("fecha")): return "publicado"
             if r.get("vb") and ok: return "publicado"
             if ok: return "verificado"
     return "borrador"

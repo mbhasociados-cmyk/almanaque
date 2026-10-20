@@ -19,10 +19,14 @@ try:
         sys.path.insert(0, os.path.dirname(__file__)); from almanaque_lib import validate; validate(L)
         assert not any(r["id"] == lid and r["revision"] == L["revision"] for r in apr["registros"]), f"{lid} ya tiene registro"
         man["lecciones"].append({"carpeta": f"borradores/{carpeta}", "id": lid, "revision": L["revision"], "fecha": fecha})
-        apr["registros"].append({"id": lid, "revision": L["revision"], "sha256": hashlib.sha256(data).hexdigest(), "modalidad": "opcion-A",
-            "verificacion": {"revisor": "Claude", "estado": "verificado", "alcance": "fuentes abiertas y comprobadas por Claude; controles automáticos del lote", "fecha": hoy},
-            "funcionamiento": "PROBADA_POR_CLAUDE", "pruebaComprension": "NO APLICA (opción A)",
-            "vb": {"por": "Max Monsalves Blanco", "fecha": "2026-10-20", "medio": "delegación general de Max (opción A, \"dale opcion A\")"}})
+        apr["registros"].append({"id": lid, "revision": L["revision"], "sha256": hashlib.sha256(data).hexdigest(),
+            "modalidad": "opcion-A",
+            "estadoRevision": "AUTOVERIFICADA_POR_CLAUDE",
+            "autoverificacion": {"por": "Claude", "fecha": hoy, "alcance": "fuentes abiertas y comprobadas por Claude; controles automáticos del lote; prueba local en la app"},
+            "publicacion": "AUTORIZADA_POR_DELEGACION_GENERAL_DE_MAX",
+            "delegacion": {"por": "Max Monsalves Blanco", "fecha": "2026-10-20", "referencia": "Declaración expresa de Max del 20-10-2026 (\"dale opcion A\"), confirmada a ChatGPT"},
+            "revisionIndependienteChatGPT": "OPCIONAL_NO_REALIZADA",
+            "funcionamiento": "PROBADA_POR_CLAUDE"})
     open(MAN, "w", encoding="utf-8").write(json.dumps(man, ensure_ascii=False, indent=2))
     open(APR, "w", encoding="utf-8").write(json.dumps(apr, ensure_ascii=False, indent=2))
     subprocess.run([sys.executable, os.path.join(ROOT, "tools", "gen_lessons.py")], check=True, stdout=subprocess.DEVNULL)
