@@ -118,7 +118,7 @@
       "disciplina": "Ciencia cotidiana",
       "familia": "fisica",
       "minutosEstimados": 5,
-      "estado": "borrador",
+      "estado": "publicado",
       "archivo": "data/lessons/cielo-azul.r3.json",
       "sha256": "e68c9e3315f25ced78fbbb61402dfcf06ed892d51700fd33282fa443bff8a8a8"
     }
