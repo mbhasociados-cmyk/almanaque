@@ -1,0 +1,15 @@
+10-22 15:59:42.677  1729  3094 W earchbox:search: Long monitor contention with owner ThreadPoolForeg (3095) at void org.chromium.net.X509Util.ensureInitialized()(PG:3) waiters=0 in void org.chromium.net.X509Util.ensureInitialized() for 1.316s
+10-22 15:59:44.710   519   590 I ActivityManager: Start proc 3321:com.google.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0/u0ai9000 for  {cl.mbhspa.almanaque/org.chromium.content.app.SandboxedProcessService0:0}
+10-22 15:59:45.078   519   590 I ActivityManager: Start proc 3379:com.google.android.webview:webview_apk/u0a134 for service {com.google.android.webview/org.chromium.android_webview.nonembedded.AwComponentUpdateService}
+10-22 15:59:45.479  3321  3321 I cr_WebViewApkApp: Launched version=113.0.5672.136 minSdkVersion=29 isBundle=false processName=com.google.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0
+10-22 15:59:46.198  3379  3462 W cr_AWNetworkFetcherTask: 	at org.chromium.android_webview.nonembedded.NetworkFetcherTask.download(chromium-TrichromeWebViewGoogle6432.apk-stable-567263637:48)
+10-22 15:59:47.566  3143  3143 I Capacitor/Console: File:  - Line 2506 - Msg: onscript loading complete
+10-22 15:59:47.573  3143  3143 I Capacitor/Console: File:  - Line 5601 - Msg: Create CdvPurchase...
+10-22 15:59:48.191  3143  3143 E Capacitor/Console: File:  - Line 6 - Msg: Error injecting safe area CSS: TypeError: Cannot read properties of null (reading 'style')
+10-22 15:59:48.193  3143  3143 E Capacitor/Console: File:  - Line 6 - Msg: Error injecting safe area CSS: TypeError: Cannot read properties of null (reading 'style')
+10-22 15:59:48.194  3143  3143 E Capacitor/Console: File:  - Line 6 - Msg: Error injecting safe area CSS: TypeError: Cannot read properties of null (reading 'style')
+10-22 15:59:48.195  3143  3143 E Capacitor/Console: File:  - Line 6 - Msg: Error injecting safe area CSS: TypeError: Cannot read properties of null (reading 'style')
+10-22 15:59:48.263  3143  3143 I Capacitor/Console: File:  - Line 2506 - Msg: onscript loading complete
+10-22 15:59:48.287  3143  3143 I Capacitor/Console: File:  - Line 5601 - Msg: Create CdvPurchase...
+10-22 16:00:16.161  3585  3766 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(6, org.chromium.net.cronet) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+10-22 16:00:16.467  4345  5019 I cr_CronetUrlRequestContext: destroyNativeStreamLocked org.chromium.net.impl.CronetBidirectionalStream@97cb328
