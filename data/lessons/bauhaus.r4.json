@@ -1,0 +1,179 @@
+{
+  "schemaVersion": "2.0",
+  "id": "bauhaus",
+  "revision": 4,
+  "idioma": "es-CL",
+  "disciplina": "Diseño",
+  "familia": "arte",
+  "titulo": "¿Qué fue la Bauhaus?",
+  "subtitulo": "La escuela que quiso diseñar mejor los objetos de todos los días.",
+  "minutosEstimados": 5,
+  "tarjetas": [
+    {
+      "id": "c1",
+      "tipo": "portada",
+      "titulo": "¿Qué fue la Bauhaus?",
+      "texto": "Una escuela alemana fundada en 1919 unió arte y oficio, y terminó diseñando objetos de todos los días para la industria.",
+      "fuenteIds": [
+        "bauhaus-koop"
+      ]
+    },
+    {
+      "id": "c2",
+      "tipo": "idea",
+      "titulo": "Arte y oficio, juntos",
+      "texto": "La Bauhaus fue fundada en 1919 en Weimar por el arquitecto Walter Gropius. Quería unir el arte, la arquitectura y el trabajo artesanal.",
+      "fuenteIds": [
+        "bauhaus-koop",
+        "met-bauhaus"
+      ]
+    },
+    {
+      "id": "c3",
+      "tipo": "pregunta",
+      "pregunta": "¿Qué buscaba la Bauhaus al comenzar?",
+      "correctaId": "b",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Copiar estilos antiguos",
+          "retro": "No: buscaba algo nuevo, uniendo arte y oficio."
+        },
+        {
+          "id": "b",
+          "texto": "Unir el arte con el oficio",
+          "retro": "¡Así es! Arte, arquitectura y trabajo artesanal en una sola escuela."
+        },
+        {
+          "id": "c",
+          "texto": "Enseñar solo pintura",
+          "retro": "No: también había arquitectura y talleres de oficios."
+        }
+      ],
+      "fuenteIds": [
+        "bauhaus-koop",
+        "met-bauhaus"
+      ]
+    },
+    {
+      "id": "c4",
+      "tipo": "idea",
+      "titulo": "Del taller a la fábrica",
+      "texto": "En 1923, Gropius orientó la escuela hacia el diseño para la producción en masa, con el lema \"Arte en la industria\".",
+      "fuenteIds": [
+        "met-bauhaus"
+      ]
+    },
+    {
+      "id": "c5",
+      "tipo": "revelar",
+      "titulo": "Una silla con algo de bicicleta",
+      "texto": "Marcel Breuer, que dirigía el taller de muebles, se inspiró en un objeto inesperado. ¿Cuál?",
+      "revelado": "Los tubos de acero de su bicicleta. Con esa idea creó sillas metálicas livianas que se podían fabricar en serie.",
+      "fuenteIds": [
+        "met-bauhaus"
+      ]
+    },
+    {
+      "id": "c6",
+      "tipo": "idea",
+      "titulo": "Letras simples y vidrio",
+      "texto": "Sus impresos usaban letras sin adornos, llamadas sin serifa, junto con fotografías. El edificio que Gropius diseñó en Dessau tenía estructura de acero y una gran fachada de vidrio, rasgos que después marcaron la arquitectura moderna.",
+      "fuenteIds": [
+        "met-bauhaus"
+      ]
+    },
+    {
+      "id": "c7",
+      "tipo": "pregunta",
+      "pregunta": "¿Qué cambio hizo Gropius en 1923?",
+      "correctaId": "a",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Orientó la escuela a diseñar para la producción en masa",
+          "retro": "¡Correcto! Su lema fue \"Arte en la industria\"."
+        },
+        {
+          "id": "b",
+          "texto": "Cerró los talleres",
+          "retro": "No: los talleres siguieron; cambió hacia qué apuntaban."
+        },
+        {
+          "id": "c",
+          "texto": "La dedicó solo a la pintura",
+          "retro": "No: el cambio fue hacia la industria y la producción en masa."
+        }
+      ],
+      "fuenteIds": [
+        "met-bauhaus"
+      ]
+    },
+    {
+      "id": "c8",
+      "tipo": "dato",
+      "texto": "La Bauhaus existió casi catorce años y pasó por tres ciudades: Weimar, Dessau y Berlín. En 1933, bajo la presión de los nacionalsocialistas, se anunció su disolución.",
+      "fuenteIds": [
+        "bauhaus-koop"
+      ]
+    }
+  ],
+  "resumen": {
+    "titulo": "La Bauhaus",
+    "puntos": [
+      "Fue una escuela alemana fundada en 1919 por Walter Gropius para unir arte, arquitectura y oficio.",
+      "Desde 1923 se orientó a diseñar objetos para la producción en masa.",
+      "Dejó sillas de tubo de acero, letras sin serifa y un edificio de acero y vidrio que marcaron el diseño moderno."
+    ]
+  },
+  "fuentes": [
+    {
+      "id": "bauhaus-koop",
+      "entidad": "Bauhaus Kooperation Berlin Dessau Weimar",
+      "titulo": "What exactly was the Bauhaus?",
+      "url": "https://bauhauskooperation.com/knowledge/the-bauhaus/bauhaus-at-a-glance",
+      "ubicacion": "Texto principal",
+      "afirmaciones": [
+        "Fundada en Weimar en 1919 por Walter Gropius, unió arte, arquitectura y oficio",
+        "Existió casi catorce años",
+        "Weimar 1919–1925, Dessau 1925–1932 (productos cotidianos bien diseñados) y Berlín 1932–1933",
+        "En Dessau cerró el 30-09-1932 por la mayoría nacionalsocialista del concejo; en Berlín se selló el edificio en 1933 y se anunció la disolución el 10-08-1933"
+      ],
+      "respalda": [
+        "c1",
+        "c2",
+        "c3",
+        "c8"
+      ],
+      "consultadaEl": "2026-10-22"
+    },
+    {
+      "id": "met-bauhaus",
+      "entidad": "The Metropolitan Museum of Art",
+      "titulo": "The Bauhaus, 1919–1933 (ensayo)",
+      "url": "https://www.metmuseum.org/essays/the-bauhaus-1919-1933",
+      "ubicacion": "Texto principal",
+      "afirmaciones": [
+        "Al inicio buscó unir las artes por medio del oficio",
+        "En 1923 Gropius giró hacia el diseño para la producción en masa con el lema \"Art into Industry\"",
+        "Breuer dirigió el taller de muebles y se inspiró en los tubos de su bicicleta para crear sillas livianas fabricables en serie",
+        "Impresos con tipografía sin serifa y fotografía",
+        "El edificio de Dessau usó estructura de acero y muro cortina de vidrio, rasgos que luego marcaron la arquitectura moderna"
+      ],
+      "respalda": [
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6",
+        "c7"
+      ],
+      "consultadaEl": "2026-10-22"
+    }
+  ],
+  "controlEditorial": {
+    "estado": "borrador",
+    "revisadoPor": null,
+    "fechaRevision": null
+  }
+}

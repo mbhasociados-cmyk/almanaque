@@ -205,6 +205,54 @@
       "estado": "publicado",
       "archivo": "data/lessons/mar-salado.r2.json",
       "sha256": "f048712c30906637637731978d5b2aa345e2aed290b416d3dc95492146fe3d75"
+    },
+    {
+      "id": "perspectiva-lineal",
+      "revision": 4,
+      "schemaVersion": "2.0",
+      "titulo": "¿Cómo se pinta la profundidad?",
+      "disciplina": "Arte",
+      "familia": "arte",
+      "minutosEstimados": 5,
+      "estado": "publicado",
+      "archivo": "data/lessons/perspectiva-lineal.r4.json",
+      "sha256": "0aec735e25dd757ddd3bc022e7b1a8c4d62ed64beb460254296a0b1696bcfbb8"
+    },
+    {
+      "id": "corriente-humboldt",
+      "revision": 3,
+      "schemaVersion": "2.0",
+      "titulo": "¿Por qué el mar de Chile es tan frío?",
+      "disciplina": "Geografía",
+      "familia": "geografia",
+      "minutosEstimados": 5,
+      "estado": "publicado",
+      "archivo": "data/lessons/corriente-humboldt.r3.json",
+      "sha256": "b81a0ea7cd61a89e0bd76a7adeeaa3aa1ebe131e2c102f3b0e4dad573ea2b5d0"
+    },
+    {
+      "id": "bauhaus",
+      "revision": 4,
+      "schemaVersion": "2.0",
+      "titulo": "¿Qué fue la Bauhaus?",
+      "disciplina": "Diseño",
+      "familia": "arte",
+      "minutosEstimados": 5,
+      "estado": "publicado",
+      "archivo": "data/lessons/bauhaus.r4.json",
+      "sha256": "ebef634445b0d72b3884673169ddd86aa142d4295ef740f8a74deeadfa7fbcb1"
+    },
+    {
+      "id": "arco-panteon",
+      "revision": 4,
+      "schemaVersion": "2.0",
+      "titulo": "¿Cómo se sostiene un arco de piedra?",
+      "disciplina": "Arquitectura e ingeniería",
+      "familia": "tecnologia",
+      "minutosEstimados": 5,
+      "estado": "publicado",
+      "archivo": "data/lessons/arco-panteon.r4.json",
+      "sha256": "e7bfcb5a9cd0fb16b4cc83cf172e9ffd867d01752bc9646b9bdffbf3e3dc4aaf"
     }
   ]
 }

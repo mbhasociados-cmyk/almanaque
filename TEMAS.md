@@ -10,6 +10,10 @@ Una lección por día. Al publicar un tema, márcalo como [x] y anota id y fecha
 - [x] 01-11 ¿Qué distingue a Gabriela Mistral? — gabriela-mistral r3
 - [x] 02-11 ¿Cómo sabe el GPS dónde estoy? — como-funciona-gps r3
 - [x] 03-11 ¿Por qué el mar es salado? — mar-salado r2
+- [x] 23-10 ¿Cómo se pinta la profundidad? — perspectiva-lineal r4 (versión en tarjetas, lote 2)
+- [x] 24-10 ¿Por qué el mar de Chile es tan frío? — corriente-humboldt r3 (versión en tarjetas, lote 2)
+- [x] 25-10 ¿Qué fue la Bauhaus? — bauhaus r4 (versión en tarjetas, lote 2)
+- [x] 26-10 ¿Cómo se sostiene un arco de piedra? — arco-panteon r4 (versión en tarjetas, lote 2)
 - [ ] ¿Por qué se empaña un vaso frío?
 - [ ] ¿Por qué hay niebla en una costa donde llueve poco?
 - [ ] ¿Cómo puede flotar un barco de acero?

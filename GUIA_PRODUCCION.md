@@ -3,7 +3,7 @@
 Decisión de Max (20-10-2026, "dale opcion A"): Claude produce, verifica contra fuentes abiertas y publica las lecciones. No hay revisión previa de ChatGPT ni V°B° por lección. Max puede revocar esta delegación cuando quiera.
 
 ## Cada semana
-1. Revisa el calendario (`data/calendar.v1.json`) y toma las 7 fechas siguientes a la última programada. Mantén siempre al menos 7 días programados por delante.
+1. Revisa el calendario (`data/calendar.v1.json`) y toma las 7 fechas siguientes a la última programada. Mantén siempre al menos 7 días programados por delante. Cuenta solo los días cuya lección está en tarjetas (esquema 2.0 en el catálogo): la app no muestra las lecciones del formato antiguo (1.x). Si una fecha futura apunta a una lección 1.x, prográmale una versión en tarjetas (ver lote 2, 22-10-2026).
 2. Elige los 7 primeros temas pendientes de `TEMAS.md`, intentando no repetir la familia en días seguidos.
 3. Por cada tema, **abre las fuentes** con WebFetch: NASA, NOAA, USGS, Britannica, Banco Central, INE, Memoria Chilena, universidades u organismos oficiales. Anota solo lo que la fuente dice; si una afirmación no está en una fuente abierta, no la escribas.
 4. Escribe el lote en `tools/lotes/loteN.py` usando `tools/almanaque_lib.py`; el ejemplo es `tools/lote1_r2.py`. Guía editorial:

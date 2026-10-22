@@ -1,0 +1,194 @@
+{
+  "schemaVersion": "2.0",
+  "id": "corriente-humboldt",
+  "revision": 3,
+  "idioma": "es-CL",
+  "disciplina": "Geografía",
+  "familia": "geografia",
+  "titulo": "¿Por qué el mar de Chile es tan frío?",
+  "subtitulo": "Una corriente que corre hacia el norte.",
+  "minutosEstimados": 5,
+  "tarjetas": [
+    {
+      "id": "c1",
+      "tipo": "portada",
+      "titulo": "¿Por qué el mar de Chile es tan frío?",
+      "texto": "Quien se mete al mar en Chile lo nota: el agua es fría. Detrás de eso hay una corriente con nombre propio.",
+      "fuenteIds": [
+        "brit-humboldt"
+      ]
+    },
+    {
+      "id": "c2",
+      "tipo": "idea",
+      "titulo": "Un río frío dentro del mar",
+      "texto": "La corriente de Humboldt, también llamada corriente del Perú, es una corriente de agua fría del Pacífico. Avanza hacia el norte por la costa de Sudamérica: desde Chile, pasando por Perú, hacia Ecuador.",
+      "fuenteIds": [
+        "brit-humboldt"
+      ]
+    },
+    {
+      "id": "c3",
+      "tipo": "pregunta",
+      "pregunta": "¿Hacia dónde avanza la corriente de Humboldt?",
+      "correctaId": "a",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Hacia el norte, a lo largo de la costa",
+          "retro": "¡Exacto! Va desde Chile hacia Perú y Ecuador."
+        },
+        {
+          "id": "b",
+          "texto": "Hacia el sur, hacia la Antártica",
+          "retro": "Al revés: avanza hacia el norte."
+        },
+        {
+          "id": "c",
+          "texto": "Hacia el continente, entrando en él",
+          "retro": "No: corre a lo largo de la costa, hacia el norte."
+        }
+      ],
+      "fuenteIds": [
+        "brit-humboldt"
+      ]
+    },
+    {
+      "id": "c4",
+      "tipo": "idea",
+      "titulo": "Agua que sube desde abajo",
+      "texto": "El viento empuja el agua de la superficie mar adentro, y desde lo profundo sube agua más fría a reemplazarla. Eso se llama surgencia, y hace aún más fría la corriente.",
+      "fuenteIds": [
+        "noaa-surgencia",
+        "brit-humboldt"
+      ]
+    },
+    {
+      "id": "c5",
+      "tipo": "idea",
+      "titulo": "Un mar lleno de vida",
+      "texto": "El agua que sube trae muchos nutrientes, que alimentan al plancton. Por eso el mar frente a Chile, Perú y Ecuador está entre las mejores zonas de pesca del mundo, por ejemplo de anchoveta.",
+      "fuenteIds": [
+        "noaa-surgencia",
+        "brit-humboldt"
+      ]
+    },
+    {
+      "id": "c6",
+      "tipo": "revelar",
+      "titulo": "¿Por qué se llama Humboldt?",
+      "texto": "El nombre de la corriente recuerda a un científico. ¿Qué hizo?",
+      "revelado": "Alexander von Humboldt midió en 1802 lo fría que era esta corriente comparada con el aire y el mar que la rodean.",
+      "fuenteIds": [
+        "brit-humboldt"
+      ]
+    },
+    {
+      "id": "c7",
+      "tipo": "pregunta",
+      "pregunta": "Durante el fenómeno de El Niño, la surgencia se debilita o se detiene. ¿Qué pasa entonces?",
+      "correctaId": "b",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Hay más peces que nunca",
+          "retro": "Al revés: sin surgencia llegan menos nutrientes y eso afecta a los peces."
+        },
+        {
+          "id": "b",
+          "texto": "Llegan menos nutrientes, hay menos plancton y eso afecta a los peces",
+          "retro": "¡Así es! El efecto sigue por toda la cadena de alimentación."
+        },
+        {
+          "id": "c",
+          "texto": "El agua se vuelve más fría",
+          "retro": "No: la surgencia es la que trae el agua fría, y durante El Niño se debilita."
+        }
+      ],
+      "fuenteIds": [
+        "noaa-nino"
+      ]
+    },
+    {
+      "id": "c8",
+      "tipo": "dato",
+      "texto": "Esa misma agua fría lleva niebla a la costa y ayuda a que esa franja sea una de las zonas más áridas del mundo.",
+      "fuenteIds": [
+        "brit-humboldt"
+      ]
+    }
+  ],
+  "resumen": {
+    "titulo": "La corriente de Humboldt",
+    "puntos": [
+      "Es una corriente fría que avanza hacia el norte por la costa de Chile, Perú y Ecuador.",
+      "La surgencia sube agua fría y llena de nutrientes, por eso es una de las mejores zonas de pesca del mundo.",
+      "Durante El Niño la surgencia se debilita, llegan menos nutrientes y eso afecta a los peces."
+    ]
+  },
+  "fuentes": [
+    {
+      "id": "brit-humboldt",
+      "entidad": "Encyclopaedia Britannica",
+      "titulo": "Peru Current",
+      "url": "https://www.britannica.com/place/Peru-Current",
+      "ubicacion": "Texto principal",
+      "afirmaciones": [
+        "Corriente de agua fría del Pacífico suroriental, también llamada corriente de Humboldt",
+        "Fluye hacia el norte por la costa occidental de Sudamérica, desde Chile, por Perú, hacia Ecuador",
+        "La surgencia intensifica su flujo frío y lleva nutrientes que favorecen el plancton",
+        "Las aguas de Perú, Chile y Ecuador están entre las mayores zonas de pesca del mundo, de anchoveta y peces mayores",
+        "Humboldt midió en 1802 su frialdad respecto del aire y el mar que la rodean",
+        "Lleva niebla a la costa y contribuye a que sea una de las zonas más áridas del mundo"
+      ],
+      "respalda": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6",
+        "c8"
+      ],
+      "consultadaEl": "2026-10-22"
+    },
+    {
+      "id": "noaa-surgencia",
+      "entidad": "NOAA National Ocean Service",
+      "titulo": "What is upwelling?",
+      "url": "https://oceanservice.noaa.gov/facts/upwelling.html",
+      "ubicacion": "Texto principal",
+      "afirmaciones": [
+        "El viento empuja el agua de superficie y sube agua más fría desde abajo para reemplazarla",
+        "El agua que sube es rica en nutrientes",
+        "Las zonas de surgencia suelen ser buenas zonas de pesca"
+      ],
+      "respalda": [
+        "c4",
+        "c5"
+      ],
+      "consultadaEl": "2026-10-22"
+    },
+    {
+      "id": "noaa-nino",
+      "entidad": "NOAA National Ocean Service",
+      "titulo": "What are El Niño and La Niña?",
+      "url": "https://oceanservice.noaa.gov/facts/ninonina.html",
+      "ubicacion": "Sección sobre El Niño",
+      "afirmaciones": [
+        "Durante El Niño la surgencia se debilita o se detiene",
+        "Sin nutrientes de lo profundo hay menos fitoplancton frente a la costa",
+        "Eso afecta a los peces que comen fitoplancton y a lo que se alimenta de peces"
+      ],
+      "respalda": [
+        "c7"
+      ],
+      "consultadaEl": "2026-10-22"
+    }
+  ],
+  "controlEditorial": {
+    "estado": "borrador",
+    "revisadoPor": null,
+    "fechaRevision": null
+  }
+}

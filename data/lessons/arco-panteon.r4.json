@@ -1,0 +1,191 @@
+{
+  "schemaVersion": "2.0",
+  "id": "arco-panteon",
+  "revision": 4,
+  "idioma": "es-CL",
+  "disciplina": "Arquitectura e ingeniería",
+  "familia": "tecnologia",
+  "titulo": "¿Cómo se sostiene un arco de piedra?",
+  "subtitulo": "Y cómo los romanos levantaron una cúpula enorme.",
+  "minutosEstimados": 5,
+  "tarjetas": [
+    {
+      "id": "c1",
+      "tipo": "portada",
+      "titulo": "¿Cómo se sostiene un arco de piedra?",
+      "texto": "Un arco de piedra puede cubrir una puerta y aguantar el peso de lo que tiene encima. ¿Cómo lo logra?",
+      "fuenteIds": [
+        "brit-arco"
+      ]
+    },
+    {
+      "id": "c2",
+      "tipo": "idea",
+      "titulo": "Piedras con forma de cuña",
+      "texto": "Un arco se arma con piedras en forma de cuña, llamadas dovelas. La del centro, en lo más alto, se llama clave.",
+      "fuenteIds": [
+        "brit-arco"
+      ]
+    },
+    {
+      "id": "c3",
+      "tipo": "idea",
+      "titulo": "Las piedras se aprietan",
+      "texto": "El peso que carga el arco viaja a lo largo de su curva y aprieta unas piedras contra otras. A ese apretón se le llama compresión.",
+      "fuenteIds": [
+        "brit-arco"
+      ]
+    },
+    {
+      "id": "c4",
+      "tipo": "pregunta",
+      "pregunta": "¿Cómo se llama la piedra del centro, en lo más alto de un arco?",
+      "correctaId": "c",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "La base",
+          "retro": "No: la base está abajo, donde el arco se apoya."
+        },
+        {
+          "id": "b",
+          "texto": "La columna",
+          "retro": "No: la columna es otra pieza; la del centro del arco es la clave."
+        },
+        {
+          "id": "c",
+          "texto": "La clave",
+          "retro": "¡Exacto! Es la dovela central, arriba."
+        }
+      ],
+      "fuenteIds": [
+        "brit-arco"
+      ]
+    },
+    {
+      "id": "c5",
+      "tipo": "idea",
+      "titulo": "Empuja hacia los lados",
+      "texto": "Un arco o una cúpula tiende a abrirse en su base: empuja hacia afuera. Ese empuje lo resiste sobre todo el edificio que lo rodea.",
+      "fuenteIds": [
+        "eng-roma"
+      ]
+    },
+    {
+      "id": "c6",
+      "tipo": "revelar",
+      "titulo": "El Panteón de Roma",
+      "texto": "Su cúpula de hormigón fue reconstruida en tiempos del emperador Adriano, entre los años 117 y 138. ¿Qué tiene de especial su tamaño?",
+      "revelado": "Mide 43,2 metros de ancho por dentro, y su altura es la misma. Adentro cabría una esfera perfecta.",
+      "fuenteIds": [
+        "uw-panteon"
+      ]
+    },
+    {
+      "id": "c7",
+      "tipo": "pregunta",
+      "pregunta": "¿Cómo hicieron los romanos para que la cúpula pesara menos en lo alto?",
+      "correctaId": "b",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "La reforzaron con barras de acero",
+          "retro": "No: el Panteón es completamente de hormigón, sin acero."
+        },
+        {
+          "id": "b",
+          "texto": "Usaron materiales más livianos hacia arriba, como la piedra pómez",
+          "retro": "¡Así es! Abajo pusieron materiales pesados y arriba otros más livianos."
+        },
+        {
+          "id": "c",
+          "texto": "La hicieron más gruesa arriba",
+          "retro": "Al revés: buscaban que la parte alta pesara menos."
+        }
+      ],
+      "fuenteIds": [
+        "uw-panteon",
+        "eng-roma"
+      ]
+    },
+    {
+      "id": "c8",
+      "tipo": "dato",
+      "texto": "En la cima de la cúpula hay un gran agujero, el óculo. Es la única entrada de luz a la cúpula.",
+      "fuenteIds": [
+        "uw-panteon"
+      ]
+    }
+  ],
+  "resumen": {
+    "titulo": "El arco y el Panteón",
+    "puntos": [
+      "Un arco se arma con piedras en cuña, las dovelas, y la del centro arriba es la clave.",
+      "El peso viaja por la curva apretando las piedras, y el arco empuja hacia afuera en su base.",
+      "La cúpula del Panteón mide 43,2 metros por dentro y usa materiales más livianos hacia arriba."
+    ]
+  },
+  "fuentes": [
+    {
+      "id": "brit-arco",
+      "entidad": "Encyclopaedia Britannica",
+      "titulo": "Arch (architecture)",
+      "url": "https://britannica.com/technology/arch-architecture",
+      "ubicacion": "Texto principal y leyendas de las ilustraciones",
+      "afirmaciones": [
+        "El arco cubre una abertura y soporta cargas desde arriba",
+        "La construcción del arco depende de la cuña: dovelas en forma de cuña y la clave arriba al centro",
+        "El arco lleva las cargas verticales principalmente por compresión a lo largo de su curva"
+      ],
+      "respalda": [
+        "c1",
+        "c2",
+        "c3",
+        "c4"
+      ],
+      "consultadaEl": "2026-10-22"
+    },
+    {
+      "id": "eng-roma",
+      "entidad": "Engineering Rome (programa de estudios en Roma, University of Washington)",
+      "titulo": "Studying Domes: Engineering of the Roman Pantheon and Brunelleschi's Duomo",
+      "url": "https://engineeringrome.org/studying-domes-engineering-of-the-roman-pantheon-and-brunelleschis-duomo/",
+      "ubicacion": "Secciones sobre el empuje y los materiales del Panteón",
+      "afirmaciones": [
+        "Arcos y cúpulas empujan hacia afuera en su base (empuje horizontal)",
+        "Ese empuje lo resiste principalmente el edificio que los rodea",
+        "El hormigón del Panteón es más liviano hacia arriba, con piedra pómez y toba liviana"
+      ],
+      "respalda": [
+        "c5",
+        "c7"
+      ],
+      "consultadaEl": "2026-10-22"
+    },
+    {
+      "id": "uw-panteon",
+      "entidad": "University of Washington, Honors Program in Rome",
+      "titulo": "The Pantheon",
+      "url": "https://depts.washington.edu/hrome/Authors/zinnia/Pantheon/pub_zbarticle_view_printable.html",
+      "ubicacion": "Texto principal",
+      "afirmaciones": [
+        "Reconstruido por completo durante el reinado de Adriano (117–138)",
+        "Luz interior de 43,2 m y altura equivalente: encerraría una esfera perfecta",
+        "Basalto en la base y áridos livianos como la piedra pómez arriba",
+        "Íntegramente de hormigón, sin acero",
+        "El óculo es la única fuente de luz de la cúpula"
+      ],
+      "respalda": [
+        "c6",
+        "c7",
+        "c8"
+      ],
+      "consultadaEl": "2026-10-22"
+    }
+  ],
+  "controlEditorial": {
+    "estado": "borrador",
+    "revisadoPor": null,
+    "fechaRevision": null
+  }
+}

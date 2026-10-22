@@ -23,26 +23,6 @@
       "revision": 3
     },
     {
-      "fecha": "2026-10-23",
-      "id": "perspectiva-lineal",
-      "revision": 3
-    },
-    {
-      "fecha": "2026-10-24",
-      "id": "corriente-humboldt",
-      "revision": 2
-    },
-    {
-      "fecha": "2026-10-25",
-      "id": "bauhaus",
-      "revision": 3
-    },
-    {
-      "fecha": "2026-10-26",
-      "id": "arco-panteon",
-      "revision": 3
-    },
-    {
       "fecha": "2026-10-27",
       "id": "cielo-azul",
       "revision": 3
@@ -81,6 +61,26 @@
       "fecha": "2026-11-03",
       "id": "mar-salado",
       "revision": 2
+    },
+    {
+      "fecha": "2026-10-23",
+      "id": "perspectiva-lineal",
+      "revision": 4
+    },
+    {
+      "fecha": "2026-10-24",
+      "id": "corriente-humboldt",
+      "revision": 3
+    },
+    {
+      "fecha": "2026-10-25",
+      "id": "bauhaus",
+      "revision": 4
+    },
+    {
+      "fecha": "2026-10-26",
+      "id": "arco-panteon",
+      "revision": 4
     }
   ]
 }

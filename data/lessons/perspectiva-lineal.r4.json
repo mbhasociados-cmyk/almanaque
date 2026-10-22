@@ -1,0 +1,193 @@
+{
+  "schemaVersion": "2.0",
+  "id": "perspectiva-lineal",
+  "revision": 4,
+  "idioma": "es-CL",
+  "disciplina": "Arte",
+  "familia": "arte",
+  "titulo": "¿Cómo se pinta la profundidad?",
+  "subtitulo": "Un invento del Renacimiento que todavía usamos.",
+  "minutosEstimados": 5,
+  "tarjetas": [
+    {
+      "id": "c1",
+      "tipo": "portada",
+      "titulo": "¿Cómo se pinta la profundidad?",
+      "texto": "Una pintura es plana, pero puede parecer una calle que se aleja. ¿Cómo se logra esa ilusión?",
+      "fuenteIds": [
+        "brit-lineal"
+      ]
+    },
+    {
+      "id": "c2",
+      "tipo": "pregunta",
+      "pregunta": "En un dibujo con perspectiva, ¿qué hacen las líneas paralelas, como los bordes de una calle?",
+      "correctaId": "a",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Se juntan en un punto sobre el horizonte",
+          "retro": "¡Así es! Ese punto se llama punto de fuga."
+        },
+        {
+          "id": "b",
+          "texto": "Siguen separadas a la misma distancia",
+          "retro": "En la realidad sí, pero en el dibujo con perspectiva se van juntando hasta un punto del horizonte."
+        },
+        {
+          "id": "c",
+          "texto": "Se curvan hacia arriba",
+          "retro": "No se curvan: siguen rectas y se juntan en un punto del horizonte."
+        }
+      ],
+      "fuenteIds": [
+        "brit-lineal"
+      ]
+    },
+    {
+      "id": "c3",
+      "tipo": "idea",
+      "titulo": "El punto de fuga",
+      "texto": "La perspectiva lineal es un sistema para crear la ilusión de profundidad en una superficie plana. En ella, las líneas paralelas se juntan en un punto de la línea del horizonte.",
+      "fuenteIds": [
+        "brit-lineal"
+      ]
+    },
+    {
+      "id": "c4",
+      "tipo": "idea",
+      "titulo": "Florencia, hacia 1415",
+      "texto": "Se cree que el arquitecto italiano Filippo Brunelleschi desarrolló este sistema hacia el año 1415.",
+      "fuenteIds": [
+        "brit-lineal",
+        "met-renacimiento"
+      ]
+    },
+    {
+      "id": "c5",
+      "tipo": "revelar",
+      "titulo": "Las reglas por escrito",
+      "texto": "Unos veinte años después, alguien explicó las reglas de la perspectiva para que cualquier pintor pudiera usarlas. ¿Quién fue?",
+      "revelado": "Leon Battista Alberti, en su tratado Sobre la pintura (Della pittura), de 1435. Fue un manual fundamental para los artistas.",
+      "fuenteIds": [
+        "brit-lineal",
+        "met-renacimiento"
+      ]
+    },
+    {
+      "id": "c6",
+      "tipo": "idea",
+      "titulo": "El aire también pinta",
+      "texto": "Los pintores usan además la perspectiva aérea: a gran distancia, las luces y sombras contrastan menos, los bordes se ven menos nítidos y los objetos oscuros tienden al azul.",
+      "fuenteIds": [
+        "brit-aerea"
+      ]
+    },
+    {
+      "id": "c7",
+      "tipo": "pregunta",
+      "pregunta": "En un paisaje pintado con perspectiva aérea, ¿cómo se ven las montañas lejanas?",
+      "correctaId": "b",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Más oscuras y nítidas que las cercanas",
+          "retro": "Al revés: a lo lejos el contraste baja y los bordes se suavizan."
+        },
+        {
+          "id": "b",
+          "texto": "Azuladas y con bordes suaves",
+          "retro": "¡Correcto! Por eso las montañas lejanas se ven azuladas."
+        },
+        {
+          "id": "c",
+          "texto": "Del mismo color que las cercanas",
+          "retro": "No: con la distancia los objetos oscuros tienden al azul."
+        }
+      ],
+      "fuenteIds": [
+        "brit-aerea"
+      ]
+    },
+    {
+      "id": "c8",
+      "tipo": "dato",
+      "texto": "Leonardo da Vinci le dio el nombre de perspectiva aérea en su Tratado de la pintura, pero la técnica ya aparecía en pinturas murales de la antigua Grecia y Roma.",
+      "fuenteIds": [
+        "brit-aerea"
+      ]
+    }
+  ],
+  "resumen": {
+    "titulo": "La perspectiva",
+    "puntos": [
+      "En la perspectiva lineal, las líneas paralelas se juntan en un punto del horizonte y eso crea la ilusión de profundidad.",
+      "Se atribuye a Brunelleschi, hacia 1415, y Alberti explicó sus reglas por escrito en 1435.",
+      "En la perspectiva aérea, lo lejano se ve con menos contraste, bordes suaves y tonos azulados."
+    ]
+  },
+  "fuentes": [
+    {
+      "id": "brit-lineal",
+      "entidad": "Encyclopaedia Britannica",
+      "titulo": "Linear perspective",
+      "url": "https://www.britannica.com/art/linear-perspective",
+      "ubicacion": "Texto principal",
+      "afirmaciones": [
+        "Sistema para crear la ilusión de profundidad en una superficie plana",
+        "Las líneas paralelas se juntan en un punto de la línea del horizonte",
+        "Se cree que Brunelleschi lo desarrolló hacia 1415",
+        "Alberti lo registró en Della pittura en 1435"
+      ],
+      "respalda": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5"
+      ],
+      "consultadaEl": "2026-10-22"
+    },
+    {
+      "id": "met-renacimiento",
+      "entidad": "The Metropolitan Museum of Art",
+      "titulo": "Architecture in Renaissance Italy (ensayo)",
+      "url": "https://www.metmuseum.org/essays/architecture-in-renaissance-italy",
+      "ubicacion": "Párrafos sobre Brunelleschi y Alberti",
+      "afirmaciones": [
+        "La perspectiva lineal pudo haber sido desarrollada primero por Brunelleschi",
+        "Della pittura de Alberti fue un manual fundamental para artistas que explicaba los principios de la perspectiva lineal"
+      ],
+      "respalda": [
+        "c4",
+        "c5"
+      ],
+      "consultadaEl": "2026-10-22"
+    },
+    {
+      "id": "brit-aerea",
+      "entidad": "Encyclopaedia Britannica",
+      "titulo": "Aerial perspective",
+      "url": "https://www.britannica.com/art/aerial-perspective",
+      "ubicacion": "Texto principal",
+      "afirmaciones": [
+        "A gran distancia los contrastes de luz y sombra son menos extremos",
+        "Los objetos oscuros lejanos tienden al azul; las montañas lejanas se ven azuladas",
+        "Los bordes lejanos se ven menos nítidos",
+        "Leonardo da Vinci le dio el nombre en su Tratado de la pintura",
+        "La técnica aparece en pinturas murales grecorromanas"
+      ],
+      "respalda": [
+        "c6",
+        "c7",
+        "c8"
+      ],
+      "consultadaEl": "2026-10-22"
+    }
+  ],
+  "controlEditorial": {
+    "estado": "borrador",
+    "revisadoPor": null,
+    "fechaRevision": null
+  }
+}
