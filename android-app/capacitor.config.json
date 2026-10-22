@@ -1,0 +1,8 @@
+{
+  "appId": "cl.mbhspa.almanaque",
+  "appName": "Almanaque del Saber",
+  "webDir": "www",
+  "android": {
+    "allowMixedContent": false
+  }
+}

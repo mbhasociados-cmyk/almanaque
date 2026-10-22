@@ -16,7 +16,13 @@ const ROUTES = ["hoy", "explorar", "aprendido", "cuenta"];
 const app = { catalog: null, calendar: null, approvals: null, lessons: new Map(), state: null, route: "hoy", filter: "Todos", play: null, syncStatus: null, preview: null, open: null };
 
 // ------------------------------------------------------------ datos (siempre desde la red)
+// En la app Android (Capacitor) la interfaz viene empaquetada; los datos se piden al sitio publicado.
+// En la web, DATA_BASE queda vacío y las rutas siguen siendo relativas, como antes.
+const NATIVE = !!(window.Capacitor && typeof window.Capacitor.isNativePlatform === "function" && window.Capacitor.isNativePlatform());
+const DATA_BASE = NATIVE ? "https://mbhasociados-cmyk.github.io/almanaque/" : "";
+const dataUrl = (p) => (/^https?:/.test(p) ? p : DATA_BASE + p);
 async function fetchJson(url) {
+  url = dataUrl(url);
   const r = await fetch(url + (url.includes("?") ? "&" : "?") + "t=" + Date.now(), { cache: "no-store" });
   if (!r.ok) throw new Error("HTTP " + r.status);
   return r.json();
@@ -34,7 +40,7 @@ async function ensureLesson(entry) {
   const k = `${entry.id}@${entry.revision}`;
   if (app.lessons.has(k)) return app.lessons.get(k);
   try {
-    const r = await fetch(entry.archivo + "?t=" + Date.now(), { cache: "no-store" });
+    const r = await fetch(dataUrl(entry.archivo) + "?t=" + Date.now(), { cache: "no-store" });
     if (!r.ok) throw new Error("HTTP " + r.status);
     const buf = await r.arrayBuffer();
     if (entry.sha256 && (await sha256Hex(buf)) !== entry.sha256) throw new Error("hash");
@@ -385,7 +391,7 @@ document.addEventListener("keydown", (e) => {
 // ------------------------------------------------------------ utilidades
 function toast(t) { const el = $("#toast"); el.textContent = t; el.hidden = false; clearTimeout(toast.t); toast.t = setTimeout(() => el.hidden = true, 2600); }
 function setupServiceWorker() {
-  if (!("serviceWorker" in navigator)) return;
+  if (NATIVE || !("serviceWorker" in navigator)) return; // la app Android no usa service worker
   navigator.serviceWorker.register("./sw.js").catch(() => {});
   let reloading = false; // la versión nueva toma el control sola; se recarga solo si no hay una lección abierta
   navigator.serviceWorker.addEventListener("controllerchange", () => { if (!reloading && !app.play) { reloading = true; location.reload(); } });
