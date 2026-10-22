@@ -33,6 +33,8 @@ jobs:
   smoke:
     needs: build
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/download-artifact@v4
         with:
@@ -56,6 +58,22 @@ jobs:
             adb exec-out screencap -p > pantalla-hoy.png
             adb logcat -d > logcat.txt
             grep -E "Capacitor/Console|chromium" logcat.txt > consola.txt || true
+            adb shell uiautomator dump /sdcard/ui.xml && adb pull /sdcard/ui.xml ui.xml || true
+      - name: Mostrar consola y textos visibles en el registro
+        if: always()
+        run: |
+          echo "=== CONSOLA ==="; cat consola.txt || true
+          echo "=== TEXTOS VISIBLES ==="; grep -o 'text="[^"]*"' ui.xml | grep -v 'text=""' || true
+      - name: Guardar evidencia en la rama capacitor-evidencia
+        if: always()
+        run: |
+          mkdir -p /tmp/ev && cp pantalla-hoy.png consola.txt ui.xml /tmp/ev/ 2>/dev/null || true
+          git init -q ev && cd ev
+          git config user.email "noreply@anthropic.com"; git config user.name "Claude"
+          git checkout -q -b capacitor-evidencia
+          cp /tmp/ev/* . && echo "Corrida ${GITHUB_RUN_ID} sobre ${GITHUB_SHA}" > LEEME.txt
+          git add -A && git commit -q -m "Evidencia de la corrida ${GITHUB_RUN_ID}"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${GITHUB_REPOSITORY}.git" capacitor-evidencia
       - uses: actions/upload-artifact@v4
         if: always()
         with:
