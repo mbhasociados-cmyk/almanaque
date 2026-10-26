@@ -19,7 +19,7 @@ const app = { catalog: null, calendar: null, approvals: null, lessons: new Map()
 // En la app Android (Capacitor) la interfaz viene empaquetada; los datos se piden al sitio publicado.
 // En la web, DATA_BASE queda vacío y las rutas siguen siendo relativas, como antes.
 const NATIVE = !!(window.Capacitor && typeof window.Capacitor.isNativePlatform === "function" && window.Capacitor.isNativePlatform());
-const DATA_BASE = NATIVE ? "https://mbhasociados-cmyk.github.io/almanaque/" : "";
+const DATA_BASE = NATIVE ? "https://almanaquedelsaber.cl/" : "";
 const dataUrl = (p) => (/^https?:/.test(p) ? p : DATA_BASE + p);
 async function fetchJson(url) {
   url = dataUrl(url);
