@@ -253,6 +253,102 @@
       "estado": "publicado",
       "archivo": "data/lessons/arco-panteon.r4.json",
       "sha256": "e7bfcb5a9cd0fb16b4cc83cf172e9ffd867d01752bc9646b9bdffbf3e3dc4aaf"
+    },
+    {
+      "id": "arco-panteon",
+      "revision": 5,
+      "schemaVersion": "2.0",
+      "titulo": "¿Cómo se sostiene un arco de piedra?",
+      "disciplina": "Arquitectura e ingeniería",
+      "familia": "tecnologia",
+      "minutosEstimados": 5,
+      "estado": "publicado",
+      "archivo": "data/lessons/arco-panteon.r5.json",
+      "sha256": "bc39887fbafd726b78a227fe1c8115c53498b1d2a4cb97d338824d239e3cb8cc"
+    },
+    {
+      "id": "pan-duro",
+      "revision": 3,
+      "schemaVersion": "2.0",
+      "titulo": "¿Por qué el pan se pone duro?",
+      "disciplina": "Cocina y ciencia",
+      "familia": "quimica",
+      "minutosEstimados": 5,
+      "estado": "publicado",
+      "archivo": "data/lessons/pan-duro.r3.json",
+      "sha256": "6fcbc299500c659c728be12ddc1f01ee2f78164b3be9c5e6088f63659cf9100d"
+    },
+    {
+      "id": "temblores-chile",
+      "revision": 3,
+      "schemaVersion": "2.0",
+      "titulo": "¿Por qué tiembla tanto en Chile?",
+      "disciplina": "Geografía",
+      "familia": "geografia",
+      "minutosEstimados": 5,
+      "estado": "publicado",
+      "archivo": "data/lessons/temblores-chile.r3.json",
+      "sha256": "6526afc7e9564d6e1ec12bd29796cc3444ccb5a115577f19ec2d6aba1dc6f020"
+    },
+    {
+      "id": "unidad-fomento",
+      "revision": 3,
+      "schemaVersion": "2.0",
+      "titulo": "¿Qué cambia cuando un precio está en UF?",
+      "disciplina": "Economía cotidiana",
+      "familia": "economia",
+      "minutosEstimados": 5,
+      "estado": "publicado",
+      "archivo": "data/lessons/unidad-fomento.r3.json",
+      "sha256": "21334752ee2d642c89ab1340f613991f4d7905cf539b43f8a526d8d4ffb19356"
+    },
+    {
+      "id": "fases-luna",
+      "revision": 3,
+      "schemaVersion": "2.0",
+      "titulo": "¿Por qué cambia la forma de la Luna?",
+      "disciplina": "Astronomía",
+      "familia": "astronomia",
+      "minutosEstimados": 5,
+      "estado": "publicado",
+      "archivo": "data/lessons/fases-luna.r3.json",
+      "sha256": "fed336ce7cdab4d7062621ea3d5ecf84cf320a9bd093863fceeb2ac614acb945"
+    },
+    {
+      "id": "gabriela-mistral",
+      "revision": 4,
+      "schemaVersion": "2.0",
+      "titulo": "¿Quién fue Gabriela Mistral?",
+      "disciplina": "Literatura",
+      "familia": "literatura",
+      "minutosEstimados": 5,
+      "estado": "publicado",
+      "archivo": "data/lessons/gabriela-mistral.r4.json",
+      "sha256": "f8660d47c9d67eb1f1efca0cc7ef1b837a704a74c7c9f4960d30ea3a78deb2b6"
+    },
+    {
+      "id": "como-funciona-gps",
+      "revision": 4,
+      "schemaVersion": "2.0",
+      "titulo": "¿Cómo sabe el GPS dónde estoy?",
+      "disciplina": "Tecnología",
+      "familia": "tecnologia",
+      "minutosEstimados": 5,
+      "estado": "publicado",
+      "archivo": "data/lessons/como-funciona-gps.r4.json",
+      "sha256": "745e960b963c4375dab495f274b9f6eaaf1b85f9b2559a510745256764f991e2"
+    },
+    {
+      "id": "mar-salado",
+      "revision": 3,
+      "schemaVersion": "2.0",
+      "titulo": "¿Por qué el mar es salado?",
+      "disciplina": "Ciencias de la Tierra",
+      "familia": "geografia",
+      "minutosEstimados": 5,
+      "estado": "publicado",
+      "archivo": "data/lessons/mar-salado.r3.json",
+      "sha256": "6c12a08060e573332fc0ad99aa8ef40ee5a45da643d16fe0fddbb3ff14b9c5d5"
     }
   ]
 }

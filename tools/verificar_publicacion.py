@@ -89,7 +89,9 @@ for k in publicadas:
         err(f"{k}: un registro de opción A no puede llevar V°B° individual de Max")
 for k, sha in APROBADAS_POR_MAX.items():
     if k not in publicadas: err(f"{k} aprobada por Max pero no publicada")
-    elif not any(e["id"] == k[0] and e["revision"] == k[1] for e in cal["entradas"]): err(f"{k} publicada pero sin fecha en el calendario")
+    elif not any(e["id"] == k[0] and e["revision"] == k[1] for e in cal["entradas"]):
+        nueva = [e for e in cal["entradas"] if e["id"] == k[0] and e["revision"] > k[1] and (e["id"], e["revision"]) in publicadas]
+        if not nueva: err(f"{k} publicada pero sin fecha en el calendario")
 
 # 6. Una misma lección no aparece en el calendario con dos revisiones distintas
 revs = {}

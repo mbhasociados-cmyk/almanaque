@@ -67,7 +67,9 @@ function editorialState(entry) {
 const isPreview = (e) => Boolean(app.preview && e && e.id === app.preview.id && e.revision === app.preview.rev);
 const isCards = (e) => e?.schemaVersion === "2.0"; // la interfaz v3 muestra solo lecciones en tarjetas
 function visible(e) { const st = editorialState(e); return isCards(e) && (st === "publicado" || (st !== "excluido" && (REVIEW_MODE || isPreview(e)))); }
-const visibleEntries = () => (app.catalog?.lecciones || []).filter(e => visible(e) && (!isPreview(e) || REVIEW_MODE || editorialState(e) === "publicado"));
+// Si una lección tiene varias revisiones publicadas (por ejemplo, una nueva con ilustraciones), se muestra solo la más reciente.
+const latestById = (list, prefer = () => false) => { const m = new Map(); for (const e of list) { const p = m.get(e.id); if (!p || (prefer(e) && !prefer(p)) || (prefer(e) === prefer(p) && e.revision > p.revision)) m.set(e.id, e); } return [...m.values()]; };
+const visibleEntries = () => latestById((app.catalog?.lecciones || []).filter(e => visible(e) && (!isPreview(e) || REVIEW_MODE || editorialState(e) === "publicado")));
 function todayIso() { return chileDate(new Date()); }
 function todayEntry() {
   if (app.preview) { const p = catEntry(app.preview.id, app.preview.rev); if (p && visible(p) && editorialState(p) !== "publicado") return p; }
@@ -94,7 +96,7 @@ async function record(type, L, extra = {}) {
 const lessonState = (L) => app.state?.perLesson.get(`${L.id}@${L.revision}`) || { activeRunId: null, maxStep: -1, attempts: [], openAttempt: null, completed: false, revealed: [] };
 const learned = () => visibleOrLearned().filter(e => lessonState(e).completed);
 // Lo aprendido se conserva aunque la lección deje de estar en el calendario; se excluye solo si su registro es contradictorio.
-const visibleOrLearned = () => (app.catalog?.lecciones || []).filter(e => isCards(e) && editorialState(e) !== "excluido" && (visible(e) || lessonState(e).completed));
+const visibleOrLearned = () => latestById((app.catalog?.lecciones || []).filter(e => isCards(e) && editorialState(e) !== "excluido" && (visible(e) || lessonState(e).completed)), e => lessonState(e).completed);
 
 // ------------------------------------------------------------ cabecera y navegación
 const SYNC_LABEL = {

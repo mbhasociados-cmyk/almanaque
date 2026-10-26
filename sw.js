@@ -1,6 +1,6 @@
 // Service worker v3: la app funciona en línea. Siempre pide a la red y usa la copia guardada
 // solo si la red falla un momento. No intercepta otros orígenes (Supabase) ni los datos de lecciones.
-const VERSION = "3.0.0";
+const VERSION = "3.1.0";
 const CACHE = "almanaque-shell-" + VERSION;
 
 self.addEventListener("install", () => self.skipWaiting());

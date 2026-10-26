@@ -13,10 +13,17 @@ try:
     fechas = {x["fecha"] for x in man["lecciones"]} | {"2026-10-27"}
     for lid, fecha in pares:
         datetime.date.fromisoformat(fecha)
-        assert fecha not in fechas, f"la fecha {fecha} ya tiene lección"; fechas.add(fecha)
+        previa = next((x for x in man["lecciones"] if x.get("fecha") == fecha), None)
         f = next(n for n in os.listdir(os.path.join(ROOT, "borradores", carpeta)) if n.startswith(lid + ".r") and n.endswith(".json"))
         data = open(os.path.join(ROOT, "borradores", carpeta, f), "rb").read(); L = json.loads(data)
-        sys.path.insert(0, os.path.dirname(__file__)); from almanaque_lib import validate; validate(L)
+        sys.path.insert(0, os.path.dirname(__file__)); from almanaque_lib import validate, validate_visuals; validate(L); validate_visuals(L)
+        if previa is not None:
+            # Reemplazo: solo una revisión más nueva de la MISMA lección puede tomar una fecha ya programada.
+            assert previa["id"] == lid and L["revision"] > previa["revision"], f"la fecha {fecha} ya tiene lección ({previa['id']} r{previa['revision']})"
+            previa["fecha"] = None; previa["reemplazadaPor"] = L["revision"]
+        else:
+            assert fecha not in fechas, f"la fecha {fecha} ya tiene lección"
+        fechas.add(fecha)
         assert not any(r["id"] == lid and r["revision"] == L["revision"] for r in apr["registros"]), f"{lid} ya tiene registro"
         man["lecciones"].append({"carpeta": f"borradores/{carpeta}", "id": lid, "revision": L["revision"], "fecha": fecha})
         apr["registros"].append({"id": lid, "revision": L["revision"], "sha256": hashlib.sha256(data).hexdigest(),

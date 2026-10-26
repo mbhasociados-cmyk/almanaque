@@ -554,7 +554,8 @@ entries = [e for e in entries if e["fecha"] not in _fechas_manifiesto]
 entries.append({"fecha": "2026-10-27", "id": "cielo-azul", "revision": 3})
 # Lecciones en tarjetas del manifiesto (lote 1 con V°B° de Max; desde el lote 2, opción A)
 for x in json.load(open(os.path.join(ROOT, "tools", "manifiesto_publicacion.json"), encoding="utf-8"))["lecciones"]:
-    entries.append({"fecha": x["fecha"], "id": x["id"], "revision": x["revision"]})
+    if x.get("fecha"):  # una revisión reemplazada por otra más nueva queda en el catálogo, pero sin fecha
+        entries.append({"fecha": x["fecha"], "id": x["id"], "revision": x["revision"]})
 open(os.path.join(ROOT, "data", "calendar.v1.json"), "w", encoding="utf-8").write(
     json.dumps({"version": 1, "zonaHoraria": "America/Santiago", "entradas": entries}, ensure_ascii=False, indent=2))
 for c in catalog: print(c["id"], c["sha256"][:12])
