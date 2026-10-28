@@ -246,12 +246,13 @@ function renderCuenta() {
       ${s.otherOwner ? `<p class="small">Este equipo tiene avance de otra cuenta; no se enviará con esta sesión.</p>` : ""}`;
   }
   view.innerHTML = `<section class="hello"><h1>Cuenta</h1></section>
-    <section class="panel">${acct}
+    <section class="panel"><p class="small">La aplicación es gratuita y puedes usarla sin cuenta: tu avance se guarda en este equipo. La cuenta, por ahora disponible solo para usuarios invitados, sirve para ver el mismo avance en varios equipos.</p>${acct}
       <dl class="kv"><dt>Estado</dt><dd>${esc((SYNC_LABEL[s.state] || (() => s.state))(s))}</dd>
       <dt>Última actualización</dt><dd>${s.lastOk ? new Date(s.lastOk).toLocaleString("es-CL") : "—"}</dd>
       ${s.pending ? `<dt>Por guardar</dt><dd>${s.pending}</dd>` : ""}
       ${s.lastError ? `<dt>Detalle</dt><dd class="small">${esc(s.lastError)}</dd>` : ""}</dl>
-    </section>`;
+    </section>
+    <p class="small"><a href="https://almanaquedelsaber.cl/privacidad.html" target="_blank" rel="noopener">Privacidad</a> · <a href="https://almanaquedelsaber.cl/privacidad.html#eliminar" target="_blank" rel="noopener">Eliminar mis datos</a> · <a href="https://almanaquedelsaber.cl/empresa.html" target="_blank" rel="noopener">Quiénes somos</a></p>`;
   const fe = $("#f-email");
   if (fe) {
     $("#email").oninput = (ev) => saveAuthDraft({ email: ev.target.value });

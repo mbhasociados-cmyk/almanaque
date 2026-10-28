@@ -101,6 +101,7 @@ a { color: var(--a); }
 /* Cuenta */
 .panel { background: var(--card); border-radius: var(--r); padding: 20px; box-shadow: var(--shadow); }
 .form { display: grid; gap: 8px; margin: 12px 0; }
+.form[hidden] { display: none; }
 .form label { font-size: 14px; color: var(--muted); }
 input { font: inherit; padding: 12px 14px; border-radius: 12px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); }
 .kv { display: grid; grid-template-columns: max-content 1fr; gap: 6px 16px; margin: 16px 0 0; font-size: 15px; }
