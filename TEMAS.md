@@ -23,8 +23,6 @@ Una lección por día. Al publicar un tema, márcalo como [x] y anota id y fecha
 - [x] 08-11 ¿Por qué el hielo flota? — hielo-flota r1 (lote 4)
 - [ ] ¿Por qué algunos cerros son buenos para observar estrellas?
 - [ ] ¿Qué significa que suba la inflación?
-- [ ] ¿Cómo sostiene peso un arco de piedra?
-- [ ] ¿Por qué las montañas lejanas se ven azuladas?
 - [ ] ¿Qué significa que una noticia tenga una fuente?
 - [ ] ¿Por qué una cuchara de metal se siente más fría que una de madera?
 - [ ] ¿Qué hace la levadura dentro del pan?
@@ -36,5 +34,10 @@ Una lección por día. Al publicar un tema, márcalo como [x] y anota id y fecha
 - [ ] ¿Por qué un cinturón de seguridad nos protege al frenar?
 - [ ] ¿Cómo reconoce un código QR el celular?
 - [ ] ¿Por qué el agua hierve a distinta temperatura en la montaña?
+- [ ] ¿Por qué se oxida el hierro?
+- [ ] ¿Cómo funciona un imán?
+- [ ] ¿Qué es el interés compuesto?
 
 Cuando queden menos de 14 temas pendientes, la producción agrega nuevos temas cotidianos de cualquier disciplina, sin repetir los ya publicados, y los anota aquí.
+
+Depurado el 28-10-2026: se quitaron "¿Cómo sostiene peso un arco de piedra?" (ya publicado como arco-panteon) y "¿Por qué las montañas lejanas se ven azuladas?" (ya tratado en perspectiva-lineal).
