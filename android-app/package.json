@@ -9,8 +9,7 @@
   },
   "dependencies": {
     "@capacitor/android": "^8.5.3",
-    "@capacitor/core": "^8.5.3",
-    "cordova-plugin-purchase": "^13.19.1"
+    "@capacitor/core": "^8.5.3"
   },
   "devDependencies": {
     "@capacitor/cli": "^8.5.3"
