@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es-CL">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quiénes somos · Almanaque del Saber</title>
+<meta name="description" content="Almanaque del Saber es una aplicación de MBH Servicios en Producción, Recitales y Eventos SpA.">
+<link rel="icon" href="icons/icon-192.png" type="image/png">
+<style>
+  @font-face { font-family: "Young Serif"; src: url(fonts/young-serif-latin-400-normal.woff2) format("woff2"); font-weight: 400; font-display: swap; }
+  @font-face { font-family: "Instrument Sans"; src: url(fonts/instrument-sans-latin-400-normal.woff2) format("woff2"); font-weight: 400; font-display: swap; }
+  @font-face { font-family: "Instrument Sans"; src: url(fonts/instrument-sans-latin-600-normal.woff2) format("woff2"); font-weight: 600; font-display: swap; }
+  :root { --bg: #F6F3EE; --card: #FFFFFF; --ink: #1D2230; --muted: #646B78; --line: #E3DED6; --a: #2F5BD3; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #14181F; --card: #1E242E; --ink: #EEF0F4; --muted: #A2AAB7; --line: #2E3542; --a: #8FAEFF; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.55 "Instrument Sans", system-ui, sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 32px 16px 48px; }
+  .brand { font: 22px/1.2 "Young Serif", Georgia, serif; }
+  .brand span { color: var(--muted); font-size: 18px; }
+  h1 { font: 30px/1.2 "Young Serif", Georgia, serif; margin: 28px 0 12px; }
+  h2 { font-size: 18px; margin: 28px 0 8px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; }
+  dl { display: grid; grid-template-columns: max-content 1fr; gap: 8px 18px; margin: 0; }
+  dt { color: var(--muted); }
+  dd { margin: 0; font-weight: 600; overflow-wrap: anywhere; }
+  a { color: var(--a); }
+  .muted { color: var(--muted); font-size: 15px; }
+  @media (max-width: 480px) { dl { grid-template-columns: 1fr; gap: 2px; } dd { margin-bottom: 10px; } }
+</style>
+</head>
+<body>
+<main>
+  <a href="./" class="brand" style="text-decoration:none;color:inherit">Almanaque <span>del Saber</span></a>
+
+  <h1>Quiénes somos</h1>
+  <p>Almanaque del Saber es una aplicación chilena que cada día enseña una idea nueva, de cualquier disciplina, en pocos minutos y en lenguaje simple. Cada lección cita las fuentes que la respaldan.</p>
+
+  <h2>Responsable de la aplicación</h2>
+  <div class="card">
+    <dl>
+      <dt>Razón social</dt><dd>MBH Servicios en Producción, Recitales y Eventos SpA</dd>
+      <dt>RUT</dt><dd>77.051.975-6</dd>
+      <dt>Domicilio</dt><dd>Juan Antonio Ríos 426, Coquimbo, Región de Coquimbo, Chile</dd>
+      <dt>Contacto</dt><dd><a href="mailto:contacto@almanaquedelsaber.cl">contacto@almanaquedelsaber.cl</a></dd>
+      <dt>Sitio</dt><dd><a href="https://almanaquedelsaber.cl">almanaquedelsaber.cl</a></dd>
+    </dl>
+  </div>
+
+  <h2>Contacto y soporte</h2>
+  <p>Para consultas, sugerencias o para reportar un error en una lección, escríbenos a <a href="mailto:contacto@almanaquedelsaber.cl">contacto@almanaquedelsaber.cl</a>. Indica el título de la lección y la fecha.</p>
+
+  <p class="muted"><a href="./">Volver a la aplicación</a></p>
+</main>
+</body>
+</html>

@@ -73,7 +73,9 @@ function editorialState(entry) {
 const isPreview = (e) => Boolean(app.preview && e && e.id === app.preview.id && e.revision === app.preview.rev);
 const isCards = (e) => e?.schemaVersion === "2.0"; // la interfaz v3 muestra solo lecciones en tarjetas
 function visible(e) { const st = editorialState(e); return isCards(e) && (st === "publicado" || (st !== "excluido" && (REVIEW_MODE || isPreview(e)))); }
-const visibleEntries = () => (app.catalog?.lecciones || []).filter(e => visible(e) && (!isPreview(e) || REVIEW_MODE || editorialState(e) === "publicado"));
+// Si una lección tiene varias revisiones publicadas (por ejemplo, una nueva con ilustraciones), se muestra solo la más reciente.
+const latestById = (list, prefer = () => false) => { const m = new Map(); for (const e of list) { const p = m.get(e.id); if (!p || (prefer(e) && !prefer(p)) || (prefer(e) === prefer(p) && e.revision > p.revision)) m.set(e.id, e); } return [...m.values()]; };
+const visibleEntries = () => latestById((app.catalog?.lecciones || []).filter(e => visible(e) && (!isPreview(e) || REVIEW_MODE || editorialState(e) === "publicado")));
 function todayIso() { return chileDate(new Date()); }
 function todayEntry() {
   if (app.preview) { const p = catEntry(app.preview.id, app.preview.rev); if (p && visible(p) && editorialState(p) !== "publicado") return p; }
@@ -100,7 +102,7 @@ async function record(type, L, extra = {}) {
 const lessonState = (L) => app.state?.perLesson.get(`${L.id}@${L.revision}`) || { activeRunId: null, maxStep: -1, attempts: [], openAttempt: null, completed: false, revealed: [] };
 const learned = () => visibleOrLearned().filter(e => lessonState(e).completed);
 // Lo aprendido se conserva aunque la lección deje de estar en el calendario; se excluye solo si su registro es contradictorio.
-const visibleOrLearned = () => (app.catalog?.lecciones || []).filter(e => isCards(e) && editorialState(e) !== "excluido" && (visible(e) || lessonState(e).completed));
+const visibleOrLearned = () => latestById((app.catalog?.lecciones || []).filter(e => isCards(e) && editorialState(e) !== "excluido" && (visible(e) || lessonState(e).completed)), e => lessonState(e).completed);
 
 // ------------------------------------------------------------ cabecera y navegación
 const SYNC_LABEL = {
@@ -250,12 +252,13 @@ function renderCuenta() {
       ${s.otherOwner ? `<p class="small">Este equipo tiene avance de otra cuenta; no se enviará con esta sesión.</p>` : ""}`;
   }
   view.innerHTML = `<section class="hello"><h1>Cuenta</h1></section>
-    <section class="panel">${acct}
+    <section class="panel"><p class="small">La aplicación es gratuita y puedes usarla sin cuenta: tu avance se guarda en este equipo. La cuenta, por ahora disponible solo para usuarios invitados, sirve para ver el mismo avance en varios equipos.</p>${acct}
       <dl class="kv"><dt>Estado</dt><dd>${esc((SYNC_LABEL[s.state] || (() => s.state))(s))}</dd>
       <dt>Última actualización</dt><dd>${s.lastOk ? new Date(s.lastOk).toLocaleString("es-CL") : "—"}</dd>
       ${s.pending ? `<dt>Por guardar</dt><dd>${s.pending}</dd>` : ""}
       ${s.lastError ? `<dt>Detalle</dt><dd class="small">${esc(s.lastError)}</dd>` : ""}</dl>
-    </section>`;
+    </section>
+    <p class="small"><a href="https://almanaquedelsaber.cl/privacidad.html" target="_blank" rel="noopener">Privacidad</a> · <a href="https://almanaquedelsaber.cl/privacidad.html#eliminar" target="_blank" rel="noopener">Eliminar mis datos</a> · <a href="https://almanaquedelsaber.cl/empresa.html" target="_blank" rel="noopener">Quiénes somos</a></p>`;
   const fe = $("#f-email");
   if (fe) {
     $("#email").oninput = (ev) => saveAuthDraft({ email: ev.target.value });

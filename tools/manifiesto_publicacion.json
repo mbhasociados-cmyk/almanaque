@@ -5,43 +5,165 @@
       "carpeta": "borradores/lote1_r2",
       "id": "pan-duro",
       "revision": 2,
-      "fecha": "2026-10-28"
+      "fecha": null,
+      "reemplazadaPor": 3
     },
     {
       "carpeta": "borradores/lote1_r2",
       "id": "temblores-chile",
       "revision": 2,
-      "fecha": "2026-10-29"
+      "fecha": null,
+      "reemplazadaPor": 3
     },
     {
       "carpeta": "borradores/lote1_r2",
       "id": "unidad-fomento",
       "revision": 2,
-      "fecha": "2026-10-30"
+      "fecha": null,
+      "reemplazadaPor": 3
     },
     {
       "carpeta": "borradores/lote1_r2",
       "id": "fases-luna",
       "revision": 2,
-      "fecha": "2026-10-31"
+      "fecha": null,
+      "reemplazadaPor": 3
     },
     {
       "carpeta": "borradores/lote1_r3",
       "id": "gabriela-mistral",
       "revision": 3,
-      "fecha": "2026-11-01"
+      "fecha": null,
+      "reemplazadaPor": 4
     },
     {
       "carpeta": "borradores/lote1_r3",
       "id": "como-funciona-gps",
       "revision": 3,
-      "fecha": "2026-11-02"
+      "fecha": null,
+      "reemplazadaPor": 4
     },
     {
       "carpeta": "borradores/lote1_r2",
       "id": "mar-salado",
       "revision": 2,
+      "fecha": null,
+      "reemplazadaPor": 3
+    },
+    {
+      "carpeta": "borradores/lote2",
+      "id": "perspectiva-lineal",
+      "revision": 4,
+      "fecha": "2026-10-23"
+    },
+    {
+      "carpeta": "borradores/lote2",
+      "id": "corriente-humboldt",
+      "revision": 3,
+      "fecha": "2026-10-24"
+    },
+    {
+      "carpeta": "borradores/lote2",
+      "id": "bauhaus",
+      "revision": 4,
+      "fecha": "2026-10-25"
+    },
+    {
+      "carpeta": "borradores/lote2",
+      "id": "arco-panteon",
+      "revision": 4,
+      "fecha": null,
+      "reemplazadaPor": 5
+    },
+    {
+      "carpeta": "borradores/lote3",
+      "id": "arco-panteon",
+      "revision": 5,
+      "fecha": "2026-10-26"
+    },
+    {
+      "carpeta": "borradores/lote3",
+      "id": "pan-duro",
+      "revision": 3,
+      "fecha": "2026-10-28"
+    },
+    {
+      "carpeta": "borradores/lote3",
+      "id": "temblores-chile",
+      "revision": 3,
+      "fecha": "2026-10-29"
+    },
+    {
+      "carpeta": "borradores/lote3",
+      "id": "unidad-fomento",
+      "revision": 3,
+      "fecha": "2026-10-30"
+    },
+    {
+      "carpeta": "borradores/lote3",
+      "id": "fases-luna",
+      "revision": 3,
+      "fecha": "2026-10-31"
+    },
+    {
+      "carpeta": "borradores/lote3",
+      "id": "gabriela-mistral",
+      "revision": 4,
+      "fecha": "2026-11-01"
+    },
+    {
+      "carpeta": "borradores/lote3",
+      "id": "como-funciona-gps",
+      "revision": 4,
+      "fecha": "2026-11-02"
+    },
+    {
+      "carpeta": "borradores/lote3",
+      "id": "mar-salado",
+      "revision": 3,
       "fecha": "2026-11-03"
+    },
+    {
+      "carpeta": "borradores/lote4",
+      "id": "vaso-empanado",
+      "revision": 1,
+      "fecha": "2026-11-04"
+    },
+    {
+      "carpeta": "borradores/lote4",
+      "id": "niebla-costera",
+      "revision": 1,
+      "fecha": "2026-11-05"
+    },
+    {
+      "carpeta": "borradores/lote4",
+      "id": "barco-acero",
+      "revision": 1,
+      "fecha": "2026-11-06"
+    },
+    {
+      "carpeta": "borradores/lote4",
+      "id": "rieles-horizonte",
+      "revision": 1,
+      "fecha": "2026-11-07"
+    },
+    {
+      "carpeta": "borradores/lote4",
+      "id": "hielo-flota",
+      "revision": 1,
+      "fecha": "2026-11-08"
+    },
+    {
+      "carpeta": "borradores/lote4",
+      "id": "imprenta-libros",
+      "revision": 1,
+      "fecha": "2026-11-09"
+    },
+    {
+      "carpeta": "borradores/lote4",
+      "id": "jabon-grasa",
+      "revision": 1,
+      "fecha": "2026-11-10"
     }
   ]
 }

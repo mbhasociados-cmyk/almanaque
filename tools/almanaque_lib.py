@@ -1,5 +1,5 @@
 # Biblioteca común para producir lecciones en tarjetas (esquema 2.0). La usan los scripts de tools/lotes/.
-import json, hashlib, os
+import json, hashlib, os, re
 ROOT = os.path.join(os.path.dirname(__file__), "..")
 
 def card(id, tipo, **k):
@@ -42,6 +42,18 @@ def validate(L):
             if f["id"] in t["fuenteIds"]: assert t["id"] in f["respalda"], (L["id"], t["id"], f["id"])
         if t["tipo"] == "pregunta":
             assert len(t["opciones"]) == 3 and t["correctaId"] in {o["id"] for o in t["opciones"]}, (L["id"], t["id"])
+
+def validate_visuals(L):
+    """Desde el lote 3 (26-10-2026): portada, ideas, revelar y dato llevan una ilustración SVG con título."""
+    for t in L["tarjetas"]:
+        if t["tipo"] in ("portada", "idea", "revelar", "dato"):
+            v = t.get("visual") or ""
+            assert v.startswith("<svg") and "<title>" in v, ("tarjeta sin ilustración", L["id"], t["id"])
+            assert len(v) <= 60000, ("ilustración demasiado grande", L["id"], t["id"])
+            for m in re.findall(r'id="([^"]+)"', v):
+                assert m.startswith(L["id"] + "-"), ("id de SVG sin el prefijo de la lección", L["id"], t["id"], m)
+            for bad in ("<script", "style=", "href", "fill=\"#", "stroke=\"#", "<image", "<foreignObject"):
+                assert bad not in v, ("ilustración con elemento no permitido", L["id"], t["id"], bad)
 
 def write(lote_dir, lessons):
     """Valida y escribe cada lección en borradores/<lote_dir>/<id>.r<rev>.json. Devuelve [(id, rev, sha)]."""

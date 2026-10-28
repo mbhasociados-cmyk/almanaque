@@ -1,0 +1,242 @@
+{
+  "schemaVersion": "2.0",
+  "id": "imprenta-libros",
+  "revision": 1,
+  "idioma": "es-CL",
+  "disciplina": "Historia",
+  "familia": "historia",
+  "titulo": "¿Cómo cambió los libros la imprenta?",
+  "subtitulo": "De copiar a mano a imprimir muchas copias.",
+  "minutosEstimados": 5,
+  "tarjetas": [
+    {
+      "id": "c1",
+      "tipo": "portada",
+      "titulo": "¿Cómo cambió los libros la imprenta?",
+      "texto": "Antes de la imprenta, hacer un libro en Europa era caro y lento. ¿Qué cambió con la prensa de Gutenberg?",
+      "fuenteIds": [
+        "utas-impr"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Un libro abierto y una prensa de imprimir: antes de la imprenta, un libro era caro y lento de hacer</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><path d=\"M20 80 C44.0 70 70.0 70 80.0 80 C90.0 70 116.0 70 140 80 L140 150 C116.0 140 90.0 140 80.0 150 C70.0 140 44.0 140 20 150 Z\" class=\"as-svg__warm\"/><path d=\"M20 80 C44.0 70 70.0 70 80.0 80 C90.0 70 116.0 70 140 80 L140 150 C116.0 140 90.0 140 80.0 150 C70.0 140 44.0 140 20 150 Z\" class=\"as-svg__ink\"/><line x1=\"80.0\" y1=\"80\" x2=\"80.0\" y2=\"150\" class=\"as-svg__ink\"/><g transform=\"translate(190,50) scale(0.9)\"><rect x=\"0\" y=\"0\" width=\"14\" height=\"110\" rx=\"2\" class=\"as-svg__fill\"/><rect x=\"0\" y=\"0\" width=\"14\" height=\"110\" rx=\"2\" class=\"as-svg__ink\"/><rect x=\"86\" y=\"0\" width=\"14\" height=\"110\" rx=\"2\" class=\"as-svg__fill\"/><rect x=\"86\" y=\"0\" width=\"14\" height=\"110\" rx=\"2\" class=\"as-svg__ink\"/><rect x=\"0\" y=\"0\" width=\"100\" height=\"16\" rx=\"2\" class=\"as-svg__fill\"/><rect x=\"0\" y=\"0\" width=\"100\" height=\"16\" rx=\"2\" class=\"as-svg__ink\"/><line x1=\"50\" y1=\"16\" x2=\"50\" y2=\"50\" class=\"as-svg__ink\" stroke-width=\"3\"/><rect x=\"22\" y=\"50\" width=\"56\" height=\"12\" rx=\"2\" class=\"as-svg__warm\"/><rect x=\"22\" y=\"50\" width=\"56\" height=\"12\" rx=\"2\" class=\"as-svg__ink\"/><rect x=\"14\" y=\"80\" width=\"72\" height=\"10\" rx=\"2\" class=\"as-svg__soft\"/><rect x=\"14\" y=\"80\" width=\"72\" height=\"10\" rx=\"2\" class=\"as-svg__ink\"/></g><text x=\"80\" y=\"40\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"17\">caro y lento</text><text x=\"235\" y=\"186\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">imprenta</text></svg>"
+    },
+    {
+      "id": "c2",
+      "tipo": "idea",
+      "titulo": "Libros escasos y caros",
+      "texto": "Copiar un libro a mano era un trabajo laborioso y costoso. Un manuscrito encuadernado costaba lo que ganaba en un mes un funcionario de la corte.",
+      "fuenteIds": [
+        "uwm-manus"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Un libro copiado a mano con pluma: era laborioso y costaba lo que ganaba en un mes un funcionario de la corte</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><path d=\"M20 60 C46.0 50 75.0 50 85.0 60 C95.0 50 124.0 50 150 60 L150 140 C124.0 130 95.0 130 85.0 140 C75.0 130 46.0 130 20 140 Z\" class=\"as-svg__warm\"/><path d=\"M20 60 C46.0 50 75.0 50 85.0 60 C95.0 50 124.0 50 150 60 L150 140 C124.0 130 95.0 130 85.0 140 C75.0 130 46.0 130 20 140 Z\" class=\"as-svg__ink\"/><line x1=\"85.0\" y1=\"60\" x2=\"85.0\" y2=\"140\" class=\"as-svg__ink\"/><line x1=\"32\" y1=\"78\" x2=\"72\" y2=\"78\" class=\"as-svg__ink\"/><line x1=\"32\" y1=\"92\" x2=\"72\" y2=\"92\" class=\"as-svg__ink\"/><line x1=\"32\" y1=\"106\" x2=\"72\" y2=\"106\" class=\"as-svg__ink\"/><line x1=\"32\" y1=\"120\" x2=\"72\" y2=\"120\" class=\"as-svg__ink\"/><line x1=\"96\" y1=\"78\" x2=\"136\" y2=\"78\" class=\"as-svg__ink\"/><line x1=\"96\" y1=\"92\" x2=\"136\" y2=\"92\" class=\"as-svg__ink\"/><line x1=\"96\" y1=\"106\" x2=\"136\" y2=\"106\" class=\"as-svg__ink\"/><line x1=\"96\" y1=\"120\" x2=\"136\" y2=\"120\" class=\"as-svg__ink\"/><path d=\"M180 30 C210 40 216 70 196 96 L190 110 L184 106 L188 92 C170 78 170 50 180 30 Z\" class=\"as-svg__fill\"/><path d=\"M180 30 C210 40 216 70 196 96 L190 110 L184 106 L188 92 C170 78 170 50 180 30 Z\" class=\"as-svg__ink\"/><text x=\"264\" y=\"70\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">copiado</text><text x=\"264\" y=\"90\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">a mano</text><text x=\"160\" y=\"168\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">costaba un mes de sueldo</text><text x=\"160\" y=\"190\" text-anchor=\"middle\" class=\"as-svg__muted\" font-size=\"15\">de un funcionario de la corte</text></svg>"
+    },
+    {
+      "id": "c3",
+      "tipo": "idea",
+      "titulo": "Tipos de metal y una prensa",
+      "texto": "En las décadas de 1440 y 1450, Johann Gutenberg desarrolló en Estrasburgo y Maguncia la imprenta: tipos metálicos móviles y una prensa manual.",
+      "fuenteIds": [
+        "utas-impr"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Tipos metálicos móviles y una prensa manual: Gutenberg, en Estrasburgo y Maguncia, en las décadas de 1440 y 1450</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><rect x=\"24\" y=\"70\" width=\"26\" height=\"30\" rx=\"3\" class=\"as-svg__warm\"/><rect x=\"24\" y=\"70\" width=\"26\" height=\"30\" rx=\"3\" class=\"as-svg__ink\"/><text x=\"37\" y=\"91\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"17\">T</text><rect x=\"54\" y=\"70\" width=\"26\" height=\"30\" rx=\"3\" class=\"as-svg__warm\"/><rect x=\"54\" y=\"70\" width=\"26\" height=\"30\" rx=\"3\" class=\"as-svg__ink\"/><text x=\"67\" y=\"91\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"17\">I</text><rect x=\"84\" y=\"70\" width=\"26\" height=\"30\" rx=\"3\" class=\"as-svg__warm\"/><rect x=\"84\" y=\"70\" width=\"26\" height=\"30\" rx=\"3\" class=\"as-svg__ink\"/><text x=\"97\" y=\"91\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"17\">P</text><rect x=\"114\" y=\"70\" width=\"26\" height=\"30\" rx=\"3\" class=\"as-svg__warm\"/><rect x=\"114\" y=\"70\" width=\"26\" height=\"30\" rx=\"3\" class=\"as-svg__ink\"/><text x=\"127\" y=\"91\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"17\">O</text><rect x=\"144\" y=\"70\" width=\"26\" height=\"30\" rx=\"3\" class=\"as-svg__warm\"/><rect x=\"144\" y=\"70\" width=\"26\" height=\"30\" rx=\"3\" class=\"as-svg__ink\"/><text x=\"157\" y=\"91\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"17\">S</text><g transform=\"translate(200,40) scale(0.9)\"><rect x=\"0\" y=\"0\" width=\"14\" height=\"110\" rx=\"2\" class=\"as-svg__fill\"/><rect x=\"0\" y=\"0\" width=\"14\" height=\"110\" rx=\"2\" class=\"as-svg__ink\"/><rect x=\"86\" y=\"0\" width=\"14\" height=\"110\" rx=\"2\" class=\"as-svg__fill\"/><rect x=\"86\" y=\"0\" width=\"14\" height=\"110\" rx=\"2\" class=\"as-svg__ink\"/><rect x=\"0\" y=\"0\" width=\"100\" height=\"16\" rx=\"2\" class=\"as-svg__fill\"/><rect x=\"0\" y=\"0\" width=\"100\" height=\"16\" rx=\"2\" class=\"as-svg__ink\"/><line x1=\"50\" y1=\"16\" x2=\"50\" y2=\"50\" class=\"as-svg__ink\" stroke-width=\"3\"/><rect x=\"22\" y=\"50\" width=\"56\" height=\"12\" rx=\"2\" class=\"as-svg__warm\"/><rect x=\"22\" y=\"50\" width=\"56\" height=\"12\" rx=\"2\" class=\"as-svg__ink\"/><rect x=\"14\" y=\"80\" width=\"72\" height=\"10\" rx=\"2\" class=\"as-svg__soft\"/><rect x=\"14\" y=\"80\" width=\"72\" height=\"10\" rx=\"2\" class=\"as-svg__ink\"/></g><text x=\"85\" y=\"130\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">tipos de metal</text><text x=\"85\" y=\"150\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">móviles</text><text x=\"245\" y=\"30\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">prensa</text><text x=\"110\" y=\"176\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">Estrasburgo y Maguncia</text><text x=\"110\" y=\"194\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">décadas de 1440 y 1450</text></svg>"
+    },
+    {
+      "id": "c4",
+      "tipo": "pregunta",
+      "pregunta": "¿Qué cambió con la prensa de Gutenberg?",
+      "correctaId": "a",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Se pudieron fabricar muchos libros a un costo relativamente bajo",
+          "retro": "¡Exacto! Fue la primera vez en Europa que eso fue posible."
+        },
+        {
+          "id": "b",
+          "texto": "Los libros se volvieron más caros",
+          "retro": "Al revés: el costo por libro bajó."
+        },
+        {
+          "id": "c",
+          "texto": "Se dejó de usar papel",
+          "retro": "No: la mayoría de las Biblias de Gutenberg, por ejemplo, se imprimieron en papel."
+        }
+      ],
+      "fuenteIds": [
+        "brit-gutenberg",
+        "loc-biblia"
+      ]
+    },
+    {
+      "id": "c5",
+      "tipo": "idea",
+      "titulo": "Más libros, más lectores",
+      "texto": "Por primera vez en Europa se pudo fabricar una gran cantidad de libros con un costo relativamente bajo. Los impresos llegaron a más gente, lo que favoreció la alfabetización y la educación.",
+      "fuenteIds": [
+        "brit-gutenberg"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Muchos libros a un costo relativamente bajo: los impresos llegan a más gente</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><rect x=\"30\" y=\"140\" width=\"20\" height=\"22\" rx=\"2\" class=\"as-svg__fill\"/><rect x=\"30\" y=\"140\" width=\"20\" height=\"22\" rx=\"2\" class=\"as-svg__ink\"/><rect x=\"30\" y=\"118\" width=\"20\" height=\"22\" rx=\"2\" class=\"as-svg__warm\"/><rect x=\"30\" y=\"118\" width=\"20\" height=\"22\" rx=\"2\" class=\"as-svg__ink\"/><rect x=\"30\" y=\"96\" width=\"20\" height=\"22\" rx=\"2\" class=\"as-svg__fill\"/><rect x=\"30\" y=\"96\" width=\"20\" height=\"22\" rx=\"2\" class=\"as-svg__ink\"/><rect x=\"30\" y=\"74\" width=\"20\" height=\"22\" rx=\"2\" class=\"as-svg__warm\"/><rect x=\"30\" y=\"74\" width=\"20\" height=\"22\" rx=\"2\" class=\"as-svg__ink\"/><rect x=\"52\" y=\"140\" width=\"20\" height=\"22\" rx=\"2\" class=\"as-svg__warm\"/><rect x=\"52\" y=\"140\" width=\"20\" height=\"22\" rx=\"2\" class=\"as-svg__ink\"/><rect x=\"52\" y=\"118\" width=\"20\" height=\"22\" rx=\"2\" class=\"as-svg__fill\"/><rect x=\"52\" y=\"118\" width=\"20\" height=\"22\" rx=\"2\" class=\"as-svg__ink\"/><rect x=\"52\" y=\"96\" width=\"20\" height=\"22\" rx=\"2\" class=\"as-svg__warm\"/><rect x=\"52\" y=\"96\" width=\"20\" height=\"22\" rx=\"2\" class=\"as-svg__ink\"/><rect x=\"74\" y=\"140\" width=\"20\" height=\"22\" rx=\"2\" class=\"as-svg__fill\"/><rect x=\"74\" y=\"140\" width=\"20\" height=\"22\" rx=\"2\" class=\"as-svg__ink\"/><rect x=\"74\" y=\"118\" width=\"20\" height=\"22\" rx=\"2\" class=\"as-svg__warm\"/><rect x=\"74\" y=\"118\" width=\"20\" height=\"22\" rx=\"2\" class=\"as-svg__ink\"/><rect x=\"74\" y=\"96\" width=\"20\" height=\"22\" rx=\"2\" class=\"as-svg__fill\"/><rect x=\"74\" y=\"96\" width=\"20\" height=\"22\" rx=\"2\" class=\"as-svg__ink\"/><rect x=\"74\" y=\"74\" width=\"20\" height=\"22\" rx=\"2\" class=\"as-svg__warm\"/><rect x=\"74\" y=\"74\" width=\"20\" height=\"22\" rx=\"2\" class=\"as-svg__ink\"/><rect x=\"96\" y=\"140\" width=\"20\" height=\"22\" rx=\"2\" class=\"as-svg__warm\"/><rect x=\"96\" y=\"140\" width=\"20\" height=\"22\" rx=\"2\" class=\"as-svg__ink\"/><rect x=\"96\" y=\"118\" width=\"20\" height=\"22\" rx=\"2\" class=\"as-svg__fill\"/><rect x=\"96\" y=\"118\" width=\"20\" height=\"22\" rx=\"2\" class=\"as-svg__ink\"/><rect x=\"96\" y=\"96\" width=\"20\" height=\"22\" rx=\"2\" class=\"as-svg__warm\"/><rect x=\"96\" y=\"96\" width=\"20\" height=\"22\" rx=\"2\" class=\"as-svg__ink\"/><rect x=\"118\" y=\"140\" width=\"20\" height=\"22\" rx=\"2\" class=\"as-svg__fill\"/><rect x=\"118\" y=\"140\" width=\"20\" height=\"22\" rx=\"2\" class=\"as-svg__ink\"/><rect x=\"118\" y=\"118\" width=\"20\" height=\"22\" rx=\"2\" class=\"as-svg__warm\"/><rect x=\"118\" y=\"118\" width=\"20\" height=\"22\" rx=\"2\" class=\"as-svg__ink\"/><rect x=\"118\" y=\"96\" width=\"20\" height=\"22\" rx=\"2\" class=\"as-svg__fill\"/><rect x=\"118\" y=\"96\" width=\"20\" height=\"22\" rx=\"2\" class=\"as-svg__ink\"/><rect x=\"118\" y=\"74\" width=\"20\" height=\"22\" rx=\"2\" class=\"as-svg__warm\"/><rect x=\"118\" y=\"74\" width=\"20\" height=\"22\" rx=\"2\" class=\"as-svg__ink\"/><path d=\"M180 70 C202.0 60 225.0 60 235.0 70 C245.0 60 268.0 60 290 70 L290 130 C268.0 120 245.0 120 235.0 130 C225.0 120 202.0 120 180 130 Z\" class=\"as-svg__soft\"/><path d=\"M180 70 C202.0 60 225.0 60 235.0 70 C245.0 60 268.0 60 290 70 L290 130 C268.0 120 245.0 120 235.0 130 C225.0 120 202.0 120 180 130 Z\" class=\"as-svg__ink\"/><line x1=\"235.0\" y1=\"70\" x2=\"235.0\" y2=\"130\" class=\"as-svg__ink\"/><text x=\"85\" y=\"40\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">muchos libros</text><text x=\"235\" y=\"160\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">más lectores</text><text x=\"235\" y=\"180\" text-anchor=\"middle\" class=\"as-svg__muted\" font-size=\"15\">y educación</text></svg>"
+    },
+    {
+      "id": "c6",
+      "tipo": "revelar",
+      "titulo": "La Biblia de Gutenberg",
+      "texto": "Hacia 1455 salió en Maguncia su obra más famosa. ¿Cuántas copias se imprimieron?",
+      "revelado": "Unas 180: 145 en papel y 35 en pergamino de piel de ternero. Se imprimió en columnas de 42 líneas.",
+      "fuenteIds": [
+        "loc-biblia",
+        "brit-biblia"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>La Biblia de Gutenberg, hacia 1455: unas 180 copias, 145 en papel y 35 en pergamino, en columnas de 42 líneas</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><rect x=\"30\" y=\"40\" width=\"80\" height=\"110\" rx=\"3\" class=\"as-svg__soft\"/><rect x=\"30\" y=\"40\" width=\"80\" height=\"110\" rx=\"3\" class=\"as-svg__ink\"/><line x1=\"40\" y1=\"52\" x2=\"66\" y2=\"52\" class=\"as-svg__ink\"/><line x1=\"74\" y1=\"52\" x2=\"100\" y2=\"52\" class=\"as-svg__ink\"/><line x1=\"40\" y1=\"60\" x2=\"66\" y2=\"60\" class=\"as-svg__ink\"/><line x1=\"74\" y1=\"60\" x2=\"100\" y2=\"60\" class=\"as-svg__ink\"/><line x1=\"40\" y1=\"68\" x2=\"66\" y2=\"68\" class=\"as-svg__ink\"/><line x1=\"74\" y1=\"68\" x2=\"100\" y2=\"68\" class=\"as-svg__ink\"/><line x1=\"40\" y1=\"76\" x2=\"66\" y2=\"76\" class=\"as-svg__ink\"/><line x1=\"74\" y1=\"76\" x2=\"100\" y2=\"76\" class=\"as-svg__ink\"/><line x1=\"40\" y1=\"84\" x2=\"66\" y2=\"84\" class=\"as-svg__ink\"/><line x1=\"74\" y1=\"84\" x2=\"100\" y2=\"84\" class=\"as-svg__ink\"/><line x1=\"40\" y1=\"92\" x2=\"66\" y2=\"92\" class=\"as-svg__ink\"/><line x1=\"74\" y1=\"92\" x2=\"100\" y2=\"92\" class=\"as-svg__ink\"/><line x1=\"40\" y1=\"100\" x2=\"66\" y2=\"100\" class=\"as-svg__ink\"/><line x1=\"74\" y1=\"100\" x2=\"100\" y2=\"100\" class=\"as-svg__ink\"/><line x1=\"40\" y1=\"108\" x2=\"66\" y2=\"108\" class=\"as-svg__ink\"/><line x1=\"74\" y1=\"108\" x2=\"100\" y2=\"108\" class=\"as-svg__ink\"/><line x1=\"40\" y1=\"116\" x2=\"66\" y2=\"116\" class=\"as-svg__ink\"/><line x1=\"74\" y1=\"116\" x2=\"100\" y2=\"116\" class=\"as-svg__ink\"/><line x1=\"40\" y1=\"124\" x2=\"66\" y2=\"124\" class=\"as-svg__ink\"/><line x1=\"74\" y1=\"124\" x2=\"100\" y2=\"124\" class=\"as-svg__ink\"/><line x1=\"40\" y1=\"132\" x2=\"66\" y2=\"132\" class=\"as-svg__ink\"/><line x1=\"74\" y1=\"132\" x2=\"100\" y2=\"132\" class=\"as-svg__ink\"/><line x1=\"40\" y1=\"140\" x2=\"66\" y2=\"140\" class=\"as-svg__ink\"/><line x1=\"74\" y1=\"140\" x2=\"100\" y2=\"140\" class=\"as-svg__ink\"/><text x=\"70\" y=\"174\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">42 líneas</text><text x=\"220\" y=\"50\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"17\">≈ 180 copias</text><rect x=\"144\" y=\"76\" width=\"132\" height=\"24\" rx=\"3\" class=\"as-svg__warm\"/><rect x=\"144\" y=\"76\" width=\"132\" height=\"24\" rx=\"3\" class=\"as-svg__ink\"/><text x=\"210\" y=\"94\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">145 papel</text><rect x=\"144\" y=\"110\" width=\"132\" height=\"24\" rx=\"3\" class=\"as-svg__soft\"/><rect x=\"144\" y=\"110\" width=\"132\" height=\"24\" rx=\"3\" class=\"as-svg__ink\"/><text x=\"210\" y=\"128\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">35 pergamino</text><text x=\"220\" y=\"172\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">Maguncia, ≈ 1455</text></svg>"
+    },
+    {
+      "id": "c7",
+      "tipo": "pregunta",
+      "pregunta": "¿Fue Gutenberg el primero en imprimir con tipos móviles de metal?",
+      "correctaId": "b",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Sí, nadie lo había hecho antes",
+          "retro": "No: hay evidencia de que en Corea se usaron casi un siglo antes."
+        },
+        {
+          "id": "b",
+          "texto": "No: en Corea se usaron casi un siglo antes",
+          "retro": "¡Así es! Lo de Gutenberg fue el primer libro con tipos metálicos móviles en Europa occidental."
+        },
+        {
+          "id": "c",
+          "texto": "No: los inventaron los romanos",
+          "retro": "No: la evidencia más antigua citada viene de Corea, casi un siglo antes de Gutenberg."
+        }
+      ],
+      "fuenteIds": [
+        "loc-biblia",
+        "brit-gutenberg"
+      ]
+    },
+    {
+      "id": "c8",
+      "tipo": "dato",
+      "texto": "La imprenta se difundió rápido por Europa. Y en Chile, la Aurora de Chile, primer periódico de la República, se imprimió en 1812.",
+      "fuenteIds": [
+        "utas-impr",
+        "mc-aurora"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>La imprenta se difundió rápido por Europa; en Chile, la Aurora de Chile se imprimió en 1812</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><defs><marker id=\"imprenta-libros-ah\" viewBox=\"0 0 10 10\" refX=\"5\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" class=\"as-svg__accent\"/></marker></defs><circle cx=\"80\" cy=\"90\" r=\"10\" class=\"as-svg__fill\"/><line x1=\"92\" y1=\"82\" x2=\"130\" y2=\"56\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"2\" marker-end=\"url(#imprenta-libros-ah)\"/><line x1=\"92\" y1=\"96\" x2=\"136\" y2=\"120\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"2\" marker-end=\"url(#imprenta-libros-ah)\"/><line x1=\"70\" y1=\"80\" x2=\"40\" y2=\"50\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"2\" marker-end=\"url(#imprenta-libros-ah)\"/><text x=\"80\" y=\"160\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">Europa</text><rect x=\"190\" y=\"50\" width=\"110\" height=\"90\" rx=\"4\" class=\"as-svg__warm\"/><rect x=\"190\" y=\"50\" width=\"110\" height=\"90\" rx=\"4\" class=\"as-svg__ink\"/><text x=\"245\" y=\"76\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">Aurora</text><text x=\"245\" y=\"96\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">de Chile</text><line x1=\"204\" y1=\"110\" x2=\"286\" y2=\"110\" class=\"as-svg__ink\"/><line x1=\"204\" y1=\"122\" x2=\"270\" y2=\"122\" class=\"as-svg__ink\"/><text x=\"245\" y=\"168\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"18\">1812</text></svg>"
+    }
+  ],
+  "resumen": {
+    "titulo": "La imprenta",
+    "puntos": [
+      "Antes, los libros se copiaban a mano: eran lentos de hacer y caros.",
+      "Gutenberg desarrolló en Maguncia tipos metálicos móviles y una prensa, y su Biblia salió hacia 1455.",
+      "Se pudieron hacer muchos libros a menor costo y llegaron a más lectores."
+    ]
+  },
+  "fuentes": [
+    {
+      "id": "utas-impr",
+      "entidad": "University of Tasmania Library",
+      "titulo": "From Manuscript to Print (exposición en línea)",
+      "url": "https://www.utas.edu.au/library/exhibitions/manuscript_print/intro.html",
+      "ubicacion": "Introducción",
+      "afirmaciones": [
+        "Los manuscritos eran relativamente caros y lentos de producir",
+        "La imprenta fue desarrollada por Johann Gutenberg en Estrasburgo y Maguncia en las décadas de 1440 y 1450, con tipos metálicos móviles y prensa manual",
+        "La imprenta se difundió rápidamente por Europa"
+      ],
+      "respalda": [
+        "c1",
+        "c3",
+        "c8"
+      ],
+      "consultadaEl": "2026-10-28"
+    },
+    {
+      "id": "uwm-manus",
+      "entidad": "University of Wisconsin-Milwaukee Libraries, Special Collections",
+      "titulo": "The Manuscript Tradition and the Transition to Printing",
+      "url": "https://web.uwm.edu/lib-omeka-spc2/exhibits/show/incunabula/manuscripttrad",
+      "ubicacion": "Texto principal",
+      "afirmaciones": [
+        "Copiar manuscritos a mano era un trabajo laborioso y costoso",
+        "Un manuscrito encuadernado costaba lo que un funcionario de la corte promedio recibía en un mes"
+      ],
+      "respalda": [
+        "c2"
+      ],
+      "consultadaEl": "2026-10-28"
+    },
+    {
+      "id": "brit-gutenberg",
+      "entidad": "Encyclopaedia Britannica",
+      "titulo": "What did Johannes Gutenberg do to change the world?",
+      "url": "https://britannica.com/question/What-did-Johannes-Gutenberg-do-to-change-the-world",
+      "ubicacion": "Respuesta",
+      "afirmaciones": [
+        "Su prensa permitió por primera vez en Europa fabricar gran cantidad de libros a un costo relativamente bajo",
+        "Los impresos llegaron a un público general, lo que favoreció la alfabetización y la educación",
+        "Gutenberg no inventó la impresión con tipos móviles, que ocurrió en Corea en el siglo XIV"
+      ],
+      "respalda": [
+        "c4",
+        "c5",
+        "c7"
+      ],
+      "consultadaEl": "2026-10-28"
+    },
+    {
+      "id": "loc-biblia",
+      "entidad": "Library of Congress (EE. UU.)",
+      "titulo": "The Gutenberg Bible (exposición)",
+      "url": "https://www.loc.gov/exhibits/bibles/interactives/gutenberg/index.html",
+      "ubicacion": "Texto principal",
+      "afirmaciones": [
+        "Se imprimieron unas 180 copias, disponibles hacia 1455; 145 en papel y 35 en pergamino (vellum, piel de ternero tratada)",
+        "Primer libro impreso con tipos metálicos móviles en Europa occidental",
+        "Hay evidencia de que en Corea se usaron tipos metálicos móviles casi un siglo antes"
+      ],
+      "respalda": [
+        "c4",
+        "c6",
+        "c7"
+      ],
+      "consultadaEl": "2026-10-28"
+    },
+    {
+      "id": "brit-biblia",
+      "entidad": "Encyclopaedia Britannica",
+      "titulo": "Gutenberg Bible",
+      "url": "https://www.britannica.com/topic/Gutenberg-Bible",
+      "ubicacion": "Texto principal",
+      "afirmaciones": [
+        "Gutenberg la completó hacia 1455 en Maguncia (Mainz)",
+        "Se imprimió en columnas de 42 líneas"
+      ],
+      "respalda": [
+        "c6"
+      ],
+      "consultadaEl": "2026-10-28"
+    },
+    {
+      "id": "mc-aurora",
+      "entidad": "Memoria Chilena, Biblioteca Nacional de Chile",
+      "titulo": "Imagen corporativa de la Aurora de Chile, 1812",
+      "url": "https://www.memoriachilena.gob.cl/602/w3-article-84574.html",
+      "ubicacion": "Descripción de la imagen",
+      "afirmaciones": [
+        "La Aurora de Chile, de 1812, fue el primer periódico de la República"
+      ],
+      "respalda": [
+        "c8"
+      ],
+      "consultadaEl": "2026-10-28"
+    }
+  ],
+  "controlEditorial": {
+    "estado": "borrador",
+    "revisadoPor": null,
+    "fechaRevision": null
+  }
+}

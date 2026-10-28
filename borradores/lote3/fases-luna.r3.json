@@ -1,0 +1,177 @@
+{
+  "schemaVersion": "2.0",
+  "id": "fases-luna",
+  "revision": 3,
+  "idioma": "es-CL",
+  "disciplina": "Astronomía",
+  "familia": "astronomia",
+  "titulo": "¿Por qué cambia la forma de la Luna?",
+  "subtitulo": "La Luna no cambia: cambia lo que vemos de ella.",
+  "minutosEstimados": 5,
+  "tarjetas": [
+    {
+      "id": "c1",
+      "tipo": "portada",
+      "titulo": "¿Por qué cambia la forma de la Luna?",
+      "texto": "A veces es un círculo completo y a veces una tajada fina. Pero la Luna no cambia: cambia lo que vemos de ella.",
+      "fuenteIds": [
+        "nasa-fases"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>La Luna en distintas fases: tajada, mitad y círculo completo</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><path d=\"M 70 56 A 34 34 0 0 0 70 124 A 18.7 34 0 0 1 70 56 Z\" class=\"as-svg__sun\"/><circle cx=\"70\" cy=\"90\" r=\"34\" class=\"as-svg__ink\"/><path d=\"M 160 56 A 34 34 0 0 0 160 124 Z\" class=\"as-svg__sun\"/><circle cx=\"160\" cy=\"90\" r=\"34\" class=\"as-svg__ink\"/><circle cx=\"250\" cy=\"90\" r=\"34\" class=\"as-svg__sun\"/><circle cx=\"250\" cy=\"90\" r=\"34\" class=\"as-svg__ink\"/><text x=\"160\" y=\"170\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">cambia lo que vemos</text></svg>"
+    },
+    {
+      "id": "c2",
+      "tipo": "idea",
+      "titulo": "La Luna no tiene luz propia",
+      "texto": "La Luna no produce la luz que vemos: refleja la luz del Sol.",
+      "fuenteIds": [
+        "nasa-fases"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>El Sol ilumina a la Luna y la Luna refleja esa luz hacia la Tierra</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><defs><marker id=\"fases-luna-ah\" viewBox=\"0 0 10 10\" refX=\"5\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" class=\"as-svg__accent\"/></marker></defs><circle cx=\"40\" cy=\"70\" r=\"26\" class=\"as-svg__sun\"/><text x=\"40\" y=\"120\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">Sol</text><circle cx=\"170\" cy=\"70\" r=\"20\" class=\"as-svg__sun\"/><circle cx=\"170\" cy=\"70\" r=\"20\" class=\"as-svg__ink\"/><text x=\"170\" y=\"110\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">Luna</text><circle cx=\"270\" cy=\"150\" r=\"22\" class=\"as-svg__cool\"/><circle cx=\"270\" cy=\"150\" r=\"22\" class=\"as-svg__ink\"/><text x=\"270\" y=\"190\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">Tierra</text><line x1=\"70\" y1=\"70\" x2=\"144\" y2=\"70\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"2\" marker-end=\"url(#fases-luna-ah)\"/><line x1=\"188\" y1=\"84\" x2=\"250\" y2=\"134\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"2\" marker-end=\"url(#fases-luna-ah)\"/><text x=\"220\" y=\"48\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">refleja la luz</text></svg>"
+    },
+    {
+      "id": "c3",
+      "tipo": "idea",
+      "titulo": "Siempre hay una mitad iluminada",
+      "texto": "El Sol ilumina siempre la mitad de la Luna. Lo que cambia es cuánto de esa mitad vemos desde la Tierra mientras la Luna da su vuelta.",
+      "fuenteIds": [
+        "nasa-fases"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>El Sol ilumina siempre la mitad de la Luna que mira hacia él; desde la Tierra vemos más o menos de esa mitad</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><circle cx=\"28\" cy=\"100\" r=\"20\" class=\"as-svg__sun\"/><text x=\"28\" y=\"140\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"14\">Sol</text><circle cx=\"190\" cy=\"100\" r=\"18\" class=\"as-svg__cool\"/><circle cx=\"190\" cy=\"100\" r=\"18\" class=\"as-svg__ink\"/><circle cx=\"190\" cy=\"100\" r=\"62\" class=\"as-svg__muted\" stroke-dasharray=\"4 6\"/><path d=\"M128 88 A12 12 0 0 0 128 112 Z\" class=\"as-svg__sun\"/><circle cx=\"128\" cy=\"100\" r=\"12\" class=\"as-svg__ink\"/><path d=\"M190 26 A12 12 0 0 0 190 50 Z\" class=\"as-svg__sun\"/><circle cx=\"190\" cy=\"38\" r=\"12\" class=\"as-svg__ink\"/><path d=\"M252 88 A12 12 0 0 0 252 112 Z\" class=\"as-svg__sun\"/><circle cx=\"252\" cy=\"100\" r=\"12\" class=\"as-svg__ink\"/><path d=\"M190 150 A12 12 0 0 0 190 174 Z\" class=\"as-svg__sun\"/><circle cx=\"190\" cy=\"162\" r=\"12\" class=\"as-svg__ink\"/><text x=\"190\" y=\"196\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"14\">siempre una mitad iluminada</text></svg>"
+    },
+    {
+      "id": "c4",
+      "tipo": "pregunta",
+      "pregunta": "¿Qué causa las fases de la Luna?",
+      "correctaId": "a",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Cuánto vemos de la mitad que el Sol ilumina",
+          "retro": "¡Exacto! La mitad iluminada siempre está; cambia cuánto de ella vemos."
+        },
+        {
+          "id": "b",
+          "texto": "Que la Luna se achica y se agranda",
+          "retro": "La Luna no cambia de tamaño: cambia la parte iluminada que vemos."
+        },
+        {
+          "id": "c",
+          "texto": "Que la Luna se apaga de a poco",
+          "retro": "La Luna no tiene luz propia que se apague: la ilumina el Sol."
+        }
+      ],
+      "fuenteIds": [
+        "nasa-fases"
+      ]
+    },
+    {
+      "id": "c5",
+      "tipo": "idea",
+      "titulo": "Un ciclo de casi un mes",
+      "texto": "El ciclo completo de fases se repite más o menos una vez al mes: cada 29 días y medio.",
+      "fuenteIds": [
+        "nasa-fases"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Una flecha circular: el ciclo de fases se repite cada 29 días y medio</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><defs><marker id=\"fases-luna-ah\" viewBox=\"0 0 10 10\" refX=\"5\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" class=\"as-svg__accent\"/></marker></defs><path d=\"M160 40 A60 60 0 1 1 100 100\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"3\" marker-end=\"url(#fases-luna-ah)\"/><circle cx=\"160\" cy=\"40\" r=\"12\" class=\"as-svg__sun\"/><circle cx=\"160\" cy=\"40\" r=\"12\" class=\"as-svg__ink\"/><text x=\"160\" y=\"106\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"26\">29,5</text><text x=\"160\" y=\"128\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">días</text></svg>"
+    },
+    {
+      "id": "c6",
+      "tipo": "revelar",
+      "titulo": "Una ayuda para Chile",
+      "texto": "En el hemisferio sur, cuando la Luna se ve como una tajada fina, ¿cómo saber si está creciendo o menguando?",
+      "revelado": "Una ayuda visual: al sur del ecuador, la tajada de Luna creciente suele parecerse a una C, y la menguante, a una D. Muchas veces se ve un poco inclinada.",
+      "fuenteIds": [
+        "ou-hemisferio"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>En el hemisferio sur, la Luna creciente suele parecerse a una C y la menguante a una D</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><path d=\"M 95 45 A 40 40 0 0 0 95 125 A 22 40 0 0 1 95 45 Z\" class=\"as-svg__sun\"/><circle cx=\"95\" cy=\"85\" r=\"40\" class=\"as-svg__ink\"/><path d=\"M 225 45 A 40 40 0 0 1 225 125 A 22 40 0 0 0 225 45 Z\" class=\"as-svg__sun\"/><circle cx=\"225\" cy=\"85\" r=\"40\" class=\"as-svg__ink\"/><text x=\"95\" y=\"155\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"26\">C</text><text x=\"95\" y=\"182\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">creciente</text><text x=\"225\" y=\"155\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"26\">D</text><text x=\"225\" y=\"182\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">menguante</text></svg>"
+    },
+    {
+      "id": "c7",
+      "tipo": "pregunta",
+      "pregunta": "Esta noche, en Coquimbo, ves una tajada fina de Luna con forma de C. Usando la ayuda visual, ¿va creciendo o menguando?",
+      "correctaId": "a",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Creciendo",
+          "retro": "Correcto: en el hemisferio sur, la tajada creciente suele parecerse a una C."
+        },
+        {
+          "id": "b",
+          "texto": "Menguando",
+          "retro": "En el hemisferio sur, la tajada menguante suele parecerse a una D."
+        },
+        {
+          "id": "c",
+          "texto": "Es luna llena",
+          "retro": "La luna llena se ve como un círculo completo."
+        }
+      ],
+      "fuenteIds": [
+        "ou-hemisferio"
+      ]
+    },
+    {
+      "id": "c8",
+      "tipo": "dato",
+      "texto": "Las fases de la Luna son ocho: luna nueva, creciente, cuarto creciente, gibosa creciente, luna llena, gibosa menguante, cuarto menguante y menguante.",
+      "fuenteIds": [
+        "nasa-fases"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Las ocho fases de la Luna, de luna nueva a luna llena y de vuelta</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><circle cx=\"42\" cy=\"62\" r=\"22\" class=\"as-svg__ink\"/><path d=\"M 121 40 A 22 22 0 0 0 121 84 A 12.1 22 0 0 1 121 40 Z\" class=\"as-svg__sun\"/><circle cx=\"121\" cy=\"62\" r=\"22\" class=\"as-svg__ink\"/><path d=\"M 200 40 A 22 22 0 0 0 200 84 Z\" class=\"as-svg__sun\"/><circle cx=\"200\" cy=\"62\" r=\"22\" class=\"as-svg__ink\"/><path d=\"M 279 40 A 22 22 0 0 0 279 84 A 12.1 22 0 0 0 279 40 Z\" class=\"as-svg__sun\"/><circle cx=\"279\" cy=\"62\" r=\"22\" class=\"as-svg__ink\"/><circle cx=\"42\" cy=\"140\" r=\"22\" class=\"as-svg__sun\"/><circle cx=\"42\" cy=\"140\" r=\"22\" class=\"as-svg__ink\"/><path d=\"M 121 118 A 22 22 0 0 1 121 162 A 12.1 22 0 0 1 121 118 Z\" class=\"as-svg__sun\"/><circle cx=\"121\" cy=\"140\" r=\"22\" class=\"as-svg__ink\"/><path d=\"M 200 118 A 22 22 0 0 1 200 162 Z\" class=\"as-svg__sun\"/><circle cx=\"200\" cy=\"140\" r=\"22\" class=\"as-svg__ink\"/><path d=\"M 279 118 A 22 22 0 0 1 279 162 A 12.1 22 0 0 0 279 118 Z\" class=\"as-svg__sun\"/><circle cx=\"279\" cy=\"140\" r=\"22\" class=\"as-svg__ink\"/><text x=\"160\" y=\"194\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">8 fases</text></svg>"
+    }
+  ],
+  "resumen": {
+    "titulo": "Las fases de la Luna",
+    "puntos": [
+      "La Luna no tiene luz propia: refleja la luz del Sol, que siempre ilumina una mitad de ella.",
+      "Las fases son la parte de esa mitad iluminada que vemos desde la Tierra; el ciclo dura unos 29 días y medio.",
+      "En Chile, una ayuda visual: la tajada creciente suele parecerse a una C, y la menguante, a una D."
+    ]
+  },
+  "fuentes": [
+    {
+      "id": "nasa-fases",
+      "entidad": "NASA Science",
+      "titulo": "Moon Phases",
+      "url": "https://science.nasa.gov/moon/moon-phases/",
+      "ubicacion": "Texto principal",
+      "afirmaciones": [
+        "La Luna no produce su propia luz; la luz de la Luna es luz del Sol reflejada",
+        "El Sol siempre ilumina la mitad de la Luna; cuánto vemos de esa mitad cambia a medida que recorre su órbita",
+        "El ciclo se repite más o menos una vez al mes (cada 29,5 días)",
+        "Las ocho fases, en orden: nueva, creciente, cuarto creciente, gibosa creciente, llena, gibosa menguante, cuarto menguante y menguante"
+      ],
+      "respalda": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c8"
+      ],
+      "consultadaEl": "2026-10-20"
+    },
+    {
+      "id": "ou-hemisferio",
+      "entidad": "The Open University (OpenLearn)",
+      "titulo": "Moons of our Solar System, semana 1, 2.11 How the Moon's phases look from the Earth",
+      "url": "https://www.open.edu/openlearn/mod/oucontent/view.php?id=69107&section=3.11",
+      "ubicacion": "Párrafo sobre el hemisferio sur",
+      "afirmaciones": [
+        "Al sur del ecuador, la Luna crece como una C y mengua como una D, con la curva levemente inclinada"
+      ],
+      "respalda": [
+        "c6",
+        "c7"
+      ],
+      "consultadaEl": "2026-10-20"
+    }
+  ],
+  "controlEditorial": {
+    "estado": "borrador",
+    "revisadoPor": null,
+    "fechaRevision": null
+  }
+}

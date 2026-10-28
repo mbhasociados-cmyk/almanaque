@@ -1,0 +1,186 @@
+{
+  "schemaVersion": "2.0",
+  "id": "pan-duro",
+  "revision": 3,
+  "idioma": "es-CL",
+  "disciplina": "Cocina y ciencia",
+  "familia": "quimica",
+  "titulo": "¿Por qué el pan se pone duro?",
+  "subtitulo": "No es solo que se seque.",
+  "minutosEstimados": 5,
+  "tarjetas": [
+    {
+      "id": "c1",
+      "tipo": "portada",
+      "titulo": "¿Por qué el pan se pone duro?",
+      "texto": "La marraqueta de la mañana, en la tarde ya no es la misma. ¿Se secó? No exactamente.",
+      "fuenteIds": [
+        "asb-staling"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Una marraqueta de la mañana y la misma marraqueta en la tarde</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><g transform=\"translate(30,70) scale(1.0)\"><path d=\"M0 30 C0 5 40 0 60 12 C80 0 120 5 120 30 C120 55 80 60 60 48 C40 60 0 55 0 30 Z\" class=\"as-svg__warm\"/><path d=\"M0 30 C0 5 40 0 60 12 C80 0 120 5 120 30 C120 55 80 60 60 48 C40 60 0 55 0 30 Z\" class=\"as-svg__ink\"/><path d=\"M60 14 L60 46\" class=\"as-svg__ink\"/><path d=\"M22 22 q8 -6 16 0\" class=\"as-svg__ink\"/><path d=\"M82 22 q8 -6 16 0\" class=\"as-svg__ink\"/></g><g transform=\"translate(170,70) scale(1.0)\"><path d=\"M0 30 C0 5 40 0 60 12 C80 0 120 5 120 30 C120 55 80 60 60 48 C40 60 0 55 0 30 Z\" class=\"as-svg__warm\"/><path d=\"M0 30 C0 5 40 0 60 12 C80 0 120 5 120 30 C120 55 80 60 60 48 C40 60 0 55 0 30 Z\" class=\"as-svg__ink\"/><path d=\"M60 14 L60 46\" class=\"as-svg__ink\"/><path d=\"M22 22 q8 -6 16 0\" class=\"as-svg__ink\"/><path d=\"M82 22 q8 -6 16 0\" class=\"as-svg__ink\"/></g><circle cx=\"90\" cy=\"40\" r=\"16\" class=\"as-svg__sun\"/><text x=\"90\" y=\"160\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"17\">mañana</text><circle cx=\"230\" cy=\"40\" r=\"16\" class=\"as-svg__fill\"/><text x=\"230\" y=\"160\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"17\">tarde</text><text x=\"160\" y=\"190\" text-anchor=\"middle\" class=\"as-svg__muted\" font-size=\"16\">¿qué cambió?</text></svg>"
+    },
+    {
+      "id": "c2",
+      "tipo": "pregunta",
+      "pregunta": "¿Qué crees que hace que el pan se ponga duro?",
+      "correctaId": "b",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Que pierde agua y se seca",
+          "retro": "Es lo que casi todos pensamos, pero no es la causa principal: el pan puede endurecerse incluso sin perder agua."
+        },
+        {
+          "id": "b",
+          "texto": "Un cambio en el almidón de la miga",
+          "retro": "¡Así es! El responsable principal es el almidón, que se reordena después del horneado."
+        },
+        {
+          "id": "c",
+          "texto": "Que le entra aire",
+          "retro": "El aire no es el responsable principal: lo es un cambio en el almidón de la miga."
+        }
+      ],
+      "fuenteIds": [
+        "asb-staling"
+      ]
+    },
+    {
+      "id": "c3",
+      "tipo": "idea",
+      "titulo": "El responsable es el almidón",
+      "texto": "Cuando el pan se enfría después del horneado, el almidón de la miga se va reordenando de a poco. Ese cambio es el que pone firme la miga.",
+      "fuenteIds": [
+        "asb-staling",
+        "millingmea-staling"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>A la izquierda, el almidón de la miga desordenado; a la derecha, reordenado en filas al enfriarse</title><defs><marker id=\"pan-duro-ah\" viewBox=\"0 0 10 10\" refX=\"5\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" class=\"as-svg__accent\"/></marker></defs><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><circle cx=\"40\" cy=\"70\" r=\"4\" class=\"as-svg__fill\"/><circle cx=\"62\" cy=\"96\" r=\"4\" class=\"as-svg__fill\"/><circle cx=\"48\" cy=\"120\" r=\"4\" class=\"as-svg__fill\"/><circle cx=\"80\" cy=\"64\" r=\"4\" class=\"as-svg__fill\"/><circle cx=\"92\" cy=\"110\" r=\"4\" class=\"as-svg__fill\"/><circle cx=\"70\" cy=\"140\" r=\"4\" class=\"as-svg__fill\"/><circle cx=\"110\" cy=\"84\" r=\"4\" class=\"as-svg__fill\"/><circle cx=\"104\" cy=\"132\" r=\"4\" class=\"as-svg__fill\"/><circle cx=\"54\" cy=\"150\" r=\"4\" class=\"as-svg__fill\"/><circle cx=\"118\" cy=\"58\" r=\"4\" class=\"as-svg__fill\"/><circle cx=\"200\" cy=\"70\" r=\"4\" class=\"as-svg__fill\"/><circle cx=\"218\" cy=\"70\" r=\"4\" class=\"as-svg__fill\"/><circle cx=\"236\" cy=\"70\" r=\"4\" class=\"as-svg__fill\"/><circle cx=\"254\" cy=\"70\" r=\"4\" class=\"as-svg__fill\"/><circle cx=\"272\" cy=\"70\" r=\"4\" class=\"as-svg__fill\"/><circle cx=\"200\" cy=\"92\" r=\"4\" class=\"as-svg__fill\"/><circle cx=\"218\" cy=\"92\" r=\"4\" class=\"as-svg__fill\"/><circle cx=\"236\" cy=\"92\" r=\"4\" class=\"as-svg__fill\"/><circle cx=\"254\" cy=\"92\" r=\"4\" class=\"as-svg__fill\"/><circle cx=\"272\" cy=\"92\" r=\"4\" class=\"as-svg__fill\"/><circle cx=\"200\" cy=\"114\" r=\"4\" class=\"as-svg__fill\"/><circle cx=\"218\" cy=\"114\" r=\"4\" class=\"as-svg__fill\"/><circle cx=\"236\" cy=\"114\" r=\"4\" class=\"as-svg__fill\"/><circle cx=\"254\" cy=\"114\" r=\"4\" class=\"as-svg__fill\"/><circle cx=\"272\" cy=\"114\" r=\"4\" class=\"as-svg__fill\"/><circle cx=\"200\" cy=\"136\" r=\"4\" class=\"as-svg__fill\"/><circle cx=\"218\" cy=\"136\" r=\"4\" class=\"as-svg__fill\"/><circle cx=\"236\" cy=\"136\" r=\"4\" class=\"as-svg__fill\"/><circle cx=\"254\" cy=\"136\" r=\"4\" class=\"as-svg__fill\"/><circle cx=\"272\" cy=\"136\" r=\"4\" class=\"as-svg__fill\"/><line x1=\"140\" y1=\"104\" x2=\"180\" y2=\"104\" class=\"as-svg__ink\" stroke-width=\"2\" marker-end=\"url(#pan-duro-ah)\"/><text x=\"80\" y=\"180\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">recién horneado</text><text x=\"236\" y=\"180\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">al enfriarse</text><text x=\"160\" y=\"30\" text-anchor=\"middle\" class=\"as-svg__muted\" font-size=\"16\">el almidón de la miga</text></svg>"
+    },
+    {
+      "id": "c4",
+      "tipo": "revelar",
+      "titulo": "Un descubrimiento antiguo",
+      "texto": "Hace más de 150 años se comprobó algo curioso sobre el pan duro. ¿Qué crees que fue?",
+      "revelado": "Que el pan duro no es solo pan seco. El endurecimiento puede ocurrir aunque la miga no pierda agua, porque el cambio pasa dentro de ella.",
+      "fuenteIds": [
+        "asb-staling"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Una miga que conserva su agua, pero igual se pone firme</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><g transform=\"translate(100,60) scale(1.0)\"><path d=\"M0 30 C0 5 40 0 60 12 C80 0 120 5 120 30 C120 55 80 60 60 48 C40 60 0 55 0 30 Z\" class=\"as-svg__warm\"/><path d=\"M0 30 C0 5 40 0 60 12 C80 0 120 5 120 30 C120 55 80 60 60 48 C40 60 0 55 0 30 Z\" class=\"as-svg__ink\"/><path d=\"M60 14 L60 46\" class=\"as-svg__ink\"/><path d=\"M22 22 q8 -6 16 0\" class=\"as-svg__ink\"/><path d=\"M82 22 q8 -6 16 0\" class=\"as-svg__ink\"/></g><path d=\"M60 70 C50 86 48 98 60 104 C72 98 70 86 60 70 Z\" class=\"as-svg__cool\"/><text x=\"60\" y=\"130\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">el agua</text><text x=\"60\" y=\"148\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">se queda</text><text x=\"160\" y=\"184\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"17\">y la miga igual se endurece</text></svg>"
+    },
+    {
+      "id": "c5",
+      "tipo": "idea",
+      "titulo": "El refrigerador lo empeora",
+      "texto": "Guardar el pan en el refrigerador, entre 0 y 10 grados, acelera el endurecimiento de la miga.",
+      "fuenteIds": [
+        "millingmea-staling"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Un refrigerador entre 0 y 10 grados: el pan se endurece más rápido</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><rect x=\"30\" y=\"24\" width=\"96\" height=\"150\" rx=\"10\" class=\"as-svg__ink\"/><line x1=\"30\" y1=\"76\" x2=\"126\" y2=\"76\" class=\"as-svg__ink\"/><line x1=\"112\" y1=\"40\" x2=\"112\" y2=\"62\" class=\"as-svg__ink\"/><line x1=\"112\" y1=\"92\" x2=\"112\" y2=\"120\" class=\"as-svg__ink\"/><g transform=\"translate(42,112) scale(0.6)\"><path d=\"M0 30 C0 5 40 0 60 12 C80 0 120 5 120 30 C120 55 80 60 60 48 C40 60 0 55 0 30 Z\" class=\"as-svg__warm\"/><path d=\"M0 30 C0 5 40 0 60 12 C80 0 120 5 120 30 C120 55 80 60 60 48 C40 60 0 55 0 30 Z\" class=\"as-svg__ink\"/><path d=\"M60 14 L60 46\" class=\"as-svg__ink\"/><path d=\"M22 22 q8 -6 16 0\" class=\"as-svg__ink\"/><path d=\"M82 22 q8 -6 16 0\" class=\"as-svg__ink\"/></g><rect x=\"150\" y=\"44\" width=\"16\" height=\"96\" rx=\"8\" class=\"as-svg__ink\"/><circle cx=\"158\" cy=\"148\" r=\"12\" class=\"as-svg__cool\"/><line x1=\"158\" y1=\"140\" x2=\"158\" y2=\"100\" class=\"as-svg__coolline\"/><text x=\"158\" y=\"182\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">0 a 10 °C</text><text x=\"250\" y=\"90\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"18\">más</text><text x=\"250\" y=\"110\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"18\">rápido</text></svg>"
+    },
+    {
+      "id": "c6",
+      "tipo": "idea",
+      "titulo": "El congelador lo retrasa",
+      "texto": "La congelación retrasa la reorganización del almidón y ayuda a conservar la textura del pan. Así, el endurecimiento de la miga se demora más.",
+      "fuenteIds": [
+        "asb-staling",
+        "millingmea-staling"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Un copo de nieve y un pan: en el congelador el endurecimiento se demora más</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"-26\" class=\"as-svg__coolline\" transform=\"translate(84,96) rotate(0)\"/><line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"-26\" class=\"as-svg__coolline\" transform=\"translate(84,96) rotate(60)\"/><line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"-26\" class=\"as-svg__coolline\" transform=\"translate(84,96) rotate(120)\"/><line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"-26\" class=\"as-svg__coolline\" transform=\"translate(84,96) rotate(180)\"/><line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"-26\" class=\"as-svg__coolline\" transform=\"translate(84,96) rotate(240)\"/><line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"-26\" class=\"as-svg__coolline\" transform=\"translate(84,96) rotate(300)\"/><circle cx=\"84\" cy=\"96\" r=\"5\" class=\"as-svg__cool\"/><g transform=\"translate(160,70) scale(1.0)\"><path d=\"M0 30 C0 5 40 0 60 12 C80 0 120 5 120 30 C120 55 80 60 60 48 C40 60 0 55 0 30 Z\" class=\"as-svg__warm\"/><path d=\"M0 30 C0 5 40 0 60 12 C80 0 120 5 120 30 C120 55 80 60 60 48 C40 60 0 55 0 30 Z\" class=\"as-svg__ink\"/><path d=\"M60 14 L60 46\" class=\"as-svg__ink\"/><path d=\"M22 22 q8 -6 16 0\" class=\"as-svg__ink\"/><path d=\"M82 22 q8 -6 16 0\" class=\"as-svg__ink\"/></g><text x=\"84\" y=\"160\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">congelador</text><text x=\"220\" y=\"160\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"17\">se demora más</text></svg>"
+    },
+    {
+      "id": "c7",
+      "tipo": "pregunta",
+      "pregunta": "Compraste pan para tres días. ¿Dónde se endurece más rápido?",
+      "correctaId": "a",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "En el refrigerador",
+          "retro": "Correcto: el frío del refrigerador acelera el endurecimiento."
+        },
+        {
+          "id": "b",
+          "texto": "En el congelador",
+          "retro": "Al revés: congelarlo retrasa el endurecimiento."
+        },
+        {
+          "id": "c",
+          "texto": "Da lo mismo",
+          "retro": "No da lo mismo: el refrigerador lo acelera y el congelador lo retrasa."
+        }
+      ],
+      "fuenteIds": [
+        "millingmea-staling",
+        "asb-staling"
+      ]
+    },
+    {
+      "id": "c8",
+      "tipo": "dato",
+      "texto": "Calentar el pan duro lo ablanda por un rato, pero no lo deja igual que recién horneado: el cambio del almidón no se deshace del todo.",
+      "fuenteIds": [
+        "millingmea-staling"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Un pan calentado: se ablanda por un rato, pero no vuelve a ser recién horneado</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><g transform=\"translate(100,90) scale(1.0)\"><path d=\"M0 30 C0 5 40 0 60 12 C80 0 120 5 120 30 C120 55 80 60 60 48 C40 60 0 55 0 30 Z\" class=\"as-svg__warm\"/><path d=\"M0 30 C0 5 40 0 60 12 C80 0 120 5 120 30 C120 55 80 60 60 48 C40 60 0 55 0 30 Z\" class=\"as-svg__ink\"/><path d=\"M60 14 L60 46\" class=\"as-svg__ink\"/><path d=\"M22 22 q8 -6 16 0\" class=\"as-svg__ink\"/><path d=\"M82 22 q8 -6 16 0\" class=\"as-svg__ink\"/></g><path d=\"M120 76 q-8 -12 0 -24 q8 -12 0 -24\" class=\"as-svg__warmline\"/><path d=\"M160 76 q-8 -12 0 -24 q8 -12 0 -24\" class=\"as-svg__warmline\"/><path d=\"M200 76 q-8 -12 0 -24 q8 -12 0 -24\" class=\"as-svg__warmline\"/><text x=\"160\" y=\"176\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"17\">blando por un rato</text></svg>"
+    }
+  ],
+  "resumen": {
+    "titulo": "El pan duro",
+    "puntos": [
+      "El pan se pone duro sobre todo porque el almidón de la miga se reordena al enfriarse, no solo porque se seque.",
+      "El refrigerador acelera el endurecimiento; el congelador lo retrasa.",
+      "Calentarlo lo ablanda por un rato, pero no lo deja como recién hecho."
+    ]
+  },
+  "fuentes": [
+    {
+      "id": "asb-staling",
+      "entidad": "American Society of Baking",
+      "titulo": "Staling",
+      "url": "https://asbe.org/article/staling/",
+      "ubicacion": "Texto principal",
+      "afirmaciones": [
+        "El endurecimiento hace que los productos horneados pierdan su frescura",
+        "Se creía que se debía solo a la pérdida de humedad; eso se descartó hace más de 150 años",
+        "Se asocia a la retrogradación o recristalización del almidón y puede ocurrir sin pérdida de agua de la miga",
+        "Congelar detiene el movimiento molecular y evita que el almidón cristalice"
+      ],
+      "respalda": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c6",
+        "c7"
+      ],
+      "consultadaEl": "2026-10-20"
+    },
+    {
+      "id": "millingmea-staling",
+      "entidad": "Milling Middle East & Africa (William Gatama, tecnólogo en panificación)",
+      "titulo": "Baking technology: Staling",
+      "url": "https://millingmea.com/baking-technology-staling/",
+      "ubicacion": "Texto principal",
+      "afirmaciones": [
+        "El endurecimiento resulta de la retrogradación del almidón, que ocurre después de que el pan se enfría; no es mera pérdida de humedad",
+        "La refrigeración (0–10 °C) acelera la recristalización y el endurecimiento de la miga",
+        "Congelar reduce la movilidad molecular y retrasa la retrogradación",
+        "Recalentar puede ablandar temporalmente la miga, pero no restaura la organización original"
+      ],
+      "respalda": [
+        "c3",
+        "c5",
+        "c6",
+        "c7",
+        "c8"
+      ],
+      "consultadaEl": "2026-10-20"
+    }
+  ],
+  "controlEditorial": {
+    "estado": "borrador",
+    "revisadoPor": null,
+    "fechaRevision": null
+  }
+}

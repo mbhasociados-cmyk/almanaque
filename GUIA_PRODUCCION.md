@@ -3,11 +3,12 @@
 Decisión de Max (20-10-2026, "dale opcion A"): Claude produce, verifica contra fuentes abiertas y publica las lecciones. No hay revisión previa de ChatGPT ni V°B° por lección. Max puede revocar esta delegación cuando quiera.
 
 ## Cada semana
-1. Revisa el calendario (`data/calendar.v1.json`) y toma las 7 fechas siguientes a la última programada. Mantén siempre al menos 7 días programados por delante.
+1. Revisa el calendario (`data/calendar.v1.json`) y toma las 7 fechas siguientes a la última programada. Mantén siempre al menos 7 días programados por delante. Cuenta solo los días cuya lección está en tarjetas (esquema 2.0 en el catálogo): la app no muestra las lecciones del formato antiguo (1.x). Si una fecha futura apunta a una lección 1.x, prográmale una versión en tarjetas (ver lote 2, 22-10-2026).
 2. Elige los 7 primeros temas pendientes de `TEMAS.md`, intentando no repetir la familia en días seguidos.
 3. Por cada tema, **abre las fuentes** con WebFetch: NASA, NOAA, USGS, Britannica, Banco Central, INE, Memoria Chilena, universidades u organismos oficiales. Anota solo lo que la fuente dice; si una afirmación no está en una fuente abierta, no la escribas.
-4. Escribe el lote en `tools/lotes/loteN.py` usando `tools/almanaque_lib.py`; el ejemplo es `tools/lote1_r2.py`. Guía editorial:
+4. Escribe el lote en `tools/lotes/loteN.py` usando `tools/almanaque_lib.py`; los ejemplos son `tools/lotes/lote2.py` (texto) y `tools/lotes/lote3.py` (ilustraciones). Guía editorial:
    - una pregunta cotidiana y una idea central; 8 tarjetas: portada, ideas, 2 preguntas sin nota, un revelar y un dato curioso;
+   - ilustraciones obligatorias (desde el 26-10-2026): la portada y cada tarjeta idea, revelar y dato llevan un dibujo SVG explicativo, hecho con tools/visuales/svgkit.py (paleta amarillo y negro con el acento de la familia, textos de 15 a 18 px, título descriptivo). El dibujo muestra solo lo que dice el texto de su tarjeta: nada de cifras, nombres o hechos que no estén en él. Las preguntas no llevan dibujo. Ejemplo: tools/lotes/lote3.py. publicar_lote.py rechaza la lección si falta una ilustración;
    - de 1 a 3 frases por tarjeta, sin fórmulas ni tecnicismos;
    - toda tarjeta, incluida la portada, cita su fuente, y cada fuente indica en `respalda` qué tarjetas respalda;
    - resumen de 3 puntos que se entienda solo;

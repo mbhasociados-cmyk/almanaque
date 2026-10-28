@@ -1,0 +1,166 @@
+{
+  "schemaVersion": "2.0",
+  "id": "jabon-grasa",
+  "revision": 1,
+  "idioma": "es-CL",
+  "disciplina": "Química cotidiana",
+  "familia": "quimica",
+  "titulo": "¿Por qué el jabón ayuda a quitar la grasa?",
+  "subtitulo": "Una molécula con un lado para el agua y otro para la grasa.",
+  "minutosEstimados": 5,
+  "tarjetas": [
+    {
+      "id": "c1",
+      "tipo": "portada",
+      "titulo": "¿Por qué el jabón ayuda a quitar la grasa?",
+      "texto": "Para lavar un plato con grasa usamos jabón. ¿Cómo ayuda? La respuesta está en cómo son sus moléculas.",
+      "fuenteIds": [
+        "brit-jabon"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Un plato con una mancha de grasa y burbujas de jabón</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><ellipse cx=\"140\" cy=\"120\" rx=\"110\" ry=\"50\" class=\"as-svg__soft\"/><ellipse cx=\"140\" cy=\"120\" rx=\"110\" ry=\"50\" class=\"as-svg__ink\"/><ellipse cx=\"140\" cy=\"120\" rx=\"70\" ry=\"30\" class=\"as-svg__ink\"/><path d=\"M110 116 C120 104 150 108 160 118 C170 130 130 136 112 128 Z\" class=\"as-svg__warm\"/><circle cx=\"250\" cy=\"60\" r=\"14\" class=\"as-svg__ink\"/><circle cx=\"276\" cy=\"90\" r=\"9\" class=\"as-svg__ink\"/><circle cx=\"230\" cy=\"40\" r=\"7\" class=\"as-svg__ink\"/><circle cx=\"290\" cy=\"50\" r=\"11\" class=\"as-svg__ink\"/><text x=\"80\" y=\"40\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">¿qué hace el jabón?</text><text x=\"136\" y=\"190\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">grasa</text></svg>"
+    },
+    {
+      "id": "c2",
+      "tipo": "idea",
+      "titulo": "Una molécula con dos lados",
+      "texto": "Cada molécula de jabón tiene una parte que se une al agua y otra que rehúye el agua y se pega a la suciedad.",
+      "fuenteIds": [
+        "brit-jabon"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Una molécula de jabón: una parte se une al agua y la otra rehúye el agua y se pega a la grasa</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><defs><marker id=\"jabon-grasa-ah\" viewBox=\"0 0 10 10\" refX=\"5\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" class=\"as-svg__accent\"/></marker></defs><g transform=\"translate(110,100) rotate(0) scale(2.2)\"><path d=\"M8 0 L18 -5 L28 5 L38 -5 L48 5 L56 0\" class=\"as-svg__ink\" stroke-width=\"2\"/><circle cx=\"0\" cy=\"0\" r=\"8\" class=\"as-svg__fill\"/><circle cx=\"0\" cy=\"0\" r=\"8\" class=\"as-svg__ink\"/></g><line x1=\"110\" y1=\"40\" x2=\"110\" y2=\"76\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"2\" marker-end=\"url(#jabon-grasa-ah)\"/><line x1=\"220\" y1=\"150\" x2=\"200\" y2=\"114\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"2\" marker-end=\"url(#jabon-grasa-ah)\"/><text x=\"110\" y=\"30\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">se une al agua</text><text x=\"220\" y=\"172\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">se pega a la grasa</text></svg>"
+    },
+    {
+      "id": "c3",
+      "tipo": "pregunta",
+      "pregunta": "¿Qué parte de la molécula de jabón se pega a la grasa?",
+      "correctaId": "a",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "La parte que rehúye el agua",
+          "retro": "¡Exacto! Esa parte se pega a la suciedad, y la otra se une al agua."
+        },
+        {
+          "id": "b",
+          "texto": "La parte que se une al agua",
+          "retro": "No: esa parte queda hacia el agua. La que rehúye el agua es la que se pega a la grasa."
+        },
+        {
+          "id": "c",
+          "texto": "Ninguna: el jabón solo calienta la grasa",
+          "retro": "No: el jabón se pega a la suciedad con la parte que rehúye el agua."
+        }
+      ],
+      "fuenteIds": [
+        "brit-jabon"
+      ]
+    },
+    {
+      "id": "c4",
+      "tipo": "idea",
+      "titulo": "El agua moja mejor",
+      "texto": "El jabón baja la tensión superficial del agua. Así, el agua se extiende y moja mejor.",
+      "fuenteIds": [
+        "brit-jabon"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Sin jabón, una gota de agua queda abultada; con jabón, el agua se extiende y moja mejor</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><line x1=\"20\" y1=\"130\" x2=\"300\" y2=\"130\" class=\"as-svg__ink\" stroke-width=\"2\"/><path d=\"M60 130 C60 96 120 96 120 130 Z\" class=\"as-svg__cool\"/><path d=\"M60 130 C60 96 120 96 120 130\" class=\"as-svg__ink\"/><path d=\"M180 130 C190 118 280 118 296 130 Z\" class=\"as-svg__cool\"/><path d=\"M180 130 C190 118 280 118 296 130\" class=\"as-svg__ink\"/><text x=\"90\" y=\"160\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">sin jabón</text><text x=\"238\" y=\"160\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">con jabón</text><text x=\"238\" y=\"182\" text-anchor=\"middle\" class=\"as-svg__muted\" font-size=\"15\">se extiende</text><text x=\"160\" y=\"50\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"17\">el agua moja mejor</text></svg>"
+    },
+    {
+      "id": "c5",
+      "tipo": "idea",
+      "titulo": "La grasa se separa en gotitas",
+      "texto": "Con el jabón, la capa de aceite se rompe y se separa en gotitas, y la suciedad queda suspendida en el agua.",
+      "fuenteIds": [
+        "brit-jabon"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>La capa de grasa se rompe en gotitas rodeadas de jabón, y la suciedad queda suspendida en el agua</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><defs><marker id=\"jabon-grasa-ah\" viewBox=\"0 0 10 10\" refX=\"5\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" class=\"as-svg__accent\"/></marker></defs><rect x=\"10\" y=\"150\" width=\"120\" height=\"14\" rx=\"4\" class=\"as-svg__warm\"/><rect x=\"10\" y=\"150\" width=\"120\" height=\"14\" rx=\"4\" class=\"as-svg__ink\"/><text x=\"70\" y=\"140\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">capa de grasa</text><line x1=\"138\" y1=\"120\" x2=\"168\" y2=\"120\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"3\" marker-end=\"url(#jabon-grasa-ah)\"/><rect x=\"176\" y=\"30\" width=\"134\" height=\"150\" rx=\"8\" class=\"as-svg__soft\"/><circle cx=\"212\" cy=\"64\" r=\"12\" class=\"as-svg__warm\"/><circle cx=\"212\" cy=\"64\" r=\"12\" class=\"as-svg__ink\"/><g transform=\"translate(236.0,64.0) rotate(180.0) scale(0.35)\"><path d=\"M8 0 L18 -5 L28 5 L38 -5 L48 5 L56 0\" class=\"as-svg__ink\" stroke-width=\"2\"/><circle cx=\"0\" cy=\"0\" r=\"8\" class=\"as-svg__fill\"/><circle cx=\"0\" cy=\"0\" r=\"8\" class=\"as-svg__ink\"/></g><g transform=\"translate(212.0191118410576,87.99999239036403) rotate(269.954406) scale(0.35)\"><path d=\"M8 0 L18 -5 L28 5 L38 -5 L48 5 L56 0\" class=\"as-svg__ink\" stroke-width=\"2\"/><circle cx=\"0\" cy=\"0\" r=\"8\" class=\"as-svg__fill\"/><circle cx=\"0\" cy=\"0\" r=\"8\" class=\"as-svg__ink\"/></g><g transform=\"translate(188.00003043853906,64.03822366999569) rotate(359.908812) scale(0.35)\"><path d=\"M8 0 L18 -5 L28 5 L38 -5 L48 5 L56 0\" class=\"as-svg__ink\" stroke-width=\"2\"/><circle cx=\"0\" cy=\"0\" r=\"8\" class=\"as-svg__fill\"/><circle cx=\"0\" cy=\"0\" r=\"8\" class=\"as-svg__ink\"/></g><g transform=\"translate(211.94266452530525,40.00006848669477) rotate(449.863218) scale(0.35)\"><path d=\"M8 0 L18 -5 L28 5 L38 -5 L48 5 L56 0\" class=\"as-svg__ink\" stroke-width=\"2\"/><circle cx=\"0\" cy=\"0\" r=\"8\" class=\"as-svg__fill\"/><circle cx=\"0\" cy=\"0\" r=\"8\" class=\"as-svg__ink\"/></g><circle cx=\"276\" cy=\"92\" r=\"12\" class=\"as-svg__warm\"/><circle cx=\"276\" cy=\"92\" r=\"12\" class=\"as-svg__ink\"/><g transform=\"translate(300.0,92.0) rotate(180.0) scale(0.35)\"><path d=\"M8 0 L18 -5 L28 5 L38 -5 L48 5 L56 0\" class=\"as-svg__ink\" stroke-width=\"2\"/><circle cx=\"0\" cy=\"0\" r=\"8\" class=\"as-svg__fill\"/><circle cx=\"0\" cy=\"0\" r=\"8\" class=\"as-svg__ink\"/></g><g transform=\"translate(276.0191118410576,115.99999239036403) rotate(269.954406) scale(0.35)\"><path d=\"M8 0 L18 -5 L28 5 L38 -5 L48 5 L56 0\" class=\"as-svg__ink\" stroke-width=\"2\"/><circle cx=\"0\" cy=\"0\" r=\"8\" class=\"as-svg__fill\"/><circle cx=\"0\" cy=\"0\" r=\"8\" class=\"as-svg__ink\"/></g><g transform=\"translate(252.00003043853906,92.03822366999569) rotate(359.908812) scale(0.35)\"><path d=\"M8 0 L18 -5 L28 5 L38 -5 L48 5 L56 0\" class=\"as-svg__ink\" stroke-width=\"2\"/><circle cx=\"0\" cy=\"0\" r=\"8\" class=\"as-svg__fill\"/><circle cx=\"0\" cy=\"0\" r=\"8\" class=\"as-svg__ink\"/></g><g transform=\"translate(275.94266452530525,68.00006848669477) rotate(449.863218) scale(0.35)\"><path d=\"M8 0 L18 -5 L28 5 L38 -5 L48 5 L56 0\" class=\"as-svg__ink\" stroke-width=\"2\"/><circle cx=\"0\" cy=\"0\" r=\"8\" class=\"as-svg__fill\"/><circle cx=\"0\" cy=\"0\" r=\"8\" class=\"as-svg__ink\"/></g><circle cx=\"224\" cy=\"144\" r=\"12\" class=\"as-svg__warm\"/><circle cx=\"224\" cy=\"144\" r=\"12\" class=\"as-svg__ink\"/><g transform=\"translate(248.0,144.0) rotate(180.0) scale(0.35)\"><path d=\"M8 0 L18 -5 L28 5 L38 -5 L48 5 L56 0\" class=\"as-svg__ink\" stroke-width=\"2\"/><circle cx=\"0\" cy=\"0\" r=\"8\" class=\"as-svg__fill\"/><circle cx=\"0\" cy=\"0\" r=\"8\" class=\"as-svg__ink\"/></g><g transform=\"translate(224.0191118410576,167.99999239036404) rotate(269.954406) scale(0.35)\"><path d=\"M8 0 L18 -5 L28 5 L38 -5 L48 5 L56 0\" class=\"as-svg__ink\" stroke-width=\"2\"/><circle cx=\"0\" cy=\"0\" r=\"8\" class=\"as-svg__fill\"/><circle cx=\"0\" cy=\"0\" r=\"8\" class=\"as-svg__ink\"/></g><g transform=\"translate(200.00003043853906,144.0382236699957) rotate(359.908812) scale(0.35)\"><path d=\"M8 0 L18 -5 L28 5 L38 -5 L48 5 L56 0\" class=\"as-svg__ink\" stroke-width=\"2\"/><circle cx=\"0\" cy=\"0\" r=\"8\" class=\"as-svg__fill\"/><circle cx=\"0\" cy=\"0\" r=\"8\" class=\"as-svg__ink\"/></g><g transform=\"translate(223.94266452530525,120.00006848669477) rotate(449.863218) scale(0.35)\"><path d=\"M8 0 L18 -5 L28 5 L38 -5 L48 5 L56 0\" class=\"as-svg__ink\" stroke-width=\"2\"/><circle cx=\"0\" cy=\"0\" r=\"8\" class=\"as-svg__fill\"/><circle cx=\"0\" cy=\"0\" r=\"8\" class=\"as-svg__ink\"/></g><text x=\"243\" y=\"196\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">gotitas en el agua</text></svg>"
+    },
+    {
+      "id": "c6",
+      "tipo": "pregunta",
+      "pregunta": "¿Con qué se hace el jabón?",
+      "correctaId": "b",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Con arena y agua",
+          "retro": "No: se hace a partir de grasas o aceites."
+        },
+        {
+          "id": "b",
+          "texto": "Con grasas o aceites tratados con un álcali, como la soda cáustica",
+          "retro": "¡Así es! Esa reacción produce las moléculas de jabón."
+        },
+        {
+          "id": "c",
+          "texto": "Con sal de mesa y vinagre",
+          "retro": "No: se hace a partir de grasas o aceites y un álcali."
+        }
+      ],
+      "fuenteIds": [
+        "brit-jabon"
+      ]
+    },
+    {
+      "id": "c7",
+      "tipo": "revelar",
+      "titulo": "Un invento muy antiguo",
+      "texto": "El jabón no es un invento moderno. ¿Desde cuándo se conoce?",
+      "revelado": "Desde hace al menos 2.300 años. Según Plinio el Viejo, los fenicios lo preparaban con sebo de cabra y ceniza de madera.",
+      "fuenteIds": [
+        "brit-jabon"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Hace al menos 2.300 años ya se conocía el jabón: los fenicios lo hacían con sebo de cabra y ceniza de madera</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><defs><marker id=\"jabon-grasa-ah\" viewBox=\"0 0 10 10\" refX=\"5\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" class=\"as-svg__accent\"/></marker></defs><path d=\"M110 90 L210 90 L200 150 L120 150 Z\" class=\"as-svg__fill\"/><path d=\"M110 90 L210 90 L200 150 L120 150 Z\" class=\"as-svg__ink\"/><rect x=\"30\" y=\"40\" width=\"60\" height=\"30\" rx=\"4\" class=\"as-svg__warm\"/><rect x=\"30\" y=\"40\" width=\"60\" height=\"30\" rx=\"4\" class=\"as-svg__ink\"/><text x=\"60\" y=\"60\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">sebo</text><rect x=\"230\" y=\"40\" width=\"60\" height=\"30\" rx=\"4\" class=\"as-svg__soft\"/><rect x=\"230\" y=\"40\" width=\"60\" height=\"30\" rx=\"4\" class=\"as-svg__ink\"/><text x=\"260\" y=\"60\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">ceniza</text><line x1=\"92\" y1=\"64\" x2=\"124\" y2=\"88\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"2\" marker-end=\"url(#jabon-grasa-ah)\"/><line x1=\"228\" y1=\"64\" x2=\"196\" y2=\"88\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"2\" marker-end=\"url(#jabon-grasa-ah)\"/><text x=\"160\" y=\"196\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">al menos 2.300 años</text></svg>"
+    },
+    {
+      "id": "c8",
+      "tipo": "dato",
+      "texto": "En el agua dura, que trae sales de calcio y otros metales, el jabón forma un grumo o nata. A los detergentes sintéticos, en cambio, esas sales casi no les afectan.",
+      "fuenteIds": [
+        "brit-jabon"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>En agua dura el jabón forma un grumo; a los detergentes sintéticos esas sales casi no les afectan</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><path d=\"M43 68 L117 68 L112 170 L48 170 Z\" class=\"as-svg__cool\"/><path d=\"M40 50 L120 50 L112 170 L48 170 Z\" class=\"as-svg__ink\"/><circle cx=\"52\" cy=\"78\" r=\"5\" class=\"as-svg__warm\"/><circle cx=\"62\" cy=\"78\" r=\"5\" class=\"as-svg__warm\"/><circle cx=\"72\" cy=\"78\" r=\"5\" class=\"as-svg__warm\"/><circle cx=\"82\" cy=\"78\" r=\"5\" class=\"as-svg__warm\"/><circle cx=\"92\" cy=\"78\" r=\"5\" class=\"as-svg__warm\"/><circle cx=\"102\" cy=\"78\" r=\"5\" class=\"as-svg__warm\"/><path d=\"M203 68 L277 68 L272 170 L208 170 Z\" class=\"as-svg__cool\"/><path d=\"M200 50 L280 50 L272 170 L208 170 Z\" class=\"as-svg__ink\"/><text x=\"80\" y=\"30\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">jabón</text><text x=\"240\" y=\"30\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">detergente</text><text x=\"80\" y=\"190\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">grumo</text><text x=\"240\" y=\"190\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">casi no cambia</text><text x=\"160\" y=\"110\" text-anchor=\"middle\" class=\"as-svg__muted\" font-size=\"15\">agua dura</text></svg>"
+    }
+  ],
+  "resumen": {
+    "titulo": "El jabón y la grasa",
+    "puntos": [
+      "Cada molécula de jabón tiene un lado que se une al agua y otro que se pega a la grasa.",
+      "El jabón ayuda al agua a mojar mejor y rompe la capa de grasa en gotitas que quedan en el agua.",
+      "Se hace con grasas o aceites y un álcali, y se conoce hace al menos 2.300 años."
+    ]
+  },
+  "fuentes": [
+    {
+      "id": "brit-jabon",
+      "entidad": "Encyclopaedia Britannica",
+      "titulo": "Soap",
+      "url": "https://www.britannica.com/technology/soap",
+      "ubicacion": "Introducción y secciones \"History\" y \"Soap manufacturing processes and products\"",
+      "afirmaciones": [
+        "La parte hidrofóbica de la molécula se adhiere a la suciedad y la parte hidrofílica al agua",
+        "Aumenta la capacidad del agua de extenderse y mojar al reducir su tensión superficial",
+        "La película de aceite se rompe y se separa en gotitas; la suciedad queda suspendida",
+        "El jabón se forma por reacción de ácidos grasos con un álcali; una solución alcalina caliente, como la soda cáustica, actúa sobre grasas o aceites",
+        "Se conoce hace al menos 2.300 años; según Plinio el Viejo, los fenicios lo preparaban con sebo de cabra y ceniza de madera",
+        "En agua dura el jabón forma una nata o precipitado con sales de calcio y otros metales; los detergentes sintéticos casi no se ven afectados"
+      ],
+      "respalda": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6",
+        "c7",
+        "c8"
+      ],
+      "consultadaEl": "2026-10-28"
+    }
+  ],
+  "controlEditorial": {
+    "estado": "borrador",
+    "revisadoPor": null,
+    "fechaRevision": null
+  }
+}

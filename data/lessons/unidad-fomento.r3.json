@@ -1,0 +1,177 @@
+{
+  "schemaVersion": "2.0",
+  "id": "unidad-fomento",
+  "revision": 3,
+  "idioma": "es-CL",
+  "disciplina": "Economía cotidiana",
+  "familia": "economia",
+  "titulo": "¿Qué cambia cuando un precio está en UF?",
+  "subtitulo": "Arriendos, créditos y seguros: por qué no en pesos.",
+  "minutosEstimados": 5,
+  "tarjetas": [
+    {
+      "id": "c1",
+      "tipo": "portada",
+      "titulo": "¿Qué es la UF?",
+      "texto": "Créditos y seguros pueden estar expresados en UF. ¿Por qué no simplemente en pesos?",
+      "fuenteIds": [
+        "bcch-uf"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Una moneda con la sigla UF junto a billetes en pesos, con un signo de pregunta</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><circle cx=\"100\" cy=\"100\" r=\"46\" class=\"as-svg__warm\"/><circle cx=\"100\" cy=\"100\" r=\"46\" class=\"as-svg__ink\"/><text x=\"100\" y=\"107\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"20\">UF</text><rect x=\"180\" y=\"70\" width=\"90\" height=\"50\" rx=\"6\" class=\"as-svg__fill\"/><rect x=\"180\" y=\"70\" width=\"90\" height=\"50\" rx=\"6\" class=\"as-svg__ink\"/><text x=\"225\" y=\"102\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"24\">$</text><text x=\"160\" y=\"180\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">¿por qué no en pesos?</text></svg>"
+    },
+    {
+      "id": "c2",
+      "tipo": "idea",
+      "titulo": "Medir cuánto cambian los precios",
+      "texto": "Cada mes, el INE mide cuánto cambian los precios de una canasta de productos y servicios que compran los hogares. Ese índice se llama IPC.",
+      "fuenteIds": [
+        "ine-ipc"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Una canasta con productos y servicios de los hogares: el INE mide cada mes cuánto cambian sus precios (IPC)</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><path d=\"M90 90 L230 90 L215 160 L105 160 Z\" class=\"as-svg__warm\"/><path d=\"M90 90 L230 90 L215 160 L105 160 Z\" class=\"as-svg__ink\"/><path d=\"M120 90 C120 50 200 50 200 90\" class=\"as-svg__ink\"/><circle cx=\"130\" cy=\"82\" r=\"12\" class=\"as-svg__fill\"/><rect x=\"150\" y=\"64\" width=\"18\" height=\"28\" rx=\"3\" class=\"as-svg__cool\"/><circle cx=\"190\" cy=\"80\" r=\"10\" class=\"as-svg__fill\"/><text x=\"160\" y=\"135\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"22\">IPC</text><text x=\"160\" y=\"190\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">el INE lo mide cada mes</text></svg>"
+    },
+    {
+      "id": "c3",
+      "tipo": "idea",
+      "titulo": "La UF sigue al IPC",
+      "texto": "La UF es una unidad que calcula el Banco Central. Su valor en pesos se reajusta diariamente según el IPC del mes anterior.",
+      "fuenteIds": [
+        "bcch-uf"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>El IPC del mes anterior reajusta día a día el valor de la UF en pesos</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><defs><marker id=\"unidad-fomento-ah\" viewBox=\"0 0 10 10\" refX=\"5\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" class=\"as-svg__accent\"/></marker></defs><rect x=\"24\" y=\"60\" width=\"96\" height=\"80\" rx=\"8\" class=\"as-svg__fill\"/><rect x=\"24\" y=\"60\" width=\"96\" height=\"80\" rx=\"8\" class=\"as-svg__ink\"/><text x=\"72\" y=\"96\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"20\">IPC</text><text x=\"72\" y=\"120\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"13\">mes anterior</text><line x1=\"130\" y1=\"100\" x2=\"186\" y2=\"100\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"3\" marker-end=\"url(#unidad-fomento-ah)\"/><circle cx=\"240\" cy=\"100\" r=\"40\" class=\"as-svg__warm\"/><circle cx=\"240\" cy=\"100\" r=\"40\" class=\"as-svg__ink\"/><text x=\"240\" y=\"107\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"20\">UF</text><text x=\"240\" y=\"170\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">en $, día a día</text><text x=\"72\" y=\"170\" text-anchor=\"middle\" class=\"as-svg__muted\" font-size=\"14\">Banco Central</text></svg>"
+    },
+    {
+      "id": "c4",
+      "tipo": "pregunta",
+      "pregunta": "Si el IPC del mes anterior subió, ¿qué pasa con el valor de la UF en pesos?",
+      "correctaId": "a",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Sube un poco cada día, desde el día 10",
+          "retro": "¡Exacto! La UF se reajusta cada día, desde el 10 de un mes hasta el 9 del siguiente, según el IPC del mes anterior."
+        },
+        {
+          "id": "b",
+          "texto": "Baja",
+          "retro": "Al revés: si el IPC del mes anterior subió, la UF sube en pesos."
+        },
+        {
+          "id": "c",
+          "texto": "Cambia al instante con los precios de hoy",
+          "retro": "No: la UF sigue el IPC del mes anterior, que ya fue medido; no reacciona a los precios de hoy."
+        }
+      ],
+      "fuenteIds": [
+        "bcch-uf"
+      ]
+    },
+    {
+      "id": "c5",
+      "tipo": "idea",
+      "titulo": "Un arriendo en UF",
+      "texto": "Si el contrato mantiene el arriendo en 10 UF, cada mes pagas 10 UF. Pero si el IPC del mes anterior subió, esas 10 UF equivalen a un poco más de pesos.",
+      "fuenteIds": [
+        "bcch-uf"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Un arriendo de 10 UF: cada mes son las mismas 10 UF, pero equivalen a un poco más de pesos si el IPC subió</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><rect x=\"50\" y=\"80\" width=\"40\" height=\"60\" rx=\"4\" class=\"as-svg__warm\"/><rect x=\"50\" y=\"80\" width=\"40\" height=\"60\" rx=\"4\" class=\"as-svg__ink\"/><text x=\"70\" y=\"132\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">10</text><rect x=\"110\" y=\"74\" width=\"40\" height=\"66\" rx=\"4\" class=\"as-svg__warm\"/><rect x=\"110\" y=\"74\" width=\"40\" height=\"66\" rx=\"4\" class=\"as-svg__ink\"/><text x=\"130\" y=\"132\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">10</text><rect x=\"170\" y=\"68\" width=\"40\" height=\"72\" rx=\"4\" class=\"as-svg__warm\"/><rect x=\"170\" y=\"68\" width=\"40\" height=\"72\" rx=\"4\" class=\"as-svg__ink\"/><text x=\"190\" y=\"132\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">10</text><rect x=\"230\" y=\"62\" width=\"40\" height=\"78\" rx=\"4\" class=\"as-svg__warm\"/><rect x=\"230\" y=\"62\" width=\"40\" height=\"78\" rx=\"4\" class=\"as-svg__ink\"/><text x=\"250\" y=\"132\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">10</text><text x=\"160\" y=\"34\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">siempre 10 UF</text><text x=\"160\" y=\"166\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">un poco más de pesos</text><text x=\"160\" y=\"188\" text-anchor=\"middle\" class=\"as-svg__muted\" font-size=\"14\">si el IPC subió</text></svg>"
+    },
+    {
+      "id": "c6",
+      "tipo": "revelar",
+      "titulo": "¿Para qué sirve en un crédito?",
+      "texto": "Si un crédito está expresado en UF, ¿qué le pasa a la deuda en pesos?",
+      "revelado": "Se reajusta según el IPC del mes anterior. El Banco Central explica que la UF sirve como índice de reajuste para créditos en moneda nacional de bancos y cooperativas, y que también la usan cajas de compensación y compañías de seguros.",
+      "fuenteIds": [
+        "bcch-uf"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Un crédito en UF: la deuda en pesos se reajusta según el IPC del mes anterior</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><defs><marker id=\"unidad-fomento-ah\" viewBox=\"0 0 10 10\" refX=\"5\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" class=\"as-svg__accent\"/></marker></defs><rect x=\"40\" y=\"40\" width=\"90\" height=\"120\" rx=\"6\" class=\"as-svg__warm\"/><rect x=\"40\" y=\"40\" width=\"90\" height=\"120\" rx=\"6\" class=\"as-svg__ink\"/><text x=\"85\" y=\"80\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">crédito</text><text x=\"85\" y=\"108\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"18\">en UF</text><line x1=\"56\" y1=\"126\" x2=\"114\" y2=\"126\" class=\"as-svg__ink\"/><line x1=\"56\" y1=\"140\" x2=\"100\" y2=\"140\" class=\"as-svg__ink\"/><line x1=\"142\" y1=\"100\" x2=\"192\" y2=\"100\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"3\" marker-end=\"url(#unidad-fomento-ah)\"/><text x=\"250\" y=\"96\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">deuda en $</text><text x=\"250\" y=\"120\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">se reajusta</text></svg>"
+    },
+    {
+      "id": "c7",
+      "tipo": "pregunta",
+      "pregunta": "Te ofrecen dos arriendos: uno en pesos fijos por dos años y otro que se mantiene en UF. Si el IPC viene subiendo, ¿cuál sube en pesos?",
+      "correctaId": "a",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "El que está en UF",
+          "retro": "Correcto: como la UF se reajusta según el IPC del mes anterior, el monto en pesos sube."
+        },
+        {
+          "id": "b",
+          "texto": "El de pesos fijos",
+          "retro": "El de pesos fijos se mantiene en el mismo monto en pesos."
+        },
+        {
+          "id": "c",
+          "texto": "Ninguno de los dos",
+          "retro": "El que está en UF sí cambia en pesos, porque la UF se reajusta según el IPC del mes anterior."
+        }
+      ],
+      "fuenteIds": [
+        "bcch-uf"
+      ]
+    },
+    {
+      "id": "c8",
+      "tipo": "dato",
+      "texto": "El valor de la UF se conoce por adelantado: a más tardar el día 9 de cada mes se publican en el Diario Oficial los valores de cada día, desde el 10 de ese mes hasta el 9 del siguiente.",
+      "fuenteIds": [
+        "bcch-uf"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>A más tardar el día 9 de cada mes se publican los valores de la UF desde el 10 hasta el 9 del mes siguiente</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><defs><marker id=\"unidad-fomento-ah\" viewBox=\"0 0 10 10\" refX=\"5\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" class=\"as-svg__accent\"/></marker></defs><rect x=\"30\" y=\"50\" width=\"100\" height=\"100\" rx=\"8\" class=\"as-svg__ink\"/><rect x=\"30\" y=\"50\" width=\"100\" height=\"24\" rx=\"8\" class=\"as-svg__fill\"/><text x=\"80\" y=\"120\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"22\">día 9</text><text x=\"80\" y=\"175\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">se publican</text><line x1=\"140\" y1=\"100\" x2=\"176\" y2=\"100\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"3\" marker-end=\"url(#unidad-fomento-ah)\"/><rect x=\"186\" y=\"70\" width=\"110\" height=\"60\" rx=\"8\" class=\"as-svg__warm\"/><rect x=\"186\" y=\"70\" width=\"110\" height=\"60\" rx=\"8\" class=\"as-svg__ink\"/><text x=\"241\" y=\"98\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">del 10</text><text x=\"241\" y=\"118\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"14\">al 9 siguiente</text></svg>"
+    }
+  ],
+  "resumen": {
+    "titulo": "La UF",
+    "puntos": [
+      "La UF es una unidad que calcula el Banco Central; su valor en pesos se reajusta cada día.",
+      "El reajuste sigue el IPC del mes anterior, el índice que mide cuánto cambiaron los precios.",
+      "Por eso, un monto en UF equivale a más pesos cuando el IPC del mes anterior subió."
+    ]
+  },
+  "fuentes": [
+    {
+      "id": "bcch-uf",
+      "entidad": "Banco Central de Chile",
+      "titulo": "Unidad de Fomento (UF): nota metodológica",
+      "url": "https://si3.bcentral.cl/estadisticas/Principal1/Metodologias/EMF/UF.pdf",
+      "ubicacion": "Texto completo",
+      "afirmaciones": [
+        "La UF es un índice de reajustabilidad, calculado y autorizado por el Banco Central de Chile",
+        "Se reajusta en forma diaria desde el día 10 de cada mes hasta el día 9 del mes siguiente, de acuerdo con la variación del IPC",
+        "Se usa como índice de reajuste para créditos en moneda nacional de bancos y cooperativas, y en otras entidades como cajas de compensación y compañías de seguros",
+        "El valor diario se publica en el Diario Oficial a más tardar el día 9 de cada mes"
+      ],
+      "respalda": [
+        "c1",
+        "c3",
+        "c4",
+        "c5",
+        "c6",
+        "c7",
+        "c8"
+      ],
+      "consultadaEl": "2026-10-20"
+    },
+    {
+      "id": "ine-ipc",
+      "entidad": "Instituto Nacional de Estadísticas",
+      "titulo": "Índice de Precios al Consumidor",
+      "url": "https://www.ine.gob.cl/estadisticas/economia/indices-de-precio-e-inflacion/indice-de-precios-al-consumidor",
+      "ubicacion": "Definición",
+      "afirmaciones": [
+        "El IPC mide mes a mes la variación de los precios de una canasta de bienes y servicios representativa del consumo de los hogares urbanos"
+      ],
+      "respalda": [
+        "c2"
+      ],
+      "consultadaEl": "2026-10-20"
+    }
+  ],
+  "controlEditorial": {
+    "estado": "borrador",
+    "revisadoPor": null,
+    "fechaRevision": null
+  }
+}

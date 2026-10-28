@@ -101,6 +101,7 @@ a { color: var(--a); }
 /* Cuenta */
 .panel { background: var(--card); border-radius: var(--r); padding: 20px; box-shadow: var(--shadow); }
 .form { display: grid; gap: 8px; margin: 12px 0; }
+.form[hidden] { display: none; }
 .form label { font-size: 14px; color: var(--muted); }
 input { font: inherit; padding: 12px 14px; border-radius: 12px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); }
 .kv { display: grid; grid-template-columns: max-content 1fr; gap: 6px 16px; margin: 16px 0 0; font-size: 15px; }
@@ -179,3 +180,22 @@ input { font: inherit; padding: 12px 14px; border-radius: 12px; border: 1px soli
 text.as-svg__muted { fill: var(--muted); stroke: none; }
 .as-svg marker path { fill: var(--a); stroke: none; }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+
+/* Paleta base amarillo y negro (aprobada por Max el 26-10-2026). El color de cada familia queda como acento. */
+:root { --brand-y: #F5C400; --brand-y-soft: #FFF4C7; --brand-k: #141414; --sun: #F5C400; --warm: #F5C400; }
+.btn { background: var(--brand-y); color: var(--brand-k); }
+.btn.ghost { background: transparent; color: var(--ink); }
+.bars i { background: color-mix(in srgb, var(--brand-k) 14%, transparent); }
+.bars i.done, .bars i.now { background: var(--brand-k); }
+.player { background: var(--bg); }
+.visual, .tile .cover-visual { background: var(--brand-y-soft); }
+.tile.big .cta { background: var(--brand-y); color: var(--brand-k); }
+.as-svg__soft { fill: var(--brand-y-soft); }
+.as-svg .as-svg__ink, .as-svg__ink { stroke: var(--brand-k); }
+.badge { background: var(--brand-k); color: var(--brand-y); }
+.kicker { color: var(--brand-k); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --brand-y-soft: #3A3210; }
+  :root:not([data-theme="light"]) .as-svg .as-svg__ink, :root:not([data-theme="light"]) .as-svg__ink { stroke: #F5F5F5; }
+  :root:not([data-theme="light"]) .kicker { color: var(--brand-y); }
+  :root:not([data-theme="light"]) .bars i { background: color-mix(in srgb, #FFFFFF 18%, transparent); }
+  :root:not([data-theme="light"]) .bars i.done, :root:not([data-theme="light"]) .bars i.now { background: var(--brand-y); } }

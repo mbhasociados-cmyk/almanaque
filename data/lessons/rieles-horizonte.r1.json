@@ -1,0 +1,213 @@
+{
+  "schemaVersion": "2.0",
+  "id": "rieles-horizonte",
+  "revision": 1,
+  "idioma": "es-CL",
+  "disciplina": "Arte y percepción",
+  "familia": "arte",
+  "titulo": "¿Por qué los rieles parecen juntarse a lo lejos?",
+  "subtitulo": "Lo que pasa en el ojo y lo que aprovecharon los pintores.",
+  "minutosEstimados": 5,
+  "tarjetas": [
+    {
+      "id": "c1",
+      "tipo": "portada",
+      "titulo": "¿Por qué los rieles parecen juntarse a lo lejos?",
+      "texto": "Si te paras en una vía de tren, los dos rieles parecen juntarse a lo lejos. Pero son paralelos. ¿Qué está pasando?",
+      "fuenteIds": [
+        "msu-ponzo"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Una vía de tren vista desde adentro: los dos rieles parecen juntarse a lo lejos, en el horizonte</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><line x1=\"0\" y1=\"60\" x2=\"320\" y2=\"60\" class=\"as-svg__muted\"/><polygon points=\"50,190 160,60 270,190\" class=\"as-svg__warm\"/><line x1=\"143.5\" y1=\"79.5\" x2=\"176.5\" y2=\"79.5\" class=\"as-svg__ink\"/><line x1=\"127.0\" y1=\"99.0\" x2=\"193.0\" y2=\"99.0\" class=\"as-svg__ink\"/><line x1=\"110.5\" y1=\"118.5\" x2=\"209.5\" y2=\"118.5\" class=\"as-svg__ink\"/><line x1=\"94.0\" y1=\"138.0\" x2=\"226.0\" y2=\"138.0\" class=\"as-svg__ink\"/><line x1=\"77.5\" y1=\"157.5\" x2=\"242.5\" y2=\"157.5\" class=\"as-svg__ink\"/><line x1=\"61.0\" y1=\"177.0\" x2=\"259.0\" y2=\"177.0\" class=\"as-svg__ink\"/><line x1=\"50\" y1=\"190\" x2=\"160\" y2=\"60\" class=\"as-svg__ink\" stroke-width=\"3\"/><line x1=\"270\" y1=\"190\" x2=\"160\" y2=\"60\" class=\"as-svg__ink\" stroke-width=\"3\"/><text x=\"160\" y=\"36\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"18\">¿se juntan?</text></svg>"
+    },
+    {
+      "id": "c2",
+      "tipo": "idea",
+      "titulo": "Lo lejano se ve más chico",
+      "texto": "Mientras más lejos está algo, más pequeño es el ángulo que ocupa en nuestra vista: su imagen en el ojo se achica.",
+      "fuenteIds": [
+        "yorku-persp"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Un ojo mira dos postes iguales: el cercano ocupa un ángulo grande y el lejano un ángulo chico</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><path d=\"M20 100 C34 84 54 84 68 100 C54 116 34 116 20 100 Z\" class=\"as-svg__ink\"/><circle cx=\"44\" cy=\"100\" r=\"7\" class=\"as-svg__fill\"/><rect x=\"120\" y=\"60\" width=\"14\" height=\"80\" rx=\"2\" class=\"as-svg__fill\"/><rect x=\"120\" y=\"60\" width=\"14\" height=\"80\" rx=\"2\" class=\"as-svg__ink\"/><rect x=\"260\" y=\"60\" width=\"14\" height=\"80\" rx=\"2\" class=\"as-svg__fill\"/><rect x=\"260\" y=\"60\" width=\"14\" height=\"80\" rx=\"2\" class=\"as-svg__ink\"/><line x1=\"56\" y1=\"100\" x2=\"120\" y2=\"60\" class=\"as-svg__ink\" stroke-dasharray=\"4 4\"/><line x1=\"56\" y1=\"100\" x2=\"120\" y2=\"140\" class=\"as-svg__ink\" stroke-dasharray=\"4 4\"/><line x1=\"56\" y1=\"100\" x2=\"260\" y2=\"60\" class=\"as-svg__accent as-svg__ink\" stroke-dasharray=\"2 4\"/><line x1=\"56\" y1=\"100\" x2=\"260\" y2=\"140\" class=\"as-svg__accent as-svg__ink\" stroke-dasharray=\"2 4\"/><text x=\"127\" y=\"168\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">cerca:</text><text x=\"127\" y=\"188\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">ángulo grande</text><text x=\"267\" y=\"168\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">lejos:</text><text x=\"267\" y=\"188\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">ángulo chico</text><text x=\"190\" y=\"36\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">lo mismo, cerca y lejos</text></svg>"
+    },
+    {
+      "id": "c3",
+      "tipo": "idea",
+      "titulo": "El espacio entre los rieles",
+      "texto": "Lo mismo pasa con el espacio entre los dos rieles: a lo lejos se ve cada vez más angosto, y los rieles parecen converger hacia el horizonte.",
+      "fuenteIds": [
+        "yorku-persp",
+        "msu-ponzo"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>El espacio entre los rieles se ve cada vez más angosto a lo lejos, hasta que parecen juntarse</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><line x1=\"0\" y1=\"60\" x2=\"320\" y2=\"60\" class=\"as-svg__muted\"/><polygon points=\"50,190 160,60 270,190\" class=\"as-svg__warm\"/><line x1=\"50\" y1=\"190\" x2=\"160\" y2=\"60\" class=\"as-svg__ink\" stroke-width=\"3\"/><line x1=\"270\" y1=\"190\" x2=\"160\" y2=\"60\" class=\"as-svg__ink\" stroke-width=\"3\"/><line x1=\"80\" y1=\"170\" x2=\"240\" y2=\"170\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"3\"/><line x1=\"122\" y1=\"125\" x2=\"198\" y2=\"125\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"3\"/><line x1=\"145\" y1=\"96\" x2=\"175\" y2=\"96\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"3\"/><text x=\"160\" y=\"36\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"17\">cada vez más angosto</text></svg>"
+    },
+    {
+      "id": "c4",
+      "tipo": "pregunta",
+      "pregunta": "Dos postes iguales, uno cerca y otro lejos. ¿Cuál ocupa un ángulo más chico en tu vista?",
+      "correctaId": "a",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "El que está lejos",
+          "retro": "¡Exacto! Mientras más lejos está algo, más chico es el ángulo que ocupa."
+        },
+        {
+          "id": "b",
+          "texto": "El que está cerca",
+          "retro": "Al revés: el cercano ocupa un ángulo más grande."
+        },
+        {
+          "id": "c",
+          "texto": "Los dos ocupan lo mismo",
+          "retro": "No: aunque son iguales, el lejano ocupa un ángulo más chico."
+        }
+      ],
+      "fuenteIds": [
+        "yorku-persp"
+      ]
+    },
+    {
+      "id": "c5",
+      "tipo": "idea",
+      "titulo": "Una pista de profundidad",
+      "texto": "Aun así, no creemos que los rieles se toquen: nuestro sistema visual interpreta esas líneas que convergen como paralelas que se alejan hacia el horizonte.",
+      "fuenteIds": [
+        "msu-ponzo"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>El sistema visual interpreta las líneas que convergen como paralelas que se alejan hacia el horizonte</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><defs><marker id=\"rieles-horizonte-ah\" viewBox=\"0 0 10 10\" refX=\"5\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" class=\"as-svg__accent\"/></marker></defs><line x1=\"0\" y1=\"60\" x2=\"320\" y2=\"60\" class=\"as-svg__muted\"/><polygon points=\"50,190 160,60 270,190\" class=\"as-svg__warm\"/><line x1=\"143.5\" y1=\"79.5\" x2=\"176.5\" y2=\"79.5\" class=\"as-svg__ink\"/><line x1=\"127.0\" y1=\"99.0\" x2=\"193.0\" y2=\"99.0\" class=\"as-svg__ink\"/><line x1=\"110.5\" y1=\"118.5\" x2=\"209.5\" y2=\"118.5\" class=\"as-svg__ink\"/><line x1=\"94.0\" y1=\"138.0\" x2=\"226.0\" y2=\"138.0\" class=\"as-svg__ink\"/><line x1=\"77.5\" y1=\"157.5\" x2=\"242.5\" y2=\"157.5\" class=\"as-svg__ink\"/><line x1=\"61.0\" y1=\"177.0\" x2=\"259.0\" y2=\"177.0\" class=\"as-svg__ink\"/><line x1=\"50\" y1=\"190\" x2=\"160\" y2=\"60\" class=\"as-svg__ink\" stroke-width=\"3\"/><line x1=\"270\" y1=\"190\" x2=\"160\" y2=\"60\" class=\"as-svg__ink\" stroke-width=\"3\"/><line x1=\"300\" y1=\"170\" x2=\"252\" y2=\"122\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"2\" marker-end=\"url(#rieles-horizonte-ah)\"/><text x=\"254\" y=\"28\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">paralelas</text><text x=\"254\" y=\"48\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">que se alejan</text><text x=\"62\" y=\"28\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">pista de</text><text x=\"62\" y=\"48\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">profundidad</text></svg>"
+    },
+    {
+      "id": "c6",
+      "tipo": "revelar",
+      "titulo": "La ilusión de Ponzo",
+      "texto": "Entre dos líneas que se juntan, como rieles, se dibujan dos barras iguales. ¿Cuál parece más larga?",
+      "revelado": "La que parece estar más lejos. Si dos cosas se ven del mismo tamaño pero una parece más lejana, la percibimos más grande. Al borrar las líneas, se nota que las barras son iguales.",
+      "fuenteIds": [
+        "msu-ponzo"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>La ilusión de Ponzo: dos barras iguales entre líneas que se juntan; la que parece más lejos se ve más larga</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><line x1=\"80\" y1=\"190\" x2=\"160\" y2=\"30\" class=\"as-svg__ink\" stroke-width=\"2\"/><line x1=\"240\" y1=\"190\" x2=\"160\" y2=\"30\" class=\"as-svg__ink\" stroke-width=\"2\"/><rect x=\"130\" y=\"76\" width=\"60\" height=\"8\" class=\"as-svg__fill\"/><rect x=\"130\" y=\"150\" width=\"60\" height=\"8\" class=\"as-svg__fill\"/><text x=\"250\" y=\"84\" text-anchor=\"start\" class=\"as-svg__label\" font-size=\"15\">parece</text><text x=\"250\" y=\"102\" text-anchor=\"start\" class=\"as-svg__label\" font-size=\"15\">más larga</text><text x=\"26\" y=\"150\" text-anchor=\"start\" class=\"as-svg__label\" font-size=\"15\">son</text><text x=\"26\" y=\"168\" text-anchor=\"start\" class=\"as-svg__label\" font-size=\"15\">iguales</text></svg>"
+    },
+    {
+      "id": "c7",
+      "tipo": "pregunta",
+      "pregunta": "En un dibujo con perspectiva lineal, ¿dónde se juntan las líneas paralelas?",
+      "correctaId": "b",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "En una esquina del cuadro",
+          "retro": "No: se juntan en un punto de la línea del horizonte."
+        },
+        {
+          "id": "b",
+          "texto": "En un punto de fuga, sobre la línea del horizonte",
+          "retro": "¡Así es! Y los objetos se dibujan más chicos a medida que se acercan a ese punto."
+        },
+        {
+          "id": "c",
+          "texto": "No se juntan nunca",
+          "retro": "En la realidad no, pero en el dibujo con perspectiva sí: en el punto de fuga."
+        }
+      ],
+      "fuenteIds": [
+        "brit-lineal",
+        "brit-fuga"
+      ]
+    },
+    {
+      "id": "c8",
+      "tipo": "dato",
+      "texto": "Los pintores usan este mismo efecto para crear profundidad. Se cree que el arquitecto Filippo Brunelleschi ideó la perspectiva lineal hacia 1415, y Leon Battista Alberti la explicó por escrito en 1435.",
+      "fuenteIds": [
+        "brit-lineal"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Un cuadro con perspectiva lineal: las líneas se juntan en el punto de fuga; Brunelleschi hacia 1415 y Alberti en 1435</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><rect x=\"30\" y=\"30\" width=\"180\" height=\"130\" rx=\"4\" class=\"as-svg__soft\"/><rect x=\"30\" y=\"30\" width=\"180\" height=\"130\" rx=\"4\" class=\"as-svg__ink\"/><line x1=\"30\" y1=\"90\" x2=\"210\" y2=\"90\" class=\"as-svg__muted\"/><line x1=\"40\" y1=\"160\" x2=\"120\" y2=\"90\" class=\"as-svg__ink\"/><line x1=\"200\" y1=\"160\" x2=\"120\" y2=\"90\" class=\"as-svg__ink\"/><line x1=\"30\" y1=\"40\" x2=\"120\" y2=\"90\" class=\"as-svg__ink\"/><line x1=\"210\" y1=\"40\" x2=\"120\" y2=\"90\" class=\"as-svg__ink\"/><circle cx=\"120\" cy=\"90\" r=\"5\" class=\"as-svg__fill\"/><text x=\"120\" y=\"184\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">punto de fuga</text><text x=\"266\" y=\"70\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">Brunelleschi</text><text x=\"266\" y=\"90\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">hacia 1415</text><text x=\"266\" y=\"126\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">Alberti</text><text x=\"266\" y=\"146\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">1435</text></svg>"
+    }
+  ],
+  "resumen": {
+    "titulo": "Los rieles que se juntan",
+    "puntos": [
+      "Mientras más lejos está algo, más chico es el ángulo que ocupa en nuestra vista.",
+      "El espacio entre los rieles se ve cada vez más angosto a lo lejos, y el sistema visual lo interpreta como profundidad.",
+      "Los pintores usan la perspectiva lineal: las paralelas se juntan en un punto de fuga sobre el horizonte."
+    ]
+  },
+  "fuentes": [
+    {
+      "id": "yorku-persp",
+      "entidad": "York University (Canadá)",
+      "titulo": "Perspective Illusion",
+      "url": "https://www.yorku.ca/eye/perspect.htm",
+      "ubicacion": "Texto principal",
+      "afirmaciones": [
+        "Mientras más lejos están los objetos, menor es el ángulo visual que ocupan en la retina",
+        "Los patrones del suelo, las paredes y el techo tienden a converger hacia un punto común en la distancia"
+      ],
+      "respalda": [
+        "c2",
+        "c3",
+        "c4"
+      ],
+      "consultadaEl": "2026-10-28"
+    },
+    {
+      "id": "msu-ponzo",
+      "entidad": "Mississippi State University (ePsych)",
+      "titulo": "Ponzo illusion",
+      "url": "https://epsych.msstate.edu/descriptive/Vision/DepthValley/ponzo/4.html",
+      "ubicacion": "Texto principal",
+      "afirmaciones": [
+        "Parado sobre una vía de tren, los dos rieles paralelos parecen converger hacia el horizonte",
+        "El sistema visual interpreta las líneas como paralelas que se proyectan hacia el horizonte",
+        "La ilusión de Ponzo usa claves de profundidad, como líneas convergentes, para sugerir distancia",
+        "Si dos objetos tienen el mismo tamaño visual pero uno está más lejos, el más lejano se percibe más grande",
+        "Al quitar las líneas se ve que las barras miden lo mismo"
+      ],
+      "respalda": [
+        "c1",
+        "c3",
+        "c5",
+        "c6"
+      ],
+      "consultadaEl": "2026-10-28"
+    },
+    {
+      "id": "brit-lineal",
+      "entidad": "Encyclopaedia Britannica",
+      "titulo": "Linear perspective",
+      "url": "https://www.britannica.com/art/linear-perspective",
+      "ubicacion": "Texto principal",
+      "afirmaciones": [
+        "Sistema para crear la ilusión de profundidad en una superficie plana",
+        "Las líneas paralelas convergen en un único punto de fuga en la línea del horizonte",
+        "Los objetos se dibujan cada vez más pequeños a medida que se acercan al punto de fuga",
+        "Se cree que Brunelleschi lo ideó hacia 1415; Alberti lo documentó en 1435 (Della pittura)"
+      ],
+      "respalda": [
+        "c7",
+        "c8"
+      ],
+      "consultadaEl": "2026-10-28"
+    },
+    {
+      "id": "brit-fuga",
+      "entidad": "Encyclopaedia Britannica",
+      "titulo": "Vanishing point",
+      "url": "https://www.britannica.com/art/vanishing-point",
+      "ubicacion": "Resumen del artículo",
+      "afirmaciones": [
+        "Las líneas paralelas (ortogonales) convergen en el punto de fuga, sobre la línea del horizonte",
+        "Los objetos se dibujan más pequeños al acercarse al punto de fuga"
+      ],
+      "respalda": [
+        "c7"
+      ],
+      "consultadaEl": "2026-10-28"
+    }
+  ],
+  "controlEditorial": {
+    "estado": "borrador",
+    "revisadoPor": null,
+    "fechaRevision": null
+  }
+}

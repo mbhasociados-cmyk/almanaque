@@ -10,17 +10,19 @@ Una lección por día. Al publicar un tema, márcalo como [x] y anota id y fecha
 - [x] 01-11 ¿Qué distingue a Gabriela Mistral? — gabriela-mistral r3
 - [x] 02-11 ¿Cómo sabe el GPS dónde estoy? — como-funciona-gps r3
 - [x] 03-11 ¿Por qué el mar es salado? — mar-salado r2
-- [ ] ¿Por qué se empaña un vaso frío?
-- [ ] ¿Por qué hay niebla en una costa donde llueve poco?
-- [ ] ¿Cómo puede flotar un barco de acero?
-- [ ] ¿Por qué los rieles parecen juntarse a lo lejos?
-- [ ] ¿Cómo cambió los libros la imprenta?
-- [ ] ¿Por qué el jabón ayuda a quitar la grasa?
-- [ ] ¿Por qué el hielo flota?
+- [x] 23-10 ¿Cómo se pinta la profundidad? — perspectiva-lineal r4 (versión en tarjetas, lote 2)
+- [x] 24-10 ¿Por qué el mar de Chile es tan frío? — corriente-humboldt r3 (versión en tarjetas, lote 2)
+- [x] 25-10 ¿Qué fue la Bauhaus? — bauhaus r4 (versión en tarjetas, lote 2)
+- [x] 26-10 ¿Cómo se sostiene un arco de piedra? — arco-panteon r4 (versión en tarjetas, lote 2)
+- [x] 04-11 ¿Por qué se empaña un vaso frío? — vaso-empanado r1 (lote 4)
+- [x] 05-11 ¿Por qué hay niebla en una costa donde llueve poco? — niebla-costera r1 (lote 4)
+- [x] 06-11 ¿Cómo puede flotar un barco de acero? — barco-acero r1 (lote 4)
+- [x] 07-11 ¿Por qué los rieles parecen juntarse a lo lejos? — rieles-horizonte r1 (lote 4)
+- [x] 09-11 ¿Cómo cambió los libros la imprenta? — imprenta-libros r1 (lote 4)
+- [x] 10-11 ¿Por qué el jabón ayuda a quitar la grasa? — jabon-grasa r1 (lote 4)
+- [x] 08-11 ¿Por qué el hielo flota? — hielo-flota r1 (lote 4)
 - [ ] ¿Por qué algunos cerros son buenos para observar estrellas?
 - [ ] ¿Qué significa que suba la inflación?
-- [ ] ¿Cómo sostiene peso un arco de piedra?
-- [ ] ¿Por qué las montañas lejanas se ven azuladas?
 - [ ] ¿Qué significa que una noticia tenga una fuente?
 - [ ] ¿Por qué una cuchara de metal se siente más fría que una de madera?
 - [ ] ¿Qué hace la levadura dentro del pan?
@@ -32,5 +34,10 @@ Una lección por día. Al publicar un tema, márcalo como [x] y anota id y fecha
 - [ ] ¿Por qué un cinturón de seguridad nos protege al frenar?
 - [ ] ¿Cómo reconoce un código QR el celular?
 - [ ] ¿Por qué el agua hierve a distinta temperatura en la montaña?
+- [ ] ¿Por qué se oxida el hierro?
+- [ ] ¿Cómo funciona un imán?
+- [ ] ¿Qué es el interés compuesto?
 
 Cuando queden menos de 14 temas pendientes, la producción agrega nuevos temas cotidianos de cualquier disciplina, sin repetir los ya publicados, y los anota aquí.
+
+Depurado el 28-10-2026: se quitaron "¿Cómo sostiene peso un arco de piedra?" (ya publicado como arco-panteon) y "¿Por qué las montañas lejanas se ven azuladas?" (ya tratado en perspectiva-lineal).

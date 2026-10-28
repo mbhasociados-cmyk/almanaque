@@ -1,0 +1,195 @@
+{
+  "schemaVersion": "2.0",
+  "id": "niebla-costera",
+  "revision": 1,
+  "idioma": "es-CL",
+  "disciplina": "Geografía",
+  "familia": "geografia",
+  "titulo": "¿Por qué hay niebla en una costa donde llueve poco?",
+  "subtitulo": "La camanchaca nace en el mar.",
+  "minutosEstimados": 5,
+  "tarjetas": [
+    {
+      "id": "c1",
+      "tipo": "portada",
+      "titulo": "¿Por qué hay niebla en una costa donde llueve poco?",
+      "texto": "En la costa del norte de Chile llueve muy poco. Aun así, una niebla espesa, la camanchaca, avanza desde el océano. ¿De dónde sale?",
+      "fuenteIds": [
+        "fao-niebla",
+        "uc-niebla"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>La camanchaca: una niebla espesa que avanza desde el océano hacia la costa del norte de Chile</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><defs><marker id=\"niebla-costera-ah\" viewBox=\"0 0 10 10\" refX=\"5\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" class=\"as-svg__accent\"/></marker></defs><rect x=\"0\" y=\"130\" width=\"150\" height=\"70\" class=\"as-svg__cool\"/><path d=\"M6 130 q6.0 -5 12.0 0 t12.0 0 q6.0 -5 12.0 0 t12.0 0 q6.0 -5 12.0 0 t12.0 0 q6.0 -5 12.0 0 t12.0 0 q6.0 -5 12.0 0 t12.0 0 q6.0 -5 12.0 0 t12.0 0\" class=\"as-svg__coolline\"/><path d=\"M140 200 L140 130 L180 90 L210 110 L250 60 L290 100 L320 80 L320 200 Z\" class=\"as-svg__warm\"/><path d=\"M140 200 L140 130 L180 90 L210 110 L250 60 L290 100 L320 80 L320 200 Z\" class=\"as-svg__ink\"/><path d=\"M10 108 q12 -10 24 0 t24 0\" class=\"as-svg__muted\" stroke-width=\"3\"/><path d=\"M58 108 q12 -10 24 0 t24 0\" class=\"as-svg__muted\" stroke-width=\"3\"/><path d=\"M30 88 q12 -10 24 0 t24 0\" class=\"as-svg__muted\" stroke-width=\"3\"/><path d=\"M78 88 q12 -10 24 0 t24 0\" class=\"as-svg__muted\" stroke-width=\"3\"/><line x1=\"40\" y1=\"60\" x2=\"110\" y2=\"60\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"3\" marker-end=\"url(#niebla-costera-ah)\"/><text x=\"80\" y=\"40\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">desde el océano</text><text x=\"230\" y=\"180\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">casi no llueve</text></svg>"
+    },
+    {
+      "id": "c2",
+      "tipo": "idea",
+      "titulo": "Una nube que nace en el mar",
+      "texto": "Frente a la costa es frecuente una nube baja, de tipo estratocúmulo. Se forma sobre el océano y avanza hacia el continente.",
+      "fuenteIds": [
+        "uc-niebla"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Frente a la costa, una nube baja tipo estratocúmulo se forma sobre el océano y avanza hacia el continente</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><defs><marker id=\"niebla-costera-ah\" viewBox=\"0 0 10 10\" refX=\"5\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" class=\"as-svg__accent\"/></marker></defs><rect x=\"0\" y=\"130\" width=\"230\" height=\"70\" class=\"as-svg__cool\"/><path d=\"M6 130 q6.0 -5 12.0 0 t12.0 0 q6.0 -5 12.0 0 t12.0 0 q6.0 -5 12.0 0 t12.0 0 q6.0 -5 12.0 0 t12.0 0 q6.0 -5 12.0 0 t12.0 0 q6.0 -5 12.0 0 t12.0 0 q6.0 -5 12.0 0 t12.0 0 q6.0 -5 12.0 0 t12.0 0 q6.0 -5 12.0 0 t12.0 0\" class=\"as-svg__coolline\"/><path d=\"M230 200 L230 120 L270 100 L320 110 L320 200 Z\" class=\"as-svg__warm\"/><path d=\"M230 200 L230 120 L270 100 L320 110 L320 200 Z\" class=\"as-svg__ink\"/><path d=\"M50 100 C23.0 100 23.0 73.0 44.6 73.0 C50 55.0 86.0 55.0 91.4 73.0 C116.60000000000001 71.2 116.60000000000001 100 95.0 100 Z\" class=\"as-svg__soft\"/><path d=\"M50 100 C23.0 100 23.0 73.0 44.6 73.0 C50 55.0 86.0 55.0 91.4 73.0 C116.60000000000001 71.2 116.60000000000001 100 95.0 100 Z\" class=\"as-svg__ink\"/><path d=\"M130 104 C106.0 104 106.0 80.0 125.2 80.0 C130 64.0 162.0 64.0 166.8 80.0 C189.2 78.4 189.2 104 170.0 104 Z\" class=\"as-svg__soft\"/><path d=\"M130 104 C106.0 104 106.0 80.0 125.2 80.0 C130 64.0 162.0 64.0 166.8 80.0 C189.2 78.4 189.2 104 170.0 104 Z\" class=\"as-svg__ink\"/><line x1=\"200\" y1=\"80\" x2=\"250\" y2=\"80\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"3\" marker-end=\"url(#niebla-costera-ah)\"/><text x=\"110\" y=\"36\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">nube baja sobre el mar</text><text x=\"276\" y=\"70\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">costa</text></svg>"
+    },
+    {
+      "id": "c3",
+      "tipo": "idea",
+      "titulo": "La nube choca con los cerros",
+      "texto": "Cuando esa nube marina es atajada por la cordillera de la Costa, se forma la niebla costera: la camanchaca.",
+      "fuenteIds": [
+        "uc-niebla"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>La nube marina choca con la cordillera de la Costa y forma la niebla costera, la camanchaca</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><defs><marker id=\"niebla-costera-ah\" viewBox=\"0 0 10 10\" refX=\"5\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" class=\"as-svg__accent\"/></marker></defs><rect x=\"0\" y=\"130\" width=\"150\" height=\"70\" class=\"as-svg__cool\"/><path d=\"M6 130 q6.0 -5 12.0 0 t12.0 0 q6.0 -5 12.0 0 t12.0 0 q6.0 -5 12.0 0 t12.0 0 q6.0 -5 12.0 0 t12.0 0 q6.0 -5 12.0 0 t12.0 0 q6.0 -5 12.0 0 t12.0 0\" class=\"as-svg__coolline\"/><path d=\"M140 200 L140 130 L180 90 L210 110 L250 60 L290 100 L320 80 L320 200 Z\" class=\"as-svg__warm\"/><path d=\"M140 200 L140 130 L180 90 L210 110 L250 60 L290 100 L320 80 L320 200 Z\" class=\"as-svg__ink\"/><path d=\"M150 116 C126.0 116 126.0 92.0 145.2 92.0 C150 76.0 182.0 76.0 186.8 92.0 C209.2 90.4 209.2 116 190.0 116 Z\" class=\"as-svg__soft\"/><path d=\"M150 116 C126.0 116 126.0 92.0 145.2 92.0 C150 76.0 182.0 76.0 186.8 92.0 C209.2 90.4 209.2 116 190.0 116 Z\" class=\"as-svg__ink\"/><line x1=\"40\" y1=\"92\" x2=\"120\" y2=\"92\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"3\" marker-end=\"url(#niebla-costera-ah)\"/><text x=\"250\" y=\"30\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">cordillera</text><text x=\"250\" y=\"48\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">de la Costa</text><text x=\"240\" y=\"180\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">camanchaca</text></svg>"
+    },
+    {
+      "id": "c4",
+      "tipo": "pregunta",
+      "pregunta": "¿Qué es la camanchaca?",
+      "correctaId": "a",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Una nube marina atajada por la cordillera de la Costa",
+          "retro": "¡Exacto! Nace sobre el océano y queda atrapada en los cerros de la costa."
+        },
+        {
+          "id": "b",
+          "texto": "Humo que viene de los volcanes",
+          "retro": "No: es una nube que viene del mar."
+        },
+        {
+          "id": "c",
+          "texto": "Polvo del desierto que levanta el viento",
+          "retro": "No: está hecha de gotitas de agua y viene del océano."
+        }
+      ],
+      "fuenteIds": [
+        "uc-niebla"
+      ]
+    },
+    {
+      "id": "c5",
+      "tipo": "idea",
+      "titulo": "Aire húmedo, superficie fría",
+      "texto": "En general, la niebla aparece cuando aire húmedo se encuentra con una superficie más fría. Cuando aire más cálido se mueve sobre una superficie fría, se habla de niebla de advección.",
+      "fuenteIds": [
+        "usgs-niebla"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Aire húmedo que se encuentra con una superficie más fría: así aparece la niebla</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><defs><marker id=\"niebla-costera-ah\" viewBox=\"0 0 10 10\" refX=\"5\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" class=\"as-svg__accent\"/></marker></defs><rect x=\"20\" y=\"140\" width=\"280\" height=\"40\" rx=\"6\" class=\"as-svg__cool\"/><text x=\"160\" y=\"166\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">superficie fría</text><line x1=\"30\" y1=\"60\" x2=\"120\" y2=\"60\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"3\" marker-end=\"url(#niebla-costera-ah)\"/><text x=\"70\" y=\"44\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">aire húmedo</text><path d=\"M140 120 q12 -10 24 0 t24 0\" class=\"as-svg__muted\" stroke-width=\"3\"/><path d=\"M188 120 q12 -10 24 0 t24 0\" class=\"as-svg__muted\" stroke-width=\"3\"/><path d=\"M236 120 q12 -10 24 0 t24 0\" class=\"as-svg__muted\" stroke-width=\"3\"/><path d=\"M284 120 q12 -10 24 0 t24 0\" class=\"as-svg__muted\" stroke-width=\"3\"/><path d=\"M164 102 q12 -10 24 0 t24 0\" class=\"as-svg__muted\" stroke-width=\"3\"/><path d=\"M212 102 q12 -10 24 0 t24 0\" class=\"as-svg__muted\" stroke-width=\"3\"/><path d=\"M260 102 q12 -10 24 0 t24 0\" class=\"as-svg__muted\" stroke-width=\"3\"/><text x=\"234\" y=\"74\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"17\">niebla</text></svg>"
+    },
+    {
+      "id": "c6",
+      "tipo": "pregunta",
+      "pregunta": "La niebla costera entra solo unos pocos kilómetros tierra adentro. ¿Por qué?",
+      "correctaId": "b",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Porque el viento la empuja siempre de vuelta al mar",
+          "retro": "No es lo que describe el estudio: el calor del suelo y los cerros altos son los que la frenan."
+        },
+        {
+          "id": "b",
+          "texto": "Porque el calor del suelo evapora sus gotitas y los cerros altos la frenan",
+          "retro": "¡Así es! El suelo caliente la disipa y las serranías altas son obstáculos."
+        },
+        {
+          "id": "c",
+          "texto": "Porque se congela al llegar a tierra",
+          "retro": "No: el suelo caliente evapora sus gotitas."
+        }
+      ],
+      "fuenteIds": [
+        "uc-niebla"
+      ]
+    },
+    {
+      "id": "c7",
+      "tipo": "revelar",
+      "titulo": "Agua atrapada en una malla",
+      "texto": "En algunos lugares de Chile se cosecha agua de la camanchaca. ¿Cómo?",
+      "revelado": "Con atrapanieblas: mallas que interceptan las microgotas de la niebla. El agua cae por canaletas, se guarda en estanques y se usa para regar.",
+      "fuenteIds": [
+        "fao-niebla"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Un atrapanieblas: la malla intercepta las gotitas de la niebla, el agua escurre por una canaleta y se guarda en un estanque</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><defs><marker id=\"niebla-costera-ah\" viewBox=\"0 0 10 10\" refX=\"5\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" class=\"as-svg__accent\"/></marker></defs><path d=\"M20 60 q12 -10 24 0 t24 0\" class=\"as-svg__muted\" stroke-width=\"3\"/><path d=\"M68 60 q12 -10 24 0 t24 0\" class=\"as-svg__muted\" stroke-width=\"3\"/><path d=\"M20 84 q12 -10 24 0 t24 0\" class=\"as-svg__muted\" stroke-width=\"3\"/><path d=\"M68 84 q12 -10 24 0 t24 0\" class=\"as-svg__muted\" stroke-width=\"3\"/><line x1=\"110\" y1=\"30\" x2=\"110\" y2=\"150\" class=\"as-svg__ink\" stroke-width=\"3\"/><line x1=\"230\" y1=\"30\" x2=\"230\" y2=\"150\" class=\"as-svg__ink\" stroke-width=\"3\"/><line x1=\"120\" y1=\"40\" x2=\"120\" y2=\"120\" class=\"as-svg__muted\"/><line x1=\"132\" y1=\"40\" x2=\"132\" y2=\"120\" class=\"as-svg__muted\"/><line x1=\"144\" y1=\"40\" x2=\"144\" y2=\"120\" class=\"as-svg__muted\"/><line x1=\"156\" y1=\"40\" x2=\"156\" y2=\"120\" class=\"as-svg__muted\"/><line x1=\"168\" y1=\"40\" x2=\"168\" y2=\"120\" class=\"as-svg__muted\"/><line x1=\"180\" y1=\"40\" x2=\"180\" y2=\"120\" class=\"as-svg__muted\"/><line x1=\"192\" y1=\"40\" x2=\"192\" y2=\"120\" class=\"as-svg__muted\"/><line x1=\"204\" y1=\"40\" x2=\"204\" y2=\"120\" class=\"as-svg__muted\"/><line x1=\"216\" y1=\"40\" x2=\"216\" y2=\"120\" class=\"as-svg__muted\"/><line x1=\"228\" y1=\"40\" x2=\"228\" y2=\"120\" class=\"as-svg__muted\"/><line x1=\"110\" y1=\"40\" x2=\"230\" y2=\"40\" class=\"as-svg__muted\"/><line x1=\"110\" y1=\"52\" x2=\"230\" y2=\"52\" class=\"as-svg__muted\"/><line x1=\"110\" y1=\"64\" x2=\"230\" y2=\"64\" class=\"as-svg__muted\"/><line x1=\"110\" y1=\"76\" x2=\"230\" y2=\"76\" class=\"as-svg__muted\"/><line x1=\"110\" y1=\"88\" x2=\"230\" y2=\"88\" class=\"as-svg__muted\"/><line x1=\"110\" y1=\"100\" x2=\"230\" y2=\"100\" class=\"as-svg__muted\"/><line x1=\"110\" y1=\"112\" x2=\"230\" y2=\"112\" class=\"as-svg__muted\"/><line x1=\"110\" y1=\"124\" x2=\"230\" y2=\"124\" class=\"as-svg__muted\"/><rect x=\"110\" y=\"120\" width=\"120\" height=\"8\" class=\"as-svg__fill\"/><path d=\"M160 104.4 C164.0 109.2 164.0 113.2 160 113.2 C156.0 113.2 156.0 109.2 160 104.4 Z\" class=\"as-svg__cool\"/><path d=\"M190 90.4 C194.0 95.2 194.0 99.2 190 99.2 C186.0 99.2 186.0 95.2 190 90.4 Z\" class=\"as-svg__cool\"/><line x1=\"232\" y1=\"126\" x2=\"262\" y2=\"150\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"2\" marker-end=\"url(#niebla-costera-ah)\"/><rect x=\"254\" y=\"150\" width=\"52\" height=\"36\" rx=\"6\" class=\"as-svg__cool\"/><rect x=\"254\" y=\"150\" width=\"52\" height=\"36\" rx=\"6\" class=\"as-svg__ink\"/><text x=\"170\" y=\"24\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">malla</text><text x=\"60\" y=\"116\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">niebla</text><text x=\"246\" y=\"178\" text-anchor=\"end\" class=\"as-svg__label\" font-size=\"15\">estanque</text></svg>"
+    },
+    {
+      "id": "c8",
+      "tipo": "dato",
+      "texto": "En la Reserva Ecológica Cerro Grande, de la comunidad agrícola de Peña Blanca, 34 atrapanieblas pueden recoger hasta 650.000 litros de agua al año, sobre todo en primavera.",
+      "fuenteIds": [
+        "fao-niebla"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>En Peña Blanca, 34 atrapanieblas pueden recoger hasta 650.000 litros de agua al año, sobre todo en primavera</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><rect x=\"30\" y=\"50\" width=\"44\" height=\"40\" class=\"as-svg__soft\"/><rect x=\"30\" y=\"50\" width=\"44\" height=\"40\" class=\"as-svg__ink\"/><line x1=\"30\" y1=\"90\" x2=\"30\" y2=\"110\" class=\"as-svg__ink\"/><line x1=\"74\" y1=\"90\" x2=\"74\" y2=\"110\" class=\"as-svg__ink\"/><rect x=\"90\" y=\"50\" width=\"44\" height=\"40\" class=\"as-svg__soft\"/><rect x=\"90\" y=\"50\" width=\"44\" height=\"40\" class=\"as-svg__ink\"/><line x1=\"90\" y1=\"90\" x2=\"90\" y2=\"110\" class=\"as-svg__ink\"/><line x1=\"134\" y1=\"90\" x2=\"134\" y2=\"110\" class=\"as-svg__ink\"/><rect x=\"150\" y=\"50\" width=\"44\" height=\"40\" class=\"as-svg__soft\"/><rect x=\"150\" y=\"50\" width=\"44\" height=\"40\" class=\"as-svg__ink\"/><line x1=\"150\" y1=\"90\" x2=\"150\" y2=\"110\" class=\"as-svg__ink\"/><line x1=\"194\" y1=\"90\" x2=\"194\" y2=\"110\" class=\"as-svg__ink\"/><rect x=\"210\" y=\"50\" width=\"44\" height=\"40\" class=\"as-svg__soft\"/><rect x=\"210\" y=\"50\" width=\"44\" height=\"40\" class=\"as-svg__ink\"/><line x1=\"210\" y1=\"90\" x2=\"210\" y2=\"110\" class=\"as-svg__ink\"/><line x1=\"254\" y1=\"90\" x2=\"254\" y2=\"110\" class=\"as-svg__ink\"/><text x=\"270\" y=\"76\" text-anchor=\"start\" class=\"as-svg__label\" font-size=\"18\">×34</text><rect x=\"50\" y=\"124\" width=\"220\" height=\"50\" rx=\"6\" class=\"as-svg__cool\"/><rect x=\"50\" y=\"124\" width=\"220\" height=\"50\" rx=\"6\" class=\"as-svg__ink\"/><text x=\"160\" y=\"148\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">hasta 650.000 litros</text><text x=\"160\" y=\"167\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">al año</text><text x=\"160\" y=\"34\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">Peña Blanca</text></svg>"
+    }
+  ],
+  "resumen": {
+    "titulo": "La camanchaca",
+    "puntos": [
+      "Es una nube baja que se forma sobre el océano y queda atajada por la cordillera de la Costa.",
+      "La niebla aparece cuando aire húmedo se encuentra con una superficie más fría.",
+      "Con atrapanieblas, sus gotitas se recogen como agua para regar, aunque casi no llueva."
+    ]
+  },
+  "fuentes": [
+    {
+      "id": "uc-niebla",
+      "entidad": "Pontificia Universidad Católica de Chile, Instituto de Geografía (Cereceda, Larrain, Osses, Lázaro, Pinto y Schemenauer)",
+      "titulo": "Penetración continental de la niebla de advección en Tarapacá, Chile (2001)",
+      "url": "https://cda.uc.cl/wp-content/uploads/2024/02/Penetracion-continental-de-la-niebla-de-adveccion-en-Tarapaca-Chile.pdf",
+      "ubicacion": "Introducción y desarrollo",
+      "afirmaciones": [
+        "En la costa es frecuente una nubosidad de tipo estratocúmulo, que se forma en el océano y avanza hacia el continente",
+        "Al ser interceptada por la cordillera de la Costa forma la niebla costera o camanchaca",
+        "La niebla penetra pocos kilómetros: el calentamiento de la superficie evapora sus gotas y las altas serranías son obstáculos",
+        "La costa del norte tiene muy baja pluviosidad"
+      ],
+      "respalda": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c6"
+      ],
+      "consultadaEl": "2026-10-28"
+    },
+    {
+      "id": "usgs-niebla",
+      "entidad": "U.S. Geological Survey (USGS), Water Science School",
+      "titulo": "Condensation and the Water Cycle",
+      "url": "https://www.usgs.gov/water-science-school/science/condensation-and-water-cycle",
+      "ubicacion": "Sección \"Condensation near the ground\"",
+      "afirmaciones": [
+        "La niebla se forma cuando aire con humedad relativamente alta encuentra una superficie más fría",
+        "La niebla que se forma cuando aire más cálido se mueve sobre una superficie fría se llama niebla de advección"
+      ],
+      "respalda": [
+        "c5"
+      ],
+      "consultadaEl": "2026-10-28"
+    },
+    {
+      "id": "fao-niebla",
+      "entidad": "Organización de las Naciones Unidas para la Alimentación y la Agricultura (FAO)",
+      "titulo": "Atrapar la niebla para generar agua (15-06-2026)",
+      "url": "https://www.fao.org/newsroom/story/capturing-fog-to-make-water/es",
+      "ubicacion": "Texto principal",
+      "afirmaciones": [
+        "Una espesa niebla, la camanchaca, avanza desde el océano",
+        "Los atrapanieblas son estructuras de malla que interceptan las microgotas de la niebla; el agua cae por canalones, se almacena en estanques y se usa para riego",
+        "En la Reserva Ecológica Cerro Grande, comunidad agrícola de Peña Blanca, 34 atrapanieblas pueden recoger hasta 650.000 litros al año, sobre todo en primavera"
+      ],
+      "respalda": [
+        "c1",
+        "c7",
+        "c8"
+      ],
+      "consultadaEl": "2026-10-28"
+    }
+  ],
+  "controlEditorial": {
+    "estado": "borrador",
+    "revisadoPor": null,
+    "fechaRevision": null
+  }
+}

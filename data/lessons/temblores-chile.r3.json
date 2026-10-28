@@ -1,0 +1,213 @@
+{
+  "schemaVersion": "2.0",
+  "id": "temblores-chile",
+  "revision": 3,
+  "idioma": "es-CL",
+  "disciplina": "Geografía",
+  "familia": "geografia",
+  "titulo": "¿Por qué tiembla tanto en Chile?",
+  "subtitulo": "La respuesta está bajo el mar, frente a la costa.",
+  "minutosEstimados": 5,
+  "tarjetas": [
+    {
+      "id": "c1",
+      "tipo": "portada",
+      "titulo": "¿Por qué tiembla tanto en Chile?",
+      "texto": "Si vives en Chile, sabes lo que es un temblor. La razón está bajo el mar, frente a nuestra costa.",
+      "fuenteIds": [
+        "usgs-nazca"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>La costa de Chile: el mar a la izquierda, la cordillera a la derecha y la tierra que se sacude</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><path d=\"M0 120 L150 120 L150 200 L0 200 Z\" class=\"as-svg__cool\"/><path d=\"M10 112 q6.0 -6 12.0 0 t12.0 0 q6.0 -6 12.0 0 t12.0 0 q6.0 -6 12.0 0 t12.0 0 q6.0 -6 12.0 0 t12.0 0 q6.0 -6 12.0 0 t12.0 0 q6.0 -6 12.0 0 t12.0 0\" class=\"as-svg__coolline\"/><path d=\"M150 120 L190 90 L220 110 L260 60 L300 100 L320 90 L320 200 L150 200 Z\" class=\"as-svg__warm\"/><path d=\"M150 120 L190 90 L220 110 L260 60 L300 100 L320 90\" class=\"as-svg__ink\"/><path d=\"M170 40 q4 -6 0 -12 M178 44 q8 -12 0 -24 M290 40 q-4 -6 0 -12 M282 44 q-8 -12 0 -24\" class=\"as-svg__ink\"/><text x=\"250\" y=\"160\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"18\">Chile</text><text x=\"70\" y=\"160\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">Pacífico</text></svg>"
+    },
+    {
+      "id": "c2",
+      "tipo": "idea",
+      "titulo": "Dos placas que se encuentran",
+      "texto": "Frente a Chile se juntan dos enormes placas de roca: la placa de Nazca, bajo el océano Pacífico, y la placa Sudamericana, donde está el continente.",
+      "fuenteIds": [
+        "usgs-nazca"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Corte de la tierra frente a Chile: la placa de Nazca bajo el océano y la placa Sudamericana bajo el continente</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><defs><marker id=\"temblores-chile-ah\" viewBox=\"0 0 10 10\" refX=\"5\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" class=\"as-svg__accent\"/></marker></defs><path d=\"M10 90 L160 90 L160 150 L10 150 Z\" class=\"as-svg__fill\"/><path d=\"M10 90 L160 90 L160 150 L10 150 Z\" class=\"as-svg__ink\"/><path d=\"M164 70 L310 70 L310 150 L164 150 Z\" class=\"as-svg__warm\"/><path d=\"M164 70 L310 70 L310 150 L164 150 Z\" class=\"as-svg__ink\"/><path d=\"M14 80 q6.0 -6 12.0 0 t12.0 0 q6.0 -6 12.0 0 t12.0 0 q6.0 -6 12.0 0 t12.0 0 q6.0 -6 12.0 0 t12.0 0 q6.0 -6 12.0 0 t12.0 0 q6.0 -6 12.0 0 t12.0 0\" class=\"as-svg__coolline\"/><text x=\"85\" y=\"175\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">placa de Nazca</text><text x=\"237\" y=\"175\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">placa Sudamericana</text><line x1=\"110\" y1=\"40\" x2=\"150\" y2=\"40\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"2\" marker-end=\"url(#temblores-chile-ah)\"/><line x1=\"214\" y1=\"40\" x2=\"174\" y2=\"40\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"2\" marker-end=\"url(#temblores-chile-ah)\"/><text x=\"162\" y=\"26\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">se juntan</text></svg>"
+    },
+    {
+      "id": "c3",
+      "tipo": "idea",
+      "titulo": "Una se mete debajo de la otra",
+      "texto": "La placa de Nazca se mete lentamente bajo Sudamérica; a eso se le llama subducción. Las dos placas se acercan entre 6,5 y 8 centímetros por año.",
+      "fuenteIds": [
+        "usgs-nazca"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>La placa de Nazca se mete por debajo de la placa Sudamericana: subducción</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><defs><marker id=\"temblores-chile-ah\" viewBox=\"0 0 10 10\" refX=\"5\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" class=\"as-svg__accent\"/></marker></defs><path d=\"M10 80 L170 80 L300 170 L300 190 L170 100 L10 100 Z\" class=\"as-svg__fill\"/><path d=\"M10 80 L170 80 L300 170 L300 190 L170 100 L10 100 Z\" class=\"as-svg__ink\"/><path d=\"M170 78 L310 78 L310 160 Z\" class=\"as-svg__warm\"/><path d=\"M170 78 L310 78 L310 160 Z\" class=\"as-svg__ink\"/><line x1=\"60\" y1=\"64\" x2=\"140\" y2=\"64\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"3\" marker-end=\"url(#temblores-chile-ah)\"/><text x=\"100\" y=\"50\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">6,5 a 8 cm por año</text><text x=\"304\" y=\"94\" text-anchor=\"end\" class=\"as-svg__label\" font-size=\"15\">Sudamérica</text><text x=\"70\" y=\"128\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">Nazca</text></svg>"
+    },
+    {
+      "id": "c4",
+      "tipo": "pregunta",
+      "pregunta": "¿Qué hace la placa de Nazca frente a Chile?",
+      "correctaId": "a",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Se hunde lentamente bajo la placa Sudamericana",
+          "retro": "¡Exacto! Eso es la subducción."
+        },
+        {
+          "id": "b",
+          "texto": "Se aleja de Chile hacia el oeste",
+          "retro": "No: avanza hacia el continente y se mete por debajo."
+        },
+        {
+          "id": "c",
+          "texto": "Está quieta",
+          "retro": "No está quieta: las placas se acercan varios centímetros cada año."
+        }
+      ],
+      "fuenteIds": [
+        "usgs-nazca"
+      ]
+    },
+    {
+      "id": "c5",
+      "tipo": "idea",
+      "titulo": "Por eso tiembla",
+      "texto": "Los bordes de las placas son ásperos y se quedan trabados, mientras el resto sigue moviéndose. La energía se acumula hasta que los bordes se destraban de golpe: esa liberación repentina es el terremoto.",
+      "fuenteIds": [
+        "usgs-sismos"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Los bordes ásperos de las placas quedan trabados, acumulan energía y se destraban de golpe</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><defs><marker id=\"temblores-chile-ah\" viewBox=\"0 0 10 10\" refX=\"5\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" class=\"as-svg__accent\"/></marker></defs><path d=\"M20 60 L150 60 L140 80 L160 95 L140 110 L160 125 L150 140 L20 140 Z\" class=\"as-svg__fill\"/><path d=\"M20 60 L150 60 L140 80 L160 95 L140 110 L160 125 L150 140 L20 140 Z\" class=\"as-svg__ink\"/><path d=\"M300 60 L170 60 L160 80 L180 95 L160 110 L180 125 L170 140 L300 140 Z\" class=\"as-svg__warm\"/><path d=\"M300 60 L170 60 L160 80 L180 95 L160 110 L180 125 L170 140 L300 140 Z\" class=\"as-svg__ink\"/><path d=\"M160 20 l6 14 l14 -6 l-8 13 l12 9 l-15 1 l2 15 l-11 -10 l-11 10 l2 -15 l-15 -1 l12 -9 l-8 -13 l14 6 Z\" class=\"as-svg__sun\"/><text x=\"160\" y=\"175\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">trabados... y se destraban de golpe</text></svg>"
+    },
+    {
+      "id": "c6",
+      "tipo": "revelar",
+      "titulo": "El más grande",
+      "texto": "En Chile ocurrió el terremoto más grande registrado en el siglo XX. ¿Sabes cuál fue?",
+      "revelado": "El de Valdivia, el 22 de mayo de 1960, de magnitud 9,5. Se produjo donde la placa de Nazca se hunde bajo Sudamérica.",
+      "fuenteIds": [
+        "britannica-1960",
+        "csn-terremotos"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Un sismograma con un salto enorme: Valdivia, 22 de mayo de 1960, magnitud 9,5</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><path d=\"M10 120 L60 120 L66 112 L72 128 L78 120 L120 120 L126 60 L134 180 L142 30 L150 190 L158 50 L166 160 L174 90 L182 140 L190 120 L310 120\" class=\"as-svg__ink\" stroke-width=\"2\"/><text x=\"240\" y=\"60\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"17\">Valdivia, 1960</text><text x=\"240\" y=\"84\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"17\">magnitud 9,5</text></svg>"
+    },
+    {
+      "id": "c7",
+      "tipo": "pregunta",
+      "pregunta": "Un amigo extranjero te pregunta por qué en Chile tiembla tanto. ¿Qué le dices?",
+      "correctaId": "a",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Porque frente a la costa una placa se mete bajo la otra, y sus bordes se traban y se destraban de golpe",
+          "retro": "¡Así es! Ese encuentro de placas es la causa de fondo."
+        },
+        {
+          "id": "b",
+          "texto": "Por los volcanes",
+          "retro": "Los volcanes también nacen del encuentro de las placas, pero la causa de fondo de los temblores es ese encuentro."
+        },
+        {
+          "id": "c",
+          "texto": "Porque el país es muy largo",
+          "retro": "El largo del país no es la causa: lo es el encuentro de las placas frente a la costa."
+        }
+      ],
+      "fuenteIds": [
+        "usgs-nazca",
+        "usgs-sismos"
+      ]
+    },
+    {
+      "id": "c8",
+      "tipo": "dato",
+      "texto": "El tsunami del terremoto de 1960 cruzó el océano Pacífico: unas 15 horas después llegó a Hawái, y también causó daños en Japón.",
+      "fuenteIds": [
+        "britannica-1960"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>El tsunami de 1960 cruzó el Pacífico: desde Chile llegó a Hawái unas 15 horas después y también a Japón</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><defs><marker id=\"temblores-chile-ah\" viewBox=\"0 0 10 10\" refX=\"5\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" class=\"as-svg__accent\"/></marker></defs><rect x=\"290\" y=\"70\" width=\"14\" height=\"110\" rx=\"4\" class=\"as-svg__warm\"/><text x=\"297\" y=\"192\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"14\">Chile</text><circle cx=\"160\" cy=\"70\" r=\"6\" class=\"as-svg__fill\"/><text x=\"160\" y=\"56\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">Hawái</text><rect x=\"16\" y=\"40\" width=\"14\" height=\"40\" rx=\"4\" class=\"as-svg__warm\"/><text x=\"23\" y=\"98\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"14\">Japón</text><path d=\"M286 130 C240 110 200 90 170 74\" class=\"as-svg__coolline\" marker-end=\"url(#temblores-chile-ah)\"/><path d=\"M150 72 C110 60 70 56 36 58\" class=\"as-svg__coolline\" marker-end=\"url(#temblores-chile-ah)\"/><text x=\"236\" y=\"140\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">unas 15 horas</text></svg>"
+    }
+  ],
+  "resumen": {
+    "titulo": "Chile y los temblores",
+    "puntos": [
+      "Frente a Chile, la placa de Nazca se hunde lentamente bajo la placa Sudamericana.",
+      "Los bordes de las placas se traban y acumulan energía; cuando se destraban de golpe, se produce el terremoto.",
+      "El terremoto de Valdivia de 1960, de magnitud 9,5, fue el más grande registrado en el siglo XX."
+    ]
+  },
+  "fuentes": [
+    {
+      "id": "usgs-nazca",
+      "entidad": "U.S. Geological Survey",
+      "titulo": "Seismicity of the Earth 1900–2013: Seismotectonics of South America (Nazca Plate Region)",
+      "url": "https://www.usgs.gov/publications/seismicity-earth-1900-2013-seismotectonics-south-america-nazca-plate-region",
+      "ubicacion": "Resumen de la publicación",
+      "afirmaciones": [
+        "La corteza y litosfera oceánica de la placa de Nazca comienzan su descenso al manto bajo Sudamérica",
+        "Convergencia de aproximadamente 80 mm/año en el sur a aproximadamente 65 mm/año en el norte",
+        "La subducción influye en la actividad volcánica, la deformación de la corteza y la generación de terremotos; es responsable del levantamiento de los Andes y de la cadena volcánica activa"
+      ],
+      "respalda": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c7"
+      ],
+      "consultadaEl": "2026-10-20"
+    },
+    {
+      "id": "usgs-sismos",
+      "entidad": "U.S. Geological Survey",
+      "titulo": "The Science of Earthquakes",
+      "url": "https://www.usgs.gov/programs/earthquake-hazards/science-earthquakes",
+      "ubicacion": "Texto principal",
+      "afirmaciones": [
+        "Como los bordes de las placas son ásperos, se traban mientras el resto de la placa sigue moviéndose",
+        "Mientras los bordes están trabados, se va almacenando la energía",
+        "Cuando la fuerza vence la fricción y la falla se destraba, toda esa energía se libera",
+        "La energía se irradia en forma de ondas sísmicas"
+      ],
+      "respalda": [
+        "c5",
+        "c7"
+      ],
+      "consultadaEl": "2026-10-20"
+    },
+    {
+      "id": "britannica-1960",
+      "entidad": "Encyclopaedia Britannica",
+      "titulo": "Chile earthquake of 1960",
+      "url": "https://www.britannica.com/print/article/1421130",
+      "ubicacion": "Artículo completo",
+      "afirmaciones": [
+        "Se originó frente a la costa sur de Chile el 22 de mayo de 1960",
+        "La mayoría de las fuentes le asignan magnitud 9,5",
+        "El terremoto más grande registrado en el siglo XX",
+        "La ruptura ocurrió donde la placa de Nazca subduce bajo la placa Sudamericana",
+        "Las olas llegaron a Hawái unas 15 horas después; en Japón destruyeron más de 1.600 viviendas"
+      ],
+      "respalda": [
+        "c6",
+        "c8"
+      ],
+      "consultadaEl": "2026-10-19"
+    },
+    {
+      "id": "csn-terremotos",
+      "entidad": "Centro Sismológico Nacional, Universidad de Chile",
+      "titulo": "Grandes terremotos en Chile",
+      "url": "https://www.csn.uchile.cl/sismologia/grandes-terremotos-en-chile/",
+      "ubicacion": "Tabla de sismos importantes o destructivos",
+      "afirmaciones": [
+        "Valdivia, 22/05/1960: Mw 9,5"
+      ],
+      "respalda": [
+        "c6"
+      ],
+      "consultadaEl": "2026-10-20"
+    }
+  ],
+  "controlEditorial": {
+    "estado": "borrador",
+    "revisadoPor": null,
+    "fechaRevision": null
+  }
+}
