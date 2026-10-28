@@ -81,6 +81,41 @@
       "fecha": "2026-11-03",
       "id": "mar-salado",
       "revision": 3
+    },
+    {
+      "fecha": "2026-11-04",
+      "id": "vaso-empanado",
+      "revision": 1
+    },
+    {
+      "fecha": "2026-11-05",
+      "id": "niebla-costera",
+      "revision": 1
+    },
+    {
+      "fecha": "2026-11-06",
+      "id": "barco-acero",
+      "revision": 1
+    },
+    {
+      "fecha": "2026-11-07",
+      "id": "rieles-horizonte",
+      "revision": 1
+    },
+    {
+      "fecha": "2026-11-08",
+      "id": "hielo-flota",
+      "revision": 1
+    },
+    {
+      "fecha": "2026-11-09",
+      "id": "imprenta-libros",
+      "revision": 1
+    },
+    {
+      "fecha": "2026-11-10",
+      "id": "jabon-grasa",
+      "revision": 1
     }
   ]
 }

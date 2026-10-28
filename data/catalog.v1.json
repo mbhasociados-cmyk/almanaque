@@ -349,6 +349,90 @@
       "estado": "publicado",
       "archivo": "data/lessons/mar-salado.r3.json",
       "sha256": "6c12a08060e573332fc0ad99aa8ef40ee5a45da643d16fe0fddbb3ff14b9c5d5"
+    },
+    {
+      "id": "vaso-empanado",
+      "revision": 1,
+      "schemaVersion": "2.0",
+      "titulo": "¿Por qué se empaña un vaso frío?",
+      "disciplina": "Ciencia cotidiana",
+      "familia": "fisica",
+      "minutosEstimados": 5,
+      "estado": "publicado",
+      "archivo": "data/lessons/vaso-empanado.r1.json",
+      "sha256": "97eb5b9a9fb92a3f934f8b7ce6b7b3e2c12b81bf3e130814008a48ecbe303482"
+    },
+    {
+      "id": "niebla-costera",
+      "revision": 1,
+      "schemaVersion": "2.0",
+      "titulo": "¿Por qué hay niebla en una costa donde llueve poco?",
+      "disciplina": "Geografía",
+      "familia": "geografia",
+      "minutosEstimados": 5,
+      "estado": "publicado",
+      "archivo": "data/lessons/niebla-costera.r1.json",
+      "sha256": "29db1c9fd4c0c02bc63cbccdabe3ec5835a698f9d8b9486355fa584fa1c60e4c"
+    },
+    {
+      "id": "barco-acero",
+      "revision": 1,
+      "schemaVersion": "2.0",
+      "titulo": "¿Cómo puede flotar un barco de acero?",
+      "disciplina": "Ciencia cotidiana",
+      "familia": "fisica",
+      "minutosEstimados": 5,
+      "estado": "publicado",
+      "archivo": "data/lessons/barco-acero.r1.json",
+      "sha256": "02a2717c6bde5e1bc21bf38da5ff4947d140f7786557f0552927f6d872611104"
+    },
+    {
+      "id": "rieles-horizonte",
+      "revision": 1,
+      "schemaVersion": "2.0",
+      "titulo": "¿Por qué los rieles parecen juntarse a lo lejos?",
+      "disciplina": "Arte y percepción",
+      "familia": "arte",
+      "minutosEstimados": 5,
+      "estado": "publicado",
+      "archivo": "data/lessons/rieles-horizonte.r1.json",
+      "sha256": "cb50ca7207846d71f55dcf5644ae474dbc465540d4da0aeef80b6118b030d47d"
+    },
+    {
+      "id": "hielo-flota",
+      "revision": 1,
+      "schemaVersion": "2.0",
+      "titulo": "¿Por qué el hielo flota?",
+      "disciplina": "Ciencia cotidiana",
+      "familia": "fisica",
+      "minutosEstimados": 5,
+      "estado": "publicado",
+      "archivo": "data/lessons/hielo-flota.r1.json",
+      "sha256": "c493269bf80361cb9e516a7a01a15b8b0c8e3838a178c0fd2d3e7665e1093ecd"
+    },
+    {
+      "id": "imprenta-libros",
+      "revision": 1,
+      "schemaVersion": "2.0",
+      "titulo": "¿Cómo cambió los libros la imprenta?",
+      "disciplina": "Historia",
+      "familia": "historia",
+      "minutosEstimados": 5,
+      "estado": "publicado",
+      "archivo": "data/lessons/imprenta-libros.r1.json",
+      "sha256": "12b86e0afa509b0553a18d3ba264ab1987c4cd335bda88111a34e48fa1baeb2f"
+    },
+    {
+      "id": "jabon-grasa",
+      "revision": 1,
+      "schemaVersion": "2.0",
+      "titulo": "¿Por qué el jabón ayuda a quitar la grasa?",
+      "disciplina": "Química cotidiana",
+      "familia": "quimica",
+      "minutosEstimados": 5,
+      "estado": "publicado",
+      "archivo": "data/lessons/jabon-grasa.r1.json",
+      "sha256": "deface53ed7f20d102469397d8bbc96b7addea24e6d891caf49184629727e79e"
     }
   ]
 }

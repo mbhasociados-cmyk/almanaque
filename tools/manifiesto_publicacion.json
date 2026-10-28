@@ -122,6 +122,48 @@
       "id": "mar-salado",
       "revision": 3,
       "fecha": "2026-11-03"
+    },
+    {
+      "carpeta": "borradores/lote4",
+      "id": "vaso-empanado",
+      "revision": 1,
+      "fecha": "2026-11-04"
+    },
+    {
+      "carpeta": "borradores/lote4",
+      "id": "niebla-costera",
+      "revision": 1,
+      "fecha": "2026-11-05"
+    },
+    {
+      "carpeta": "borradores/lote4",
+      "id": "barco-acero",
+      "revision": 1,
+      "fecha": "2026-11-06"
+    },
+    {
+      "carpeta": "borradores/lote4",
+      "id": "rieles-horizonte",
+      "revision": 1,
+      "fecha": "2026-11-07"
+    },
+    {
+      "carpeta": "borradores/lote4",
+      "id": "hielo-flota",
+      "revision": 1,
+      "fecha": "2026-11-08"
+    },
+    {
+      "carpeta": "borradores/lote4",
+      "id": "imprenta-libros",
+      "revision": 1,
+      "fecha": "2026-11-09"
+    },
+    {
+      "carpeta": "borradores/lote4",
+      "id": "jabon-grasa",
+      "revision": 1,
+      "fecha": "2026-11-10"
     }
   ]
 }

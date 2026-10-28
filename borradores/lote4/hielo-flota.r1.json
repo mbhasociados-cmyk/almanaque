@@ -1,0 +1,184 @@
+{
+  "schemaVersion": "2.0",
+  "id": "hielo-flota",
+  "revision": 1,
+  "idioma": "es-CL",
+  "disciplina": "Ciencia cotidiana",
+  "familia": "fisica",
+  "titulo": "¿Por qué el hielo flota?",
+  "subtitulo": "El agua sólida es menos densa que la líquida.",
+  "minutosEstimados": 5,
+  "tarjetas": [
+    {
+      "id": "c1",
+      "tipo": "portada",
+      "titulo": "¿Por qué el hielo flota?",
+      "texto": "Echas hielo a un vaso con agua y queda flotando arriba. ¿Por qué el agua sólida flota sobre el agua líquida?",
+      "fuenteIds": [
+        "usgs-dens"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Un vaso con agua y un cubo de hielo flotando arriba, no en el fondo</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><path d=\"M123 68 L197 68 L192 170 L128 170 Z\" class=\"as-svg__cool\"/><path d=\"M120 50 L200 50 L192 170 L128 170 Z\" class=\"as-svg__ink\"/><rect x=\"146\" y=\"58\" width=\"28\" height=\"26\" rx=\"4\" class=\"as-svg__soft\"/><rect x=\"146\" y=\"58\" width=\"28\" height=\"26\" rx=\"4\" class=\"as-svg__ink\"/><text x=\"160\" y=\"34\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"17\">¿por qué flota?</text><text x=\"250\" y=\"72\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">hielo</text><text x=\"250\" y=\"140\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">agua</text></svg>"
+    },
+    {
+      "id": "c2",
+      "tipo": "idea",
+      "titulo": "Menos denso que el agua",
+      "texto": "El hielo flota porque es menos denso que el agua líquida. Su densidad es cerca del 90 % de la del agua, aunque varía, porque el hielo puede tener aire adentro.",
+      "fuenteIds": [
+        "usgs-dens"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Un cubo de hielo y un cubo de agua del mismo tamaño en una balanza: el hielo pesa menos, cerca del 90 %</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><line x1=\"160\" y1=\"70\" x2=\"160\" y2=\"170\" class=\"as-svg__ink\" stroke-width=\"3\"/><path d=\"M130 180 L190 180 L160 166 Z\" class=\"as-svg__warm\"/><line x1=\"70\" y1=\"60\" x2=\"250\" y2=\"80\" class=\"as-svg__ink\" stroke-width=\"3\"/><rect x=\"60\" y=\"24\" width=\"40\" height=\"36\" rx=\"3\" class=\"as-svg__soft\"/><rect x=\"60\" y=\"24\" width=\"40\" height=\"36\" rx=\"3\" class=\"as-svg__ink\"/><rect x=\"220\" y=\"44\" width=\"40\" height=\"36\" rx=\"3\" class=\"as-svg__cool\"/><rect x=\"220\" y=\"44\" width=\"40\" height=\"36\" rx=\"3\" class=\"as-svg__ink\"/><text x=\"80\" y=\"84\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">hielo</text><text x=\"240\" y=\"104\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">agua</text><text x=\"80\" y=\"140\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"17\">≈ 90 %</text><text x=\"160\" y=\"196\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">mismo tamaño</text></svg>"
+    },
+    {
+      "id": "c3",
+      "tipo": "pregunta",
+      "pregunta": "Al congelarse, ¿qué le pasa a la densidad del agua?",
+      "correctaId": "a",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Baja, cerca de un 9 %",
+          "retro": "¡Exacto! Por eso el hielo queda arriba."
+        },
+        {
+          "id": "b",
+          "texto": "Sube mucho",
+          "retro": "Al revés: el hielo es menos denso que el agua líquida."
+        },
+        {
+          "id": "c",
+          "texto": "Queda igual",
+          "retro": "No: al congelarse, la densidad baja cerca de un 9 %."
+        }
+      ],
+      "fuenteIds": [
+        "usgs-dens"
+      ]
+    },
+    {
+      "id": "c4",
+      "tipo": "idea",
+      "titulo": "Una red ordenada",
+      "texto": "En el hielo, las moléculas de agua se ordenan en una red regular; en el agua líquida están más al azar. Al congelarse, la densidad baja cerca de un 9 %.",
+      "fuenteIds": [
+        "usgs-dens"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>En el hielo las moléculas forman una red ordenada; en el agua líquida están más desordenadas</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><rect x=\"20\" y=\"30\" width=\"130\" height=\"110\" rx=\"8\" class=\"as-svg__soft\"/><rect x=\"20\" y=\"30\" width=\"130\" height=\"110\" rx=\"8\" class=\"as-svg__ink\"/><circle cx=\"40\" cy=\"50\" r=\"5\" class=\"as-svg__fill\"/><circle cx=\"40\" cy=\"72\" r=\"5\" class=\"as-svg__fill\"/><circle cx=\"40\" cy=\"94\" r=\"5\" class=\"as-svg__fill\"/><circle cx=\"40\" cy=\"116\" r=\"5\" class=\"as-svg__fill\"/><circle cx=\"62\" cy=\"50\" r=\"5\" class=\"as-svg__fill\"/><circle cx=\"62\" cy=\"72\" r=\"5\" class=\"as-svg__fill\"/><circle cx=\"62\" cy=\"94\" r=\"5\" class=\"as-svg__fill\"/><circle cx=\"62\" cy=\"116\" r=\"5\" class=\"as-svg__fill\"/><circle cx=\"84\" cy=\"50\" r=\"5\" class=\"as-svg__fill\"/><circle cx=\"84\" cy=\"72\" r=\"5\" class=\"as-svg__fill\"/><circle cx=\"84\" cy=\"94\" r=\"5\" class=\"as-svg__fill\"/><circle cx=\"84\" cy=\"116\" r=\"5\" class=\"as-svg__fill\"/><circle cx=\"106\" cy=\"50\" r=\"5\" class=\"as-svg__fill\"/><circle cx=\"106\" cy=\"72\" r=\"5\" class=\"as-svg__fill\"/><circle cx=\"106\" cy=\"94\" r=\"5\" class=\"as-svg__fill\"/><circle cx=\"106\" cy=\"116\" r=\"5\" class=\"as-svg__fill\"/><circle cx=\"128\" cy=\"50\" r=\"5\" class=\"as-svg__fill\"/><circle cx=\"128\" cy=\"72\" r=\"5\" class=\"as-svg__fill\"/><circle cx=\"128\" cy=\"94\" r=\"5\" class=\"as-svg__fill\"/><circle cx=\"128\" cy=\"116\" r=\"5\" class=\"as-svg__fill\"/><rect x=\"170\" y=\"30\" width=\"130\" height=\"110\" rx=\"8\" class=\"as-svg__cool\"/><rect x=\"170\" y=\"30\" width=\"130\" height=\"110\" rx=\"8\" class=\"as-svg__ink\"/><circle cx=\"186\" cy=\"50\" r=\"5\" class=\"as-svg__sun\"/><circle cx=\"214\" cy=\"62\" r=\"5\" class=\"as-svg__sun\"/><circle cx=\"240\" cy=\"46\" r=\"5\" class=\"as-svg__sun\"/><circle cx=\"270\" cy=\"58\" r=\"5\" class=\"as-svg__sun\"/><circle cx=\"290\" cy=\"80\" r=\"5\" class=\"as-svg__sun\"/><circle cx=\"196\" cy=\"86\" r=\"5\" class=\"as-svg__sun\"/><circle cx=\"228\" cy=\"92\" r=\"5\" class=\"as-svg__sun\"/><circle cx=\"258\" cy=\"100\" r=\"5\" class=\"as-svg__sun\"/><circle cx=\"184\" cy=\"118\" r=\"5\" class=\"as-svg__sun\"/><circle cx=\"212\" cy=\"124\" r=\"5\" class=\"as-svg__sun\"/><circle cx=\"246\" cy=\"130\" r=\"5\" class=\"as-svg__sun\"/><circle cx=\"280\" cy=\"120\" r=\"5\" class=\"as-svg__sun\"/><circle cx=\"230\" cy=\"70\" r=\"5\" class=\"as-svg__sun\"/><circle cx=\"270\" cy=\"86\" r=\"5\" class=\"as-svg__sun\"/><text x=\"85\" y=\"164\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">hielo: ordenadas</text><text x=\"235\" y=\"164\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">líquido: al azar</text><text x=\"160\" y=\"190\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">el hielo es ≈ 9 % menos denso</text></svg>"
+    },
+    {
+      "id": "c5",
+      "tipo": "revelar",
+      "titulo": "La punta del iceberg",
+      "texto": "Un iceberg flota igual que un cubo de hielo en un vaso. ¿Qué parte queda sobre el agua?",
+      "revelado": "Solo cerca del 10 %. Casi todo su volumen queda bajo el agua.",
+      "fuenteIds": [
+        "usgs-dens",
+        "usgs-iceberg"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Un iceberg: cerca del 10 % queda sobre el agua y casi todo su volumen queda bajo el agua</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><rect x=\"0\" y=\"70\" width=\"320\" height=\"130\" class=\"as-svg__cool\"/><path d=\"M4 70 q6.0 -4 12.0 0 t12.0 0 q6.0 -4 12.0 0 t12.0 0 q6.0 -4 12.0 0 t12.0 0 q6.0 -4 12.0 0 t12.0 0 q6.0 -4 12.0 0 t12.0 0 q6.0 -4 12.0 0 t12.0 0 q6.0 -4 12.0 0 t12.0 0 q6.0 -4 12.0 0 t12.0 0 q6.0 -4 12.0 0 t12.0 0 q6.0 -4 12.0 0 t12.0 0 q6.0 -4 12.0 0 t12.0 0 q6.0 -4 12.0 0 t12.0 0 q6.0 -4 12.0 0 t12.0 0\" class=\"as-svg__coolline\"/><polygon points=\"140,70 160,40 178,54 190,70\" class=\"as-svg__soft\"/><polygon points=\"140,70 160,40 178,54 190,70\" class=\"as-svg__ink\"/><polygon points=\"140,70 190,70 240,120 220,180 130,186 96,130\" class=\"as-svg__soft\"/><polygon points=\"140,70 190,70 240,120 220,180 130,186 96,130\" class=\"as-svg__ink\"/><text x=\"250\" y=\"50\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"17\">≈ 10 %</text><text x=\"166\" y=\"140\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">casi todo</text><text x=\"166\" y=\"160\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">bajo el agua</text></svg>"
+    },
+    {
+      "id": "c6",
+      "tipo": "pregunta",
+      "pregunta": "El agua líquida es más densa cerca de los 4 °C que a 0 °C. En un lago, ¿qué hace esa agua de 4 °C?",
+      "correctaId": "b",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Sube a la superficie",
+          "retro": "Al revés: el agua más densa se hunde."
+        },
+        {
+          "id": "b",
+          "texto": "Se hunde bajo el agua menos densa",
+          "retro": "¡Así es! El agua más densa queda abajo."
+        },
+        {
+          "id": "c",
+          "texto": "Se congela primero",
+          "retro": "No: a 4 °C el agua sigue líquida; por ser más densa, se va al fondo."
+        }
+      ],
+      "fuenteIds": [
+        "usgs-dens"
+      ]
+    },
+    {
+      "id": "c7",
+      "tipo": "idea",
+      "titulo": "Si el hielo se hundiera",
+      "texto": "Si el agua más fría fuera la más densa, en invierno el agua helada de la superficie se hundiría, y un lago podría congelarse desde el fondo hacia arriba.",
+      "fuenteIds": [
+        "usgs-dens"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Si el agua más fría fuera la más densa, se hundiría y el lago podría congelarse desde el fondo</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><defs><marker id=\"hielo-flota-ah\" viewBox=\"0 0 10 10\" refX=\"5\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" class=\"as-svg__accent\"/></marker></defs><rect x=\"20\" y=\"50\" width=\"130\" height=\"100\" rx=\"4\" class=\"as-svg__cool\"/><rect x=\"20\" y=\"50\" width=\"130\" height=\"100\" rx=\"4\" class=\"as-svg__ink\"/><rect x=\"20\" y=\"50\" width=\"130\" height=\"16\" class=\"as-svg__soft\"/><rect x=\"170\" y=\"50\" width=\"130\" height=\"100\" rx=\"4\" class=\"as-svg__cool\"/><rect x=\"170\" y=\"50\" width=\"130\" height=\"100\" rx=\"4\" class=\"as-svg__ink\"/><rect x=\"170\" y=\"128\" width=\"130\" height=\"22\" class=\"as-svg__soft\"/><line x1=\"235\" y1=\"62\" x2=\"235\" y2=\"120\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"3\" marker-end=\"url(#hielo-flota-ah)\"/><text x=\"85\" y=\"36\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">lo real</text><text x=\"85\" y=\"172\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">hielo arriba</text><text x=\"235\" y=\"36\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">si se hundiera</text><text x=\"235\" y=\"172\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">se congela</text><text x=\"235\" y=\"192\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">desde el fondo</text></svg>"
+    },
+    {
+      "id": "c8",
+      "tipo": "dato",
+      "texto": "Existe un \"hielo pesado\", hecho de agua pesada. Es un 10,6 % más denso que el agua común, así que un cubo de ese hielo se hundiría en un vaso de agua normal.",
+      "fuenteIds": [
+        "usgs-dens"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Hielo común flota en un vaso; hielo pesado, un 10,6 % más denso, se va al fondo</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><path d=\"M43 68 L117 68 L112 170 L48 170 Z\" class=\"as-svg__cool\"/><path d=\"M40 50 L120 50 L112 170 L48 170 Z\" class=\"as-svg__ink\"/><rect x=\"66\" y=\"58\" width=\"26\" height=\"24\" rx=\"4\" class=\"as-svg__soft\"/><rect x=\"66\" y=\"58\" width=\"26\" height=\"24\" rx=\"4\" class=\"as-svg__ink\"/><path d=\"M203 68 L277 68 L272 170 L208 170 Z\" class=\"as-svg__cool\"/><path d=\"M200 50 L280 50 L272 170 L208 170 Z\" class=\"as-svg__ink\"/><rect x=\"226\" y=\"138\" width=\"26\" height=\"24\" rx=\"4\" class=\"as-svg__warm\"/><rect x=\"226\" y=\"138\" width=\"26\" height=\"24\" rx=\"4\" class=\"as-svg__ink\"/><text x=\"80\" y=\"190\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">hielo común</text><text x=\"240\" y=\"190\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">hielo pesado</text><text x=\"240\" y=\"34\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">10,6 % más denso</text></svg>"
+    }
+  ],
+  "resumen": {
+    "titulo": "El hielo que flota",
+    "puntos": [
+      "El hielo flota porque es menos denso que el agua líquida: al congelarse, la densidad baja cerca de un 9 %.",
+      "En el hielo, las moléculas forman una red ordenada, y un iceberg asoma solo cerca del 10 %.",
+      "Si el agua más fría fuera la más densa, un lago podría congelarse desde el fondo."
+    ]
+  },
+  "fuentes": [
+    {
+      "id": "usgs-dens",
+      "entidad": "U.S. Geological Survey (USGS), Water Science School",
+      "titulo": "Water Density",
+      "url": "https://www.usgs.gov/water-science-school/science/water-density",
+      "ubicacion": "Secciones \"Ice is less dense than water\" y \"Water's density varies with temperature\"",
+      "afirmaciones": [
+        "El hielo es menos denso que el agua líquida, por eso flota",
+        "La densidad del hielo es cerca del 90 % de la del agua, pero varía porque el hielo puede contener aire",
+        "Al congelarse, la densidad baja cerca de un 9 %",
+        "En el hielo las moléculas se alinean en una red regular, y no al azar como en el líquido",
+        "Cerca del 10 % de un cubo de hielo o de un iceberg queda sobre la línea del agua",
+        "El agua a unos 4 °C es más densa que a 0 °C, y el agua más densa se hunde bajo la menos densa",
+        "Si el agua fuera más densa en el punto de congelación, en invierno se hundiría y el lago podría congelarse de abajo hacia arriba",
+        "El hielo pesado es 10,6 % más denso que el agua normal y se hunde en ella"
+      ],
+      "respalda": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6",
+        "c7",
+        "c8"
+      ],
+      "consultadaEl": "2026-10-28"
+    },
+    {
+      "id": "usgs-iceberg",
+      "entidad": "U.S. Geological Survey (USGS)",
+      "titulo": "Ninety percent of an iceberg is below the waterline (imagen)",
+      "url": "https://www.usgs.gov/media/images/ninety-percent-iceberg-below-waterline",
+      "ubicacion": "Título y descripción de la imagen",
+      "afirmaciones": [
+        "El noventa por ciento de un iceberg está bajo la línea del agua",
+        "La mayor parte de un iceberg está bajo la superficie"
+      ],
+      "respalda": [
+        "c5"
+      ],
+      "consultadaEl": "2026-10-28"
+    }
+  ],
+  "controlEditorial": {
+    "estado": "borrador",
+    "revisadoPor": null,
+    "fechaRevision": null
+  }
+}

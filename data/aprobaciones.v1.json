@@ -540,6 +540,146 @@
       },
       "revisionIndependienteChatGPT": "OPCIONAL_NO_REALIZADA",
       "funcionamiento": "PROBADA_POR_CLAUDE"
+    },
+    {
+      "id": "vaso-empanado",
+      "revision": 1,
+      "sha256": "97eb5b9a9fb92a3f934f8b7ce6b7b3e2c12b81bf3e130814008a48ecbe303482",
+      "modalidad": "opcion-A",
+      "estadoRevision": "AUTOVERIFICADA_POR_CLAUDE",
+      "autoverificacion": {
+        "por": "Claude",
+        "fecha": "2026-10-28",
+        "alcance": "fuentes abiertas y comprobadas por Claude; controles automáticos del lote; prueba local en la app"
+      },
+      "publicacion": "AUTORIZADA_POR_DELEGACION_GENERAL_DE_MAX",
+      "delegacion": {
+        "por": "Max Monsalves Blanco",
+        "fecha": "2026-10-20",
+        "referencia": "Declaración expresa de Max del 20-10-2026 (\"dale opcion A\"), confirmada a ChatGPT"
+      },
+      "revisionIndependienteChatGPT": "OPCIONAL_NO_REALIZADA",
+      "funcionamiento": "PROBADA_POR_CLAUDE"
+    },
+    {
+      "id": "niebla-costera",
+      "revision": 1,
+      "sha256": "29db1c9fd4c0c02bc63cbccdabe3ec5835a698f9d8b9486355fa584fa1c60e4c",
+      "modalidad": "opcion-A",
+      "estadoRevision": "AUTOVERIFICADA_POR_CLAUDE",
+      "autoverificacion": {
+        "por": "Claude",
+        "fecha": "2026-10-28",
+        "alcance": "fuentes abiertas y comprobadas por Claude; controles automáticos del lote; prueba local en la app"
+      },
+      "publicacion": "AUTORIZADA_POR_DELEGACION_GENERAL_DE_MAX",
+      "delegacion": {
+        "por": "Max Monsalves Blanco",
+        "fecha": "2026-10-20",
+        "referencia": "Declaración expresa de Max del 20-10-2026 (\"dale opcion A\"), confirmada a ChatGPT"
+      },
+      "revisionIndependienteChatGPT": "OPCIONAL_NO_REALIZADA",
+      "funcionamiento": "PROBADA_POR_CLAUDE"
+    },
+    {
+      "id": "barco-acero",
+      "revision": 1,
+      "sha256": "02a2717c6bde5e1bc21bf38da5ff4947d140f7786557f0552927f6d872611104",
+      "modalidad": "opcion-A",
+      "estadoRevision": "AUTOVERIFICADA_POR_CLAUDE",
+      "autoverificacion": {
+        "por": "Claude",
+        "fecha": "2026-10-28",
+        "alcance": "fuentes abiertas y comprobadas por Claude; controles automáticos del lote; prueba local en la app"
+      },
+      "publicacion": "AUTORIZADA_POR_DELEGACION_GENERAL_DE_MAX",
+      "delegacion": {
+        "por": "Max Monsalves Blanco",
+        "fecha": "2026-10-20",
+        "referencia": "Declaración expresa de Max del 20-10-2026 (\"dale opcion A\"), confirmada a ChatGPT"
+      },
+      "revisionIndependienteChatGPT": "OPCIONAL_NO_REALIZADA",
+      "funcionamiento": "PROBADA_POR_CLAUDE"
+    },
+    {
+      "id": "rieles-horizonte",
+      "revision": 1,
+      "sha256": "cb50ca7207846d71f55dcf5644ae474dbc465540d4da0aeef80b6118b030d47d",
+      "modalidad": "opcion-A",
+      "estadoRevision": "AUTOVERIFICADA_POR_CLAUDE",
+      "autoverificacion": {
+        "por": "Claude",
+        "fecha": "2026-10-28",
+        "alcance": "fuentes abiertas y comprobadas por Claude; controles automáticos del lote; prueba local en la app"
+      },
+      "publicacion": "AUTORIZADA_POR_DELEGACION_GENERAL_DE_MAX",
+      "delegacion": {
+        "por": "Max Monsalves Blanco",
+        "fecha": "2026-10-20",
+        "referencia": "Declaración expresa de Max del 20-10-2026 (\"dale opcion A\"), confirmada a ChatGPT"
+      },
+      "revisionIndependienteChatGPT": "OPCIONAL_NO_REALIZADA",
+      "funcionamiento": "PROBADA_POR_CLAUDE"
+    },
+    {
+      "id": "hielo-flota",
+      "revision": 1,
+      "sha256": "c493269bf80361cb9e516a7a01a15b8b0c8e3838a178c0fd2d3e7665e1093ecd",
+      "modalidad": "opcion-A",
+      "estadoRevision": "AUTOVERIFICADA_POR_CLAUDE",
+      "autoverificacion": {
+        "por": "Claude",
+        "fecha": "2026-10-28",
+        "alcance": "fuentes abiertas y comprobadas por Claude; controles automáticos del lote; prueba local en la app"
+      },
+      "publicacion": "AUTORIZADA_POR_DELEGACION_GENERAL_DE_MAX",
+      "delegacion": {
+        "por": "Max Monsalves Blanco",
+        "fecha": "2026-10-20",
+        "referencia": "Declaración expresa de Max del 20-10-2026 (\"dale opcion A\"), confirmada a ChatGPT"
+      },
+      "revisionIndependienteChatGPT": "OPCIONAL_NO_REALIZADA",
+      "funcionamiento": "PROBADA_POR_CLAUDE"
+    },
+    {
+      "id": "imprenta-libros",
+      "revision": 1,
+      "sha256": "12b86e0afa509b0553a18d3ba264ab1987c4cd335bda88111a34e48fa1baeb2f",
+      "modalidad": "opcion-A",
+      "estadoRevision": "AUTOVERIFICADA_POR_CLAUDE",
+      "autoverificacion": {
+        "por": "Claude",
+        "fecha": "2026-10-28",
+        "alcance": "fuentes abiertas y comprobadas por Claude; controles automáticos del lote; prueba local en la app"
+      },
+      "publicacion": "AUTORIZADA_POR_DELEGACION_GENERAL_DE_MAX",
+      "delegacion": {
+        "por": "Max Monsalves Blanco",
+        "fecha": "2026-10-20",
+        "referencia": "Declaración expresa de Max del 20-10-2026 (\"dale opcion A\"), confirmada a ChatGPT"
+      },
+      "revisionIndependienteChatGPT": "OPCIONAL_NO_REALIZADA",
+      "funcionamiento": "PROBADA_POR_CLAUDE"
+    },
+    {
+      "id": "jabon-grasa",
+      "revision": 1,
+      "sha256": "deface53ed7f20d102469397d8bbc96b7addea24e6d891caf49184629727e79e",
+      "modalidad": "opcion-A",
+      "estadoRevision": "AUTOVERIFICADA_POR_CLAUDE",
+      "autoverificacion": {
+        "por": "Claude",
+        "fecha": "2026-10-28",
+        "alcance": "fuentes abiertas y comprobadas por Claude; controles automáticos del lote; prueba local en la app"
+      },
+      "publicacion": "AUTORIZADA_POR_DELEGACION_GENERAL_DE_MAX",
+      "delegacion": {
+        "por": "Max Monsalves Blanco",
+        "fecha": "2026-10-20",
+        "referencia": "Declaración expresa de Max del 20-10-2026 (\"dale opcion A\"), confirmada a ChatGPT"
+      },
+      "revisionIndependienteChatGPT": "OPCIONAL_NO_REALIZADA",
+      "funcionamiento": "PROBADA_POR_CLAUDE"
     }
   ],
   "reglas": [
