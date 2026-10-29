@@ -1,0 +1,15 @@
+10-29 14:07:21.773   521   551 I ActivityManager: Start proc 2660:com.android.chrome/u0a150 for service {com.android.chrome/org.chromium.chrome.browser.customtabs.CustomTabsConnectionService}
+10-29 14:07:22.114   521   549 D AppWidgetServiceImpl: Provider info from ComponentInfo{com.android.chrome/org.chromium.chrome.browser.quickactionsearchwidget.QuickActionSearchWidgetProvider$QuickActionSearchWidgetProviderSearch} won't be persisted.
+10-29 14:07:22.114   521   549 D AppWidgetServiceImpl: Provider info from ComponentInfo{com.android.chrome/org.chromium.chrome.browser.quickactionsearchwidget.QuickActionSearchWidgetProvider$QuickActionSearchWidgetProviderDino} won't be persisted.
+10-29 14:07:22.114   521   549 D AppWidgetServiceImpl: Provider info from ComponentInfo{com.android.chrome/org.chromium.chrome.browser.searchwidget.SearchWidgetProvider} won't be persisted.
+10-29 14:07:22.694  2474  2837 W chromium: [WARNING:dns_config_service_android.cc(115)] Failed to read DnsConfig.
+10-29 14:07:22.911   521   551 I ActivityManager: Start proc 2872:com.google.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0/u0ai9000 for  {cl.mbhspa.almanaque/org.chromium.content.app.SandboxedProcessService0:0}
+10-29 14:07:23.165   521   551 I ActivityManager: Start proc 2893:com.google.android.webview:webview_service/u0a134 for service {com.google.android.webview/org.chromium.android_webview.services.VariationsSeedServer}
+10-29 14:07:23.434  2872  2872 I cr_WebViewApkApp: Launched version=113.0.5672.136 minSdkVersion=29 isBundle=false processName=com.google.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0
+10-29 14:07:24.807  2474  2474 E Capacitor/Console: File:  - Line 6 - Msg: Error injecting safe area CSS: TypeError: Cannot read properties of null (reading 'style')
+10-29 14:07:24.811  2474  2474 E Capacitor/Console: File:  - Line 6 - Msg: Error injecting safe area CSS: TypeError: Cannot read properties of null (reading 'style')
+10-29 14:07:24.816  2474  2474 E Capacitor/Console: File:  - Line 6 - Msg: Error injecting safe area CSS: TypeError: Cannot read properties of null (reading 'style')
+10-29 14:07:25.222   521   551 I ActivityManager: Start proc 3139:com.google.android.webview:webview_apk/u0a134 for service {com.google.android.webview/org.chromium.android_webview.nonembedded.AwComponentUpdateService}
+10-29 14:07:26.629  3139  3211 W cr_AWNetworkFetcherTask: 	at org.chromium.android_webview.nonembedded.NetworkFetcherTask.download(chromium-TrichromeWebViewGoogle6432.apk-stable-567263637:48)
+10-29 14:07:31.416  1825  2327 W earchbox:search: Verification of void org.chromium.net.impl.CronetLibraryLoader.a(android.content.Context, hr) took 133.283ms (885.33 bytecodes/s) (4360B approximate peak alloc)
+10-29 14:07:59.176  4361  4792 I cr_CronetUrlRequestContext: destroyNativeStreamLocked org.chromium.net.impl.CronetBidirectionalStream@6b43ff0
