@@ -7,7 +7,7 @@ android {
         applicationId "cl.mbhspa.almanaque"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 1
+        versionCode Integer.parseInt(System.getenv("ALMANAQUE_VERSION_CODE") ?: "1")
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         aaptOptions {
@@ -16,8 +16,21 @@ android {
             ignoreAssetsPattern = '!.svn:!.git:!.ds_store:!*.scc:.*:!CVS:!thumbs.db:!picasa.ini:!*~'
         }
     }
+    // Firma de la versión para Google Play: la clave de subida llega por variables de entorno
+    // (secretos de GitHub en el flujo "Android (versión para Google Play)"). Nunca se guarda en el repositorio.
+    signingConfigs {
+        release {
+            if (System.getenv("ALMANAQUE_KEYSTORE")) {
+                storeFile file(System.getenv("ALMANAQUE_KEYSTORE"))
+                storePassword System.getenv("ALMANAQUE_KEYSTORE_PASSWORD")
+                keyAlias System.getenv("ALMANAQUE_KEY_ALIAS")
+                keyPassword System.getenv("ALMANAQUE_KEY_PASSWORD")
+            }
+        }
+    }
     buildTypes {
         release {
+            if (System.getenv("ALMANAQUE_KEYSTORE")) { signingConfig signingConfigs.release }
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
