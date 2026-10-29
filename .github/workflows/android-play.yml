@@ -1,6 +1,6 @@
 name: Android (versión para Google Play)
 
-# Se ejecuta a mano desde la pestaña Actions ("Run workflow").
+# Se ejecuta a mano desde la pestaña Actions ("Run workflow"); siempre compila la rama capacitor-prueba.
 # Compila el paquete firmado (AAB) que se sube a Google Play Console.
 # Requiere los secretos del repositorio: ALMANAQUE_KEYSTORE_B64, ALMANAQUE_KEYSTORE_PASSWORD,
 # ALMANAQUE_KEY_ALIAS y ALMANAQUE_KEY_PASSWORD.
@@ -17,6 +17,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: capacitor-prueba   # la app Android vive en esta rama
       - uses: actions/setup-node@v4
         with:
           node-version: 22
