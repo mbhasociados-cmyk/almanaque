@@ -199,3 +199,9 @@ text.as-svg__muted { fill: var(--muted); stroke: none; }
   :root:not([data-theme="light"]) .kicker { color: var(--brand-y); }
   :root:not([data-theme="light"]) .bars i { background: color-mix(in srgb, #FFFFFF 18%, transparent); }
   :root:not([data-theme="light"]) .bars i.done, :root:not([data-theme="light"]) .bars i.now { background: var(--brand-y); } }
+
+/* Botón hacia la app Android en Google Play (solo web, no iPhone) */
+.play-badge { display: flex; align-items: center; gap: 12px; width: max-content; max-width: 100%; margin: 28px auto 8px; padding: 10px 18px; border-radius: 12px; background: var(--brand-k, #141414); color: #fff; text-decoration: none; }
+.play-badge .pb-ico { font-size: 22px; color: var(--brand-y, #F5C400); line-height: 1; }
+.play-badge small { display: block; font-size: 12px; opacity: .85; line-height: 1.1; }
+.play-badge b { display: block; font-size: 18px; line-height: 1.2; }

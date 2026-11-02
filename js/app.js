@@ -164,6 +164,14 @@ async function loadAll(entries) { // carga en paralelo lo que falta y vuelve a d
 }
 
 // ------------------------------------------------------------ Hoy
+// Botón hacia la app Android en Google Play: solo en la web y no en iPhone/iPad (allí no se puede instalar).
+const PLAY_URL = "https://play.google.com/store/apps/details?id=cl.mbhspa.almanaque";
+function playBadge() {
+  const nativo = !!(window.Capacitor && typeof window.Capacitor.isNativePlatform === "function" && window.Capacitor.isNativePlatform());
+  const ios = /iPhone|iPad|iPod/i.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+  if (nativo || ios) return "";
+  return `<a class="play-badge" href="${PLAY_URL}" target="_blank" rel="noopener"><span class="pb-ico" aria-hidden="true">▶</span><span><small>Disponible en</small><b>Google Play</b></span></a>`;
+}
 function renderHoy() {
   const hoy = todayIso();
   const [y, m, d] = hoy.split("-").map(Number);
@@ -177,7 +185,8 @@ function renderHoy() {
     ${e ? tile(e, true) : (() => { const nx = nextScheduled(); return `<div class="empty"><h2>Hoy no hay una idea programada</h2><p>${nx ? `La próxima llega el ${esc(shortDate(nx.x.fecha))}. Si no quieres esperar, puedes verla anticipada en Explorar.` : "Estamos preparando y verificando las próximas lecciones."}</p>${nx ? `<button class="btn" data-go="explorar">Ir a Explorar</button>` : ""}</div>`; })()}
     <div class="stat"><b>${n}</b> ${n === 1 ? "idea aprendida" : "ideas aprendidas"} <button class="link" data-go="aprendido">Ver mi colección</button></div>
     ${others.length ? `<h2 class="section">Sigue explorando</h2><div class="grid">${others.map(x => tile(x)).join("")}</div>` : ""}
-    ${proximas.length ? `<h2 class="section">Próximas lecciones</h2><p class="date">Puedes verlas antes de su fecha.</p><div class="grid">${proximas.map(x => tile(x)).join("")}</div>` : ""}`;
+    ${proximas.length ? `<h2 class="section">Próximas lecciones</h2><p class="date">Puedes verlas antes de su fecha.</p><div class="grid">${proximas.map(x => tile(x)).join("")}</div>` : ""}
+    ${playBadge()}`;
   bindTiles();
   loadAll([e, ...others, ...proximas].filter(Boolean));
 }
