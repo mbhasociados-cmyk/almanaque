@@ -1,0 +1,194 @@
+{
+  "schemaVersion": "2.0",
+  "id": "noticia-fuente",
+  "revision": 1,
+  "idioma": "es-CL",
+  "disciplina": "Sociedad y medios",
+  "familia": "sociedad",
+  "titulo": "¿Qué significa que una noticia tenga una fuente?",
+  "subtitulo": "Saber quién lo dice ayuda a decidir cuánto creer.",
+  "minutosEstimados": 5,
+  "tarjetas": [
+    {
+      "id": "c1",
+      "tipo": "portada",
+      "titulo": "¿Qué significa que una noticia tenga una fuente?",
+      "texto": "Una noticia sin fuentes tiene mucha menos credibilidad. Pero ¿qué es exactamente una fuente?",
+      "fuenteIds": [
+        "sp-fuentes"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Un diario con una noticia y un signo de pregunta sobre quién lo dice</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><rect x=\"70\" y=\"30\" width=\"180\" height=\"130\" rx=\"8\" class=\"as-svg__warm\"/><rect x=\"70\" y=\"30\" width=\"180\" height=\"130\" rx=\"8\" class=\"as-svg__ink\"/><rect x=\"84\" y=\"44\" width=\"152\" height=\"26\" rx=\"4\" class=\"as-svg__soft\"/><rect x=\"84\" y=\"44\" width=\"152\" height=\"26\" rx=\"4\" class=\"as-svg__ink\"/><text x=\"160\" y=\"63\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"17\">noticia</text><line x1=\"86\" y1=\"90\" x2=\"234\" y2=\"90\" class=\"as-svg__ink\" /><line x1=\"86\" y1=\"108\" x2=\"234\" y2=\"108\" class=\"as-svg__ink\" /><line x1=\"86\" y1=\"126\" x2=\"180\" y2=\"126\" class=\"as-svg__ink\" /><text x=\"160\" y=\"186\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"17\">¿quién lo dice?</text></svg>"
+    },
+    {
+      "id": "c2",
+      "tipo": "idea",
+      "titulo": "Alguien que informa",
+      "texto": "Una fuente es una persona que transmite información. Puede contactar al periodista para contarle lo que sabe, o el periodista puede buscarla para pedirle su testimonio.",
+      "fuenteIds": [
+        "sp-fuentes"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Una persona le entrega información a un periodista; puede buscarlo ella o él puede buscarla</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><defs><marker id=\"noticia-fuente-ah\" viewBox=\"0 0 10 10\" refX=\"5\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" class=\"as-svg__accent\"/></marker></defs><circle cx=\"66\" cy=\"62\" r=\"11\" class=\"as-svg__warm\"/><circle cx=\"66\" cy=\"62\" r=\"11\" class=\"as-svg__ink\"/><path d=\"M48 106 C48 76 84 76 84 106 Z\" class=\"as-svg__warm\"/><path d=\"M48 106 C48 76 84 76 84 106 Z\" class=\"as-svg__ink\"/><circle cx=\"254\" cy=\"62\" r=\"11\" class=\"as-svg__fill\"/><circle cx=\"254\" cy=\"62\" r=\"11\" class=\"as-svg__ink\"/><path d=\"M236 106 C236 76 272 76 272 106 Z\" class=\"as-svg__fill\"/><path d=\"M236 106 C236 76 272 76 272 106 Z\" class=\"as-svg__ink\"/><line x1=\"100\" y1=\"72\" x2=\"216\" y2=\"72\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"3\" marker-end=\"url(#noticia-fuente-ah)\"/><line x1=\"216\" y1=\"104\" x2=\"100\" y2=\"104\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"3\" marker-end=\"url(#noticia-fuente-ah)\"/><text x=\"160\" y=\"60\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">información</text><text x=\"160\" y=\"124\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">testimonio</text><text x=\"66\" y=\"134\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">fuente</text><text x=\"254\" y=\"134\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">periodista</text><text x=\"160\" y=\"180\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">cualquiera puede buscar al otro</text></svg>"
+    },
+    {
+      "id": "c3",
+      "tipo": "pregunta",
+      "pregunta": "¿Cuál de estas personas es una fuente primaria de un choque en la calle?",
+      "correctaId": "a",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Alguien que lo vio directamente",
+          "retro": "¡Exacto! Un testigo directo da un relato de primera mano."
+        },
+        {
+          "id": "b",
+          "texto": "El familiar de un testigo, que escuchó lo que este contó",
+          "retro": "No: un familiar lo sabe por un intermediario. Es una fuente secundaria."
+        },
+        {
+          "id": "c",
+          "texto": "Un vocero que recibió un informe",
+          "retro": "No: un vocero obtiene la información por intermediarios. Es una fuente secundaria."
+        }
+      ],
+      "fuenteIds": [
+        "sp-fuentes"
+      ]
+    },
+    {
+      "id": "c4",
+      "tipo": "idea",
+      "titulo": "Directa o por otra persona",
+      "texto": "Una fuente primaria da un relato de primera mano, como un testigo directo. Una fuente secundaria lo sabe por un intermediario, como un vocero o un familiar.",
+      "fuenteIds": [
+        "sp-fuentes"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Fuente primaria: alguien que lo vio directamente. Fuente secundaria: alguien que lo sabe por un intermediario</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><defs><marker id=\"noticia-fuente-ah\" viewBox=\"0 0 10 10\" refX=\"5\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" class=\"as-svg__accent\"/></marker></defs><path d=\"M160 16 L164.2 25.8 L174 30 L164.2 34.2 L160 44 L155.8 34.2 L146 30 L155.8 25.8 Z\" class=\"as-svg__sun\"/><path d=\"M160 16 L164.2 25.8 L174 30 L164.2 34.2 L160 44 L155.8 34.2 L146 30 L155.8 25.8 Z\" class=\"as-svg__ink\"/><circle cx=\"60\" cy=\"60\" r=\"11\" class=\"as-svg__warm\"/><circle cx=\"60\" cy=\"60\" r=\"11\" class=\"as-svg__ink\"/><path d=\"M42 104 C42 74 78 74 78 104 Z\" class=\"as-svg__warm\"/><path d=\"M42 104 C42 74 78 74 78 104 Z\" class=\"as-svg__ink\"/><circle cx=\"262\" cy=\"60\" r=\"11\" class=\"as-svg__soft\"/><circle cx=\"262\" cy=\"60\" r=\"11\" class=\"as-svg__ink\"/><path d=\"M244 104 C244 74 280 74 280 104 Z\" class=\"as-svg__soft\"/><path d=\"M244 104 C244 74 280 74 280 104 Z\" class=\"as-svg__ink\"/><circle cx=\"160\" cy=\"92\" r=\"11\" class=\"as-svg__soft\"/><circle cx=\"160\" cy=\"92\" r=\"11\" class=\"as-svg__ink\"/><path d=\"M142 136 C142 106 178 106 178 136 Z\" class=\"as-svg__soft\"/><path d=\"M142 136 C142 106 178 106 178 136 Z\" class=\"as-svg__ink\"/><line x1=\"142\" y1=\"34\" x2=\"84\" y2=\"50\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"3\" marker-end=\"url(#noticia-fuente-ah)\"/><line x1=\"160\" y1=\"48\" x2=\"160\" y2=\"76\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"3\" marker-end=\"url(#noticia-fuente-ah)\"/><line x1=\"186\" y1=\"112\" x2=\"236\" y2=\"92\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"3\" marker-end=\"url(#noticia-fuente-ah)\"/><text x=\"60\" y=\"132\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">primaria</text><text x=\"64\" y=\"152\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">de primera mano</text><text x=\"262\" y=\"132\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">secundaria</text><text x=\"160\" y=\"182\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">intermediario</text></svg>"
+    },
+    {
+      "id": "c5",
+      "tipo": "idea",
+      "titulo": "Con nombre y razón",
+      "texto": "Dar el nombre de la fuente y su condición permite al lector comprobar quién es. También hay que explicar por qué esa persona importa en el tema.",
+      "fuenteIds": [
+        "sp-fuentes"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Una credencial con nombre, condición y por qué importa esa persona en el tema</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><rect x=\"70\" y=\"40\" width=\"180\" height=\"120\" rx=\"10\" class=\"as-svg__warm\"/><rect x=\"70\" y=\"40\" width=\"180\" height=\"120\" rx=\"10\" class=\"as-svg__ink\"/><circle cx=\"108\" cy=\"72\" r=\"11\" class=\"as-svg__soft\"/><circle cx=\"108\" cy=\"72\" r=\"11\" class=\"as-svg__ink\"/><path d=\"M90 116 C90 86 126 86 126 116 Z\" class=\"as-svg__soft\"/><path d=\"M90 116 C90 86 126 86 126 116 Z\" class=\"as-svg__ink\"/><text x=\"146\" y=\"76\" text-anchor=\"start\" class=\"as-svg__label\" font-size=\"16\">nombre</text><text x=\"146\" y=\"102\" text-anchor=\"start\" class=\"as-svg__label\" font-size=\"16\">condición</text><text x=\"160\" y=\"142\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">por qué importa</text><text x=\"160\" y=\"186\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">el lector puede comprobarlo</text></svg>"
+    },
+    {
+      "id": "c6",
+      "tipo": "revelar",
+      "titulo": "¿Y si no da su nombre?",
+      "texto": "A veces una noticia cita a una fuente que pidió reserva. ¿Cuándo se acepta eso?",
+      "revelado": "Cuando hablar pone en riesgo su seguridad, su empleo o su reputación. Aun así, el periodista debe explicar su papel y justificar por qué no la nombra. Como lector, puedes buscar otras pruebas que lo confirmen.",
+      "fuenteIds": [
+        "sp-fuentes",
+        "sb-anonimas"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Una persona sin rostro visible junto a la frase: una fuente que pidió reserva</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><path d=\"M120 150 C120 96 200 96 200 150 Z\" class=\"as-svg__ink\"/><path d=\"M120 150 C120 96 200 96 200 150 Z\" class=\"as-svg__ink\"/><circle cx=\"160\" cy=\"78\" r=\"26\" class=\"as-svg__muted\"/><text x=\"160\" y=\"87\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"24\">?</text><rect x=\"50\" y=\"158\" width=\"220\" height=\"30\" rx=\"6\" class=\"as-svg__warm\"/><rect x=\"50\" y=\"158\" width=\"220\" height=\"30\" rx=\"6\" class=\"as-svg__ink\"/><text x=\"160\" y=\"179\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">una fuente que pidió reserva</text></svg>"
+    },
+    {
+      "id": "c7",
+      "tipo": "pregunta",
+      "pregunta": "Un testigo directo le cuenta algo a un periodista. ¿Qué debería hacer el periodista?",
+      "correctaId": "b",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Publicarlo tal cual, porque estuvo ahí",
+          "retro": "No: las fuentes primarias no siempre dicen la verdad, aunque actúen de buena fe."
+        },
+        {
+          "id": "b",
+          "texto": "Contrastarlo con otras fuentes",
+          "retro": "¡Así es! Debe validar la información y detectar contradicciones."
+        },
+        {
+          "id": "c",
+          "texto": "Descartarlo, porque un testigo nunca sirve",
+          "retro": "No: un testigo es valioso, pero lo que dice se contrasta."
+        }
+      ],
+      "fuenteIds": [
+        "sp-fuentes"
+      ]
+    },
+    {
+      "id": "c8",
+      "tipo": "dato",
+      "texto": "En Chile, la Ley de Prensa de 2001 da a los periodistas derecho a mantener reserva sobre su fuente. No se les puede obligar a revelarla, ni siquiera ante un tribunal.",
+      "fuenteIds": [
+        "uchile-reserva"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Un candado sobre una tarjeta de fuente: en Chile, la Ley de Prensa de 2001 protege la reserva de la fuente</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><rect x=\"120\" y=\"84\" width=\"80\" height=\"62\" rx=\"8\" class=\"as-svg__warm\"/><rect x=\"120\" y=\"84\" width=\"80\" height=\"62\" rx=\"8\" class=\"as-svg__ink\"/><path d=\"M138 84 L138 66 C138 38 182 38 182 66 L182 84\" class=\"as-svg__ink\" stroke-width=\"5\"/><text x=\"160\" y=\"122\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">fuente</text><text x=\"160\" y=\"170\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">Ley de Prensa, 2001</text><text x=\"160\" y=\"192\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">reserva sobre la fuente</text></svg>"
+    }
+  ],
+  "resumen": {
+    "titulo": "Las fuentes de una noticia",
+    "puntos": [
+      "Una fuente es una persona que transmite información; puede ser directa o saberlo por un intermediario.",
+      "Nombrar la fuente y explicar por qué importa permite comprobar quién habla.",
+      "Lo que dice una fuente se contrasta, y la reserva de su nombre debe justificarse."
+    ]
+  },
+  "fuentes": [
+    {
+      "id": "sp-fuentes",
+      "entidad": "Agence Science-Presse (Québec)",
+      "titulo": "Journalistic sources (ficha 3)",
+      "url": "https://www.sciencepresse.qc.ca/sites/default/files/inline-files/Journalistic%20sources_EN.pdf",
+      "ubicacion": "Ficha completa",
+      "afirmaciones": [
+        "Una noticia sin fuentes tiene mucha menos credibilidad",
+        "Una fuente es una persona que transmite información; puede contactar al periodista o este buscarla",
+        "Primarias: relato de primera mano, como testigos directos; secundarias: por intermediarios, como familiares o portavoces",
+        "Identificar a la fuente con nombre y condición permite confirmar quién es; se debe explicar por qué es relevante",
+        "Las fuentes anónimas se usan si hablar pone en riesgo la seguridad, el empleo o la reputación; el periodista debe explicar su papel y justificar la reserva",
+        "Las fuentes primarias no siempre dicen la verdad, aunque actúen de buena fe; hay que contrastar"
+      ],
+      "respalda": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6",
+        "c7"
+      ],
+      "consultadaEl": "2026-11-04"
+    },
+    {
+      "id": "sb-anonimas",
+      "entidad": "Stony Brook Center for News Literacy",
+      "titulo": "Says Who? Evaluating Sources, Part 3: Evaluating Anonymous Sources",
+      "url": "https://digitalresource.center/node/18156",
+      "ubicacion": "Preguntas guía",
+      "afirmaciones": [
+        "Ante una fuente anónima conviene preguntarse por qué pide anonimato y buscar otras pruebas que confirmen lo que dice"
+      ],
+      "respalda": [
+        "c6"
+      ],
+      "consultadaEl": "2026-11-04"
+    },
+    {
+      "id": "uchile-reserva",
+      "entidad": "Universidad de Chile",
+      "titulo": "Académicas y académicos en defensa de la confidencialidad de las fuentes",
+      "url": "https://uchile.cl/noticias/234478/academicos-fcei-en-defensa-de-la-confidencialidad-de-las-fuentes",
+      "ubicacion": "Texto principal, que cita el artículo 7 de la Ley de Prensa",
+      "afirmaciones": [
+        "La Ley de Prensa, promulgada en 2001, dispone en su artículo 7 que los periodistas tienen derecho a mantener reserva sobre su fuente informativa y no pueden ser obligados a revelarla, ni aun judicialmente"
+      ],
+      "respalda": [
+        "c8"
+      ],
+      "consultadaEl": "2026-11-04"
+    }
+  ],
+  "controlEditorial": {
+    "estado": "borrador",
+    "revisadoPor": null,
+    "fechaRevision": null
+  }
+}

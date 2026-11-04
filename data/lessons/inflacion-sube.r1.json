@@ -1,0 +1,221 @@
+{
+  "schemaVersion": "2.0",
+  "id": "inflacion-sube",
+  "revision": 1,
+  "idioma": "es-CL",
+  "disciplina": "Economía",
+  "familia": "economia",
+  "titulo": "¿Qué significa que suba la inflación?",
+  "subtitulo": "Por qué no quiere decir que todo suba igual.",
+  "minutosEstimados": 5,
+  "tarjetas": [
+    {
+      "id": "c1",
+      "tipo": "portada",
+      "titulo": "¿Qué significa que suba la inflación?",
+      "texto": "En las noticias dicen que subió la inflación. ¿Significa que todo está más caro? No exactamente.",
+      "fuenteIds": [
+        "bc-disminucion"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Un titular de noticias dice que subió la inflación, con un signo de pregunta</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><rect x=\"50\" y=\"36\" width=\"220\" height=\"118\" rx=\"8\" class=\"as-svg__warm\"/><rect x=\"50\" y=\"36\" width=\"220\" height=\"118\" rx=\"8\" class=\"as-svg__ink\"/><rect x=\"64\" y=\"50\" width=\"192\" height=\"40\" rx=\"4\" class=\"as-svg__soft\"/><rect x=\"64\" y=\"50\" width=\"192\" height=\"40\" rx=\"4\" class=\"as-svg__ink\"/><text x=\"160\" y=\"76\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"17\">subió la inflación</text><line x1=\"70\" y1=\"108\" x2=\"250\" y2=\"108\" class=\"as-svg__ink\" /><line x1=\"70\" y1=\"124\" x2=\"250\" y2=\"124\" class=\"as-svg__ink\" /><line x1=\"70\" y1=\"140\" x2=\"190\" y2=\"140\" class=\"as-svg__ink\" /><text x=\"160\" y=\"182\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"17\">¿todo más caro?</text></svg>"
+    },
+    {
+      "id": "c2",
+      "tipo": "idea",
+      "titulo": "Los precios en general",
+      "texto": "La inflación es el aumento generalizado de los precios en una economía. En Chile, el INE la mide con el IPC, una canasta de bienes y servicios que refleja el gasto típico de las familias.",
+      "fuenteIds": [
+        "bc-disminucion",
+        "ine-ipc"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Una canasta con productos: el INE mide con el IPC el aumento general de los precios</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><path d=\"M124 84 C124 44 196 44 196 84\" class=\"as-svg__ink\"/><path d=\"M100 84 L220 84 L206 148 L114 148 Z\" class=\"as-svg__warm\"/><path d=\"M100 84 L220 84 L206 148 L114 148 Z\" class=\"as-svg__ink\"/><circle cx=\"132\" cy=\"74\" r=\"11\" class=\"as-svg__fill\"/><circle cx=\"132\" cy=\"74\" r=\"11\" class=\"as-svg__ink\"/><rect x=\"150\" y=\"54\" width=\"18\" height=\"30\" rx=\"3\" class=\"as-svg__cool\"/><rect x=\"150\" y=\"54\" width=\"18\" height=\"30\" rx=\"3\" class=\"as-svg__ink\"/><circle cx=\"190\" cy=\"72\" r=\"13\" class=\"as-svg__fill\"/><circle cx=\"190\" cy=\"72\" r=\"13\" class=\"as-svg__ink\"/><text x=\"160\" y=\"124\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"20\">IPC</text><text x=\"160\" y=\"28\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"17\">precios en general</text><text x=\"160\" y=\"182\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">lo mide el INE</text></svg>"
+    },
+    {
+      "id": "c3",
+      "tipo": "pregunta",
+      "pregunta": "Si el IPC subió 1 % en un mes, ¿qué significa?",
+      "correctaId": "b",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Que todos los precios subieron 1 %",
+          "retro": "No: 1 % es el resultado de la canasta completa. Algunos precios suben, otros se mantienen y otros bajan."
+        },
+        {
+          "id": "b",
+          "texto": "Que la canasta, en conjunto, subió 1 %",
+          "retro": "¡Correcto! Dentro de ella, algunos precios suben, otros se mantienen y otros bajan."
+        },
+        {
+          "id": "c",
+          "texto": "Que los sueldos subieron 1 %",
+          "retro": "No: el IPC mide precios de bienes y servicios, no sueldos."
+        }
+      ],
+      "fuenteIds": [
+        "bc-disminucion"
+      ]
+    },
+    {
+      "id": "c4",
+      "tipo": "idea",
+      "titulo": "Un promedio, no tu cuenta",
+      "texto": "La canasta se basa en el gasto promedio de los hogares, no en el de una familia específica. Por eso, lo que notas en tus compras puede ser distinto del IPC.",
+      "fuenteIds": [
+        "ine-preguntas"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Barras de gasto de varios hogares y una línea que marca el promedio: una familia puede quedar lejos de esa línea</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><defs><marker id=\"inflacion-sube-ah\" viewBox=\"0 0 10 10\" refX=\"5\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" class=\"as-svg__accent\"/></marker></defs><rect x=\"52\" y=\"92\" width=\"42\" height=\"58\" rx=\"3\" class=\"as-svg__warm\"/><rect x=\"52\" y=\"92\" width=\"42\" height=\"58\" rx=\"3\" class=\"as-svg__ink\"/><rect x=\"110\" y=\"58\" width=\"42\" height=\"92\" rx=\"3\" class=\"as-svg__warm\"/><rect x=\"110\" y=\"58\" width=\"42\" height=\"92\" rx=\"3\" class=\"as-svg__ink\"/><rect x=\"168\" y=\"76\" width=\"42\" height=\"74\" rx=\"3\" class=\"as-svg__warm\"/><rect x=\"168\" y=\"76\" width=\"42\" height=\"74\" rx=\"3\" class=\"as-svg__ink\"/><rect x=\"226\" y=\"38\" width=\"42\" height=\"112\" rx=\"3\" class=\"as-svg__warm\"/><rect x=\"226\" y=\"38\" width=\"42\" height=\"112\" rx=\"3\" class=\"as-svg__ink\"/><line x1=\"30\" y1=\"66\" x2=\"290\" y2=\"66\" class=\"as-svg__ink\" stroke-dasharray=\"6 5\"/><text x=\"160\" y=\"26\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">gasto promedio de los hogares</text><line x1=\"160\" y1=\"34\" x2=\"160\" y2=\"62\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"2\" marker-end=\"url(#inflacion-sube-ah)\"/><text x=\"160\" y=\"182\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">tu familia puede ser distinta</text></svg>"
+    },
+    {
+      "id": "c5",
+      "tipo": "idea",
+      "titulo": "El sueldo rinde menos",
+      "texto": "Si los precios suben y los ingresos no, el dinero rinde menos: con el mismo sueldo se compra menos.",
+      "fuenteIds": [
+        "bc-bolsillo"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>El mismo sueldo compra menos cosas cuando los precios suben y los ingresos no</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><defs><marker id=\"inflacion-sube-ah\" viewBox=\"0 0 10 10\" refX=\"5\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" class=\"as-svg__accent\"/></marker></defs><rect x=\"22\" y=\"58\" width=\"96\" height=\"62\" rx=\"8\" class=\"as-svg__warm\"/><rect x=\"22\" y=\"58\" width=\"96\" height=\"62\" rx=\"8\" class=\"as-svg__ink\"/><text x=\"70\" y=\"96\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"17\">sueldo</text><line x1=\"126\" y1=\"88\" x2=\"166\" y2=\"88\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"3\" marker-end=\"url(#inflacion-sube-ah)\"/><rect x=\"182\" y=\"60\" width=\"36\" height=\"56\" rx=\"4\" class=\"as-svg__fill\"/><rect x=\"182\" y=\"60\" width=\"36\" height=\"56\" rx=\"4\" class=\"as-svg__ink\"/><rect x=\"226\" y=\"60\" width=\"36\" height=\"56\" rx=\"4\" class=\"as-svg__fill\"/><rect x=\"226\" y=\"60\" width=\"36\" height=\"56\" rx=\"4\" class=\"as-svg__ink\"/><rect x=\"270\" y=\"60\" width=\"36\" height=\"56\" rx=\"4\" class=\"as-svg__soft\"/><rect x=\"270\" y=\"60\" width=\"36\" height=\"56\" rx=\"4\" class=\"as-svg__ink\"/><line x1=\"274\" y1=\"66\" x2=\"304\" y2=\"110\" class=\"as-svg__ink\" /><line x1=\"304\" y1=\"66\" x2=\"274\" y2=\"110\" class=\"as-svg__ink\" /><text x=\"160\" y=\"34\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"17\">el mismo sueldo</text><text x=\"235\" y=\"150\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">alcanza para menos</text><text x=\"70\" y=\"150\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">no sube</text></svg>"
+    },
+    {
+      "id": "c6",
+      "tipo": "pregunta",
+      "pregunta": "Si la inflación baja hasta niveles normales, ¿qué pasa con los precios?",
+      "correctaId": "a",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "En general siguen subiendo, pero a menor ritmo",
+          "retro": "¡Así es! Bajar la inflación no es lo mismo que bajar los precios."
+        },
+        {
+          "id": "b",
+          "texto": "Vuelven a lo que costaban antes",
+          "retro": "No: los precios siguen subiendo, solo que más lento."
+        },
+        {
+          "id": "c",
+          "texto": "Bajan todos al mismo tiempo",
+          "retro": "No: una baja generalizada de precios tiene otro nombre: deflación."
+        }
+      ],
+      "fuenteIds": [
+        "bc-disminucion"
+      ]
+    },
+    {
+      "id": "c7",
+      "tipo": "revelar",
+      "titulo": "La meta",
+      "texto": "El Banco Central de Chile tiene una meta de inflación. ¿Cuál es?",
+      "revelado": "Una inflación de 3 % al año, en un horizonte de dos años. Su principal herramienta para cumplirla es la tasa de política monetaria, una tasa de interés.",
+      "fuenteIds": [
+        "bc-cespedes"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Una diana con un signo de pregunta: la meta de inflación del Banco Central</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><circle cx=\"160\" cy=\"96\" r=\"62\" class=\"as-svg__warm\"/><circle cx=\"160\" cy=\"96\" r=\"62\" class=\"as-svg__ink\"/><circle cx=\"160\" cy=\"96\" r=\"40\" class=\"as-svg__soft\"/><circle cx=\"160\" cy=\"96\" r=\"40\" class=\"as-svg__ink\"/><circle cx=\"160\" cy=\"96\" r=\"18\" class=\"as-svg__fill\"/><circle cx=\"160\" cy=\"96\" r=\"18\" class=\"as-svg__ink\"/><text x=\"160\" y=\"103\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"20\">?</text><text x=\"160\" y=\"186\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">la meta del Banco Central</text></svg>"
+    },
+    {
+      "id": "c8",
+      "tipo": "dato",
+      "texto": "El INE publica el IPC dentro de los primeros ocho días del mes siguiente. Por eso, la cifra que escuchas siempre habla del mes anterior.",
+      "fuenteIds": [
+        "ine-preguntas"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>El IPC se publica dentro de los primeros ocho días del mes siguiente y habla del mes anterior</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><defs><marker id=\"inflacion-sube-ah\" viewBox=\"0 0 10 10\" refX=\"5\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" class=\"as-svg__accent\"/></marker></defs><rect x=\"30\" y=\"54\" width=\"100\" height=\"92\" rx=\"8\" class=\"as-svg__soft\"/><rect x=\"30\" y=\"54\" width=\"100\" height=\"92\" rx=\"8\" class=\"as-svg__ink\"/><rect x=\"30\" y=\"54\" width=\"100\" height=\"24\" rx=\"8\" class=\"as-svg__fill\"/><rect x=\"30\" y=\"54\" width=\"100\" height=\"24\" rx=\"8\" class=\"as-svg__ink\"/><text x=\"80\" y=\"116\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"20\">IPC</text><line x1=\"138\" y1=\"100\" x2=\"182\" y2=\"100\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"3\" marker-end=\"url(#inflacion-sube-ah)\"/><rect x=\"190\" y=\"54\" width=\"100\" height=\"92\" rx=\"8\" class=\"as-svg__warm\"/><rect x=\"190\" y=\"54\" width=\"100\" height=\"92\" rx=\"8\" class=\"as-svg__ink\"/><rect x=\"190\" y=\"54\" width=\"100\" height=\"24\" rx=\"8\" class=\"as-svg__fill\"/><rect x=\"190\" y=\"54\" width=\"100\" height=\"24\" rx=\"8\" class=\"as-svg__ink\"/><text x=\"240\" y=\"112\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">días 1 al 8</text><text x=\"80\" y=\"172\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">mes anterior</text><text x=\"240\" y=\"172\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">se publica</text></svg>"
+    }
+  ],
+  "resumen": {
+    "titulo": "La inflación",
+    "puntos": [
+      "Es el aumento generalizado de los precios; en Chile se mide con el IPC del INE.",
+      "Que suba 1 % no significa que todo suba 1 %: es el resultado de una canasta completa.",
+      "Si la inflación baja, los precios en general siguen subiendo, pero más lento."
+    ]
+  },
+  "fuentes": [
+    {
+      "id": "bc-disminucion",
+      "entidad": "Banco Central de Chile",
+      "titulo": "Entendiendo la disminución de la inflación: Qué es… y qué no",
+      "url": "https://www.bcentral.cl/en/content/-/detalle/entendiendo-la-disminucion-de-la-inflacion-que-es-y-que-no",
+      "ubicacion": "Texto principal",
+      "afirmaciones": [
+        "La inflación es el aumento generalizado de los precios en una economía",
+        "El INE la mide con el IPC, una canasta que refleja el gasto de una familia típica",
+        "Si sube 1 %, la canasta subió 1 % en su conjunto: no significa que todos los precios mostraron ese incremento",
+        "Una baja de la inflación significa que los precios aumentan a menor ritmo",
+        "Una baja generalizada de los precios se llama deflación"
+      ],
+      "respalda": [
+        "c1",
+        "c2",
+        "c3",
+        "c6"
+      ],
+      "consultadaEl": "2026-11-04"
+    },
+    {
+      "id": "ine-ipc",
+      "entidad": "Instituto Nacional de Estadísticas",
+      "titulo": "Índice de Precios al Consumidor",
+      "url": "https://www.ine.gob.cl/estadisticas-por-tema/precios-e-inflacion/indice-de-precios-al-consumidor",
+      "ubicacion": "Descripción del indicador",
+      "afirmaciones": [
+        "El IPC mide la variación mensual de los precios de una canasta de bienes y servicios de consumo de los hogares"
+      ],
+      "respalda": [
+        "c2"
+      ],
+      "consultadaEl": "2026-11-04"
+    },
+    {
+      "id": "ine-preguntas",
+      "entidad": "Instituto Nacional de Estadísticas",
+      "titulo": "Preguntas frecuentes del IPC, base anual 2023=100",
+      "url": "https://www.ine.gob.cl/docs/default-source/%C3%ADndice-de-precios-al-consumidor/metodologias/base-anual-2023-100/2---preguntas-frecuentes-ipc-2023.pdf",
+      "ubicacion": "Preguntas sobre la canasta y la publicación",
+      "afirmaciones": [
+        "La canasta se basa en el gasto promedio de los hogares, no en el de una persona o familia específica",
+        "Los resultados se publican en los primeros ocho días del mes siguiente"
+      ],
+      "respalda": [
+        "c4",
+        "c8"
+      ],
+      "consultadaEl": "2026-11-04"
+    },
+    {
+      "id": "bc-bolsillo",
+      "entidad": "Banco Central de Chile",
+      "titulo": "¿Sabes cómo afecta la inflación el bolsillo de las personas?",
+      "url": "https://www.bcentral.cl/documents/33528/133214/rcc_24082022.pdf/3c82613d-6c7a-6552-cc2d-ed9e69051ea6?t=1661364774053",
+      "ubicacion": "Texto principal",
+      "afirmaciones": [
+        "Si los precios suben y los ingresos no, el dinero rinde menos y con el mismo sueldo se compra menos"
+      ],
+      "respalda": [
+        "c5"
+      ],
+      "consultadaEl": "2026-11-04"
+    },
+    {
+      "id": "bc-cespedes",
+      "entidad": "Banco Central de Chile",
+      "titulo": "El Banco Central y la inflación (presentación en Duoc UC, mayo de 2026)",
+      "url": "https://www.bcentral.cl/documents/33528/8073461/El+Banco+Central+y+la+Inflaci%C3%B3n+(Duoc+UC)+-+Luis+Felipe+C%C3%A9spedes,+Consejero.pdf/f1de7438-8b0c-1ac7-0ac5-64c70fe017a4?t=1778077574539",
+      "ubicacion": "Diapositivas sobre la meta y la tasa de política monetaria",
+      "afirmaciones": [
+        "Meta permanente de 3 % en un horizonte de 2 años",
+        "La tasa de política monetaria es una tasa de interés y la principal herramienta para cumplir la meta"
+      ],
+      "respalda": [
+        "c7"
+      ],
+      "consultadaEl": "2026-11-04"
+    }
+  ],
+  "controlEditorial": {
+    "estado": "borrador",
+    "revisadoPor": null,
+    "fechaRevision": null
+  }
+}

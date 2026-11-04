@@ -21,13 +21,13 @@ Una lección por día. Al publicar un tema, márcalo como [x] y anota id y fecha
 - [x] 09-11 ¿Cómo cambió los libros la imprenta? — imprenta-libros r1 (lote 4)
 - [x] 10-11 ¿Por qué el jabón ayuda a quitar la grasa? — jabon-grasa r1 (lote 4)
 - [x] 08-11 ¿Por qué el hielo flota? — hielo-flota r1 (lote 4)
-- [ ] ¿Por qué algunos cerros son buenos para observar estrellas?
-- [ ] ¿Qué significa que suba la inflación?
-- [ ] ¿Qué significa que una noticia tenga una fuente?
-- [ ] ¿Por qué una cuchara de metal se siente más fría que una de madera?
-- [ ] ¿Qué hace la levadura dentro del pan?
-- [ ] ¿Por qué hay estaciones del año?
-- [ ] ¿Por qué una rebaja seguida de un alza igual no devuelve el precio inicial?
+- [x] 11-11 ¿Por qué algunos cerros son buenos para observar estrellas? — cerros-estrellas r1 (lote 5)
+- [x] 12-11 ¿Qué significa que suba la inflación? — inflacion-sube r1 (lote 5)
+- [x] 14-11 ¿Qué significa que una noticia tenga una fuente? — noticia-fuente r1 (lote 5)
+- [x] 13-11 ¿Por qué una cuchara de metal se siente más fría que una de madera? — cuchara-fria r1 (lote 5)
+- [x] 15-11 ¿Qué hace la levadura dentro del pan? — levadura-pan r1 (lote 5)
+- [x] 16-11 ¿Por qué hay estaciones del año? — estaciones-ano r1 (lote 5)
+- [x] 17-11 ¿Por qué una rebaja seguida de un alza igual no devuelve el precio inicial? — rebaja-alza r1 (lote 5)
 - [ ] ¿Qué hace que un documento sea fácil de leer?
 - [ ] ¿Por qué desconfiar de las "proporciones perfectas" en todas partes?
 - [ ] ¿Qué nos puede contar una pieza de cerámica diaguita?
@@ -37,6 +37,12 @@ Una lección por día. Al publicar un tema, márcalo como [x] y anota id y fecha
 - [ ] ¿Por qué se oxida el hierro?
 - [ ] ¿Cómo funciona un imán?
 - [ ] ¿Qué es el interés compuesto?
+- [ ] ¿Por qué el arcoíris tiene esos colores?
+- [ ] ¿Cómo protege una vacuna?
+- [ ] ¿Cómo se mantiene un avión en el aire?
+- [ ] ¿Qué hacen las plantas con la luz del Sol?
+- [ ] ¿Por qué las hojas cambian de color en otoño?
+- [ ] ¿Cómo funciona un termo?
 
 Cuando queden menos de 14 temas pendientes, la producción agrega nuevos temas cotidianos de cualquier disciplina, sin repetir los ya publicados, y los anota aquí.
 

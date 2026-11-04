@@ -164,6 +164,48 @@
       "id": "jabon-grasa",
       "revision": 1,
       "fecha": "2026-11-10"
+    },
+    {
+      "carpeta": "borradores/lote5",
+      "id": "cerros-estrellas",
+      "revision": 1,
+      "fecha": "2026-11-11"
+    },
+    {
+      "carpeta": "borradores/lote5",
+      "id": "inflacion-sube",
+      "revision": 1,
+      "fecha": "2026-11-12"
+    },
+    {
+      "carpeta": "borradores/lote5",
+      "id": "cuchara-fria",
+      "revision": 1,
+      "fecha": "2026-11-13"
+    },
+    {
+      "carpeta": "borradores/lote5",
+      "id": "noticia-fuente",
+      "revision": 1,
+      "fecha": "2026-11-14"
+    },
+    {
+      "carpeta": "borradores/lote5",
+      "id": "levadura-pan",
+      "revision": 1,
+      "fecha": "2026-11-15"
+    },
+    {
+      "carpeta": "borradores/lote5",
+      "id": "estaciones-ano",
+      "revision": 1,
+      "fecha": "2026-11-16"
+    },
+    {
+      "carpeta": "borradores/lote5",
+      "id": "rebaja-alza",
+      "revision": 1,
+      "fecha": "2026-11-17"
     }
   ]
 }

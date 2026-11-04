@@ -116,6 +116,41 @@
       "fecha": "2026-11-10",
       "id": "jabon-grasa",
       "revision": 1
+    },
+    {
+      "fecha": "2026-11-11",
+      "id": "cerros-estrellas",
+      "revision": 1
+    },
+    {
+      "fecha": "2026-11-12",
+      "id": "inflacion-sube",
+      "revision": 1
+    },
+    {
+      "fecha": "2026-11-13",
+      "id": "cuchara-fria",
+      "revision": 1
+    },
+    {
+      "fecha": "2026-11-14",
+      "id": "noticia-fuente",
+      "revision": 1
+    },
+    {
+      "fecha": "2026-11-15",
+      "id": "levadura-pan",
+      "revision": 1
+    },
+    {
+      "fecha": "2026-11-16",
+      "id": "estaciones-ano",
+      "revision": 1
+    },
+    {
+      "fecha": "2026-11-17",
+      "id": "rebaja-alza",
+      "revision": 1
     }
   ]
 }

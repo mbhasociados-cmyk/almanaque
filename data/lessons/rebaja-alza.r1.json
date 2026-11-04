@@ -1,0 +1,180 @@
+{
+  "schemaVersion": "2.0",
+  "id": "rebaja-alza",
+  "revision": 1,
+  "idioma": "es-CL",
+  "disciplina": "Matemática cotidiana",
+  "familia": "matematica",
+  "titulo": "¿Por qué una rebaja seguida de un alza igual no devuelve el precio inicial?",
+  "subtitulo": "Un porcentaje depende del número sobre el que se calcula.",
+  "minutosEstimados": 5,
+  "tarjetas": [
+    {
+      "id": "c1",
+      "tipo": "portada",
+      "titulo": "¿Por qué una rebaja seguida de un alza igual no devuelve el precio inicial?",
+      "texto": "Un precio baja 20 % y después sube 20 %. Parece que todo vuelve a su lugar, pero no. ¿Qué pasó?",
+      "fuenteIds": [
+        "omc-porcentajes"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Un precio baja 20 por ciento y luego sube 20 por ciento, pero no vuelve al mismo lugar</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><defs><marker id=\"rebaja-alza-ah\" viewBox=\"0 0 10 10\" refX=\"5\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" class=\"as-svg__accent\"/></marker></defs><rect x=\"26\" y=\"64\" width=\"70\" height=\"44\" rx=\"6\" class=\"as-svg__warm\"/><rect x=\"26\" y=\"64\" width=\"70\" height=\"44\" rx=\"6\" class=\"as-svg__ink\"/><text x=\"61\" y=\"92\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">precio</text><line x1=\"104\" y1=\"80\" x2=\"146\" y2=\"120\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"3\" marker-end=\"url(#rebaja-alza-ah)\"/><rect x=\"150\" y=\"112\" width=\"46\" height=\"34\" rx=\"6\" class=\"as-svg__soft\"/><rect x=\"150\" y=\"112\" width=\"46\" height=\"34\" rx=\"6\" class=\"as-svg__ink\"/><line x1=\"200\" y1=\"118\" x2=\"236\" y2=\"88\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"3\" marker-end=\"url(#rebaja-alza-ah)\"/><rect x=\"240\" y=\"74\" width=\"58\" height=\"44\" rx=\"6\" class=\"as-svg__warm\"/><rect x=\"240\" y=\"74\" width=\"58\" height=\"44\" rx=\"6\" class=\"as-svg__ink\"/><text x=\"269\" y=\"102\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"20\">?</text><text x=\"112\" y=\"128\" text-anchor=\"end\" class=\"as-svg__label\" font-size=\"16\">−20 %</text><text x=\"214\" y=\"74\" text-anchor=\"end\" class=\"as-svg__label\" font-size=\"16\">+20 %</text><line x1=\"26\" y1=\"60\" x2=\"298\" y2=\"60\" class=\"as-svg__ink\" stroke-dasharray=\"6 5\"/><text x=\"160\" y=\"186\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">no vuelve al mismo lugar</text></svg>"
+    },
+    {
+      "id": "c2",
+      "tipo": "pregunta",
+      "pregunta": "Un producto de $10.000 baja 20 % y luego sube 20 %. ¿En cuánto queda?",
+      "correctaId": "b",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "$10.000",
+          "retro": "Eso parece, pero el 20 % del alza se calcula sobre un precio menor."
+        },
+        {
+          "id": "b",
+          "texto": "$9.600",
+          "retro": "¡Exacto! Las próximas tarjetas muestran por qué."
+        },
+        {
+          "id": "c",
+          "texto": "$10.400",
+          "retro": "No: queda bajo el precio inicial, no sobre él."
+        }
+      ],
+      "fuenteIds": [
+        "openstax-descuentos"
+      ]
+    },
+    {
+      "id": "c3",
+      "tipo": "idea",
+      "titulo": "La rebaja mira el precio original",
+      "texto": "Una rebaja se calcula sobre el precio original. Un 20 % de $10.000 son $2.000, y el precio queda en $8.000.",
+      "fuenteIds": [
+        "openstax-descuentos"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Una rebaja de 20 por ciento sobre 10.000 pesos quita 2.000 y deja 8.000</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><rect x=\"24\" y=\"50\" width=\"272\" height=\"30\" rx=\"4\" class=\"as-svg__warm\"/><rect x=\"24\" y=\"50\" width=\"272\" height=\"30\" rx=\"4\" class=\"as-svg__ink\"/><text x=\"160.0\" y=\"71\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">$10.000 precio original</text><rect x=\"24\" y=\"104\" width=\"218\" height=\"30\" rx=\"4\" class=\"as-svg__soft\"/><rect x=\"24\" y=\"104\" width=\"218\" height=\"30\" rx=\"4\" class=\"as-svg__ink\"/><text x=\"133.0\" y=\"125\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">$8.000</text><rect x=\"242\" y=\"104\" width=\"54\" height=\"30\" rx=\"4\" class=\"as-svg__fill\"/><rect x=\"242\" y=\"104\" width=\"54\" height=\"30\" rx=\"4\" class=\"as-svg__ink\"/><text x=\"269\" y=\"125\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">$2.000</text><text x=\"160\" y=\"34\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">20 % del precio original</text><text x=\"160\" y=\"172\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">la rebaja quita $2.000</text></svg>"
+    },
+    {
+      "id": "c4",
+      "tipo": "idea",
+      "titulo": "El alza parte más abajo",
+      "texto": "El segundo porcentaje se calcula sobre el precio que quedó, no sobre el original. Un 20 % de $8.000 son $1.600, y el precio llega a $9.600.",
+      "fuenteIds": [
+        "openstax-descuentos"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>El alza de 20 por ciento se calcula sobre 8.000 pesos: suma 1.600 y llega a 9.600</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><rect x=\"24\" y=\"50\" width=\"218\" height=\"30\" rx=\"4\" class=\"as-svg__warm\"/><rect x=\"24\" y=\"50\" width=\"218\" height=\"30\" rx=\"4\" class=\"as-svg__ink\"/><text x=\"133.0\" y=\"71\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">$8.000</text><rect x=\"242\" y=\"50\" width=\"54\" height=\"30\" rx=\"4\" class=\"as-svg__fill\"/><rect x=\"242\" y=\"50\" width=\"54\" height=\"30\" rx=\"4\" class=\"as-svg__ink\"/><text x=\"269\" y=\"71\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">$1.600</text><rect x=\"24\" y=\"104\" width=\"272\" height=\"30\" rx=\"4\" class=\"as-svg__soft\"/><rect x=\"24\" y=\"104\" width=\"272\" height=\"30\" rx=\"4\" class=\"as-svg__ink\"/><text x=\"160.0\" y=\"125\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">$9.600</text><text x=\"160\" y=\"34\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">20 % del precio que quedó</text><text x=\"160\" y=\"172\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">el alza suma $1.600</text></svg>"
+    },
+    {
+      "id": "c5",
+      "tipo": "idea",
+      "titulo": "Mismo porcentaje, distinta plata",
+      "texto": "La rebaja quitó $2.000 y el alza devolvió solo $1.600. Por eso faltan $400: el mismo 20 % vale menos sobre un precio más bajo.",
+      "fuenteIds": [
+        "openstax-descuentos"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>La rebaja quitó 2.000 pesos y el alza devolvió 1.600: faltan 400</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><rect x=\"40\" y=\"40\" width=\"100\" height=\"100\" rx=\"4\" class=\"as-svg__warm\"/><rect x=\"40\" y=\"40\" width=\"100\" height=\"100\" rx=\"4\" class=\"as-svg__ink\"/><rect x=\"190\" y=\"60\" width=\"80\" height=\"80\" rx=\"4\" class=\"as-svg__fill\"/><rect x=\"190\" y=\"60\" width=\"80\" height=\"80\" rx=\"4\" class=\"as-svg__ink\"/><text x=\"90\" y=\"96\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"17\">$2.000</text><text x=\"230\" y=\"106\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">$1.600</text><text x=\"90\" y=\"162\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">quitó</text><text x=\"230\" y=\"162\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">devolvió</text><text x=\"160\" y=\"28\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">mismo 20 %</text><text x=\"160\" y=\"192\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"17\">faltan $400</text></svg>"
+    },
+    {
+      "id": "c6",
+      "tipo": "pregunta",
+      "pregunta": "¿Y si es al revés? Un producto de $10.000 sube 20 % y luego baja 20 %. ¿En cuánto queda?",
+      "correctaId": "c",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "$10.000",
+          "retro": "No: subir y bajar el mismo porcentaje no se cancela."
+        },
+        {
+          "id": "b",
+          "texto": "$10.400",
+          "retro": "No: sube a $12.000, y el 20 % de eso son $2.400."
+        },
+        {
+          "id": "c",
+          "texto": "$9.600",
+          "retro": "¡Correcto! Sube a $12.000, baja $2.400 y queda en $9.600."
+        }
+      ],
+      "fuenteIds": [
+        "openstax-descuentos",
+        "omc-porcentajes"
+      ]
+    },
+    {
+      "id": "c7",
+      "tipo": "revelar",
+      "titulo": "Volver al precio original",
+      "texto": "Para que el precio vuelva de $8.000 a $10.000, ¿cuánto debe subir?",
+      "revelado": "Un 25 %. Hay que sumar $2.000, y $2.000 es la cuarta parte de $8.000.",
+      "fuenteIds": [
+        "openstax-descuentos"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Para volver de 8.000 a 10.000 pesos hay que sumar 2.000: ¿qué porcentaje es?</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><defs><marker id=\"rebaja-alza-ah\" viewBox=\"0 0 10 10\" refX=\"5\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" class=\"as-svg__accent\"/></marker></defs><rect x=\"30\" y=\"70\" width=\"90\" height=\"50\" rx=\"6\" class=\"as-svg__warm\"/><rect x=\"30\" y=\"70\" width=\"90\" height=\"50\" rx=\"6\" class=\"as-svg__ink\"/><text x=\"75\" y=\"101\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"17\">$8.000</text><line x1=\"128\" y1=\"95\" x2=\"188\" y2=\"95\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"3\" marker-end=\"url(#rebaja-alza-ah)\"/><rect x=\"196\" y=\"70\" width=\"96\" height=\"50\" rx=\"6\" class=\"as-svg__soft\"/><rect x=\"196\" y=\"70\" width=\"96\" height=\"50\" rx=\"6\" class=\"as-svg__ink\"/><text x=\"244\" y=\"101\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"17\">$10.000</text><text x=\"158\" y=\"76\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"18\">¿?</text><text x=\"160\" y=\"36\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">volver al precio original</text><text x=\"160\" y=\"158\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">¿cuánto debe subir?</text></svg>"
+    },
+    {
+      "id": "c8",
+      "tipo": "dato",
+      "texto": "Con porcentajes mayores se nota más: un alza de 50 % seguida de una baja de 50 % deja el precio en 75 % del original.",
+      "fuenteIds": [
+        "omc-porcentajes"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Un alza de 50 por ciento seguida de una baja de 50 por ciento deja el precio en 75 por ciento del original</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><defs><marker id=\"rebaja-alza-ah\" viewBox=\"0 0 10 10\" refX=\"5\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" class=\"as-svg__accent\"/></marker></defs><rect x=\"30\" y=\"60\" width=\"80\" height=\"80\" rx=\"4\" class=\"as-svg__warm\"/><rect x=\"30\" y=\"60\" width=\"80\" height=\"80\" rx=\"4\" class=\"as-svg__ink\"/><text x=\"70\" y=\"106\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">100 %</text><line x1=\"116\" y1=\"84\" x2=\"136\" y2=\"84\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"3\" marker-end=\"url(#rebaja-alza-ah)\"/><rect x=\"140\" y=\"30\" width=\"80\" height=\"110\" rx=\"4\" class=\"as-svg__soft\"/><rect x=\"140\" y=\"30\" width=\"80\" height=\"110\" rx=\"4\" class=\"as-svg__ink\"/><text x=\"180\" y=\"90\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">150 %</text><line x1=\"226\" y1=\"84\" x2=\"246\" y2=\"84\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"3\" marker-end=\"url(#rebaja-alza-ah)\"/><rect x=\"250\" y=\"80\" width=\"50\" height=\"60\" rx=\"4\" class=\"as-svg__fill\"/><rect x=\"250\" y=\"80\" width=\"50\" height=\"60\" rx=\"4\" class=\"as-svg__ink\"/><text x=\"275\" y=\"116\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">75 %</text><text x=\"160\" y=\"164\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">+50 % y luego −50 %</text><text x=\"160\" y=\"186\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">queda en 75 % del original</text></svg>"
+    }
+  ],
+  "resumen": {
+    "titulo": "Rebajas y alzas",
+    "puntos": [
+      "Cada porcentaje se calcula sobre el precio que hay en ese momento.",
+      "Por eso $10.000 con una baja de 20 % y un alza de 20 % queda en $9.600.",
+      "Para deshacer una baja de 20 % hace falta un alza de 25 %."
+    ]
+  },
+  "fuentes": [
+    {
+      "id": "openstax-descuentos",
+      "entidad": "OpenStax, Rice University",
+      "titulo": "Contemporary Mathematics, 6.2 Discounts, Markups, and Sales Tax",
+      "url": "https://openstax.org/books/contemporary-mathematics/pages/6-2-discounts-markups-and-sales-tax",
+      "ubicacion": "Secciones sobre descuentos y aumentos",
+      "afirmaciones": [
+        "El descuento es el porcentaje multiplicado por el precio original",
+        "En porcentajes sucesivos, el segundo se calcula sobre el precio que quedó tras el primero",
+        "Un porcentaje de aumento se obtiene dividiendo el aumento por el precio de partida",
+        "Cálculos propios: 20 % de $10.000 = $2.000; 20 % de $8.000 = $1.600; $8.000 + $1.600 = $9.600; $10.000 − $9.600 = $400; 20 % de $12.000 = $2.400; $2.000 ÷ $8.000 = 25 %"
+      ],
+      "respalda": [
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6",
+        "c7"
+      ],
+      "consultadaEl": "2026-11-04"
+    },
+    {
+      "id": "omc-porcentajes",
+      "entidad": "One Mathematical Cat, Please! (sitio educativo de matemática)",
+      "titulo": "More practice with percents: percent increase and decrease",
+      "url": "https://www.onemathematicalcat.org/OneMathematicalCat_Offline/Algebra1/more_prob_percent_inc_decOffline.htm",
+      "ubicacion": "Problemas de aumento seguido de disminución",
+      "afirmaciones": [
+        "El cambio final se obtiene multiplicando los factores, no sumando los porcentajes",
+        "Un aumento de 50 % y luego una disminución de 50 %: (0,5)(1,5) = 0,75, es decir, 75 % del original"
+      ],
+      "respalda": [
+        "c1",
+        "c6",
+        "c8"
+      ],
+      "consultadaEl": "2026-11-04"
+    }
+  ],
+  "controlEditorial": {
+    "estado": "borrador",
+    "revisadoPor": null,
+    "fechaRevision": null
+  }
+}

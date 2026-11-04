@@ -433,6 +433,90 @@
       "estado": "publicado",
       "archivo": "data/lessons/jabon-grasa.r1.json",
       "sha256": "deface53ed7f20d102469397d8bbc96b7addea24e6d891caf49184629727e79e"
+    },
+    {
+      "id": "cerros-estrellas",
+      "revision": 1,
+      "schemaVersion": "2.0",
+      "titulo": "¿Por qué algunos cerros son buenos para observar estrellas?",
+      "disciplina": "Astronomía",
+      "familia": "astronomia",
+      "minutosEstimados": 5,
+      "estado": "publicado",
+      "archivo": "data/lessons/cerros-estrellas.r1.json",
+      "sha256": "f37a2d8e46a5438b7e062ea889c32ed484ab6dcaf8575c87f575daa2f4e33572"
+    },
+    {
+      "id": "inflacion-sube",
+      "revision": 1,
+      "schemaVersion": "2.0",
+      "titulo": "¿Qué significa que suba la inflación?",
+      "disciplina": "Economía",
+      "familia": "economia",
+      "minutosEstimados": 5,
+      "estado": "publicado",
+      "archivo": "data/lessons/inflacion-sube.r1.json",
+      "sha256": "bc499e34c645efca9a255b653a44bab731595bc92d98fddc6fc653876bfc1742"
+    },
+    {
+      "id": "cuchara-fria",
+      "revision": 1,
+      "schemaVersion": "2.0",
+      "titulo": "¿Por qué una cuchara de metal se siente más fría que una de madera?",
+      "disciplina": "Física cotidiana",
+      "familia": "fisica",
+      "minutosEstimados": 5,
+      "estado": "publicado",
+      "archivo": "data/lessons/cuchara-fria.r1.json",
+      "sha256": "e481f304b44aff4855e4448593464faa99392f905604a0776d20573f119b9814"
+    },
+    {
+      "id": "noticia-fuente",
+      "revision": 1,
+      "schemaVersion": "2.0",
+      "titulo": "¿Qué significa que una noticia tenga una fuente?",
+      "disciplina": "Sociedad y medios",
+      "familia": "sociedad",
+      "minutosEstimados": 5,
+      "estado": "publicado",
+      "archivo": "data/lessons/noticia-fuente.r1.json",
+      "sha256": "d73446b2592b62135039eda0699b4789fe111077c4aa5408f4aabca1cb4b9e27"
+    },
+    {
+      "id": "levadura-pan",
+      "revision": 1,
+      "schemaVersion": "2.0",
+      "titulo": "¿Qué hace la levadura dentro del pan?",
+      "disciplina": "Ciencia de la cocina",
+      "familia": "cocina",
+      "minutosEstimados": 5,
+      "estado": "publicado",
+      "archivo": "data/lessons/levadura-pan.r1.json",
+      "sha256": "110ad41593688a242704e39a8715c753fea7a157ae9480fa42e5c4ede3e28d78"
+    },
+    {
+      "id": "estaciones-ano",
+      "revision": 1,
+      "schemaVersion": "2.0",
+      "titulo": "¿Por qué hay estaciones del año?",
+      "disciplina": "Astronomía",
+      "familia": "astronomia",
+      "minutosEstimados": 5,
+      "estado": "publicado",
+      "archivo": "data/lessons/estaciones-ano.r1.json",
+      "sha256": "e951d3f7d6063b261b85bcf913ef662c2c6aed06d735ca9f0f388fbef07a6059"
+    },
+    {
+      "id": "rebaja-alza",
+      "revision": 1,
+      "schemaVersion": "2.0",
+      "titulo": "¿Por qué una rebaja seguida de un alza igual no devuelve el precio inicial?",
+      "disciplina": "Matemática cotidiana",
+      "familia": "matematica",
+      "minutosEstimados": 5,
+      "estado": "publicado",
+      "archivo": "data/lessons/rebaja-alza.r1.json",
+      "sha256": "6f3318776582657731685f8f9275f7a44ef90eb50d588cf3c339e14098c7f437"
     }
   ]
 }

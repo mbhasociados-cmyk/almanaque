@@ -1,0 +1,208 @@
+{
+  "schemaVersion": "2.0",
+  "id": "cerros-estrellas",
+  "revision": 1,
+  "idioma": "es-CL",
+  "disciplina": "Astronomía",
+  "familia": "astronomia",
+  "titulo": "¿Por qué algunos cerros son buenos para observar estrellas?",
+  "subtitulo": "Menos aire encima, menos humedad y un cielo oscuro.",
+  "minutosEstimados": 5,
+  "tarjetas": [
+    {
+      "id": "c1",
+      "tipo": "portada",
+      "titulo": "¿Por qué algunos cerros son buenos para observar estrellas?",
+      "texto": "Muchos de los grandes telescopios están en lo alto de un cerro. ¿Qué tiene de especial ese lugar?",
+      "fuenteIds": [
+        "brit-cerros"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Un telescopio en la cima de un cerro bajo un cielo con estrellas</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><path d=\"M40 200 L160 70 L280 200 Z\" class=\"as-svg__warm\"/><path d=\"M40 200 L160 70 L280 200 Z\" class=\"as-svg__ink\"/><path d=\"M144.0 72 A16.0 16.0 0 0 1 176.0 72 Z\" class=\"as-svg__fill\"/><path d=\"M144.0 72 A16.0 16.0 0 0 1 176.0 72 Z\" class=\"as-svg__ink\"/><path d=\"M60 33 L62.1 37.9 L67 40 L62.1 42.1 L60 47 L57.9 42.1 L53 40 L57.9 37.9 Z\" class=\"as-svg__sun\"/><path d=\"M60 33 L62.1 37.9 L67 40 L62.1 42.1 L60 47 L57.9 42.1 L53 40 L57.9 37.9 Z\" class=\"as-svg__ink\"/><path d=\"M110 21 L111.5 24.5 L115 26 L111.5 27.5 L110 31 L108.5 27.5 L105 26 L108.5 24.5 Z\" class=\"as-svg__sun\"/><path d=\"M110 21 L111.5 24.5 L115 26 L111.5 27.5 L110 31 L108.5 27.5 L105 26 L108.5 24.5 Z\" class=\"as-svg__ink\"/><path d=\"M232 23 L234.1 27.9 L239 30 L234.1 32.1 L232 37 L229.9 32.1 L225 30 L229.9 27.9 Z\" class=\"as-svg__sun\"/><path d=\"M232 23 L234.1 27.9 L239 30 L234.1 32.1 L232 37 L229.9 32.1 L225 30 L229.9 27.9 Z\" class=\"as-svg__ink\"/><path d=\"M280 53 L281.5 56.5 L285 58 L281.5 59.5 L280 63 L278.5 59.5 L275 58 L278.5 56.5 Z\" class=\"as-svg__sun\"/><path d=\"M280 53 L281.5 56.5 L285 58 L281.5 59.5 L280 63 L278.5 59.5 L275 58 L278.5 56.5 Z\" class=\"as-svg__ink\"/><text x=\"160\" y=\"186\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"17\">¿qué tiene este lugar?</text></svg>"
+    },
+    {
+      "id": "c2",
+      "tipo": "idea",
+      "titulo": "El aire desvía la luz",
+      "texto": "El aire de la atmósfera se mueve y desvía un poco la luz de las estrellas. Por eso titilan, y por eso las imágenes de los telescopios pueden salir borrosas.",
+      "fuenteIds": [
+        "nasa-titilar",
+        "brit-cerros"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>La luz de una estrella se desvía al cruzar el aire en movimiento; por eso titila y la imagen sale borrosa</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><path d=\"M160 16 L163.0 23.0 L170 26 L163.0 29.0 L160 36 L157.0 29.0 L150 26 L157.0 23.0 Z\" class=\"as-svg__sun\"/><path d=\"M160 16 L163.0 23.0 L170 26 L163.0 29.0 L160 36 L157.0 29.0 L150 26 L157.0 23.0 Z\" class=\"as-svg__ink\"/><path d=\"M160 40 C135 60 185 78 160 96 C135 114 185 130 160 150\" class=\"as-svg__warmline\"/><path d=\"M14 74 q6.5 -5 13.0 0 t13.0 0 q6.5 -5 13.0 0 t13.0 0 q6.5 -5 13.0 0 t13.0 0 q6.5 -5 13.0 0 t13.0 0 q6.5 -5 13.0 0 t13.0 0\" class=\"as-svg__coolline\"/><path d=\"M204 74 q6.5 -5 13.0 0 t13.0 0 q6.5 -5 13.0 0 t13.0 0 q6.5 -5 13.0 0 t13.0 0 q6.5 -5 13.0 0 t13.0 0\" class=\"as-svg__coolline\"/><path d=\"M14 112 q6.5 -5 13.0 0 t13.0 0 q6.5 -5 13.0 0 t13.0 0 q6.5 -5 13.0 0 t13.0 0 q6.5 -5 13.0 0 t13.0 0 q6.5 -5 13.0 0 t13.0 0\" class=\"as-svg__coolline\"/><path d=\"M204 112 q6.5 -5 13.0 0 t13.0 0 q6.5 -5 13.0 0 t13.0 0 q6.5 -5 13.0 0 t13.0 0 q6.5 -5 13.0 0 t13.0 0\" class=\"as-svg__coolline\"/><text x=\"80\" y=\"56\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">aire en movimiento</text><circle cx=\"146\" cy=\"170\" r=\"4\" class=\"as-svg__muted\"/><circle cx=\"160\" cy=\"170\" r=\"4\" class=\"as-svg__muted\"/><circle cx=\"174\" cy=\"170\" r=\"4\" class=\"as-svg__muted\"/><text x=\"160\" y=\"192\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">la luz se desvía</text></svg>"
+    },
+    {
+      "id": "c3",
+      "tipo": "pregunta",
+      "pregunta": "¿Qué gana un telescopio en la cima de un cerro alto?",
+      "correctaId": "a",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Queda por encima de gran parte de la atmósfera",
+          "retro": "¡Exacto! Hay menos aire que distorsione la luz."
+        },
+        {
+          "id": "b",
+          "texto": "Recibe más calor del Sol",
+          "retro": "No: la ventaja no tiene que ver con el calor, sino con tener menos atmósfera encima."
+        },
+        {
+          "id": "c",
+          "texto": "Las estrellas se mueven más lento",
+          "retro": "No: lo que cambia es el aire que cruza la luz, y arriba hay menos."
+        }
+      ],
+      "fuenteIds": [
+        "brit-cerros"
+      ]
+    },
+    {
+      "id": "c4",
+      "tipo": "idea",
+      "titulo": "Menos aire encima",
+      "texto": "En lo alto, el observatorio queda por encima de gran parte de la atmósfera. Hay menos aire que distorsione la luz, y las imágenes salen más nítidas.",
+      "fuenteIds": [
+        "brit-cerros"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Un observatorio en lo alto queda por encima de gran parte de la atmósfera</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><defs><marker id=\"cerros-estrellas-ah\" viewBox=\"0 0 10 10\" refX=\"5\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" class=\"as-svg__accent\"/></marker></defs><rect x=\"0\" y=\"120\" width=\"320\" height=\"80\" rx=\"18\" class=\"as-svg__cool\"/><path d=\"M70 200 L170 58 L270 200 Z\" class=\"as-svg__warm\"/><path d=\"M70 200 L170 58 L270 200 Z\" class=\"as-svg__ink\"/><path d=\"M154.0 60 A16.0 16.0 0 0 1 186.0 60 Z\" class=\"as-svg__fill\"/><path d=\"M154.0 60 A16.0 16.0 0 0 1 186.0 60 Z\" class=\"as-svg__ink\"/><text x=\"66\" y=\"38\" text-anchor=\"start\" class=\"as-svg__label\" font-size=\"16\">menos aire encima</text><line x1=\"112\" y1=\"50\" x2=\"150\" y2=\"70\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"2\" marker-end=\"url(#cerros-estrellas-ah)\"/><text x=\"48\" y=\"150\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">mucha</text><text x=\"48\" y=\"170\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">atmósfera</text><text x=\"170\" y=\"150\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">cerro</text></svg>"
+    },
+    {
+      "id": "c5",
+      "tipo": "idea",
+      "titulo": "Mejor si el aire es seco",
+      "texto": "El vapor de agua absorbe parte de la luz, sobre todo la infrarroja. Por eso ayuda que el cerro esté en una zona seca.",
+      "fuenteIds": [
+        "brit-cerros"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>El vapor de agua absorbe parte de la luz infrarroja; en una zona seca esa luz llega mejor al telescopio</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><defs><marker id=\"cerros-estrellas-ah\" viewBox=\"0 0 10 10\" refX=\"5\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" class=\"as-svg__accent\"/></marker></defs><rect x=\"16\" y=\"40\" width=\"136\" height=\"96\" rx=\"10\" class=\"as-svg__soft\"/><rect x=\"16\" y=\"40\" width=\"136\" height=\"96\" rx=\"10\" class=\"as-svg__ink\"/><rect x=\"168\" y=\"40\" width=\"136\" height=\"96\" rx=\"10\" class=\"as-svg__soft\"/><rect x=\"168\" y=\"40\" width=\"136\" height=\"96\" rx=\"10\" class=\"as-svg__ink\"/><line x1=\"34\" y1=\"66\" x2=\"100\" y2=\"66\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"3\" marker-end=\"url(#cerros-estrellas-ah)\"/><circle cx=\"70\" cy=\"96\" r=\"4\" class=\"as-svg__cool\"/><circle cx=\"84\" cy=\"84\" r=\"4\" class=\"as-svg__cool\"/><circle cx=\"112\" cy=\"66\" r=\"4\" class=\"as-svg__cool\"/><circle cx=\"112\" cy=\"88\" r=\"4\" class=\"as-svg__cool\"/><circle cx=\"126\" cy=\"74\" r=\"4\" class=\"as-svg__cool\"/><circle cx=\"98\" cy=\"110\" r=\"4\" class=\"as-svg__cool\"/><circle cx=\"126\" cy=\"112\" r=\"4\" class=\"as-svg__cool\"/><line x1=\"186\" y1=\"66\" x2=\"286\" y2=\"66\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"3\" marker-end=\"url(#cerros-estrellas-ah)\"/><text x=\"84\" y=\"160\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">con vapor</text><text x=\"84\" y=\"182\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">parte se absorbe</text><text x=\"236\" y=\"160\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">aire seco</text><text x=\"236\" y=\"182\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">llega mejor</text><text x=\"160\" y=\"28\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">luz infrarroja</text></svg>"
+    },
+    {
+      "id": "c6",
+      "tipo": "revelar",
+      "titulo": "Un cerro muy seco",
+      "texto": "Cerro Paranal, en el desierto de Atacama, tiene 2.635 metros de altura y un gran observatorio. ¿Qué tan seco es ese lugar?",
+      "revelado": "El Observatorio Europeo Austral lo describe como posiblemente la zona más seca de la Tierra: llueve menos de 10 milímetros al año.",
+      "fuenteIds": [
+        "eso-paranal"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Cerro Paranal en el desierto de Atacama, con 2.635 metros de altura</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><path d=\"M60 168 L160 84 L260 168 Z\" class=\"as-svg__warm\"/><path d=\"M60 168 L160 84 L260 168 Z\" class=\"as-svg__ink\"/><path d=\"M144.0 86 A16.0 16.0 0 0 1 176.0 86 Z\" class=\"as-svg__fill\"/><path d=\"M144.0 86 A16.0 16.0 0 0 1 176.0 86 Z\" class=\"as-svg__ink\"/><line x1=\"20\" y1=\"168\" x2=\"300\" y2=\"168\" class=\"as-svg__ink\"/><text x=\"160\" y=\"40\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"18\">Cerro Paranal</text><text x=\"160\" y=\"62\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">2.635 metros</text><text x=\"160\" y=\"190\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">desierto de Atacama</text></svg>"
+    },
+    {
+      "id": "c7",
+      "tipo": "pregunta",
+      "pregunta": "Según el Observatorio Europeo Austral, ¿qué ofrece el cielo del norte de Chile?",
+      "correctaId": "b",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Lluvias frecuentes que limpian el aire",
+          "retro": "No: destaca lo contrario, un cielo despejado y muy seco."
+        },
+        {
+          "id": "b",
+          "texto": "Cielo despejado y muy seco, con poca turbulencia y poca contaminación lumínica",
+          "retro": "¡Así es! Por eso sus observatorios están en Chile."
+        },
+        {
+          "id": "c",
+          "texto": "Estrellas que brillan más que en otras partes",
+          "retro": "No: las estrellas son las mismas; lo que ayuda es el cielo del lugar."
+        }
+      ],
+      "fuenteIds": [
+        "eso-chile"
+      ]
+    },
+    {
+      "id": "c8",
+      "tipo": "dato",
+      "texto": "Desde el hemisferio norte cuesta ver el centro de la Vía Láctea y las Nubes de Magallanes. Desde Chile, en cambio, se pueden ver.",
+      "fuenteIds": [
+        "eso-chile"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Desde Chile se ven el centro de la Vía Láctea y las dos Nubes de Magallanes</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><path d=\"M0 150 C70 110 130 90 200 60 C240 44 280 30 320 26 L320 62 C280 70 240 84 200 96 C130 122 70 150 0 186 Z\" class=\"as-svg__warm\"/><circle cx=\"60\" cy=\"148\" r=\"2\" class=\"as-svg__label\"/><circle cx=\"110\" cy=\"120\" r=\"2\" class=\"as-svg__label\"/><circle cx=\"150\" cy=\"108\" r=\"2\" class=\"as-svg__label\"/><circle cx=\"206\" cy=\"78\" r=\"2\" class=\"as-svg__label\"/><circle cx=\"250\" cy=\"62\" r=\"2\" class=\"as-svg__label\"/><circle cx=\"284\" cy=\"50\" r=\"2\" class=\"as-svg__label\"/><circle cx=\"180\" cy=\"92\" r=\"2\" class=\"as-svg__label\"/><ellipse cx=\"66\" cy=\"50\" rx=\"24\" ry=\"13\" class=\"as-svg__fill\"/><ellipse cx=\"124\" cy=\"38\" rx=\"15\" ry=\"9\" class=\"as-svg__fill\"/><text x=\"14\" y=\"26\" text-anchor=\"start\" class=\"as-svg__label\" font-size=\"15\">Nubes de Magallanes</text><text x=\"196\" y=\"136\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">centro de la</text><text x=\"196\" y=\"156\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">Vía Láctea</text><text x=\"160\" y=\"190\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">se ven desde Chile</text></svg>"
+    }
+  ],
+  "resumen": {
+    "titulo": "Cerros y estrellas",
+    "puntos": [
+      "La atmósfera desvía la luz de las estrellas, y en lo alto hay menos aire que la distorsione.",
+      "El aire seco ayuda porque el vapor de agua absorbe parte de la luz.",
+      "El norte de Chile ofrece cielos despejados y muy secos, con poca contaminación lumínica."
+    ]
+  },
+  "fuentes": [
+    {
+      "id": "brit-cerros",
+      "entidad": "Encyclopaedia Britannica",
+      "titulo": "Why are many large optical telescopes built on high mountains?",
+      "url": "https://www.britannica.com/science/Why-are-many-large-optical-telescopes-built-on-high-mountains",
+      "ubicacion": "Texto principal",
+      "afirmaciones": [
+        "Muchos telescopios ópticos grandes se construyen en montañas altas",
+        "La turbulencia de la atmósfera distorsiona la luz: las estrellas centellean y las imágenes salen borrosas",
+        "En altura, el observatorio queda sobre gran parte de la atmósfera",
+        "Muchas de esas montañas están en zonas secas; el vapor de agua absorbe ciertas longitudes de onda, sobre todo en el infrarrojo"
+      ],
+      "respalda": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5"
+      ],
+      "consultadaEl": "2026-11-04"
+    },
+    {
+      "id": "nasa-titilar",
+      "entidad": "NASA, StarChild",
+      "titulo": "Why do stars twinkle?",
+      "url": "https://starchild.gsfc.nasa.gov/docs/StarChild/questions/question26.html",
+      "ubicacion": "Respuesta a la pregunta",
+      "afirmaciones": [
+        "La luz de las estrellas atraviesa la atmósfera y el movimiento del aire la desvía levemente, y por eso parecen titilar"
+      ],
+      "respalda": [
+        "c2"
+      ],
+      "consultadaEl": "2026-11-04"
+    },
+    {
+      "id": "eso-paranal",
+      "entidad": "European Southern Observatory",
+      "titulo": "Paranal: Site Information",
+      "url": "https://www.eso.org/sci/facilities/paranal/astroclimate/site.html",
+      "ubicacion": "Descripción del sitio",
+      "afirmaciones": [
+        "Cerro Paranal tiene 2.635 metros sobre el nivel del mar",
+        "Se considera posiblemente la zona más seca de la Tierra",
+        "La lluvia anual es inferior a 10 milímetros"
+      ],
+      "respalda": [
+        "c6"
+      ],
+      "consultadaEl": "2026-11-04"
+    },
+    {
+      "id": "eso-chile",
+      "entidad": "European Southern Observatory",
+      "titulo": "Why are ESO's observatories in Chile?",
+      "url": "https://supernova.eso.org/exhibition/0606/?lang=en",
+      "ubicacion": "Texto principal",
+      "afirmaciones": [
+        "El cielo del norte de Chile es despejado y muy seco, con muy poca turbulencia y muy poca contaminación lumínica",
+        "Desde el hemisferio norte son difíciles de ver el centro de la Vía Láctea y las Nubes de Magallanes; desde Chile son visibles"
+      ],
+      "respalda": [
+        "c7",
+        "c8"
+      ],
+      "consultadaEl": "2026-11-04"
+    }
+  ],
+  "controlEditorial": {
+    "estado": "borrador",
+    "revisadoPor": null,
+    "fechaRevision": null
+  }
+}

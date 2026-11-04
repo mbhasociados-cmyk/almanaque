@@ -1,0 +1,226 @@
+{
+  "schemaVersion": "2.0",
+  "id": "levadura-pan",
+  "revision": 1,
+  "idioma": "es-CL",
+  "disciplina": "Ciencia de la cocina",
+  "familia": "cocina",
+  "titulo": "¿Qué hace la levadura dentro del pan?",
+  "subtitulo": "Un ser vivo diminuto llena la masa de burbujas.",
+  "minutosEstimados": 5,
+  "tarjetas": [
+    {
+      "id": "c1",
+      "tipo": "portada",
+      "titulo": "¿Qué hace la levadura dentro del pan?",
+      "texto": "Una masa de pan crece mientras reposa, y su textura queda más ligera. El trabajo lo hace la levadura, un ser vivo.",
+      "fuenteIds": [
+        "brit-levadura",
+        "iowa-pan"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Una masa de pan pequeña que crece hasta ser una masa más grande mientras reposa</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><defs><marker id=\"levadura-pan-ah\" viewBox=\"0 0 10 10\" refX=\"5\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" class=\"as-svg__accent\"/></marker></defs><path d=\"M36 156 L122 156 C130 125.2 106 112 79.0 112 C52 112 28 125.2 36 156 Z\" class=\"as-svg__warm\"/><path d=\"M36 156 L122 156 C130 125.2 106 112 79.0 112 C52 112 28 125.2 36 156 Z\" class=\"as-svg__ink\"/><line x1=\"132\" y1=\"128\" x2=\"170\" y2=\"128\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"3\" marker-end=\"url(#levadura-pan-ah)\"/><path d=\"M184 156 L296 156 C304 97.2 280 72 240.0 72 C200 72 176 97.2 184 156 Z\" class=\"as-svg__warm\"/><path d=\"M184 156 L296 156 C304 97.2 280 72 240.0 72 C200 72 176 97.2 184 156 Z\" class=\"as-svg__ink\"/><line x1=\"20\" y1=\"158\" x2=\"300\" y2=\"158\" class=\"as-svg__ink\" /><text x=\"160\" y=\"36\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">la masa crece mientras reposa</text><text x=\"160\" y=\"186\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">¿qué hay adentro?</text></svg>"
+    },
+    {
+      "id": "c2",
+      "tipo": "idea",
+      "titulo": "Un hongo de una sola célula",
+      "texto": "La levadura de panadería es un hongo de una sola célula, no un hongo de sombrero como el champiñón.",
+      "fuenteIds": [
+        "buffalo-levadura"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Una célula de levadura: un hongo de una sola célula, muy distinto de un champiñón con sombrero</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><circle cx=\"84\" cy=\"86\" r=\"34\" class=\"as-svg__fill\"/><circle cx=\"84\" cy=\"86\" r=\"34\" class=\"as-svg__ink\"/><text x=\"84\" y=\"148\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">una sola célula</text><path d=\"M206 88 C206 40 286 40 286 88 Z\" class=\"as-svg__warm\"/><path d=\"M206 88 C206 40 286 40 286 88 Z\" class=\"as-svg__ink\"/><rect x=\"234\" y=\"88\" width=\"24\" height=\"42\" rx=\"4\" class=\"as-svg__soft\"/><rect x=\"234\" y=\"88\" width=\"24\" height=\"42\" rx=\"4\" class=\"as-svg__ink\"/><line x1=\"204\" y1=\"44\" x2=\"288\" y2=\"132\" class=\"as-svg__ink\" /><text x=\"246\" y=\"150\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">no es de sombrero</text><text x=\"84\" y=\"180\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">levadura</text></svg>"
+    },
+    {
+      "id": "c3",
+      "tipo": "pregunta",
+      "pregunta": "¿Qué gas de la levadura hace subir la masa?",
+      "correctaId": "b",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Oxígeno",
+          "retro": "No: el gas que libera la levadura y forma las burbujas es el dióxido de carbono."
+        },
+        {
+          "id": "b",
+          "texto": "Dióxido de carbono",
+          "retro": "¡Correcto! Forma burbujas que expanden la masa."
+        },
+        {
+          "id": "c",
+          "texto": "Helio",
+          "retro": "No: la levadura libera dióxido de carbono."
+        }
+      ],
+      "fuenteIds": [
+        "buffalo-levadura",
+        "brit-levadura"
+      ]
+    },
+    {
+      "id": "c4",
+      "tipo": "idea",
+      "titulo": "Come azúcar y suelta gas",
+      "texto": "La levadura se alimenta de azúcar. Al fermentar, produce dióxido de carbono y alcohol, y el dióxido de carbono forma burbujas que expanden la masa.",
+      "fuenteIds": [
+        "brit-levadura",
+        "buffalo-levadura"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>La levadura come azúcar y produce dióxido de carbono y alcohol; el dióxido de carbono forma burbujas en la masa</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><defs><marker id=\"levadura-pan-ah\" viewBox=\"0 0 10 10\" refX=\"5\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" class=\"as-svg__accent\"/></marker></defs><rect x=\"16\" y=\"74\" width=\"74\" height=\"40\" rx=\"6\" class=\"as-svg__warm\"/><rect x=\"16\" y=\"74\" width=\"74\" height=\"40\" rx=\"6\" class=\"as-svg__ink\"/><text x=\"53\" y=\"100\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">azúcar</text><line x1=\"96\" y1=\"94\" x2=\"124\" y2=\"94\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"3\" marker-end=\"url(#levadura-pan-ah)\"/><circle cx=\"156\" cy=\"94\" r=\"24\" class=\"as-svg__fill\"/><circle cx=\"156\" cy=\"94\" r=\"24\" class=\"as-svg__ink\"/><line x1=\"186\" y1=\"84\" x2=\"214\" y2=\"62\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"3\" marker-end=\"url(#levadura-pan-ah)\"/><line x1=\"186\" y1=\"104\" x2=\"214\" y2=\"126\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"3\" marker-end=\"url(#levadura-pan-ah)\"/><text x=\"262\" y=\"50\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">dióxido de</text><text x=\"262\" y=\"68\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">carbono</text><text x=\"262\" y=\"136\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">alcohol</text><text x=\"160\" y=\"28\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">fermentación</text><circle cx=\"120\" cy=\"170\" r=\"10\" class=\"as-svg__ink\"/><circle cx=\"150\" cy=\"176\" r=\"7\" class=\"as-svg__ink\"/><circle cx=\"176\" cy=\"168\" r=\"11\" class=\"as-svg__ink\"/><circle cx=\"202\" cy=\"176\" r=\"6\" class=\"as-svg__ink\"/><text x=\"66\" y=\"178\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">burbujas</text></svg>"
+    },
+    {
+      "id": "c5",
+      "tipo": "idea",
+      "titulo": "Una red que atrapa el gas",
+      "texto": "Al amasar se estiran las proteínas del gluten, que forman una red elástica. Esa red atrapa el gas dentro de la masa.",
+      "fuenteIds": [
+        "wsu-horno",
+        "iowa-pan"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Una red elástica de gluten atrapa las burbujas de gas dentro de la masa</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><rect x=\"30\" y=\"44\" width=\"260\" height=\"110\" rx=\"22\" class=\"as-svg__warm\"/><rect x=\"30\" y=\"44\" width=\"260\" height=\"110\" rx=\"22\" class=\"as-svg__ink\"/><path d=\"M44 50 C70 90 30 110 60 148\" class=\"as-svg__ink\"/><path d=\"M90 50 C116 90 76 110 106 148\" class=\"as-svg__ink\"/><path d=\"M136 50 C162 90 122 110 152 148\" class=\"as-svg__ink\"/><path d=\"M182 50 C208 90 168 110 198 148\" class=\"as-svg__ink\"/><path d=\"M228 50 C254 90 214 110 244 148\" class=\"as-svg__ink\"/><path d=\"M274 50 C300 90 260 110 290 148\" class=\"as-svg__ink\"/><path d=\"M36 64 C110 52 200 80 284 64\" class=\"as-svg__ink\"/><path d=\"M36 88 C110 76 200 104 284 88\" class=\"as-svg__ink\"/><path d=\"M36 112 C110 100 200 128 284 112\" class=\"as-svg__ink\"/><path d=\"M36 136 C110 124 200 152 284 136\" class=\"as-svg__ink\"/><circle cx=\"88\" cy=\"76\" r=\"10\" class=\"as-svg__soft\"/><circle cx=\"150\" cy=\"110\" r=\"10\" class=\"as-svg__soft\"/><circle cx=\"214\" cy=\"84\" r=\"10\" class=\"as-svg__soft\"/><circle cx=\"240\" cy=\"126\" r=\"10\" class=\"as-svg__soft\"/><circle cx=\"110\" cy=\"128\" r=\"10\" class=\"as-svg__soft\"/><text x=\"160\" y=\"28\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"17\">red de gluten</text><text x=\"160\" y=\"182\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"17\">atrapa el gas</text></svg>"
+    },
+    {
+      "id": "c6",
+      "tipo": "revelar",
+      "titulo": "¿Y en el horno?",
+      "texto": "La levadura también produjo alcohol. ¿Qué pasa con él en el horno, y con la levadura?",
+      "revelado": "El calor mata la levadura y evapora el alcohol.",
+      "fuenteIds": [
+        "ucsb-levadura"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Un pan entra al horno: ¿qué pasa con el alcohol que produjo la levadura?</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><rect x=\"70\" y=\"40\" width=\"180\" height=\"120\" rx=\"10\" class=\"as-svg__warm\"/><rect x=\"70\" y=\"40\" width=\"180\" height=\"120\" rx=\"10\" class=\"as-svg__ink\"/><rect x=\"86\" y=\"56\" width=\"148\" height=\"88\" rx=\"6\" class=\"as-svg__soft\"/><rect x=\"86\" y=\"56\" width=\"148\" height=\"88\" rx=\"6\" class=\"as-svg__ink\"/><path d=\"M118 138 L202 138 C210 103.0 186 88 160.0 88 C134 88 110 103.0 118 138 Z\" class=\"as-svg__fill\"/><path d=\"M118 138 L202 138 C210 103.0 186 88 160.0 88 C134 88 110 103.0 118 138 Z\" class=\"as-svg__ink\"/><line x1=\"92\" y1=\"146\" x2=\"228\" y2=\"146\" class=\"as-svg__ink\" /><text x=\"160\" y=\"28\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">en el horno</text><text x=\"160\" y=\"184\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"17\">¿y el alcohol?</text></svg>"
+    },
+    {
+      "id": "c7",
+      "tipo": "pregunta",
+      "pregunta": "¿Por qué una receta de pan pide líquido tibio y no muy caliente?",
+      "correctaId": "c",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Para que no se queme la harina",
+          "retro": "No: la razón es que la levadura es un ser vivo."
+        },
+        {
+          "id": "b",
+          "texto": "Para que el gluten se derrita",
+          "retro": "No: el cuidado es con la levadura, que muere con demasiado calor."
+        },
+        {
+          "id": "c",
+          "texto": "Porque el calor excesivo mata la levadura",
+          "retro": "¡Así es! Y con frío trabaja lento."
+        }
+      ],
+      "fuenteIds": [
+        "iowa-pan"
+      ]
+    },
+    {
+      "id": "c8",
+      "tipo": "dato",
+      "texto": "Esta levadura se usa desde hace miles de años para hacer pan, cerveza y vino. Es uno de los microorganismos domesticados más antiguos.",
+      "fuenteIds": [
+        "brit-levadura"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Pan, cerveza y vino: se hacen con esta levadura desde hace miles de años</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><path d=\"M28 146 L104 146 C112 111.0 88 96 66.0 96 C44 96 20 111.0 28 146 Z\" class=\"as-svg__warm\"/><path d=\"M28 146 L104 146 C112 111.0 88 96 66.0 96 C44 96 20 111.0 28 146 Z\" class=\"as-svg__ink\"/><rect x=\"130\" y=\"72\" width=\"56\" height=\"74\" rx=\"6\" class=\"as-svg__warm\"/><rect x=\"130\" y=\"72\" width=\"56\" height=\"74\" rx=\"6\" class=\"as-svg__ink\"/><path d=\"M186 90 C204 90 204 126 186 126\" class=\"as-svg__ink\"/><path d=\"M238 70 L280 70 C280 100 268 110 259 110 C250 110 238 100 238 70 Z\" class=\"as-svg__fill\"/><path d=\"M238 70 L280 70 C280 100 268 110 259 110 C250 110 238 100 238 70 Z\" class=\"as-svg__ink\"/><line x1=\"259\" y1=\"110\" x2=\"259\" y2=\"140\" class=\"as-svg__ink\" /><line x1=\"242\" y1=\"144\" x2=\"276\" y2=\"144\" class=\"as-svg__ink\" /><text x=\"66\" y=\"170\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">pan</text><text x=\"158\" y=\"170\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">cerveza</text><text x=\"259\" y=\"170\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">vino</text><text x=\"160\" y=\"34\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">desde hace miles de años</text></svg>"
+    }
+  ],
+  "resumen": {
+    "titulo": "La levadura",
+    "puntos": [
+      "Es un hongo de una sola célula que se alimenta de azúcar.",
+      "Al fermentar produce dióxido de carbono, y las burbujas hacen crecer la masa.",
+      "La red de gluten atrapa el gas; en el horno, el calor mata la levadura y evapora el alcohol."
+    ]
+  },
+  "fuentes": [
+    {
+      "id": "brit-levadura",
+      "entidad": "Encyclopaedia Britannica",
+      "titulo": "Baker's yeast",
+      "url": "https://www.britannica.com/science/bakers-yeast",
+      "ubicacion": "Texto principal",
+      "afirmaciones": [
+        "La levadura de panadería es un hongo unicelular que hace subir los productos horneados",
+        "Convierte azúcares en dióxido de carbono y alcohol; el dióxido de carbono expande la masa y da una textura más ligera",
+        "Se usa desde hace miles de años en panadería, cerveza y vino; es uno de los microorganismos domesticados más antiguos"
+      ],
+      "respalda": [
+        "c1",
+        "c3",
+        "c4",
+        "c8"
+      ],
+      "consultadaEl": "2026-11-04"
+    },
+    {
+      "id": "buffalo-levadura",
+      "entidad": "University at Buffalo",
+      "titulo": "Meet baker's yeast, the budding, single-celled fungus that fluffs your bread",
+      "url": "https://www.buffalo.edu/ubnow/stories/2020/07/yeast.html",
+      "ubicacion": "Texto principal",
+      "afirmaciones": [
+        "Es un hongo unicelular, no un hongo con sombrero como los champiñones",
+        "Se alimenta de azúcar y libera dióxido de carbono, que forma burbujas que expanden la masa"
+      ],
+      "respalda": [
+        "c2",
+        "c3",
+        "c4"
+      ],
+      "consultadaEl": "2026-11-04"
+    },
+    {
+      "id": "wsu-horno",
+      "entidad": "Washington State University, Ask Dr. Universe",
+      "titulo": "Why does bread expand in the oven?",
+      "url": "https://askdruniverse.wsu.edu/2026/04/30/bread-expand-oven/",
+      "ubicacion": "Texto principal",
+      "afirmaciones": [
+        "Al amasar se estiran las proteínas del gluten, que forman una red que atrapa los gases"
+      ],
+      "respalda": [
+        "c5"
+      ],
+      "consultadaEl": "2026-11-04"
+    },
+    {
+      "id": "iowa-pan",
+      "entidad": "Iowa State University Extension",
+      "titulo": "Yeast Bread Baking: A Kitchen Science Drama",
+      "url": "https://blogs.extension.iastate.edu/answerline/2021/01/12/yeast-bread-baking-a-kitchen-science-drama/",
+      "ubicacion": "Texto principal",
+      "afirmaciones": [
+        "La levadura es un organismo vivo que consume azúcar y libera dióxido de carbono",
+        "Amasar desarrolla el gluten, una red elástica que atrapa el gas y hace subir la masa",
+        "La levadura trabaja lento con frío y muere con temperaturas demasiado altas"
+      ],
+      "respalda": [
+        "c1",
+        "c5",
+        "c7"
+      ],
+      "consultadaEl": "2026-11-04"
+    },
+    {
+      "id": "ucsb-levadura",
+      "entidad": "University of California, Santa Barbara, ScienceLine",
+      "titulo": "Respuesta sobre la levadura y el pan",
+      "url": "https://scienceline.ucsb.edu/getkey.php?key=692",
+      "ubicacion": "Respuesta a la pregunta",
+      "afirmaciones": [
+        "El calor del horno mata la levadura y evapora el alcohol"
+      ],
+      "respalda": [
+        "c6"
+      ],
+      "consultadaEl": "2026-11-04"
+    }
+  ],
+  "controlEditorial": {
+    "estado": "borrador",
+    "revisadoPor": null,
+    "fechaRevision": null
+  }
+}

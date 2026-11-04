@@ -1,0 +1,214 @@
+{
+  "schemaVersion": "2.0",
+  "id": "cuchara-fria",
+  "revision": 1,
+  "idioma": "es-CL",
+  "disciplina": "Física cotidiana",
+  "familia": "fisica",
+  "titulo": "¿Por qué una cuchara de metal se siente más fría que una de madera?",
+  "subtitulo": "Tu mano no siempre es un buen termómetro.",
+  "minutosEstimados": 5,
+  "tarjetas": [
+    {
+      "id": "c1",
+      "tipo": "portada",
+      "titulo": "¿Por qué una cuchara de metal se siente más fría que una de madera?",
+      "texto": "Deja una cuchara de metal y otra de madera sobre la mesa. Al tocarlas, la de metal se siente más fría. ¿Lo está de verdad?",
+      "fuenteIds": [
+        "expl-metal"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Una cuchara de metal y una de madera sobre la misma mesa</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><rect x=\"95\" y=\"78\" width=\"10\" height=\"100\" rx=\"5\" class=\"as-svg__cool\"/><rect x=\"95\" y=\"78\" width=\"10\" height=\"100\" rx=\"5\" class=\"as-svg__ink\"/><ellipse cx=\"100\" cy=\"60\" rx=\"20\" ry=\"27\" class=\"as-svg__cool\"/><ellipse cx=\"100\" cy=\"60\" rx=\"20\" ry=\"27\" class=\"as-svg__ink\"/><rect x=\"215\" y=\"78\" width=\"10\" height=\"100\" rx=\"5\" class=\"as-svg__warm\"/><rect x=\"215\" y=\"78\" width=\"10\" height=\"100\" rx=\"5\" class=\"as-svg__ink\"/><ellipse cx=\"220\" cy=\"60\" rx=\"20\" ry=\"27\" class=\"as-svg__warm\"/><ellipse cx=\"220\" cy=\"60\" rx=\"20\" ry=\"27\" class=\"as-svg__ink\"/><line x1=\"30\" y1=\"182\" x2=\"290\" y2=\"182\" class=\"as-svg__ink\" /><text x=\"160\" y=\"36\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">¿más fría?</text><text x=\"50\" y=\"112\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">metal</text><text x=\"270\" y=\"112\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">madera</text></svg>"
+    },
+    {
+      "id": "c2",
+      "tipo": "pregunta",
+      "pregunta": "Las dos cucharas llevan una hora en la misma mesa. ¿Cuál está más fría?",
+      "correctaId": "c",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "La de metal",
+          "retro": "Se siente más fría, pero un termómetro mostraría que no lo está."
+        },
+        {
+          "id": "b",
+          "texto": "La de madera",
+          "retro": "No: un termómetro no mostraría diferencia entre ambas."
+        },
+        {
+          "id": "c",
+          "texto": "Están a la misma temperatura",
+          "retro": "¡Exacto! Las dos quedan a temperatura ambiente, aunque no se sientan igual."
+        }
+      ],
+      "fuenteIds": [
+        "expl-metal",
+        "illinois-fisica"
+      ]
+    },
+    {
+      "id": "c3",
+      "tipo": "idea",
+      "titulo": "La misma temperatura",
+      "texto": "Si dejas materiales cerca de una hora en un mismo lugar, llegan a temperatura ambiente. Un termómetro infrarrojo no muestra diferencia, aunque el tacto diga lo contrario.",
+      "fuenteIds": [
+        "expl-metal"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Un termómetro marca lo mismo en la cuchara de metal y en la de madera</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><rect x=\"65\" y=\"76\" width=\"10\" height=\"100\" rx=\"5\" class=\"as-svg__cool\"/><rect x=\"65\" y=\"76\" width=\"10\" height=\"100\" rx=\"5\" class=\"as-svg__ink\"/><ellipse cx=\"70\" cy=\"58\" rx=\"20\" ry=\"27\" class=\"as-svg__cool\"/><ellipse cx=\"70\" cy=\"58\" rx=\"20\" ry=\"27\" class=\"as-svg__ink\"/><rect x=\"245\" y=\"76\" width=\"10\" height=\"100\" rx=\"5\" class=\"as-svg__warm\"/><rect x=\"245\" y=\"76\" width=\"10\" height=\"100\" rx=\"5\" class=\"as-svg__ink\"/><ellipse cx=\"250\" cy=\"58\" rx=\"20\" ry=\"27\" class=\"as-svg__warm\"/><ellipse cx=\"250\" cy=\"58\" rx=\"20\" ry=\"27\" class=\"as-svg__ink\"/><rect x=\"106\" y=\"62\" width=\"108\" height=\"56\" rx=\"8\" class=\"as-svg__soft\"/><rect x=\"106\" y=\"62\" width=\"108\" height=\"56\" rx=\"8\" class=\"as-svg__ink\"/><text x=\"160\" y=\"86\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"17\">misma</text><text x=\"160\" y=\"106\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">temperatura</text><text x=\"160\" y=\"150\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">el termómetro</text><text x=\"160\" y=\"170\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">no ve diferencia</text></svg>"
+    },
+    {
+      "id": "c4",
+      "tipo": "idea",
+      "titulo": "Lo que sientes es tu piel",
+      "texto": "La temperatura ambiente es menor que la de tu mano, así que el objeto le quita calor a la piel. Si la piel se enfría, sientes que el objeto está frío.",
+      "fuenteIds": [
+        "expl-metal"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>El calor sale de la mano tibia hacia la cuchara y la piel se enfría</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><defs><marker id=\"cuchara-fria-ah\" viewBox=\"0 0 10 10\" refX=\"5\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" class=\"as-svg__accent\"/></marker></defs><path d=\"M126 92 C126 62 194 62 194 92 Z\" class=\"as-svg__warm\"/><path d=\"M126 92 C126 62 194 62 194 92 Z\" class=\"as-svg__ink\"/><rect x=\"90\" y=\"112\" width=\"140\" height=\"22\" rx=\"8\" class=\"as-svg__cool\"/><rect x=\"90\" y=\"112\" width=\"140\" height=\"22\" rx=\"8\" class=\"as-svg__ink\"/><line x1=\"130\" y1=\"76\" x2=\"130\" y2=\"106\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"3\" marker-end=\"url(#cuchara-fria-ah)\"/><line x1=\"160\" y1=\"76\" x2=\"160\" y2=\"106\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"3\" marker-end=\"url(#cuchara-fria-ah)\"/><line x1=\"190\" y1=\"76\" x2=\"190\" y2=\"106\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"3\" marker-end=\"url(#cuchara-fria-ah)\"/><text x=\"160\" y=\"34\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"17\">mano más tibia</text><text x=\"160\" y=\"164\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">el calor pasa a la cuchara</text><text x=\"160\" y=\"186\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">y la piel se enfría</text></svg>"
+    },
+    {
+      "id": "c5",
+      "tipo": "idea",
+      "titulo": "El metal se lleva el calor",
+      "texto": "El metal conduce bien el calor: el de tu mano se va rápido hacia su interior. Por eso su superficie sigue fría, y tú también la sientes fría.",
+      "fuenteIds": [
+        "expl-metal",
+        "illinois-fisica"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>En el metal el calor se va rápido hacia adentro y la superficie sigue fría</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><defs><marker id=\"cuchara-fria-ah\" viewBox=\"0 0 10 10\" refX=\"5\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" class=\"as-svg__accent\"/></marker></defs><rect x=\"30\" y=\"70\" width=\"260\" height=\"50\" rx=\"8\" class=\"as-svg__soft\"/><rect x=\"30\" y=\"70\" width=\"260\" height=\"50\" rx=\"8\" class=\"as-svg__ink\"/><path d=\"M56 70 C56 40 124 40 124 70 Z\" class=\"as-svg__warm\"/><path d=\"M56 70 C56 40 124 40 124 70 Z\" class=\"as-svg__ink\"/><line x1=\"90\" y1=\"86\" x2=\"90\" y2=\"108\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"3\" marker-end=\"url(#cuchara-fria-ah)\"/><line x1=\"112\" y1=\"104\" x2=\"180\" y2=\"104\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"3\" marker-end=\"url(#cuchara-fria-ah)\"/><line x1=\"190\" y1=\"104\" x2=\"262\" y2=\"104\" class=\"as-svg__ink as-svg__accent\" stroke-width=\"3\" marker-end=\"url(#cuchara-fria-ah)\"/><text x=\"160\" y=\"34\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"17\">el calor se va rápido</text><text x=\"160\" y=\"146\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">hacia adentro del metal</text><text x=\"160\" y=\"170\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">la superficie sigue fría</text></svg>"
+    },
+    {
+      "id": "c6",
+      "tipo": "pregunta",
+      "pregunta": "¿Por qué la madera se siente menos fría que el metal?",
+      "correctaId": "a",
+      "opciones": [
+        {
+          "id": "a",
+          "texto": "Porque frena el paso del calor",
+          "retro": "¡Así es! La madera es un aislante: el calor de la mano pasa más lento."
+        },
+        {
+          "id": "b",
+          "texto": "Porque está a más temperatura",
+          "retro": "No: ambas cucharas están a temperatura ambiente."
+        },
+        {
+          "id": "c",
+          "texto": "Porque produce su propio calor",
+          "retro": "No: la diferencia está en la rapidez con que deja pasar el calor."
+        }
+      ],
+      "fuenteIds": [
+        "brit-aislantes",
+        "illinois-fisica"
+      ]
+    },
+    {
+      "id": "c7",
+      "tipo": "revelar",
+      "titulo": "¿Cuánta diferencia hay?",
+      "texto": "Hay tablas que indican qué tan bien conduce el calor cada material. ¿Cuánto mejor lo conduce el acero inoxidable que la madera?",
+      "revelado": "Entre 87,5 y 175 veces mejor. En una tabla de física, el acero inoxidable marca 14, y la madera, entre 0,08 y 0,16.",
+      "fuenteIds": [
+        "openstax-conduccion"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Dos barras muy distintas comparan cuánto conducen el calor el acero inoxidable y la madera</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><rect x=\"30\" y=\"66\" width=\"256\" height=\"30\" rx=\"4\" class=\"as-svg__fill\"/><rect x=\"30\" y=\"66\" width=\"256\" height=\"30\" rx=\"4\" class=\"as-svg__ink\"/><rect x=\"30\" y=\"124\" width=\"3\" height=\"30\" rx=\"1\" class=\"as-svg__warm\"/><rect x=\"30\" y=\"124\" width=\"3\" height=\"30\" rx=\"1\" class=\"as-svg__ink\"/><text x=\"30\" y=\"54\" text-anchor=\"start\" class=\"as-svg__label\" font-size=\"16\">acero inoxidable</text><text x=\"30\" y=\"116\" text-anchor=\"start\" class=\"as-svg__label\" font-size=\"16\">madera</text><text x=\"70\" y=\"145\" text-anchor=\"start\" class=\"as-svg__label\" font-size=\"16\">¿cuánta diferencia?</text><text x=\"160\" y=\"186\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">qué tan bien conducen el calor</text></svg>"
+    },
+    {
+      "id": "c8",
+      "tipo": "dato",
+      "texto": "Pasa lo mismo con los pies: una alfombra y un piso de baldosas pueden estar a la misma temperatura, pero las baldosas se sienten más frías. En ellas, la piel pierde más calor.",
+      "fuenteIds": [
+        "openstax-conduccion"
+      ],
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" class=\"as-svg\" role=\"img\"><title>Un pie descalzo pasa de una alfombra a un piso de baldosas; ambos a la misma temperatura</title><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"18\" class=\"as-svg__soft\"/><rect x=\"20\" y=\"118\" width=\"136\" height=\"50\" rx=\"4\" class=\"as-svg__warm\"/><rect x=\"20\" y=\"118\" width=\"136\" height=\"50\" rx=\"4\" class=\"as-svg__ink\"/><rect x=\"164\" y=\"118\" width=\"42\" height=\"50\" rx=\"2\" class=\"as-svg__cool\"/><rect x=\"164\" y=\"118\" width=\"42\" height=\"50\" rx=\"2\" class=\"as-svg__ink\"/><rect x=\"210\" y=\"118\" width=\"42\" height=\"50\" rx=\"2\" class=\"as-svg__cool\"/><rect x=\"210\" y=\"118\" width=\"42\" height=\"50\" rx=\"2\" class=\"as-svg__ink\"/><rect x=\"256\" y=\"118\" width=\"42\" height=\"50\" rx=\"2\" class=\"as-svg__cool\"/><rect x=\"256\" y=\"118\" width=\"42\" height=\"50\" rx=\"2\" class=\"as-svg__ink\"/><path d=\"M210 112 C206 88 214 70 224 70 C234 70 232 90 240 100 C250 106 262 108 262 112 Z\" class=\"as-svg__warm\"/><path d=\"M210 112 C206 88 214 70 224 70 C234 70 232 90 240 100 C250 106 262 108 262 112 Z\" class=\"as-svg__ink\"/><text x=\"88\" y=\"192\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">alfombra</text><text x=\"232\" y=\"192\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">baldosas</text><text x=\"160\" y=\"30\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"16\">misma temperatura</text><text x=\"232\" y=\"56\" text-anchor=\"middle\" class=\"as-svg__label\" font-size=\"15\">se sienten más frías</text></svg>"
+    }
+  ],
+  "resumen": {
+    "titulo": "La cuchara fría",
+    "puntos": [
+      "La cuchara de metal y la de madera están a la misma temperatura si llevan rato en el mismo lugar.",
+      "Lo que sientes es cómo se enfría tu piel, no la temperatura del objeto.",
+      "El metal se lleva rápido el calor de la mano, y la madera frena su paso."
+    ]
+  },
+  "fuentes": [
+    {
+      "id": "expl-metal",
+      "entidad": "Exploratorium",
+      "titulo": "Cold Metal",
+      "url": "https://www.exploratorium.edu/snacks/cold-metal",
+      "ubicacion": "Secciones de preparación y explicación",
+      "afirmaciones": [
+        "Tras cerca de una hora los materiales alcanzan la temperatura ambiente",
+        "Un termómetro infrarrojo muestra que no hay diferencia entre ellos",
+        "La temperatura ambiente es menor que la de la mano",
+        "El metal conduce bien el calor: el de la mano pasa rápido a su interior y la superficie sigue fría",
+        "Si la piel se enfría, el objeto se percibe como frío",
+        "La mano no siempre es un buen termómetro"
+      ],
+      "respalda": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5"
+      ],
+      "consultadaEl": "2026-11-04"
+    },
+    {
+      "id": "illinois-fisica",
+      "entidad": "University of Illinois, Department of Physics (Ask the Van)",
+      "titulo": "Different Materials get Different Temperatures?",
+      "url": "https://van.physics.illinois.edu/ask/listing/29929",
+      "ubicacion": "Respuesta del 23-05-2015",
+      "afirmaciones": [
+        "Dos materiales en contacto, sin un flujo importante de energía desde otros objetos, terminan a la misma temperatura",
+        "No se sienten igual: el metal tiene mayor conductividad térmica y el calor fluye más rápido entre el dedo y el metal"
+      ],
+      "respalda": [
+        "c2",
+        "c5",
+        "c6"
+      ],
+      "consultadaEl": "2026-11-04"
+    },
+    {
+      "id": "brit-aislantes",
+      "entidad": "Britannica Kids",
+      "titulo": "Insulators and conductors",
+      "url": "https://kids.britannica.com/kids/article/insulators-and-conductors/476281",
+      "ubicacion": "Texto principal",
+      "afirmaciones": [
+        "La madera es un buen aislante térmico: frena el paso del calor"
+      ],
+      "respalda": [
+        "c6"
+      ],
+      "consultadaEl": "2026-11-04"
+    },
+    {
+      "id": "openstax-conduccion",
+      "entidad": "OpenStax, Rice University",
+      "titulo": "College Physics 2e, 14.5 Conduction",
+      "url": "https://openstax.org/books/college-physics-2e/pages/14-5-conduction",
+      "ubicacion": "Tabla de conductividades y ejemplo de la alfombra",
+      "afirmaciones": [
+        "Conductividad térmica cerca de 0 °C: acero inoxidable 14, madera 0,08 a 0,16 J/(s·m·°C)",
+        "14 ÷ 0,16 = 87,5 y 14 ÷ 0,08 = 175",
+        "Alfombra y baldosas a la misma temperatura: los pies sienten más frío en las baldosas porque la piel pierde más calor"
+      ],
+      "respalda": [
+        "c7",
+        "c8"
+      ],
+      "consultadaEl": "2026-11-04"
+    }
+  ],
+  "controlEditorial": {
+    "estado": "borrador",
+    "revisadoPor": null,
+    "fechaRevision": null
+  }
+}
